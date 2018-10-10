@@ -1,7 +1,7 @@
-# upsdk.en
+# upsdk.zh_CN
 
 #### 项目介绍
-UPSDK integration documentation
+UPSDK 接入文档
 
 #### 软件架构
 软件架构说明
