@@ -27,7 +27,9 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Access for Android" href="unity03_1_android.html" />
+    <link rel="prev" title="How to add plugin in Unity project" href="unity02_unityplugin.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -76,16 +78,29 @@
               
             
             
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../chapters/chapter01.html">UPSDK Android</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapters/chapter02.html">UPSDK IOS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter03.html">UPSDK UnityPlugin</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../chapters/chapter03.html">UPSDK UnityPlugin</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="unity01_guide.html">UnityPlugin Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unity02_unityplugin.html">How to add plugin in Unity project</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">UnityPlugin Access</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="unity03_1_android.html">Access for Android</a></li>
+<li class="toctree-l3"><a class="reference internal" href="unity03_2_ios.html">Access for IOS</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="unity04_api_catalog.html">UnityPlugin API Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unity05_sample_catalog.html">UnityPlugin API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unity06_multidex_catalog.html">UnityPlugin Androi MultiDex</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../chapters/chapter04.html">UPSDK Cocos2d-X Cpp</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapters/chapter05.html">UPSDK Cocos2d-X Lua</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapters/chapter06.html">UPSDK Cocos2d-X JavaScript</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapters/chapter07.html">UPSDK Layabox JavaScript</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapters/chapter08.html">UPSDK Egret TypeScript</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapters/chapter09.html">UPSDK Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter10.html">GDPR</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapters/chapter11.html">FAQ</a></li>
 </ul>
 
@@ -132,6 +147,8 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
+          <li><a href="../chapters/chapter03.html">UPSDK UnityPlugin</a> &raquo;</li>
+        
       <li>UnityPlugin Access</li>
     
     
@@ -158,40 +175,8 @@
 <p>Contents:</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="unity03_1_android.html">Access for Android</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="unity03_1_android.html#i-declaration">I. Declaration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="unity03_1_android.html#ii-checking-assets-catalog-in-unity-project">II. Checking Assets Catalog in Unity Project</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="unity03_1_android.html#libs-res">1. <code class="docutils literal notranslate"><span class="pre">libs_res</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="unity03_1_android.html#thirdlibs">2.<code class="docutils literal notranslate"><span class="pre">thirdlibs</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="unity03_1_android.html#avidly-android">3.<code class="docutils literal notranslate"><span class="pre">avidly_android</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="unity03_1_android.html#iii-adaption-for-unity-specific-version">III. Adaption for Unity specific version</a></li>
-<li class="toctree-l2"><a class="reference internal" href="unity03_1_android.html#iv-compile-error-for-unity-project">IV. Compile Error for Unity Project</a></li>
-<li class="toctree-l2"><a class="reference internal" href="unity03_1_android.html#v-unity-android-proguard-configuration">V. Unity Android proguard configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="unity03_1_android.html#vi-the-problems-of-android-overmuch-method-for-unity-project">VI. The Problems of Android overmuch-method for Unity Project</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="unity03_2_ios.html">Access for IOS</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="unity03_2_ios.html#ideclaration">I、Declaration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="unity03_2_ios.html#iiinspect-ios-frameworks-under-assets-catalog-in-unity-project">II、Inspect iOS Frameworks under Assets catalog in Unity project</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="unity03_2_ios.html#upsdk-adsdk-main-package">1. UPSDK ADSDK Main Package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="unity03_2_ios.html#upsdk-adsdk-dependency-for-ad-networks">2. UPSDK ADSDK Dependency for Ad Networks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="unity03_2_ios.html#upsdk-adsdk-resource-package">3. UPSDK ADSDK Resource Package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="unity03_2_ios.html#xuporter">4. XUPorter</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="unity03_2_ios.html#xcode-configuration-inspection">Xcode Configuration Inspection</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="unity03_2_ios.html#deployent-target-settings">1. Deployent Target Settings</a></li>
-<li class="toctree-l3"><a class="reference internal" href="unity03_2_ios.html#link-binary-with-libraries-inspection">2. Link Binary with Libraries inspection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="unity03_2_ios.html#bundle-resources-inspection">3. bundle resources inspection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="unity03_2_ios.html#other-linker-flag-inspection">4. Other Linker Flag Inspection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="unity03_2_ios.html#solution-to-compatibility-problems-for-some-unity-versions">5. Solution to Compatibility problems for some Unity versions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="unity03_2_ios.html#clean-project-re-compile">6. Clean Project, Re-Compile</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="unity03_1_android.html">Access for Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unity03_2_ios.html">Access for IOS</a></li>
 </ul>
 </div>
 </div>
@@ -202,12 +187,21 @@
           </div>
           <footer>
   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="unity03_1_android.html" class="btn btn-neutral float-right" title="Access for Android" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="unity02_unityplugin.html" class="btn btn-neutral" title="How to add plugin in Unity project" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, upltv
+        &copy; Copyright 2018, upltv.
 
     </p>
   </div>
@@ -226,14 +220,21 @@
 
   
 
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            LANGUAGE:'zh-CN',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

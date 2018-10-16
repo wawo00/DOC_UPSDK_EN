@@ -27,7 +27,9 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Use Android Studio" href="unity06_1_multidex_dexbyas.html" />
+    <link rel="prev" title="UnityPlugin Androi MultiDex" href="unity06_multidex_catalog.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -76,10 +78,23 @@
               
             
             
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../chapters/chapter01.html">UPSDK Android</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapters/chapter02.html">UPSDK IOS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter03.html">UPSDK UnityPlugin</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../chapters/chapter03.html">UPSDK UnityPlugin</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="unity01_guide.html">UnityPlugin Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unity02_unityplugin.html">How to add plugin in Unity project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unity03_integrate_catalog.html">UnityPlugin Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unity04_api_catalog.html">UnityPlugin API Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unity05_sample_catalog.html">UnityPlugin API</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="unity06_multidex_catalog.html">UnityPlugin Androi MultiDex</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">65535 Limitation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="unity06_1_multidex_dexbyas.html">Use Android Studio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="unity06_2_multidex_dexbyunity.html">Use Unity</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../chapters/chapter04.html">UPSDK Cocos2d-X Cpp</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapters/chapter05.html">UPSDK Cocos2d-X Lua</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapters/chapter06.html">UPSDK Cocos2d-X JavaScript</a></li>
@@ -132,6 +147,10 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
+          <li><a href="../chapters/chapter03.html">UPSDK UnityPlugin</a> &raquo;</li>
+        
+          <li><a href="unity06_multidex_catalog.html">UnityPlugin Androi MultiDex</a> &raquo;</li>
+        
       <li>65535 Limitation</li>
     
     
@@ -158,14 +177,14 @@
 <blockquote>
 <div><code class="docutils literal notranslate"><span class="pre">trouble</span> <span class="pre">writing</span> <span class="pre">output:</span> <span class="pre">Too</span> <span class="pre">many</span> <span class="pre">method</span> <span class="pre">references</span> <span class="pre">to</span> <span class="pre">fit</span> <span class="pre">in</span> <span class="pre">one</span> <span class="pre">dex</span> <span class="pre">file:</span> <span class="pre">67449;</span> <span class="pre">max</span> <span class="pre">is</span> <span class="pre">65536.</span></code></div></blockquote>
 <p>In order to solve this problem, Unity has supported Multidex since 5.5 and is solved by Dex subcontracting.</p>
-</div>
 <div class="section" id="use-androidstudio">
-<span id="use-androidstudio"></span><h1>1. <a class="reference external" href="http://docs.upltv.com/docs/show/251">Use AndroidStudio </a><a class="headerlink" href="#use-androidstudio" title="Permalink to this headline">¶</a></h1>
+<span id="use-androidstudio"></span><h2>1. <a class="reference external" href="http://docs.upltv.com/docs/show/251">Use AndroidStudio </a><a class="headerlink" href="#use-androidstudio" title="Permalink to this headline">¶</a></h2>
 <p>In the AndroidStudio project, it is possible to flexibly complete apk packaging via gradle, provided that AndroidStudio 2.2.3 or higher is required.</p>
 </div>
 <div class="section" id="use-unityide">
-<span id="use-unityide"></span><h1>2. <a class="reference external" href="http://docs.upltv.com/docs/show/252">Use UnityIDE </a><a class="headerlink" href="#use-unityide" title="Permalink to this headline">¶</a></h1>
+<span id="use-unityide"></span><h2>2. <a class="reference external" href="http://docs.upltv.com/docs/show/252">Use UnityIDE </a><a class="headerlink" href="#use-unityide" title="Permalink to this headline">¶</a></h2>
 <p>Simply copy the necessary files and initial settings to complete the subcontracting.</p>
+</div>
 </div>
 
 
@@ -174,12 +193,21 @@
           </div>
           <footer>
   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="unity06_1_multidex_dexbyas.html" class="btn btn-neutral float-right" title="Use Android Studio" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="unity06_multidex_catalog.html" class="btn btn-neutral" title="UnityPlugin Androi MultiDex" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, upltv
+        &copy; Copyright 2018, upltv.
 
     </p>
   </div>
@@ -198,14 +226,21 @@
 
   
 
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            LANGUAGE:'zh-CN',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
