@@ -2,372 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84e338eb-619c-4008-a535-8d405c94f7a2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/android01.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/android01.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/android01_1.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/android01_1.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/android01_2.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/android01_2.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/android01_3.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/android01_3.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/android02.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/android02.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/android03.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/android03.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/android04.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/android04.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/android04_1.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/android04_1.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/android04_2.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/android04_2.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/android04_banner.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/android04_banner.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/android05.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/android05.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/android06.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/android06.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/android07.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/android07.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/android08.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/android08.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/cpp01.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/cpp01.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/cpp01_1.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/cpp01_1.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/cpp01_2.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/cpp01_2.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/cpp01_3.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/cpp01_3.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/cpp02.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/cpp02.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/cpp03.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/cpp03.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/cpp03_1.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/cpp03_1.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/cpp03_2.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/cpp03_2.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/cpp03_3.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/cpp03_3.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/cpp03_4.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/cpp03_4.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/cpp03_5.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/cpp03_5.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/cpp03_6.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/cpp03_6.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/cpp03_7.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/cpp03_7.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/js01.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/js01.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/js01_1.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/js01_1.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/js01_2.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/js01_2.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/js01_3.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/js01_3.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/js01_4.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/js01_4.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/js02.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/js02.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/js02_1.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/js02_1.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/js02_2.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/js02_2.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/js02_3.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/js02_3.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/js02_4.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/js02_4.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/js02_5.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/js02_5.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/js02_6.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/js02_6.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/js02_7.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/js02_7.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/lua01.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/lua01.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/lua01_1.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/lua01_1.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/lua01_2.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/lua01_2.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/lua01_3.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/lua01_3.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/lua02.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/lua02.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/lua02_1.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/lua02_1.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/lua02_2.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/lua02_2.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/lua02_3.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/lua02_3.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/lua02_4.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/lua02_4.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/lua02_5.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/lua02_5.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/lua02_6.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/lua02_6.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/lua02_7.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/lua02_7.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Download/Download_Guide.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Download/Download_Guide.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Egret-Ts/egret01.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Egret-Ts/egret01.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Egret-Ts/egret01_1.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Egret-Ts/egret01_1.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Egret-Ts/egret02.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Egret-Ts/egret02.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Egret-Ts/egret02_1.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Egret-Ts/egret02_1.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Egret-Ts/egret02_2.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Egret-Ts/egret02_2.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Egret-Ts/egret02_3.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Egret-Ts/egret02_3.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Egret-Ts/egret02_4.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Egret-Ts/egret02_4.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Egret-Ts/egret02_5.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Egret-Ts/egret02_5.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Egret-Ts/egret02_6.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Egret-Ts/egret02_6.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Egret-Ts/egret02_7.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Egret-Ts/egret02_7.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/FAQ/FAQ_Guide.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/FAQ/FAQ_Guide.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/GDPR/GDPR_Guide.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/GDPR/GDPR_Guide.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Layabox-Js/laya01.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Layabox-Js/laya01.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Layabox-Js/laya01_1.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Layabox-Js/laya01_1.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Layabox-Js/laya01_2.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Layabox-Js/laya01_2.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Layabox-Js/laya01_3.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Layabox-Js/laya01_3.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Layabox-Js/laya02.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Layabox-Js/laya02.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Layabox-Js/laya02_1.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Layabox-Js/laya02_1.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Layabox-Js/laya02_2.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Layabox-Js/laya02_2.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Layabox-Js/laya02_3.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Layabox-Js/laya02_3.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Layabox-Js/laya02_4.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Layabox-Js/laya02_4.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Layabox-Js/laya02_5.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Layabox-Js/laya02_5.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Layabox-Js/laya02_6.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Layabox-Js/laya02_6.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Layabox-Js/laya02_7.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Layabox-Js/laya02_7.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/old/unity01.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/old/unity01.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/old/unity02.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/old/unity02.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/old/unity03.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/old/unity03.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/old/unity03_1.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/old/unity03_1.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/old/unity03_2.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/old/unity03_2.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/old/unity04.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/old/unity04.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/old/unity04_1.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/old/unity04_1.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/old/unity04_2.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/old/unity04_2.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/old/unity05.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/old/unity05.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/old/unity05_1.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/old/unity05_1.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/old/unity05_2.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/old/unity05_2.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/old/unity05_3.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/old/unity05_3.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/old/unity05_4.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/old/unity05_4.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/old/unity05_5.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/old/unity05_5.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/old/unity05_6.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/old/unity05_6.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/old/unity05_7.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/old/unity05_7.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/old/unity06.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/old/unity06.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/old/unity06_1.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/old/unity06_1.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/old/unity06_2.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/old/unity06_2.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/old/unity06_3.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/old/unity06_3.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/unity01_guide.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/unity01_guide.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/unity02_unityplugin.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/unity02_unityplugin.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/unity03_1_android.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/unity03_1_android.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/unity03_2_ios.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/unity03_2_ios.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/unity03_integrate_catalog.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/unity03_integrate_catalog.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/unity04_1_api.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/unity04_1_api.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/unity04_2_callback.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/unity04_2_callback.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/unity04_api_catalog.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/unity04_api_catalog.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/unity05_1_init.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/unity05_1_init.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/unity05_2_abtest.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/unity05_2_abtest.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/unity05_3_adload.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/unity05_3_adload.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/unity05_4_adshow.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/unity05_4_adshow.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/unity05_5_banner.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/unity05_5_banner.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/unity05_6_gdpr.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/unity05_6_gdpr.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/unity05_7_demo.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/unity05_7_demo.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/unity05_sample_catalog.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/unity05_sample_catalog.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/unity06_0_multidex_guide.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/unity06_0_multidex_guide.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/unity06_1_multidex_dexbyas.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/unity06_1_multidex_dexbyas.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/unity06_2_multidex_dexbyunity.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/unity06_2_multidex_dexbyunity.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/unity06_multidex_catalog.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/unity06_multidex_catalog.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/chapters/chapter01.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/chapters/chapter01.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/chapters/chapter02.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/chapters/chapter02.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/chapters/chapter03.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/chapters/chapter03.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/chapters/chapter04.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/chapters/chapter04.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/chapters/chapter05.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/chapters/chapter05.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/chapters/chapter06.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/chapters/chapter06.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/chapters/chapter07.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/chapters/chapter07.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/chapters/chapter08.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/chapters/chapter08.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/chapters/chapter09.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/chapters/chapter09.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/chapters/chapter10.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/chapters/chapter10.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/chapters/chapter11.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/chapters/chapter11.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/environment.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/index.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/API/Unity_API.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/API/Unity_API.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/API/Unity_CallBack.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/API/Unity_CallBack.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/API_catalog.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/API_catalog.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/Integrate/Unity_Android.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/Integrate/Unity_Android.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/Integrate/Unity_Ios.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/Integrate/Unity_Ios.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/Integrate_catalog.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/Integrate_catalog.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/MultiDex/Unity_Dex.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/MultiDex/Unity_Dex.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/MultiDex/Unity_DexByAS.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/MultiDex/Unity_DexByAS.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/MultiDex/Unity_DexByUnity.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/MultiDex/Unity_DexByUnity.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/MultiDex_catalog.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/MultiDex_catalog.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/Sample/Unity_ABTest.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/Sample/Unity_ABTest.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/Sample/Unity_AdsLoad.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/Sample/Unity_AdsLoad.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/Sample/Unity_AdsShow.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/Sample/Unity_AdsShow.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/Sample/Unity_Banner.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/Sample/Unity_Banner.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/Sample/Unity_Demo.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/Sample/Unity_Demo.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/Sample/Unity_GDPR.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/Sample/Unity_GDPR.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/Sample/Unity_Init.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/Sample/Unity_Init.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/Sample_catalog.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/Sample_catalog.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/Unity_Guide.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/Unity_Guide.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/Unity_UnityPlugin.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/Unity_UnityPlugin.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity01.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity01.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity02.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity02.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity03.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity03.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity03_1.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity03_1.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity03_2.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity03_2.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity04.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity04.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity04_1.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity04_1.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity04_2.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity04_2.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity05.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity05.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity05_1.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity05_1.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity05_2.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity05_2.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity05_3.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity05_3.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity05_4.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity05_4.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity05_5.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity05_5.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity05_6.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity05_6.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity05_7.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity05_7.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity06.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity06.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity06_1.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity06_1.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity06_2.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity06_2.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity06_3.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/old_unity/Unity/unity06_3.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Android/android01.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Android/android01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Android/android01_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Android/android01_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Android/android01_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Android/android01_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Android/android01_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Android/android01_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Android/android02.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Android/android02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Android/android03.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Android/android03.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Android/android04.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Android/android04.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Android/android04_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Android/android04_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Android/android04_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Android/android04_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Android/android04_banner.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Android/android04_banner.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Android/android05.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Android/android05.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Android/android06.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Android/android06.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Android/android07.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Android/android07.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Android/android08.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Android/android08.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/cpp01.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/cpp01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/cpp01_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/cpp01_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/cpp01_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/cpp01_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/cpp01_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/cpp01_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/cpp02.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/cpp02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/cpp03.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/cpp03.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/cpp03_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/cpp03_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/cpp03_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/cpp03_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/cpp03_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/cpp03_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/cpp03_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/cpp03_4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/cpp03_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/cpp03_5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/cpp03_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/cpp03_6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/cpp03_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/cpp03_7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/js01.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/js01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/js01_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/js01_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/js01_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/js01_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/js01_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/js01_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/js01_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/js01_4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/js02.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/js02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/js02_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/js02_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/js02_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/js02_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/js02_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/js02_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/js02_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/js02_4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/js02_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/js02_5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/js02_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/js02_6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/js02_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/js02_7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/lua01.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/lua01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/lua01_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/lua01_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/lua01_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/lua01_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/lua01_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/lua01_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/lua02.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/lua02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/lua02_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/lua02_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/lua02_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/lua02_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/lua02_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/lua02_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/lua02_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/lua02_4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/lua02_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/lua02_5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/lua02_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/lua02_6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/lua02_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/lua02_7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Download/Download_Guide.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Download/Download_Guide.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/egret01.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Egret-Ts/egret01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/egret01_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Egret-Ts/egret01_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/egret02.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Egret-Ts/egret02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/egret02_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Egret-Ts/egret02_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/egret02_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Egret-Ts/egret02_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/egret02_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Egret-Ts/egret02_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/egret02_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Egret-Ts/egret02_4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/egret02_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Egret-Ts/egret02_5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/egret02_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Egret-Ts/egret02_6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/egret02_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Egret-Ts/egret02_7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/FAQ/FAQ_Guide.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/FAQ/FAQ_Guide.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/GDPR/GDPR_Guide.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/GDPR/GDPR_Guide.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/laya01.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Layabox-Js/laya01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/laya01_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Layabox-Js/laya01_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/laya01_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Layabox-Js/laya01_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/laya01_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Layabox-Js/laya01_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/laya02.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Layabox-Js/laya02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/laya02_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Layabox-Js/laya02_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/laya02_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Layabox-Js/laya02_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/laya02_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Layabox-Js/laya02_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/laya02_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Layabox-Js/laya02_4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/laya02_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Layabox-Js/laya02_5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/laya02_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Layabox-Js/laya02_6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/laya02_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Layabox-Js/laya02_7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/old/unity01.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/old/unity01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/old/unity02.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/old/unity02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/old/unity03.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/old/unity03.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/old/unity03_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/old/unity03_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/old/unity03_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/old/unity03_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/old/unity04.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/old/unity04.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/old/unity04_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/old/unity04_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/old/unity04_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/old/unity04_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/old/unity05.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/old/unity05.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/old/unity05_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/old/unity05_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/old/unity05_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/old/unity05_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/old/unity05_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/old/unity05_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/old/unity05_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/old/unity05_4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/old/unity05_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/old/unity05_5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/old/unity05_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/old/unity05_6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/old/unity05_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/old/unity05_7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/old/unity06.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/old/unity06.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/old/unity06_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/old/unity06_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/old/unity06_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/old/unity06_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/old/unity06_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/old/unity06_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/unity01_guide.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/unity01_guide.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/unity02_unityplugin.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/unity02_unityplugin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/unity03_1_android.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/unity03_1_android.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/unity03_2_ios.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/unity03_2_ios.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/unity03_integrate_catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/unity03_integrate_catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/unity04_1_api.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/unity04_1_api.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/unity04_2_callback.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/unity04_2_callback.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/unity04_api_catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/unity04_api_catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/unity05_1_init.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/unity05_1_init.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/unity05_2_abtest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/unity05_2_abtest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/unity05_3_adload.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/unity05_3_adload.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/unity05_4_adshow.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/unity05_4_adshow.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/unity05_5_banner.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/unity05_5_banner.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/unity05_6_gdpr.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/unity05_6_gdpr.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/unity05_7_demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/unity05_7_demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/unity05_sample_catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/unity05_sample_catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/unity06_0_multidex_guide.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/unity06_0_multidex_guide.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/unity06_1_multidex_dexbyas.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/unity06_1_multidex_dexbyas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/unity06_2_multidex_dexbyunity.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/unity06_2_multidex_dexbyunity.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/Unity/unity06_multidex_catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/unity06_multidex_catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/Android/android07.md.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/Android/android07.md.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/Unity/unity03_integrate_catalog.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/Unity/unity03_integrate_catalog.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/Unity/unity05_6_gdpr.md.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/Unity/unity05_6_gdpr.md.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/Unity/unity05_7_demo.md.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/Unity/unity05_7_demo.md.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/Unity/unity05_sample_catalog.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/Unity/unity05_sample_catalog.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/Unity/unity06_0_multidex_guide.md.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/Unity/unity06_0_multidex_guide.md.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/Unity/unity06_2_multidex_dexbyunity.md.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/Unity/unity06_2_multidex_dexbyunity.md.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/Unity/unity06_multidex_catalog.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/Unity/unity06_multidex_catalog.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/chapter03.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/chapters/chapter03.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/chapter10.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/chapters/chapter10.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_static/css/theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/js/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_static/js/theme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/chapters/chapter01.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/chapters/chapter01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/chapters/chapter02.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/chapters/chapter02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/chapters/chapter03.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/chapters/chapter03.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/chapters/chapter04.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/chapters/chapter04.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/chapters/chapter05.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/chapters/chapter05.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/chapters/chapter06.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/chapters/chapter06.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/chapters/chapter07.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/chapters/chapter07.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/chapters/chapter08.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/chapters/chapter08.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/chapters/chapter09.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/chapters/chapter09.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/chapters/chapter10.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/chapters/chapter10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/chapters/chapter11.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/chapters/chapter11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/genindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/genindex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/objects.inv" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/objects.inv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/API/Unity_API.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/API/Unity_API.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/API/Unity_CallBack.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/API/Unity_CallBack.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/API_catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/API_catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/Integrate/Unity_Android.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/Integrate/Unity_Android.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/Integrate/Unity_Ios.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/Integrate/Unity_Ios.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/Integrate_catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/Integrate_catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/MultiDex/Unity_Dex.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/MultiDex/Unity_Dex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/MultiDex/Unity_DexByAS.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/MultiDex/Unity_DexByAS.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/MultiDex/Unity_DexByUnity.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/MultiDex/Unity_DexByUnity.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/MultiDex_catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/MultiDex_catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/Sample/Unity_ABTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/Sample/Unity_ABTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/Sample/Unity_AdsLoad.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/Sample/Unity_AdsLoad.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/Sample/Unity_AdsShow.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/Sample/Unity_AdsShow.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/Sample/Unity_Banner.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/Sample/Unity_Banner.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/Sample/Unity_Demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/Sample/Unity_Demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/Sample/Unity_GDPR.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/Sample/Unity_GDPR.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/Sample/Unity_Init.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/Sample/Unity_Init.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/Sample_catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/Sample_catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/Unity_Guide.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/Unity_Guide.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/Unity_UnityPlugin.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/Unity_UnityPlugin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/unity01.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/unity01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/unity02.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/unity02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/unity03.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/unity03.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/unity03_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/unity03_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/unity03_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/unity03_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/unity04.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/unity04.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/unity04_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/unity04_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/unity04_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/unity04_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/unity05.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/unity05.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/unity05_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/unity05_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/unity05_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/unity05_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/unity05_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/unity05_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/unity05_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/unity05_4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/unity05_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/unity05_5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/unity05_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/unity05_6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/unity05_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/unity05_7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/unity06.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/unity06.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/unity06_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/unity06_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/unity06_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/unity06_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/old_unity/Unity/unity06_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/old_unity/Unity/unity06_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/searchindex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Android/android01_1.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/Android/android01_1_help_as.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Android/android01_2.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/Android/android01_2_help_ec.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Android/android01_3.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/Android/android01_3_help_faq.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/IOS/ios04.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/IOS/ios04.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/IOS/ios04_1.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/IOS/ios04_1_banner_custom.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/IOS/ios04_2.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/IOS/ios04_2_banner_quick.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/IOS/new/ios04_banner.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/IOS/new/ios04_banner.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Unity/unity03_integrate_catalog.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/Unity/unity03_integrate_catalog.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Unity/unity05_sample_catalog.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/Unity/unity05_sample_catalog.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/chapters/chapter10.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/chapters/chapter10.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/conf.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -381,8 +16,17 @@
       <file leaf-file-name="conf.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/conf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="71" column="54" selection-start-line="71" selection-start-column="54" selection-end-line="71" selection-end-column="54" />
+            <state relative-caret-position="175">
+              <caret line="84" column="31" lean-forward="true" selection-start-line="84" selection-start-column="31" selection-end-line="84" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/_static/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -423,7 +67,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="android01.rst" pinned="false" current-in-tab="true">
+      <file leaf-file-name="android01.rst" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/Android/android01.rst">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="125">
@@ -454,13 +98,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/source/conf.py" />
         <option value="$PROJECT_DIR$/source/chapters/chapter10.rst" />
         <option value="$PROJECT_DIR$/source/Unity/unity03_integrate_catalog.rst" />
         <option value="$PROJECT_DIR$/source/Unity/unity05_sample_catalog.rst" />
         <option value="$PROJECT_DIR$/source/IOS/new/ios04_banner.rst" />
         <option value="$PROJECT_DIR$/source/IOS/ios04.rst" />
         <option value="$PROJECT_DIR$/source/Android/android01.rst" />
+        <option value="$PROJECT_DIR$/source/conf.py" />
+        <option value="$PROJECT_DIR$/source/_static/css/main.css" />
       </list>
     </option>
   </component>
@@ -512,7 +157,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Integrate_catalog.rst&#9;FILE&#9;file://D:/www/upsdk.en/build/html/_sources/old_unity/Unity/Integrate_catalog.rst.txt&#10;ios04&#9;FILE&#9;file://D:/www/upsdk.en/source/IOS/ios04.rst&#10;ios04_banner.rst&#9;FILE&#9;file://D:/www/upsdk.en/source/IOS/new/ios04_banner.rst&#10;unity05_sample_catalog.rst&#9;FILE&#9;file://D:/www/upsdk.en/source/Unity/unity05_sample_catalog.rst&#10;unity03_integrate_catalog.rst&#9;FILE&#9;file://D:/www/upsdk.en/source/Unity/unity03_integrate_catalog.rst" />
+    <property name="SearchEverywhereHistoryKey" value="main.css&#9;FILE&#9;file://D:/www/upsdk.en/source/_static/css/main.css&#10;Integrate_catalog.rst&#9;FILE&#9;file://D:/www/upsdk.en/build/html/_sources/old_unity/Unity/Integrate_catalog.rst.txt&#10;ios04&#9;FILE&#9;file://D:/www/upsdk.en/source/IOS/ios04.rst&#10;ios04_banner.rst&#9;FILE&#9;file://D:/www/upsdk.en/source/IOS/new/ios04_banner.rst&#10;unity05_sample_catalog.rst&#9;FILE&#9;file://D:/www/upsdk.en/source/Unity/unity05_sample_catalog.rst&#10;unity03_integrate_catalog.rst&#9;FILE&#9;file://D:/www/upsdk.en/source/Unity/unity03_integrate_catalog.rst" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -546,12 +191,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1118000" />
+    <option name="totallyTimeSpent" value="1575000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25670242" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25670242" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -560,7 +206,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.56348073" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.35092723" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -721,13 +367,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/conf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="71" column="54" selection-start-line="71" selection-start-column="54" selection-end-line="71" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/chapters/chapter10.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="35">
@@ -770,6 +409,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="84" column="31" lean-forward="true" selection-start-line="84" selection-start-column="31" selection-end-line="84" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
