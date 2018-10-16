@@ -2,7 +2,7 @@
 
 Unity 5.5 and above support multidex, no need to export to AndroidStudio project, complete the subcontracting settings directly in Unity IDE.
 
-## 1.Open `Gradle build system`
+### 1.Open `Gradle build system`
 
 - Open `Build Settings` in`Unity Editor`  ( File > Build Settings…)
 - Select `Android` in list
@@ -12,7 +12,7 @@ Maybe **Build Settings** are slightly different in many Unity IDE , please be fl
 
 ![666](http://docs.upltv.com/uploads/201807/5b39e51a967db_5b39e51a.jpeg "666")
 
-## 2.Modify `Gradle settings`
+### 2.Modify `Gradle settings`
 ####  (1)  s For Unity2017.2 and above, you can open `Player Settings` and check the `Custom Gradle Template` checkbox as follows. For other versions, you need to copy the `mainTemplate.gradle` file (search for the mainTemplate in the Unity installation directory) to `Assets/Plugins/Android/mainTemplate.gradle`.
 ![777](http://docs.upltv.com/uploads/201807/5b39ec4b74539_5b39ec4b.jpeg "777")
 
@@ -41,7 +41,7 @@ dependencies {
 #### (4) Remove minifyEnabled and useProguard setting
 If there is an error `shrinking/minification is not supported with Multidex`，please remove the useProguard parameter and even remove the minifyEnabled parameter.
 
-## 3.Initialize Multidex 
+### 3.Initialize Multidex 
 If AndroidManifest.xml does not exist in `Assets/Plugins/Android/ `, copy the default AndroidManifest.xml from the Unity installation directory to this directory. If the **application** tag of AndroidManifest.xml does not have a subclass of MultiDexApplication or MultiDexApplication as `android:name`, add `android.support.multidex.MultiDexApplication` as `android:name`
 
 ```xml
