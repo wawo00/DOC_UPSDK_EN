@@ -1,0 +1,311 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Initial SDK &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="A/B Test" href="lua02_2.html" />
+    <link rel="prev" title="LuaPlugin Sample" href="lua02.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> UPInteractive Document
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter01.html">UPSDK Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter02.html">UPSDK IOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter03.html">UPSDK UnityPlugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter04.html">UPSDK Cocos2d-X Cpp</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../chapters/chapter05.html">UPSDK Cocos2d-X Lua</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="lua01.html">LuaPlugin</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="lua02.html">LuaPlugin Sample</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Initial SDK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lua02_2.html">A/B Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lua02_3.html">Banner AD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lua02_4.html">Interstitial API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lua02_5.html">Reward video Ad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lua02_6.html">GDPR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lua02_7.html">Download Demo</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter06.html">UPSDK Cocos2d-X JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter07.html">UPSDK Layabox JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter08.html">UPSDK Egret TypeScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter09.html">UPSDK Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter11.html">FAQ</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../chapters/chapter05.html">UPSDK Cocos2d-X Lua</a> &raquo;</li>
+        
+          <li><a href="lua02.html">LuaPlugin Sample</a> &raquo;</li>
+        
+      <li>Initial SDK</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/Cocos2d-X_Lua/lua02_1.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="initial-sdk">
+<span id="initial-sdk"></span><h1>Initial SDK<a class="headerlink" href="#initial-sdk" title="Permalink to this headline">¶</a></h1>
+<p>Only used Xcode engineering  as an example for explanation. If you are using other projects, please refer to Xcode engineering operation. Sorry for any inconvenience.</p>
+<p>The UPLTV SDK is very simple to initialize.</p>
+<div class="section" id="add-the-following-reference-to-your-project">
+<span id="add-the-following-reference-to-your-project"></span><h2>Add the following reference to your project<a class="headerlink" href="#add-the-following-reference-to-your-project" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="kd">local</span> <span class="n">upltv</span> <span class="o">=</span> <span class="nb">require</span> <span class="s2">&quot;src.app.views.UPLTV&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="initial-upsdk">
+<span id="initial-upsdk"></span><h2>Initial UPSDK<a class="headerlink" href="#initial-upsdk" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="c1">-- initial sdk</span>
+<span class="c1">-- parameter zone：product distribution area，0:overseas，1:China，2:automatic positioning according to IP</span>
+<span class="c1">-- The callback interface after the SDK initialization is completed. The callback interface contains a Boolean parameter callback(Boolean). True means success</span>
+<span class="n">upltv</span><span class="p">:</span><span class="n">initSDK</span><span class="p">(</span><span class="n">zone</span><span class="p">,</span> <span class="p">...)</span> 
+</pre></div>
+</div>
+<p>For example：</p>
+<div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="kd">local</span> <span class="n">btn</span> <span class="o">=</span> <span class="n">createBtnAt</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">left</span><span class="p">,</span> <span class="n">top</span><span class="p">,</span> <span class="n">fontsize</span><span class="p">,</span> <span class="s2">&quot;init&quot;</span><span class="p">)</span>
+<span class="n">btn</span><span class="p">:</span><span class="n">addTouchEventListener</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="n">sender</span><span class="p">,</span> <span class="n">eventType</span><span class="p">)</span>
+    <span class="kr">if</span> <span class="p">(</span><span class="mi">2</span> <span class="o">==</span> <span class="n">eventType</span><span class="p">)</span> <span class="kr">then</span>
+       <span class="kd">local</span> <span class="n">zone</span> <span class="o">=</span> <span class="mi">0</span>
+       <span class="kd">local</span> <span class="n">callback</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+            <span class="kr">if</span> <span class="n">r</span> <span class="o">==</span> <span class="kc">true</span> <span class="kr">then</span>
+               <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;===&gt; initSDK success&quot;</span><span class="p">)</span>
+           <span class="kr">else</span>
+               <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;===&gt; initSDK fail&quot;</span><span class="p">)</span>
+           <span class="kr">end</span>
+        <span class="kr">end</span>
+        <span class="n">upltv</span><span class="p">:</span><span class="n">initSDK</span><span class="p">(</span><span class="n">zone</span><span class="p">,</span> <span class="n">callback</span><span class="p">)</span>
+    <span class="kr">end</span>
+<span class="kr">end</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="setcustomerid">
+<span id="setcustomerid"></span><h2>setCustomerId<a class="headerlink" href="#setcustomerid" title="Permalink to this headline">¶</a></h2>
+<p>Only support Android platform, for non-gp packages, androidid can be passed to avoid additional statistical errors.</p>
+<div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="c1">-- please call this method before Initializing</span>
+<span class="c1">-- Version 3004(subversion 5) and above support this method</span>
+<span class="c1">-- @param androidid</span>
+<span class="n">upltv</span><span class="p">:</span><span class="n">setCustomerId</span><span class="p">(</span><span class="n">androidid</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="add-onapplicationfocus">
+<span id="add-onapplicationfocus"></span><h2>Add onApplicationFocus()<a class="headerlink" href="#add-onapplicationfocus" title="Permalink to this headline">¶</a></h2>
+<p>For the Android platform, we strongly require the following two interfaces of UPSDK to be called when switching between the front and back of the current game, so that the UPSDK can respond correctly internally and avoid unnecessary errors.</p>
+<div class="section" id="call-the-api-when-the-game-returns-to-the-foreground">
+<span id="call-the-api-when-the-game-returns-to-the-foreground"></span><h3>Call the API when the game returns to the foreground<a class="headerlink" href="#call-the-api-when-the-game-returns-to-the-foreground" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">UPAdsSdk</span><span class="o">.</span><span class="na">onApplicationResume</span><span class="o">();</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="call-the-api-when-the-game-returns-to-the-background">
+<span id="call-the-api-when-the-game-returns-to-the-background"></span><h3>Call the API when the game returns to the background<a class="headerlink" href="#call-the-api-when-the-game-returns-to-the-background" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">UPAdsSdk</span><span class="o">.</span><span class="na">onApplicationPause</span><span class="o">();</span>
+</pre></div>
+</div>
+<p>For example：</p>
+<p>Usually Cocos2d - X engine generates game Activity, inheritance in org. Cocos2dx. Lib. Cocos2dxActivity subclass. In the Demo project, this class is AppActivity。</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="nd">@Override</span>
+<span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onResume</span><span class="o">()</span> <span class="o">{</span>
+    <span class="kd">super</span><span class="o">.</span><span class="na">onResume</span><span class="o">();</span>
+    <span class="n">UPAdsSdk</span><span class="o">.</span><span class="na">onApplicationResume</span><span class="o">();</span>
+<span class="o">}</span>
+
+<span class="nd">@Override</span>
+<span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onPause</span><span class="o">()</span> <span class="o">{</span>
+    <span class="kd">super</span><span class="o">.</span><span class="na">onPause</span><span class="o">();</span>
+    <span class="n">UPAdsSdk</span><span class="o">.</span><span class="na">onApplicationPause</span><span class="o">();</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="lua02_2.html" class="btn btn-neutral float-right" title="A/B Test" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="lua02.html" class="btn btn-neutral" title="LuaPlugin Sample" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, upltv
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,176 +1,222 @@
-### Q：嵌入SDK后无广告正确显示怎么办？
-如果您设置了“广告位”，请确保已经把配置在代码中的“广告位”正确的告知给技术对接人。
+
+### Q: What should I do if there is no advertisement displayed correctly after embedding the SDK?
+
+If you've set up an "placementid," please make sure you 've sent the correct placementid code to the technicist.
 
 <br />
 
-### Q：UpLTV相比单个广告平台（如AdMob, Mobvista, Vungle）等有什么优势？
 
-1. UpLTV通过整合多家的广告资源，提供比单个平台更好的广告填充率和更高的展示价格(eCPM)。通常能够比你当前的变现效果提高20%以上。
-2. UpLTV一站式接入多家优质广告平台，减少了合作方逐个注册、对接和沟通的工作量。结算更简单，到账速度更快。
-3. 我们专业的技术支持团队和变现顾问团队提供专业的全天候在线支持，重点客户可以上门服务。
+### Q: What advantages does UpLTV have over a single advertising platform , such as AdMob , Mobvista , Vungle, etc.?
+ 
+
+1. UpLTV provides better ad fill rate and higher exhibition price ( eCPM ) than a single platform by integrating multiple ad resources. Usually, it will boost your monetization by 20 percent. 
+
+2. UpLTV's one-stop access to multiple high-quality advertising platforms avoids the registration, docking and negotiation among multiple organizations. It makes the billing process simpler and the transfer faster.
+
+3. Our professional technical support team and liquidation consultant team provide the 24/7 online support and even on-site service for key customers.
+
 
 <br />
-
-### Q：同样是聚合平台，为什么UpLTV相比其他聚合平台如YoMob, Heyzap, Fyber变现效率高？
-
-1.	UPLTV具备更优秀的加载策略、流量分配和调度逻辑。
-2.	以生命周期价值（LTV）为优化目标，兼顾短期和长期变现效果，保持变现和留存的平衡。
-3.	更完善的后端AI数据分析系统，提供更大的提升空间。
 4.	我们更认为变现并不是简单的SDK对接，而是一种持续的服务。MaaS（Monetization as a Service） 。我们同样重视根据客户的游戏内容提供最佳的广告露出逻辑，这个更依赖于深度的机器学习和人工干预相结合的手段。
 
+### Q: Why is UpLTV more efficient than other integration platforms such as YoMob , Heyzap , and Fyber ?
+1. UPLTV has better loading strategies, traffic distribution and scheduling logic.
+
+2. The goal of UPLTV is to optimize the life cycle value (LTV). It takes the short-term and long-term monetization into consideration and balances the monetization and retention.
+
+3. UPLTV has a better back-end AI data analysis system and provides more room for improvement.
+
+4. We believe that monetization should be an ongoing MaaS (Monetization as a Service) instead of a simple SDK docking. We also value the logic of providing the best advertising based on the customer's game content, which is more dependent on the combination of deep machine learning and manual intervention.
 <br />
 
-### Q：接入UpLTV聚合SDK需要多久？
-基于我们的客户反馈，代码接入工作只需半天工时。
-代码接入完成后请提供测试版本给我们，我们会及时协助测试和确认保证接入正确。
-当接入过程中碰到问题，我们随时提供7*24个性化支持。
+### Q: How long does it take to embed the SDK?
 
-<br />
+Based on our customer feedback, it takes only half a day to embed the SDK.
 
-### Q：为什么接入了AI可以在聚合的基础上进一步提升变现效率？
-AI 系统会分析每个用户对广告的耐受程度和转化比例，为独立用户提供完全个性化的广告配置，从而进一步提升变现效率。
+Please provide us with the test version after finishing the code embedding. We will promptly assist the test to confirm that the code embedding is correct.
 
-<br />
-
-### Q：你们的后台可以看到每一个广告平台给我们带来的收益吗？
-后台默认不提供分平台收益数据。如果有需要我们可以个别提供广告平台的相关截图，并且在每月结算时，我们可以准确提供来自各平台的收益合计。
-
-我们所希望的并非只提供一个工具，而是提供一套整体的变现优化服务。我们希望我们的 AI 可以帮助开发者无需关注任何底层的细节，只关注总体收益、广告 ARPU、eCPM和LTV这类数据。
-
-<br />
-
-### Q：可否选择屏蔽竞品广告？
-对于支持屏蔽竞品的广告平台，我们可以按开发者要求去做屏蔽。
+When encountering, we are always providing 7/24 customized support for any problems occurred during the embedding process.
 
 <br />
 
-### Q：可否只选择某一类广告，如激励视频？
-可以。
+
+### Q: How can AI improve monetization based on integration? 
+
+To further enhancing the efficiency of the monetization, the AI system analyzes each user's tolerance and conversion ratio for the ad and provides a fully personalized ad configuration for independent users, 
+
 
 <br />
 
-### Q：激励视频、插屏、banner的数据可以分别查看吗？
-可以。
+### Q: Can I check the benefits brought by each advertising platform in the background? 
+
+There is no revenue data for each platform in the the background by default. However, if necessary, we can provide screenshots of the advertising platform individually, and at the monthly settlement, we can provide the accurate total revenue from each platform.
+
+What we hope is to provide a whole set of optimization services instead of a tool. We hope that our AI can help developers pay attention the overall revenue, advertising ARPU, eCPM and LTV instead of any underlying details.
+
 
 <br />
 
-### Q：我们的游戏更新了版本是否需要重新接入一次你们的SDK？
-不需要。
+### Q: Can I choose to block ads from the competitors ?
 
-但我们推荐你及时更新我们的新版本SDK以确保始终拥有最好的变现效率。
+For the advertising platform that supports blocking competing products, we can do it according to the developer's request.
+<br />
+
+### Q: Can I choose the certain type of advertisement, such as a rewarded video?
+
+Of course, you can.
+<br />
+
+### Q: Can I check the data of rewarded video, interstitial, and banner separately?
+
+Yes, you can.
+<br />
+
+
+### Q: Shall we re-embed the SDK after updating the game version?
+No, you don’t have to.
+
+However, we do recommend that you update the SDK to the latest version to ensure that you always have the best monetization efficiency.
+<br />
+
+### Q: Since the Chartboost has been embedded in the SDK , can you exchange the traffic?
+
+It is not available temporarily. 
+
+We use the advertising resources from Chartboost only as a general advertising platform.
+<br />
+
+
+### Q: What is the size of  the SDK currently? Is it related to the number of ad platforms integration?
+
+The SDK size is less than 1M.
+Its size depends on how many the third-party advertising platforms are integrated. Usually we recommend to choose three to five third-party advertising platforms, which increases the size to 2~3M.
 
 <br />
 
-### Q：你们接了Chartboost, 是否可以进行换量？
-暂不支持。
 
-我们仅使用 Chartboost 自身的广告资源，当做普通广告平台来使用。
+### Q: If our game has embedded a single advertising platform such as vungle , unityads , and your SDK integrates the platform as well. Will there be any conflicts?
 
-<br />
+Usually there no conflicts. If there is a conflict, we will provide a customized solution.
 
-### Q：SDK的目前有多大？SDK的大小只与聚合的广告平台的多少有关吗？
-UPSDK 自身SDK体积小于1M。
+Notes:
 
-最终带来的包体大小增长主要取决于加入了多少家第三方广告平台。通常我们建议选择3~5家第三方广告平台。这样带来的体积增长大约是2~3M。
+- We do not recommend re-integration among UPSDK and other third-party ad platforms, which may reduce revenue (repetitive ads).
 
-<br />
+- In addition, some third-party ad SDK might have compatibility problems.
 
-### Q：已经接入了单个广告平台如vungle，unityads，而你们的聚合SDK也聚合了他们，会不会有冲突？
-通常不会, 如发生冲突，我们会提供个性化解决方案。
+Our recommendation is to take over the provisioning strategy directly from the UPSDK in the top-level logic .
 
-需要注意的是：
-- 我们不建议将 UPSDK 和其他第三方广告平台再次聚合，一方面这样可能会降低收益（重复广告）。
-- 另外，这种场景下部分第三方广告 SDK有可能存在兼容性问题。
-
-我们的建议是在顶层逻辑中直接由 UPSDK 接管调配策略。
-
-如果担心由于我们的SDK不稳定造成收益下降，我们可以在合同中提供相应的赔付保障条款。 
+If you are concerned about the decline in revenue due to our SDK, we can provide the corresponding claims protection clause in the contract.
 
 <br />
 
-### Q：你们是如何做到优先展示较高价格的广告Offer的？是否是实时竞价？
+### Q: How do you get priority to show the relatively high price Offer of advertising? Is it a real-time bid?
 
-1.	UpLTV系统接入了各第三方广告平台数据 API，每小时获取分产品分国家的价格、填充率点击率等信息。
-2.	经过综合计算将效率较高的广告平台排在优先位置。
+1.	UpLTV has integrated the data API for every third-party advertising platform, so that it can access to the product information such as the sub-national rate, click-through rate per hour filling rate etc..
 
-目前移动In-App 广告的行业状况，实时竞价并非主流。我们采用的仍然是基于策略的排序规则。
-但值得一提的是，我们还做了这些：
--	广告平台提供的数据我们会根据自己的统计数据进行修正。
--	充分考虑排位本身对价格和 CTR 的影响，通过模型进行修正。
--	增加额外的调度策略，用于抓住部分地区短期优质 offer 的短线机会。
--	基于用户画像的分组模式，使用不同的联盟和广告位组合。
+2.  Then the more efficient advertising platform will come first through comprehensive calculations.
 
-<br />
+Currently, real-time bidding is not mainstream in the industry for mobile In-App advertising . We are still using a strategy-based collation.
 
-### Q：你们的SDK中是否会加入你们自己的互动广告平台？
-已经加入。
+But it is worth mentioning what we have done. 
 
-<br />
+- The data provided by the advertising platform will be revised according to our own statistics.
 
-### Q：广告显示横屏或者竖屏广告能否做设置？
-绝大多数广告联盟都支持自动适配资源，开发者不需要关心适配问题。
--	如果由于某个广告平台横竖屏适配不佳，导致其收益较差，会很快被我们的自动算法降权。
--	如果收益（LTV）够好，开发者实际上也无需关心横竖屏是否适配。
+-  Full consideration is given to the impact of the ranking itself on prices and CTR, which is corrected by the model.
+
+- Add additional scheduling strategies to capture short-term opportunities for short-term premium offers in some regions.
+
+- Different federation and ad slot combinations are used based on the grouping pattern of user portraits.
+
 
 <br />
 
-### Q：API的接入是否只需要接入你们的SDK和API就够了，是否还需要接入我们本身的数据平台来供你们采集数据？
-不需要。
+### Q: Will your SDK be added to your own interactive advertising platform?
 
-我们的SDK已经内置了对广告相关事件的收集和上报功能，用来帮助游戏开发者优化收益。游戏开发者除了接入SDK以外，并不需要额外对我们开放数据平台。
-
-但为了支持广告的 A/B Testing 功能，我们可能需要游戏开发者在调用我们的API时传入“是否属于已付费用户”或“是否已经通过新手教程”等信息来帮助我们一起优化。具体信息根据游戏不同有不同的方案。
-
-实际上，根据客户的需要，我们提供三个层次的接入服务：
--	SDK - 整合到游戏并发版，比较初级的对接，适用于小型CP，对于广告变现经验不足或者不是非常重视的客户。
--	API - 需要通过接口传入少量数据（如：是否属于已付费用户），大中型CP,对广告变现有充分的认知。
--	AI - 需要通过接口传入较多游戏内事件（如：过关、失败、复活、新记录等），深度合作客户，对于广告变现的价值充分认知。
-
-以上都是基于 SDK 的，不需要 CP 开放数据平台。
+Already joined.
 
 <br />
 
-### Q：eCPM是否可以设置低价？
-不支持。
+### Q: Can you set up the horizontal or vertical screen ads display?
 
-实际上我们会使用 Floor eCPM 限制第三方平台价格来优化总体收益。
+Most ad networks support automatic adaptation of resources, and developers don't need to care about adaptation issues.
 
-但为了提高 LTV 这个总体目标，我们不会提供限制 eCPM 的功能。
+-  If the advertising system is poor due to poor adaptability of the horizontal and vertical screens of an advertising platform, it will be quickly reduced by our automatic algorithm.
+
+-	If the revenue (LTV) is good enough, the developers do not need to care about whether the horizontal and vertical screens are adapted.
+<br />
+
+### Q: Is it enough to access your SDK and API only? Is it still necessary to access our own data platform for you to collect data?
+
+No need.
+
+ 
+Our SDK has built-in collection and reporting of ad-related events to help game developers optimize revenue. In addition to accessing the SDK, game developers do not need to open up the data platform for us.
+
+However, in order to support the A/B Testing function of the advertisement , we may need to pass the information of “whether it is a paid user” or “whether it has passed the novice tutorial” to the game developer to help us optimize. Specific information has different options depending on the game.
+
+In fact, we provide three levels of access services based on customer needs:
+
+-  SDK - integrated into the game concurrent version, relatively junior docking, suitable for small CP, customers who have little or no experience in advertising cash.
+
+- API - Need to pass a small amount of data through the interface (whether it is a paid user), large and medium-sized CP, full awareness of advertising.
+
+- AI - Need to pass more in-game events through the interface (clearance, failure, resurrection, new records, etc.), deep cooperation customers, fully aware of the value of advertising cash.
+
+All of the above are SDK-based and do not require a CP open data platform.
 
 <br />
 
-### Q：API接入之后用户标签能够细化到什么程度？
-UPLTV 关注的主要有三个维度：
--	付费意愿
--	留存粘度
--	广告活跃
 
-我们的 AI 系统会根据用户在游戏内的事件，对用户基于上述三个维度进行高中低的大致分组。然后再根据分组情况提供个性化的广告展示策略。
+### Q: Can eCPM set a low price?
+
+It’s not available.
+
+In fact, we will use Floor eCPM to limit the price of third-party platforms to optimize overall revenue.
+However, in order to improve the LTV, we will not provide the function of limiting eCPM .
+<br />
+
+
+### Q: To what extent can user tags be refined after API access?
+
+There are three main dimensions of UPLTV's attention:
+
+-  Willingness to pay
+
+-  Retention viscosity
+
+-  Active advertising
+
+
+Our AI system will roughly group the high, medium and low groups based on the above three dimensions based on the user's events in the game. Then it will provide personalized advertising display strategies based on groupings.
 
 <br />
 
-### Q：如何规避打款产生的税的问题？
-我们的付款账户是香港公司身份。并且我们会协助大陆开发者完成税费减免申请（类似 Google 和 Facebook）。
+### Q: How to avoid the tax generated by the payment ?
 
+Our payment account is a Hong Kong company identity. And we will assist mainland developers to complete tax deductions (similar to Google and Facebook).
 <br />
 
-### Q：你们是如何区分付费用户和非付费用户来针对性的投放的？
-根据用户行为进行分析，对其潜在付费概率进行预测（基于 AI技术）。
+### Q: How do you distinguish between subscribers and non-paying users to targeted delivery group ?
 
-针对付费意愿进行分组。在不影响用户留存的前提下，提高付费意愿低组用户的每日观看广告的次数上限。
-
+Analyze user behavior and predict its potential payment probability (based on AI technology).
+Grouping for willingness to pay. Under the premise of not affecting the retention of users , the upper limit of the number of daily viewing advertisements of low- paying users is increased .
 <br />
 
-### Q：同时接入两家CP聚合，包体是否会额外增加？
-同时接入我们和其他家聚合的时候，我们共同支持的联盟就不需要重新接入，只需针对我们有但是另外一家聚合没有的联盟需要单独接入。通常几乎不会增加包体大小。
+### Q: Will accessing two CPs at the same time increase the package size?
 
+When we connect with other platforms at the same time, the alliances we support together do not need to re-access. We need to access the alliances that we have but another aggregation does not need. It will not increase the size of the package.
 <br />
 
-### Q：目前连词类的产品北美地区eCPM大概价格在多少？
--	安卓激励视频 $8左右，插屏$5-6；
--	iOS奖励视频$10，插屏6-8。
 
-不同类型的产品波动较大，以上数据仅供参考。
+
+### Q: What is the current price of eCPM in North America for words game?
+
+- Android incentive video is about $8, Interstitial$5-6;
+
+- iOS reward video $10, Interstitial 6-8.
+
+Different types of products fluctuate greatly, the above data is for reference only.
 
 
 

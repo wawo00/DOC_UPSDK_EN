@@ -1,0 +1,271 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Solving 65535-Limitation &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="SDK Initializating" href="android03.html" />
+    <link rel="prev" title="Quick Start" href="android01.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> UPInteractive Document
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../chapters/chapter01.html">UPSDK Android</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="android01.html">Quick Start</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Solving 65535-Limitation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="android03.html">SDK Initializating</a></li>
+<li class="toctree-l2"><a class="reference internal" href="android04.html">Banner Ad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="android05.html">Interstitial Ad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="android06.html">Rewarded Video Ad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="android07.html">GDPR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="android08.html">Demo</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter02.html">UPSDK IOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter03.html">UPSDK UnityPlugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter04.html">UPSDK Cocos2d-X Cpp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter05.html">UPSDK Cocos2d-X Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter06.html">UPSDK Cocos2d-X JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter07.html">UPSDK Layabox JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter08.html">UPSDK Egret TypeScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter09.html">UPSDK Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter11.html">FAQ</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../chapters/chapter01.html">UPSDK Android</a> &raquo;</li>
+        
+      <li>Solving 65535-Limitation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/Android/android02.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="solving-65535-limitation">
+<span id="solving-65535-limitation"></span><h1>Solving 65535-Limitation<a class="headerlink" href="#solving-65535-limitation" title="Permalink to this headline">¶</a></h1>
+<p>If you mediated too much SDK in framework procedure, it may cause the following condition:</p>
+<p>Conversion to Dalvik format failed: Unable to execute dex: method ID not in [0, 0xffff]: 65536</p>
+<p>We provide you the following methods to solve this limitation.</p>
+<div class="section" id="i-release-proguard">
+<span id="i-release-proguard"></span><h2>I. Release Proguard<a class="headerlink" href="#i-release-proguard" title="Permalink to this headline">¶</a></h2>
+<p>If you have not released proguard in your app, we suggest you to release it. It will effectively help you to exclude some unused class methods. Regarding to Ads SDK Proguard configuration, please refer to <code class="docutils literal notranslate"><span class="pre">proguard-project.txt</span></code> in the downloaded files. If releasing proguard still can not help from exceeding the limitation, please refer to the following methods.</p>
+</div>
+<div class="section" id="ii-multidex-methods">
+<span id="ii-multidex-methods"></span><h2>II. MultiDex Methods<a class="headerlink" href="#ii-multidex-methods" title="Permalink to this headline">¶</a></h2>
+<p>MultiDex methods is designed by Google, aims to break the 65535-Limitation. If you are using AndroidStudio to develop, it will be much easier. Please follow the steps hereunder to configurate.</p>
+<p>Firstly, add the following configuration into build.gradle project:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">android</span> <span class="p">{</span>
+    <span class="n">defaultConfig</span> <span class="p">{</span>
+        <span class="n">multiDexEnabled</span> <span class="n">true</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">dependencies</span> <span class="p">{</span>  
+    <span class="nb">compile</span> <span class="s1">&#39;com.google.android:multidex:1.0.1&#39;</span>
+<span class="p">}</span> 
+</pre></div>
+</div>
+<p>If your project contains<code class="docutils literal notranslate"><span class="pre">Application</span></code> , then let it inherit <code class="docutils literal notranslate"><span class="pre">android.support.multidex.MultiDexApplication</span></code> will be okay.</p>
+<p>If your <code class="docutils literal notranslate"><span class="pre">Application</span></code> has inherited others and you do not want to change, you could use <code class="docutils literal notranslate"><span class="pre">attachBaseContext()</span></code> methods of<code class="docutils literal notranslate"><span class="pre">Application</span></code> to solve the limitation.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">public</span> <span class="k">class</span> <span class="nc">MyApplication</span> <span class="n">extends</span> <span class="n">FooApplication</span> <span class="p">{</span>  
+    <span class="nd">@Override</span>  
+    <span class="n">protected</span> <span class="n">void</span> <span class="n">attachBaseContext</span><span class="p">(</span><span class="n">Context</span> <span class="n">base</span><span class="p">)</span> <span class="p">{</span>  
+        <span class="nb">super</span><span class="o">.</span><span class="n">attachBaseContext</span><span class="p">(</span><span class="n">base</span><span class="p">);</span>  
+        <span class="n">MultiDex</span><span class="o">.</span><span class="n">install</span><span class="p">(</span><span class="n">this</span><span class="p">);</span>  
+    <span class="p">}</span>  
+<span class="p">}</span>  
+</pre></div>
+</div>
+</div>
+<div class="section" id="iii-using-dex-dynamic-loading-methods">
+<span id="iii-using-dex-dynamic-loading-methods"></span><h2>III. Using Dex Dynamic-Loading Methods<a class="headerlink" href="#iii-using-dex-dynamic-loading-methods" title="Permalink to this headline">¶</a></h2>
+<p>If you are using Eclipse, integrating MiltiDex method will be complex, so we provide you another method: Dex Dynamic-Loading.</p>
+<p>In the downloaded SDK zip package, you can see that the <code class="docutils literal notranslate"><span class="pre">assets</span></code> folder, and then copy the <code class="docutils literal notranslate"><span class="pre">assets</span></code> directory to the project.</p>
+<p><strong>【Attention】 During the copy period, please do not modify files or rename any folders.</strong></p>
+<p><strong>【Attention】Ad Networks like <code class="docutils literal notranslate"><span class="pre">admob</span></code>,<code class="docutils literal notranslate"><span class="pre">batmobi</span></code> and <code class="docutils literal notranslate"><span class="pre">inmobi</span></code> currently do not support this kind of loading.</strong></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="android03.html" class="btn btn-neutral float-right" title="SDK Initializating" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="android01.html" class="btn btn-neutral" title="Quick Start" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, upltv
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

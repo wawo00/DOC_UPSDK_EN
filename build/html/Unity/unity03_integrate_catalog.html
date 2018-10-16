@@ -1,0 +1,249 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>UnityPlugin Access &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> UPInteractive Document
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter01.html">UPSDK Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter02.html">UPSDK IOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter03.html">UPSDK UnityPlugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter04.html">UPSDK Cocos2d-X Cpp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter05.html">UPSDK Cocos2d-X Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter06.html">UPSDK Cocos2d-X JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter07.html">UPSDK Layabox JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter08.html">UPSDK Egret TypeScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter09.html">UPSDK Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter11.html">FAQ</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>UnityPlugin Access</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/Unity/unity03_integrate_catalog.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="unityplugin-access">
+<h1>UnityPlugin Access<a class="headerlink" href="#unityplugin-access" title="Permalink to this headline">¶</a></h1>
+<p>Although UPSDK ADSDK has done well in mediation and packaging regarding to Unity, but due to the differential issue for Unity versions, but after the plugin imported at first time, problems which make compiling failure like import confliction and coding abnormal may occur easily. For this purpose, we learn from the outside supporting experience, then make a further complete summary of experience. We truly hope it could help every of our partners.</p>
+<p>Regarding to the different supporting methods, we explain these into two section：</p>
+<p>Contents:</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="unity03_1_android.html">Access for Android</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="unity03_1_android.html#i-declaration">I. Declaration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unity03_1_android.html#ii-checking-assets-catalog-in-unity-project">II. Checking Assets Catalog in Unity Project</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="unity03_1_android.html#libs-res">1. <code class="docutils literal notranslate"><span class="pre">libs_res</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unity03_1_android.html#thirdlibs">2.<code class="docutils literal notranslate"><span class="pre">thirdlibs</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unity03_1_android.html#avidly-android">3.<code class="docutils literal notranslate"><span class="pre">avidly_android</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="unity03_1_android.html#iii-adaption-for-unity-specific-version">III. Adaption for Unity specific version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unity03_1_android.html#iv-compile-error-for-unity-project">IV. Compile Error for Unity Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unity03_1_android.html#v-unity-android-proguard-configuration">V. Unity Android proguard configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unity03_1_android.html#vi-the-problems-of-android-overmuch-method-for-unity-project">VI. The Problems of Android overmuch-method for Unity Project</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="unity03_2_ios.html">Access for IOS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="unity03_2_ios.html#ideclaration">I、Declaration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unity03_2_ios.html#iiinspect-ios-frameworks-under-assets-catalog-in-unity-project">II、Inspect iOS Frameworks under Assets catalog in Unity project</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="unity03_2_ios.html#upsdk-adsdk-main-package">1. UPSDK ADSDK Main Package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="unity03_2_ios.html#upsdk-adsdk-dependency-for-ad-networks">2. UPSDK ADSDK Dependency for Ad Networks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="unity03_2_ios.html#upsdk-adsdk-resource-package">3. UPSDK ADSDK Resource Package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="unity03_2_ios.html#xuporter">4. XUPorter</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="unity03_2_ios.html#xcode-configuration-inspection">Xcode Configuration Inspection</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="unity03_2_ios.html#deployent-target-settings">1. Deployent Target Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="unity03_2_ios.html#link-binary-with-libraries-inspection">2. Link Binary with Libraries inspection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="unity03_2_ios.html#bundle-resources-inspection">3. bundle resources inspection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="unity03_2_ios.html#other-linker-flag-inspection">4. Other Linker Flag Inspection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="unity03_2_ios.html#solution-to-compatibility-problems-for-some-unity-versions">5. Solution to Compatibility problems for some Unity versions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="unity03_2_ios.html#clean-project-re-compile">6. Clean Project, Re-Compile</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, upltv
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

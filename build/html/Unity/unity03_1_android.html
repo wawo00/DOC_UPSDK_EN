@@ -1,0 +1,265 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Access for Android &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> UPInteractive Document
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter01.html">UPSDK Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter02.html">UPSDK IOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter03.html">UPSDK UnityPlugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter04.html">UPSDK Cocos2d-X Cpp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter05.html">UPSDK Cocos2d-X Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter06.html">UPSDK Cocos2d-X JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter07.html">UPSDK Layabox JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter08.html">UPSDK Egret TypeScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter09.html">UPSDK Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter11.html">FAQ</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Access for Android</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/Unity/unity03_1_android.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="access-for-android">
+<span id="access-for-android"></span><h1>Access for Android<a class="headerlink" href="#access-for-android" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="i-declaration">
+<span id="i-declaration"></span><h2>I. Declaration<a class="headerlink" href="#i-declaration" title="Permalink to this headline">¶</a></h2>
+<p>Android Platform, supports Unity 5.0.0 or higher version</p>
+</div>
+<div class="section" id="ii-checking-assets-catalog-in-unity-project">
+<span id="ii-checking-assets-catalog-in-unity-project"></span><h2>II. Checking Assets Catalog in Unity Project<a class="headerlink" href="#ii-checking-assets-catalog-in-unity-project" title="Permalink to this headline">¶</a></h2>
+<p>When Unity plugin for Android finishes to be import, please check whether <code class="docutils literal notranslate"><span class="pre">PolyADSDK/Plugins/Android</span></code> exists under Assets catalog.</p>
+<ul class="simple">
+<li>3.0.02 and lower plugin version
+Soon after the successful import, there will be like as below in Assets catalog:
+<img alt="import" src="http://docs.upltv.com/uploads/201804/5acc569aeb642_5acc569a.png" /></li>
+</ul>
+<div class="section" id="libs-res">
+<span id="libs-res"></span><h3>1. <code class="docutils literal notranslate"><span class="pre">libs_res</span></code><a class="headerlink" href="#libs-res" title="Permalink to this headline">¶</a></h3>
+<p>This directory includes <code class="docutils literal notranslate"><span class="pre">AvidlyAdsSdk_2.0.xx_dex.aar</span></code>, <code class="docutils literal notranslate"><span class="pre">support-v4-24.1.1.aar</span></code>, and <code class="docutils literal notranslate"><span class="pre">proguard-project.txt</span></code> files.</p>
+<blockquote>
+<div>The support-v4 library must be added. The version of V24.1.1 is the version recommended by the plug-in. If there are other higher-level v4 libraries in the project, you can directly replace the recommended version.</div></blockquote>
+</div>
+<div class="section" id="thirdlibs">
+<span id="thirdlibs"></span><h3>2.<code class="docutils literal notranslate"><span class="pre">thirdlibs</span></code><a class="headerlink" href="#thirdlibs" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">thirdlibs/aar</span></code> is the directory used to reference some network library that does not support dynamic loading,such as: appcompat-v7-24.1.1.jar.</p>
+</div>
+<div class="section" id="avidly-android">
+<span id="avidly-android"></span><h3>3.<code class="docutils literal notranslate"><span class="pre">avidly_android</span></code><a class="headerlink" href="#avidly-android" title="Permalink to this headline">¶</a></h3>
+<p>This directory includes many third-party networdk that named like ‘dex_xxx.jar’ for dynamic loading at runtime.</p>
+<ul class="simple">
+<li>3.0.03 (included) and higher plugin version
+Soon after the successful import, there will be like as below in  <code class="docutils literal notranslate"><span class="pre">Assets</span></code> catalog:
+<img alt="工程结构" src="http://docs.upltv.com/uploads/201805/5b026a7687a70_5b026a76.jpeg" /></li>
+</ul>
+<p>In 3.0.03 and higher plugin version, in order to Simplify access steps,we remove<code class="docutils literal notranslate"><span class="pre">avidly_android</span></code> and change <code class="docutils literal notranslate"><span class="pre">AvidlyAdsSdk_x.x.xx_dex.aar</span></code> to <code class="docutils literal notranslate"><span class="pre">UPAdsSdk_3.0.xx_dex.aar</span></code>。</p>
+</div>
+</div>
+<div class="section" id="iii-adaption-for-unity-specific-version">
+<span id="iii-adaption-for-unity-specific-version"></span><h2>III. Adaption for Unity specific version<a class="headerlink" href="#iii-adaption-for-unity-specific-version" title="Permalink to this headline">¶</a></h2>
+<p>1、 5.1.1, during compile-build-package, unity can not find error for armeabi structure—–it needs to remove armeabi structure in .arr(using unarchiver to open it and delete armeabi folder directly)；</p>
+<p>2、5.0.0，during the apk packaging process, merge AndroidManifest.xml jurisdiction losses—–it needs to add AndroidManifest.xml into \Assets\Plugins\AndroidDownload page:  <a class="reference external" href="http://docs.upltv.com/docs/show/50">5.0.0 AndroidManifest Download Page</a></p>
+<blockquote>
+<div>If you have not found any needed file, please contact our technical colleagues for supports.</div></blockquote>
+</div>
+<div class="section" id="iv-compile-error-for-unity-project">
+<span id="iv-compile-error-for-unity-project"></span><h2>IV. Compile Error for Unity Project<a class="headerlink" href="#iv-compile-error-for-unity-project" title="Permalink to this headline">¶</a></h2>
+<p>Regarding to the solution for Unity compile error, please refer to Android <a class="reference external" href="http://docs.upltv.com/docs/show/105">Problem Resolution for Integration</a> for suggestion.</p>
+</div>
+<div class="section" id="v-unity-android-proguard-configuration">
+<span id="v-unity-android-proguard-configuration"></span><h2>V. Unity Android proguard configuration<a class="headerlink" href="#v-unity-android-proguard-configuration" title="Permalink to this headline">¶</a></h2>
+<p>Regarding to the projects with proguard configuration, please copy <code class="docutils literal notranslate"><span class="pre">proguard-project.txt</span></code> into your proguard file, to avoid importing the wrong package name which proguard which may caused programme crashes.</p>
+</div>
+<div class="section" id="vi-the-problems-of-android-overmuch-method-for-unity-project">
+<span id="vi-the-problems-of-android-overmuch-method-for-unity-project"></span><h2>VI. The Problems of Android overmuch-method for Unity Project<a class="headerlink" href="#vi-the-problems-of-android-overmuch-method-for-unity-project" title="Permalink to this headline">¶</a></h2>
+<p>AS Android has 65535-limitation issue, when projects import third-party *.jar or *.aar mothod overmuch and in the condition that subpackage can not work. Please delete those unnecessary third-party library, and apply the following suggestions until the probelms solved.</p>
+<ul class="simple">
+<li>If your plugin version is lower than 2.0.24, please update it to the latest version. Because version 2.0.24 or higher ones acheive dex dymatc-loading modole for Android to avoid some aar imported by third-party library.</li>
+<li>If the problem is still unsolved, please try to delete aar files in <code class="docutils literal notranslate"><span class="pre">thirdlibs/aar/fb/</span></code>.</li>
+<li>If the prolem is still, please contact our technical colleagues for support. We will make further decision whether to delete arr in <code class="docutils literal notranslate"><span class="pre">thirdlibs/aar/china/</span></code> to reduce method.</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, upltv
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

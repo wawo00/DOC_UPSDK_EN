@@ -1,0 +1,426 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>API description &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> UPInteractive Document
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter01.html">UPSDK Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter02.html">UPSDK IOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter03.html">UPSDK UnityPlugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter04.html">UPSDK Cocos2d-X Cpp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter05.html">UPSDK Cocos2d-X Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter06.html">UPSDK Cocos2d-X JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter07.html">UPSDK Layabox JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter08.html">UPSDK Egret TypeScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter09.html">UPSDK Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter11.html">FAQ</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>API description</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/Unity/unity04_1_api.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="api-description">
+<span id="api-description"></span><h1>API description<a class="headerlink" href="#api-description" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="use-upsdk-unity-plugin">
+<span id="use-upsdk-unity-plugin"></span><h2>Use UPSDK Unity Plugin<a class="headerlink" href="#use-upsdk-unity-plugin" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">using</span> <span class="nn">Polymer.PolyADSDK</span> <span class="p">;</span>
+</pre></div>
+</div>
+<blockquote>
+<div>API and callback interfaces (Actions) are defined as static methods, which can be accessed from other model directly.</div></blockquote>
+</div>
+<div class="section" id="api-reference">
+<span id="api-reference"></span><h2>API reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span>        <span class="cm">/*</span>
+<span class="cm">        * Get Plugin version number </span>
+<span class="cm">        */</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="kt">string</span> <span class="nf">getVersionOfPlugin</span><span class="p">();</span>
+        
+        <span class="cm">/*</span>
+<span class="cm">        * Get the version number of supported platform for current plugin</span>
+<span class="cm">         Get iOS and Android versions currently supportted. Automaticly matched by complie environment at runtime</span>
+<span class="cm">        public static string getVersionOfPlatform();</span>
+<span class="cm">        */</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="kt">string</span> <span class="nf">getVersionOfPlatform</span><span class="p">();</span>
+
+        <span class="cm">/*</span>
+<span class="cm">        * Initial  SDK</span>
+<span class="cm">        * versions older than 2030, please use this method to initialize</span>
+<span class="cm">        */</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="kt">string</span> <span class="nf">initPolyAdSDK</span><span class="p">();</span>
+         
+         <span class="cm">/*</span>
+<span class="cm">        * initalize Avidly SDK</span>
+<span class="cm">        * @param zone:0, areas except China (CN)；1, China；2, judging the types of users automatically depending on ip</span>
+<span class="cm">        * version 2030 and later versions, could use his method to initialize </span>
+<span class="cm">        */</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="kt">string</span> <span class="nf">initPolyAdSDK</span><span class="p">(</span><span class="kt">int</span> <span class="n">zone</span><span class="p">);</span>
+        
+        <span class="cm">/*</span>
+<span class="cm">        * initialize abtest configuration for upsdk ads</span>
+<span class="cm">        * @param gameAccountId        accountid in game（required）</span>
+<span class="cm">        * @param completeTask         complete the novice task in the game?</span>
+<span class="cm">        * @param isPaid               Paying users?，0 means No</span>
+<span class="cm">        * @param promotionChannelName Channel</span>
+<span class="cm">        * @param gender               &quot;M&quot;, &quot;F&quot;</span>
+<span class="cm">        * @param age                  -1 means unknown</span>
+<span class="cm">        * @param tags                 </span>
+<span class="cm">        */</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">initAbtConfigJson</span><span class="p">(</span><span class="kt">string</span> <span class="n">gameAccountId</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">completeTask</span><span class="p">,</span> <span class="kt">int</span> <span class="n">isPaid</span><span class="p">,</span> <span class="kt">string</span> <span class="n">promotionChannelName</span><span class="p">,</span>  <span class="kt">string</span> <span class="n">gender</span><span class="p">,</span> <span class="kt">int</span> <span class="n">age</span><span class="p">,</span> <span class="kt">string</span><span class="p">[]</span> <span class="n">tags</span><span class="p">)</span> <span class="p">;</span>
+        
+        <span class="cm">/*</span>
+<span class="cm">        * Get abtest configuration of upsdk ads</span>
+<span class="cm">        * returned result could be Json character string, posiblity could be null</span>
+<span class="cm">        * Before invoking this API, pl;ease invoke initAbtConfigJson() to finish the initialization for abtest configuration</span>
+<span class="cm">        */</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="kt">string</span> <span class="nf">getAbtConfig</span><span class="p">(</span><span class="kt">string</span> <span class="n">placementId</span><span class="p">);</span>
+        
+        <span class="cm">/*</span>
+<span class="cm">         * Check if interstitial ad ready or not</span>
+<span class="cm">         */</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="kt">bool</span> <span class="nf">isInterstitialReady</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpPlaceId</span><span class="p">);</span>
+        
+        <span class="cm">/*</span>
+<span class="cm">        * Check if rewarded video ad ready or not</span>
+<span class="cm">        *Please do not call this method continuously in your code, such as updating the state of the UI button. For this case, set the callback listener with setRewardVideoLoadCallback().</span>
+<span class="cm">        */</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="kt">bool</span> <span class="nf">isRewardReady</span><span class="p">();</span>
+        
+        <span class="cm">/*</span>
+<span class="cm">        * Show Rewarded video ad, cpCustomId is CP defined identifier,it is required</span>
+<span class="cm">        */</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">showRewardAd</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpCustomId</span><span class="p">);</span>
+        
+        <span class="cm">/*</span>
+<span class="cm">        * Show interstitial ad</span>
+<span class="cm">        * cpPlaceId is Ad placement identifier, make sure it correctly</span>
+<span class="cm">        */</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">showInterstitialAd</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpPlaceId</span><span class="p">);</span>
+        
+        <span class="cm">/*</span>
+<span class="cm">        * Show banner ads in top of screen</span>
+<span class="cm">        * cpPlaceId is Ad placement identifier, make sure it correctly</span>
+<span class="cm">        */</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">showBannerAdAtTop</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpPlaceId</span><span class="p">);</span>
+        
+        <span class="cm">/*</span>
+<span class="cm">        * Show banner ads in bottom of screen</span>
+<span class="cm">        */</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">showBannerAdAtBottom</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpPlaceId</span><span class="p">);</span>
+        
+        <span class="cm">/*</span>
+<span class="cm">         * Hiding current top banner ad</span>
+<span class="cm">         * No need to distinguish placements of ad</span>
+<span class="cm">         * While next show is coming, you need to call showBannerAdAtTop()</span>
+<span class="cm">         */</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">hideBannerAdAtTop</span><span class="p">();</span>
+        
+        <span class="cm">/*</span>
+<span class="cm">         * Hiding current bottom banner ad</span>
+<span class="cm">         * No need to distinguish placements of ad</span>
+<span class="cm">         * While next show is coming, you need to call showBannerAdAtBottom()</span>
+<span class="cm">         * Start to support from 2037</span>
+<span class="cm">         */</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">hideBannerAdAtBottom</span><span class="p">();</span>
+        
+        <span class="cm">/*</span>
+<span class="cm">        * Delete a banner ad</span>
+<span class="cm">        */</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">removeBannerAdAt</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpPlaceId</span><span class="p">);</span>
+        
+        <span class="cm">/*</span>
+<span class="cm">        * Set Android manifest.xml defined packagename</span>
+<span class="cm">        */</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">setManifestPackageName</span><span class="p">(</span><span class="kt">string</span> <span class="n">packagename</span><span class="p">);</span>
+        
+        <span class="cm">/*</span>
+<span class="cm">        * Show exit ad (only android)</span>
+<span class="cm">        */</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">onBackPressed</span><span class="p">();</span>
+    
+        
+        <span class="cm">/*</span>
+<span class="cm">         * Adding callback API for loading rewarded video ads </span>
+<span class="cm">         * @param success  callback of successful loading</span>
+<span class="cm">         * @param fail     callback of failed loading</span>
+<span class="cm">         * </span>
+<span class="cm">         * Types of callback parameters: Action&amp;lt;string,string&gt;</span>
+<span class="cm">         * The first one is cpPlaceId, placementid of ads, could be empty or null; The second parameter is the decribed info, could be empty or null</span>
+<span class="cm">         * supported from 2028</span>
+<span class="cm">         */</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">setRewardVideoLoadCallback</span><span class="p">(</span><span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">success</span><span class="p">,</span> <span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">fail</span><span class="p">);</span>
+        
+        <span class="cm">/*</span>
+<span class="cm">         * Adding callback API for loading Intersitial ads</span>
+<span class="cm">         * @param cpPlaceId:  the symbol of interstitial ads, could not be empty or null</span>
+<span class="cm">         * @param success  callback of successful loading</span>
+<span class="cm">         * @param fail t   callback of failed loading</span>
+<span class="cm">         * </span>
+<span class="cm">         * Types of callback parameters: Action&amp;lt;string,string&gt;</span>
+<span class="cm">         * The first one is cpPlaceId, placementId of ads, could be empty or null: The second parameter is described info, could be empty or null</span>
+<span class="cm">         * supported from 2028</span>
+<span class="cm">         */</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">setIntersitialLoadCallback</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpPlaceId</span><span class="p">,</span> <span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">success</span><span class="p">,</span> <span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">fail</span><span class="p">)</span>
+        
+        <span class="cm">/*</span>
+<span class="cm">         * It is using for showing reward video debug info </span>
+<span class="cm">         * supported from 2028</span>
+<span class="cm">         */</span>
+
+        <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">showRewardDebugView</span><span class="p">();</span>
+        
+        <span class="cm">/*</span>
+<span class="cm">         * It is using for showing interstitial debug info </span>
+<span class="cm">         * supported from 2028</span>
+<span class="cm">         */</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">showInterstitialDebugView</span><span class="p">();</span>
+        
+
+         <span class="cm">/**</span>
+<span class="cm">         * Don&#39;t want to automatic loading ads when initializing sdk </span>
+<span class="cm">         * Required：When sdk disables the automatic loading of ads, and the background of upltv also turns off this fuction.</span>
+<span class="cm">         * supported from 3002</span>
+<span class="cm">         */</span>
+         <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">loadAvidlyAdsByManual</span><span class="p">()</span> <span class="p">;</span>
+         
+         <span class="cm">/**</span>
+<span class="cm">         * Only for IphoneX, when the top Banner is blocked by the status bar, you can solve this problem by adjusting the offset value of the top Banner.</span>
+<span class="cm">         * @param padding: The offset of the top Banner, such as 75, will be offset          downward by 75 pixels.</span>
+<span class="cm">         * supported from 3002</span>
+<span class="cm">         */</span>
+         <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">setTopBannerForIphonex</span><span class="p">(</span><span class="kt">int</span> <span class="n">padding</span><span class="p">);</span>
+         
+         <span class="cm">/**</span>
+<span class="cm">          * Only for hawei P20, when the top Banner is blocked by the status bar, you can solve this problem by adjusting the offset value of the top Banner.</span>
+<span class="cm">          * @param padding: The offset of the top Banner, such as 75, will be offset downward by 75 pixels.</span>
+<span class="cm">          * supported from 3004</span>
+<span class="cm">          */</span>
+          <span class="k">public</span> <span class="k">void</span> <span class="nf">setTopBannerForHuaWeiP20</span><span class="p">(</span><span class="kt">int</span> <span class="n">padding</span><span class="p">);</span>
+         
+         <span class="cm">/**</span>
+<span class="cm">         * pop up Dialog to ask authorizing</span>
+<span class="cm">         * @param callback</span>
+<span class="cm">         * Version 3003 and above support this method</span>
+<span class="cm">         */</span>
+         <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">notifyAccessPrivacyInfoStatus</span><span class="p">(</span><span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">UPConstant</span><span class="p">.</span>         <span class="n">UPAccessPrivacyInfoStatusEnum</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">callback</span><span class="p">);</span>
+         
+         <span class="cm">/**</span>
+<span class="cm">         * Conducting the GDPR authorization and notice the authorization results to UPSDK,which should be called before the initial UPSDK</span>
+<span class="cm">         * @param enumValue</span>
+<span class="cm">         * Version 3003 and above support this method</span>
+<span class="cm">         */</span>
+         <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">updateAccessPrivacyInfoStatus</span><span class="p">(</span><span class="n">UPConstant</span><span class="p">.</span>         <span class="n">UPAccessPrivacyInfoStatusEnum</span> <span class="n">enumValue</span><span class="p">);</span>
+         
+         <span class="cm">/**</span>
+<span class="cm">         * Get user authorization results, which should be called before the initial UPSDK</span>
+<span class="cm">         * return UPConstant.UPAccessPrivacyInfoStatusEnum</span>
+<span class="cm">         * Version 3003 and above support this method</span>
+<span class="cm">         */</span>
+         <span class="k">public</span> <span class="k">static</span> <span class="n">UPConstant</span><span class="p">.</span><span class="n">UPAccessPrivacyInfoStatusEnum</span>          <span class="n">getAccessPrivacyInfoStatus</span><span class="p">();</span>
+         
+         <span class="cm">/**</span>
+<span class="cm">         * If the user belongs to the EU</span>
+<span class="cm">         * Asynchronous callback, which should be called before the initial UPSDK</span>
+<span class="cm">         * Version 3003 and above support this method</span>
+<span class="cm">         */</span>
+         <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">isEuropeanUnionUser</span><span class="p">(</span><span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">bool</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">callback</span><span class="p">);</span>
+         
+</pre></div>
+</div>
+</div>
+<div class="section" id="specific-methods">
+<span id="specific-methods"></span><h2>Specific Methods<a class="headerlink" href="#specific-methods" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="supporting-banner-ads-only">
+<span id="supporting-banner-ads-only"></span><h3>1、Supporting banner ads only<a class="headerlink" href="#supporting-banner-ads-only" title="Permalink to this headline">¶</a></h3>
+<p>In the condition of using Unity plugin, <strong>Supporting banner ads only</strong>, and the location for showing is in <strong>the top or bottom</strong> of current interface</p>
+</div>
+<div class="section" id="setmanifestpackagename-string-packagename">
+<span id="setmanifestpackagename-string-packagename"></span><h3>2、<strong>setManifestPackageName</strong>(string packagename)<a class="headerlink" href="#setmanifestpackagename-string-packagename" title="Permalink to this headline">¶</a></h3>
+<p>This API only works for Android. In AndroidManifest, if the package name of application is different from the pratical name after packaging, please use this API for SDK to set <strong>AndroidManifest</strong> correspinding <strong>package name</strong>!!!</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, upltv
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
