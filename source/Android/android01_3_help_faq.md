@@ -5,8 +5,8 @@
 #### 1. com.google.android.gms.version confliction or deletion error
 In **Android Studio** version, in order to avoid this kind of confliction, from 2.0.21 Studio Version, Avidly ADSDK has romoved the following declarations in AndroidManfiest.xml:
 ```asp
-&lt;!-- admob -->
-&lt;meta-data
+<!-- admob -->
+<meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version"/>
 ```
@@ -14,8 +14,8 @@ Thus, for those versions which are older than 2.0.21, if gms.version occurs, ple
 
 However, in **Android Elipse** version, you need to add the following declarations in AndroidManfiest.xml：
 ```asp
-&lt;!-- admob -->
-&lt;meta-data
+<!-- admob -->
+<meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version"/>
 ```
@@ -23,29 +23,29 @@ Specially, please check whether if the xml format files in *res/values* content 
 
 *version_ad.xml* content：
 ```asp
-&lt;?xml version="1.0" encoding="utf-8"?>
-&lt;resources>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
 	// defined the value of gms version, the kind of integer
 	// if the current version is not 9080000, please change to the correct version.
-    &lt;integer name="google_play_services_version">11020000&lt;/integer>
-&lt;/resources>
+    <integer name="google_play_services_version">11020000</integer>
+</resources>
 ```
 
 #### 2. activity confliction or deletion error
 In Android Studio versions, Avidly ADSDK from 2.0.21 Studio Version,  has removed the Activity declarations which relied on Admob and Facebook Ads in AndroidManfiest.xml:
 ```asp
-&lt;!-- admob -->
+<!-- admob -->
 
-&lt;activity
+<activity
 android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
 android:multiprocess="true"
 android:theme="@android:style/Theme.Translucent"/>
-&lt;!-- admob -->
+<!-- admob -->
 
 
-&lt;!-- facebook -->
-&lt;activity
+<!-- facebook -->
+<activity
 android:name="com.facebook.ads.InterstitialAdActivity"
 android:configChanges="keyboardHidden|orientation|screenSize"
 android:multiprocess="true"/>
