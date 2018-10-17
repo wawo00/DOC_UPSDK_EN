@@ -8,12 +8,12 @@ UPSDK IOS
    :titlesonly:
    :glob:
 
-   ../IOS/ios01
-   ../IOS/ios02
-   ../IOS/ios03
-   ../IOS/ios04
-   ../IOS/ios05
-   ../IOS/ios06
-   ../IOS/ios07
-   ../IOS/ios08
+   ../IOS/ios01_xcode
+   ../IOS/ios02_cocoapods
+   ../IOS/ios03_init
+   ../IOS/ios04_banner_catalog
+   ../IOS/ios05_inter
+   ../IOS/ios06_video
+   ../IOS/ios07_gdpr
+   ../IOS/ios08_demo
 
