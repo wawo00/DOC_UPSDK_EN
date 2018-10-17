@@ -9,5 +9,5 @@ UPSDK Cocos2d-X Lua
    :titlesonly:
    :glob:
 
-   ../Cocos2d-X_Lua/lua01
-   ../Cocos2d-X_Lua/lua02
+   ../Cocos2d-X_Lua/lua01_help_catalog
+   ../Cocos2d-X_Lua/lua02_sample_catalog

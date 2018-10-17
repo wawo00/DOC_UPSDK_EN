@@ -1,14 +1,11 @@
-
 =============================
-GDPR
+Banner Ad
 =============================
 
-
-
-Contents:
 
 .. toctree::
    :maxdepth: 1
    :glob:
 
-   ../GDPR/*
+   ../Android/android04_1_banner_quick
+   ../Android/android04_2_banner_custom

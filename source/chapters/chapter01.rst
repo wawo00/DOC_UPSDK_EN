@@ -7,12 +7,12 @@ UPSDK Android
    :titlesonly:
    :glob:
 
-   ../Android/android01
-   ../Android/android02
-   ../Android/android03
-   ../Android/android04
-   ../Android/android05
-   ../Android/android06
-   ../Android/android07
-   ../Android/android08
-   .
+   ../Android/android01_help_catalog
+   ../Android/android02_65535
+   ../Android/android03_init
+   ../Android/android04_banner_catalog
+   ../Android/android05_inter
+   ../Android/android06_video
+   ../Android/android07_gdpr
+   ../Android/android08_demo
+   

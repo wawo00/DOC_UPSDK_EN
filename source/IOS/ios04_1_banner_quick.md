@@ -1,0 +1,53 @@
+## Quick  Banner Ad
+
+If you only need to build a banner ad ads at the top or bottom of the view, we recommend using this method to achieve the goal faster and more easier.
+
+> You can set parameter `Placement ID` to any significative name you want. If you not sure about should discussed with our **support engineer**. You should use different `Placement ID` for different ads placement. We provide revenue from each  `Placement ID` in the feature.
+> Eg: You may use "Pause" or "Menu" when initial our SDK in the pause scene of your game.
+
+#### Sample
+```objective-c
+/*
+* Initial method 
+* 1. avidPlacement：Placement ID，Type is NSString,not be empty
+* 2. vc：Type is UIViewController,not be empty
+* 3. showLocation：location of banner（Top or Bottom）
+*/
+- (instancetype)initWithPlacement:(NSString *)avidPlacement controller:(UIViewController*)vc showLocation:(UPStripShowLocationType)type;
+```
+For the position of ads,like the top or bottom of the view, use the following enumeration to exactly declare when constructing
+
+```objective-c
+typedef NS_ENUM(NSUInteger, UPStripShowLocationType) {
+    UPStripShowLocationTypeTop       = 1,        //Top
+    UPStripShowLocationTypeBottom    = 2,        //Bottom
+};
+```
+- Set UPStripShowLocationTypeTop，the banner will display automaticallyat the top of the viewController 
+- Set UPStripShowLocationTypeBottom，the banner will display automaticallyat the bottom of the viewController 
+
+
+Sample:
+
+In ViewController.m，we can initialize a Banner ads and set callback of loading 。
+```objective-c
+- (void)viewDidLoad {
+	// …
+	// initialize wrapper
+    _topStripBanner = [[UPBannerStripWrapper alloc] initWithPlacement:@"banner_strip” controller:self showLocation:UPStripShowLocationTypeTop];
+	// set delegate of callback
+    _topStripBanner.delegate = self;
+	// …
+}
+```
+
+the banner will display automaticallyat the top of the viewController，do not need to call other codes.
+
+<br>
+
+### Recycle memory：
+`Please set banner to nil for recyele when the ViewController where the banner view is located is destroyed (such as, removed in the interface, popped from nav, memory is recycled)`
+<br>
+
+
+

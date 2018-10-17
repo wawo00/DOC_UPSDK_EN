@@ -1,0 +1,73 @@
+## Rewarded Video Ad
+
+### Ads Object Initialization 
+
+Initialize Rewarded Video like this:
+
+    mVideoAd = UPRewardVideoAd.getInstance(this);
+
+### Show Rewarded Video Ads
+
+When you want show Rewarded Video ads, call `isReady` to check if the video was ready. You can determine your "play" button display status with the return value of `isReady`.
+Then, you should call `show` method to display video ads.
+Please use the correct value of parameter `Placement ID` for different ads placement.
+
+**Don't forget to call `isReady` before `show` to make sure there is a video available.**
+
+> You can set the parameter `Placement ID` to any significative name you want. If you're not sure, please discuss with our **support engineer**. You should use a different `Placement ID` for different ads placement. We provide revenue from each  `Placement ID` in the feature.
+> Eg: You may use "Pause" or "Menu" when initializing our SDK in the pause scene of your game.
+
+    if (mVideoAd != null && mVideoAd.isReady()) {
+        mVideoAd.show("Ad Placement");
+    }
+
+### Callback
+
+You can use the interface `setUPVideoAdListener` to setup callback functions.
+For the most part, you only need to care about the method `onVideoAdReward` and `onVideoAdDontReward`, which can tell you if you should give the user a reward or not.
+
+    mVideoAd.setUPVideoAdListener(new UPRewardVideoAdListener() {
+        @Override
+        public void onVideoAdClicked() {
+            // click callback
+        }
+
+        @Override
+        public void onVideoAdClosed() {
+            // close callback
+        }
+
+        @Override
+        public void onVideoAdDisplayed() {
+            // impression callback
+        }
+
+        @Override
+        public void onVideoAdReward() {
+            // reward callback, means user already reached the reward condition
+        }
+
+        @Override
+        public void onVideoAdDontReward(String reason) {
+            // DON'T reward callback, means user hasn't reached the reward condition, like too short time to view video.
+        }
+    });
+
+### Debug Page
+
+We provide a debug page to assist your integration works. You can easily access all status of video ads during development process with the following code:
+
+    if (mVideoAd != null) {
+        mVideoAd.showVideoDebugActivity(this);
+    }
+
+
+The page looks like this. Columns (left to right):
+- Affiliate name
+- Is this Affiliate SDK integrated?
+- Is this Affiliate opened by server side configuration?
+- Did this Affiliate Ads successfully load?
+
+You can play ads by clicking the item if the ads successfully loaded.
+
+![as_03](http://docs.upltv.com/uploads/201808/5b7fe851cb4b4_5b7fe851.png "as_03")

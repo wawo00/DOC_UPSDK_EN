@@ -1,14 +1,11 @@
-
 =============================
-GDPR
+Banner Ad
 =============================
 
-
-
-Contents:
 
 .. toctree::
    :maxdepth: 1
    :glob:
 
-   ../GDPR/*
+   ../IOS/ios04_1_banner_quick
+   ../IOS/ios04_2_banner_custom
