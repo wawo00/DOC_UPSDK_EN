@@ -10,6 +10,10 @@
 div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(2) {
     display: none;
 }
+
+div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(3) {
+    display: none;
+}
 /* Hide "On READ THE DOCS" section from versions menu */
 div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(4) {
     display: none;
