@@ -10,7 +10,7 @@ For projects built with Eclipse, UPSDK is imported into the project as `*.jar`. 
   This directory mainly contains the ad dependency library files required for Eclipse project access.
 - `lua`文件夹
   This directory mainly contains some *.lua source files for bridging the current Cocos2d-X lua project with the UPSDK interface call.
-- `AndroidStudio`
+- `Android Studio`
 If you build project through,please ignore this directory.
 - `proguard-project.txt`
   The configuration file of confusion,if you need to obfuscate code, add the contents of this file to the file that the project depends on.

@@ -2,24 +2,24 @@
 
 Regarding to the supports for Studio, this article will explain in four sections as following.
 
-### I. Structure of UP ADSDK Directory
-Regarding to Android Studio or Gradle built project, UP ADSDK suggests it should be import by other main project in `*.aar` format. You will see the structure of directory for UP ADSDK Studio when you unzip it:
+### I. Structure of UPSDK Directory
+Regarding to Android Studio or Gradle built project, UPSDK suggests it should be import by other main project in `*.aar` format. You will see the structure of directory for UPSDK Studio when you unzip it:
 
 ![as_91](http://docs.upltv.com/uploads/201808/5b7fdca87b9ae_5b7fdca8.png "as_91")
 
-#### 1. Main Package of UP ADSDK
-Please refer to the screenshot above, the file named `UPAdsSdk_x.x.xx.aar` is the main package of UP ADSDK, you have to add it into your main project.
+#### 1. Main Package of UPSDK
+Please refer to the screenshot above, the file named `UPAdsSdk_x.x.xx.aar` is the main package of UPSDK, you have to add it into your main project.
 
-#### 2. Networks Dependencies of UP ADSDK
-The relationships between UP ADSDK and other networks are loose and coupled. You could remove some ads dependencies from the main project to reduce the size of application.
+#### 2. Networks Dependencies of UPSDK
+The relationships between UPSDK and other networks are loose and coupled. You could remove some ads dependencies from the main project to reduce the size of application.
 
 The dependencies of networks except Admob and Facebook, they are existing in xxxx_ads.aar format.
 
 #### 3. Ads Dependencies of Admob and Facebook
-Among UP ADSDK local files, it provides aar dependencies for Admob and Facebook in case of the situation of bad internet or other unexpected problems happened. Even so, we still suggest you to update the dependencies online from gradle of Admob and Facebook long-distance warehouse.
+Among UPSDK local files, it provides aar dependencies for Admob and Facebook in case of the situation of bad internet or other unexpected problems happened. Even so, we still suggest you to update the dependencies online from gradle of Admob and Facebook long-distance warehouse.
     > Regarding to the specification of how to integrate with Admob and Facebook, it will be particularly introduced later in this section.
 
-### II. Using Gradle of Android Studio to import the main package of UP ADSDK
+### II. Using Gradle of Android Studio to import the main package of UPSDK
 
 Please refer to the introduction above, add the downloaded files which named  `UPAdsSdk_x.x.xx.aar` into `libs` directory in your project.
 After they are added, the effects of Studio project acts like the following screenshot:
@@ -44,9 +44,9 @@ At last, please add aar into compile method
      compile(name: 'UPAdsSdk_3.0.03', ext: 'aar')
     }
 
-So far, aar package of UP ADSDK has been successfully configurated in your project. Please wait gradle compile works. But the work of importing UP ADSDK has not been finished yet, the final step is very significant to do: **add other dependencies**.
+So far, aar package of UPSDK has been successfully configurated in your project. Please wait gradle compile works. But the work of importing UPSDK has not been finished yet, the final step is very significant to do: **add other dependencies**.
 
-> As an excellent and powerful mediation platform, UP SDSDK can be flexibly compatible with the runtime library of third-party affiliate networks. So that it can help you yield the greatest returns. As a conclusion, if you want UP ADSDK to yield the greatest returns, please add the third-party dependencies correctly.
+> As an excellent and powerful mediation platform, UP SDSDK can be flexibly compatible with the runtime library of third-party affiliate networks. So that it can help you yield the greatest returns. As a conclusion, if you want UPSDK to yield the greatest returns, please add the third-party dependencies correctly.
 
 If you are using Gradle of Android Studio to build your project. First of all, you have to import all files like `UPAdsSdk_x.x.xx.aar` from `for_studio` directory to you project.
 Each `xxx_ads.aar` file in directory means a affiliate network which supported by us. 
@@ -62,7 +62,7 @@ The SDKs of some affiliate networks need to depend on some public third-party li
 If you want to remove the supports from some affiliate networks, but you do not know how to operate. Please give priority to contact our support team to acheive your goal.
 
 #### 1. Add *.aar of affiliate networks
-Among the downloaded target files, files named  `xxx_ads.aar` are the dependent files for the affiliate networks in use. Please refer to **Import UP ADSDK aar files** to add them in your project.
+Among the downloaded target files, files named  `xxx_ads.aar` are the dependent files for the affiliate networks in use. Please refer to **Import UPSDK aar files** to add them in your project.
 
 #### 2. Add other external dependencies
 Because of requiring some extra Android Api supports by some affiliate networks, so you have to add external dependencies as followed.
@@ -121,7 +121,7 @@ If you want to add Admob ads in your project, you need to add Google Ads support
 
 ```
 > If you only want to add aar files which gms play depends on locally. You could ignore this configuration in gradle file.
-> Specially, if the version of gms play-service in your project is different from UP ADSDK dependencies, please use the higher version. 
+> Specially, if the version of gms play-service in your project is different from UPSDK dependencies, please use the higher version. 
 
 #### 4. Add Facebook Ads SDK
 If you want to add Facebook interstitial ads in your project, you need to add Facebook Ads support in your project. You can follow the following steps to add dependencies:

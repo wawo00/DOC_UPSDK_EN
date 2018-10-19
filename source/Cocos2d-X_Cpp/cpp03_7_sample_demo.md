@@ -6,4 +6,4 @@ To reduce the size of the cocos2d-x Demo project package, the Cocos2d open sourc
 
 ![cocos2d](http://docs.upltv.com/uploads/201804/5ad55580d4619_5ad55580.jpeg "cocos2d")
 
-Android platform support only AndroidStudio engineering, please import `proj.android-studio`， iOS only supports the XCode project, please import `proj.ios_mac`。
+Android platform support only Android Studio engineering, please import `proj.android-studio`， iOS only supports the XCode project, please import `proj.ios_mac`。

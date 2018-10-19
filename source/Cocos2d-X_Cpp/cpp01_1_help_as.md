@@ -1,14 +1,14 @@
 ## Android Studio 
 
 ### I.Structure of UPSDK CppPlugin
-Regarding to Android Studio or Gradle built project, UP ADSDK suggests it should be import by other main project in  *.aar  format. Download UPSDK CppPlugin( [Android-CPPSDK](http://ads-sdk-doc.haloapps.com/docs/show/13 "SDK下载页面") UPSDK CppPlugin)You will see the structure of directory when you unzip it:
+Regarding to Android Studio or Gradle built project, UPSDK suggests it should be import by other main project in  *.aar  format. Download UPSDK CppPlugin( [Android-CPPSDK](http://ads-sdk-doc.haloapps.com/docs/show/13 "SDK下载页面") UPSDK CppPlugin)You will see the structure of directory when you unzip it:
 
 
 ![as-1-1](http://docs.upltv.com/uploads/201805/5afd2c552eab2_5afd2c55.png "as-1-1")
 >The UPSDK CppPlugin main package is named `UPAdsSdk_Cpp_x.x.xx_dex.aar`.
 
-- `AndroidStudio`
-    This directory mainly contains the ad dependency library files required for AndroidStudio.
+- `Android Studio`
+    This directory mainly contains the ad dependency library files required for Android Studio.
 - `cpp`
     This directory mainly contains some *.cpp source files for bridging the current Cocos2d-X cpp project with the UPSDK interface .
 - `Eclipse`
@@ -99,7 +99,7 @@ In the `build.gradle` , download the gms play-service15.0.1 package from Google'
 
 #### 2.Add other networdks
 To ensure you get more revenue, add as many ad libraries as possible to your project.
-Please refer to the following method to add the file named `xxx_ads.aar` in `AndroidStudio/aar` to the project.
+Please refer to the following method to add the file named `xxx_ads.aar` in `Android Studio/aar` to the project.
 ###### Global except China
 The build.gradle is as follows：
 ```groovy

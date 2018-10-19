@@ -2,7 +2,7 @@
 ## GDPR
 
 `GDPR "The General Data Protection Regulation" is a data protection program issued by the European Union. `
-If your product is intended for EU users, we offer the following solutions to ensure that `UP ADSDK` complies with the `GDPR' rules.
+If your product is intended for EU users, we offer the following solutions to ensure that `UPSDK` complies with the `GDPR' rules.
 
 `UPSDK` supports the EU `GDPR` rules in the `3.0.03` version, and developers who will distribute in EU region must handle this logic.
 

@@ -79,21 +79,21 @@ Add dependency libraries form TARGETS → General → Linked Frameworks Librarie
 #### 2 Add the following nodes to the info.plist to be compatible with HTTP mode
 
 ```objective-c
-&lt;key>NSAppTransportSecurity&lt;/key>
-&lt;dict>
-	&lt;key>NSAllowsArbitraryLoads&lt;/key>
-	&lt;true/>
-&lt;/dict>
+ <key>NSAppTransportSecurity </key>
+ <dict>
+	 <key>NSAllowsArbitraryLoads </key>
+	 <true/>
+ </dict>
 ```
 
 #### 3 Add the following nodes to the info.plist to obtain permissions (if you use AdColony union, you must add; if you do not use AdColony union, you may not add it)
 ```objective-c
-&lt;key>NSCalendarsUsageDescription&lt;/key>
-&lt;string>Some ad content may create a calendar event.&lt;/string>
-&lt;key>NSCameraUsageDescription&lt;/key>
-&lt;string>Some ad content may access camera to take picture.&lt;/string>
-&lt;key>NSPhotoLibraryUsageDescription&lt;/key>
-&lt;string>Some ad content may require access to the photo library.&lt;/string>
+ <key>NSCalendarsUsageDescription </key>
+ <string>Some ad content may create a calendar event. </string>
+ <key>NSCameraUsageDescription </key>
+ <string>Some ad content may access camera to take picture. </string>
+ <key>NSPhotoLibraryUsageDescription </key>
+ <string>Some ad content may require access to the photo library. </string>
 ```
 
 tips：Depending on the language and usage scenario, the user can adjust the description of the access permission appropriately.
