@@ -2,7 +2,7 @@
 
 
 ### I.Structure of UPSDK LuaPlugin
-For projects built with Eclipse, UPSDK is imported into the project as `*.jar`. Download UPSDK LuaPlugin in ( [Android-LuaSDK下载](http://doc.upltv.com/en/master/chapters/chapter09.html "download"))and unzip：
+For projects built with Eclipse, UPSDK is imported into the project as `*.jar`. Download UPSDK LuaPlugin in ( [Android-LuaSDK](http://doc.upltv.com/en/master/chapters/chapter09.html "download"))and unzip：
 
 
 ![ec-1-1](http://docc.upltv.com/uploads/201805/5afe9bd143673_5afe9bd1.png "ec-1-1")

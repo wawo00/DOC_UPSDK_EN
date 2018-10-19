@@ -113,7 +113,7 @@ btnhideallbanner:addTouchEventListener(function(sender, eventType)
     end
 end)
 ```
-### 6. Remove banner ads告
+### 6. Remove banner ads
 UPSDK supports removing Banner ads from an ad placement ID.
 ```lua
 upltv:removeBannerAdAt(cpPlaceId)
