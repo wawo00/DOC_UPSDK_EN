@@ -18,7 +18,7 @@ Sample:
     if (result == UPConstant.UPAccessPrivacyInfoStatusEnum.UPAccessPrivacyInfoStatusUnkown
         || result == UPConstant.UPAccessPrivacyInfoStatusEnum.UPAccessPrivacyInfoStatusFailed) {
         // if the user is in the EU
-        UPSDK.isEuropeanUnionUser (new Action&lt;bool, string>(isEuropeanUserCallback));
+        UPSDK.isEuropeanUnionUser (new Action <bool, string>(isEuropeanUserCallback));
     } else {
         UPSDK.initPolyAdSDK (UPConstant.SDKZONE_FOREIGN);
     }
@@ -75,7 +75,7 @@ Sample:
     UPConstant.UPAccessPrivacyInfoStatusEnum result = Polymer.UPSDK.getAccessPrivacyInfoStatus();
     if (result == UPConstant.UPAccessPrivacyInfoStatusEnum.UPAccessPrivacyInfoStatusUnkown
         || result == UPConstant.UPAccessPrivacyInfoStatusEnum.UPAccessPrivacyInfoStatusFailed) {
-        UPSDK.isEuropeanUnionUser (new Action&lt;bool, string>(isEuropeanUserCallback));
+        UPSDK.isEuropeanUnionUser (new Action <bool, string>(isEuropeanUserCallback));
     } else {
         UPSDK.initPolyAdSDK (UPConstant.SDKZONE_FOREIGN);
     }
@@ -87,7 +87,7 @@ private void isEuropeanUserCallback(bool result, string msg) {
      // result: true means that client in the EU
     if (result) {
     //pop up Dialog to ask authorizing
-        UPSDK.notifyAccessPrivacyInfoStatus (new Action&lt;UPConstant.UPAccessPrivacyInfoStatusEnum, string> (accessPrivacyInforCallback));
+        UPSDK.notifyAccessPrivacyInfoStatus (new Action <UPConstant.UPAccessPrivacyInfoStatusEnum, string> (accessPrivacyInforCallback));
     } else {
         UPSDK.initPolyAdSDK (UPConstant.SDKZONE_FOREIGN);
     }
@@ -108,13 +108,13 @@ private void accessPrivacyInforCallback(UPConstant.UPAccessPrivacyInfoStatusEnum
 The authorization window pops up to explain to the user that we will collect data and ask the user whether to approve the authorization. If the user refuses to authorize, the collection of related data will be abandoned. Please call before initializing the UPSDK.
 
 ```csharp
-public static void notifyAccessPrivacyInfoStatus(Action&lt;UPConstant.UPAccessPrivacyInfoStatusEnum, string> callback)
+public static void notifyAccessPrivacyInfoStatus(Action <UPConstant.UPAccessPrivacyInfoStatusEnum, string> callback)
 ```
 Sample：
 
 ```csharp
 public void onBtnNotifyAccessStatus_Click() {
-    Polymer.UPSDK.notifyAccessPrivacyInfoStatus (new Action&lt;UPConstant.UPAccessPrivacyInfoStatusEnum, string>(accessPrivacyInforCallback));
+    Polymer.UPSDK.notifyAccessPrivacyInfoStatus (new Action <UPConstant.UPAccessPrivacyInfoStatusEnum, string>(accessPrivacyInforCallback));
 }
 
 private void accessPrivacyInforCallback(UPConstant.UPAccessPrivacyInfoStatusEnum result, string msg) {
@@ -159,12 +159,12 @@ public void onBtnGetAccessStatus_Click() {
 Determine whether the user belongs to the EU region,which can be called before initializing the UPSDK.
 
 ```csharp
-public static void isEuropeanUnionUser(Action&lt;bool, string> callback)
+public static void isEuropeanUnionUser(Action <bool, string> callback)
 ```
 Sample：
 ```csharp
 public void onBtnIsEuropeanUnionUser_Click() {
-    Polymer.UPSDK.isEuropeanUnionUser (new Action&lt;bool, string>(isEuropeanUserCallback));
+    Polymer.UPSDK.isEuropeanUnionUser (new Action <bool, string>(isEuropeanUserCallback));
 }
 
 private void isEuropeanUserCallback(bool result, string msg) {

@@ -36,10 +36,10 @@ dependencies {
 
 edit **AndroidManifest.xml **：
 ```groovy
-&lt;application
+ <application
             android:name="android.support.multidex.MultiDexApplication" >
         ...
-&lt;/application>
+ </application>
 ```
 
 ### 4.Fix OutOfMemory

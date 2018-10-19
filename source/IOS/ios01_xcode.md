@@ -66,21 +66,21 @@ Add depends library in: TARGETS → General → Linked Frameworks Libraries
 #### 2 Add nodes in info.plist to allow http protocol 
 
 ```objective-c
-&lt;key>NSAppTransportSecurity&lt;/key>
-&lt;dict>
-	&lt;key>NSAllowsArbitraryLoads&lt;/key>
-	&lt;true/>
-&lt;/dict>
+ <key>NSAppTransportSecurity </key>
+ <dict>
+	 <key>NSAllowsArbitraryLoads </key>
+	 <true/>
+ </dict>
 ```
 
 #### 3 Add nodes info.plist, to require permissions
 ```objective-c
-&lt;key>NSCalendarsUsageDescription&lt;/key>
-&lt;string>Some ad content may create a calendar event.&lt;/string>
-&lt;key>NSCameraUsageDescription&lt;/key>
-&lt;string>Some ad content may access camera to take picture.&lt;/string>
-&lt;key>NSPhotoLibraryUsageDescription&lt;/key>
-&lt;string>Some ad content may require access to the photo library.&lt;/string>
+ <key>NSCalendarsUsageDescription </key>
+ <string>Some ad content may create a calendar event. </string>
+ <key>NSCameraUsageDescription </key>
+ <string>Some ad content may access camera to take picture. </string>
+ <key>NSPhotoLibraryUsageDescription </key>
+ <string>Some ad content may require access to the photo library. </string>
 ```
 
 Note: you can change description into your target language if needed.

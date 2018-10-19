@@ -4,7 +4,7 @@
 Related methods and delegate interfaces was defined in file `UPIntersitialWrapper.h`
 ### Reference header file
 ```objective-c
-#import   &lt;UPSDK/UPSDK.h>
+#import   <UPSDK/UPSDK.h>
 ```
 ### Methods of implementation class
 
@@ -41,7 +41,7 @@ Related methods and delegate interfaces was defined in file `UPIntersitialWrappe
  * Callback of loading ads
  * @param delegate，delegate for callback
  **/
- - (void)load:(id&lt;UPIntersitialLoadDelegate>)delegate;
+ - (void)load:(id<UPIntersitialLoadDelegate>)delegate;
 @end
 ```
 ### UpIntersitialDelegate Callback protocol 

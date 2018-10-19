@@ -7,5 +7,5 @@ UPSDK Layabox JavaScript
    :titlesonly:
    :glob:
 
-   ../Layabox-Js/laya01
-   ../Layabox-Js/laya02
+   ../Layabox-Js/laya01_help_catalog
+   ../Layabox-Js/laya02_sample_catalog

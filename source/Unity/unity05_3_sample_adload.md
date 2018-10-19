@@ -11,10 +11,10 @@
 * @param success  callback of successful loading
 * @param fail t   callback of failed loading
 * 
-* Types of callback parameters: Action&lt;string,string>
+* Types of callback parameters: Action <string,string>
 * The first one is cpPlaceId, placementId of ads, could be empty or null: The second parameter is described info, could be empty or null
 * supported from 2028
-*/static void setIntersitialLoadCallback(string cpPlaceId, Action&lt;string,string> success, Action&lt;string, string> fail)
+*/static void setIntersitialLoadCallback(string cpPlaceId, Action <string,string> success, Action <string, string> fail)
 ```
 
 Sample:
@@ -25,8 +25,8 @@ Sample:
 public void onBtn_ClickForIntsLoadCallback() {
     // "inter_aaa" is placementId
     UPSDK.setIntersitialLoadCallback ("inter_aaa", 
-        new System.Action&lt;string, string>(actionForIntsLoadSuccess),
-        new System.Action&lt;string, string>(actionForIntsLoadFail) 
+        new System.Action <string, string>(actionForIntsLoadSuccess),
+        new System.Action <string, string>(actionForIntsLoadFail) 
     );
 }
 
@@ -51,12 +51,12 @@ private void actionForIntsLoadSuccess(string placeId, string msg)
  * @param success  callback of successful loading
  * @param fail     callback of failed loading
  * 
- * Types of callback parameters: Action&lt;string,string>
+ * Types of callback parameters: Action <string,string>
  * The first one is cpPlaceId, placementid of ads, could be empty or 
 null; The second parameter is the decribed info, could be empty or null
  * supported from 2028
  */
-public static void setRewardVideoLoadCallback(Action&lt;string,string> success, Action&lt;string, string> fail)
+public static void setRewardVideoLoadCallback(Action <string,string> success, Action <string, string> fail)
 
 
 ```
@@ -66,8 +66,8 @@ Sample：
 //There is no paramter for this method
 public void onBtn_ClickForRewardLoadCallback() {
     Polymer.PolyADSDK.setRewardVideoLoadCallback ( 
-        new System.Action&lt;string, string>(actionForRewardLoadSuccess),
-        new System.Action&lt;string, string>(actionForRewardLoadFail) 
+        new System.Action <string, string>(actionForRewardLoadSuccess),
+        new System.Action <string, string>(actionForRewardLoadFail) 
     );
 }
 

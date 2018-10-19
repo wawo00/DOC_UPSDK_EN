@@ -7,7 +7,7 @@ Let's say if you are using AppDelegate (implement UIApplicationDelegate) as your
  1. Add reference in AppDelegate.m
 
 ```objective-c
-#import   &lt;UPSDK/UPSDK.h>
+#import    <UPSDK/UPSDK.h>
 ```
 
  2. SDK initial at the entrance of the app

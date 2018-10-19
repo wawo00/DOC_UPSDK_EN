@@ -4,7 +4,7 @@ All Rewarded video interfaces and protocol were defined in file `UPRewardWrapper
 
 Add header file `UPRewardWrapper.h` in your XCode project:
 ```objective-c
-#import   &lt;UPSDK/UPSDK.h>
+#import    <UPSDK/UPSDK.h>
 ```
 
 The only difference between Rewarded Video and Interstitial Ad was **"Rewarded Video was using Singleton design model"**.
@@ -93,7 +93,7 @@ Add following codes in file `STRewardViewController.m`.
 
 ```objective-c
 
-#import   &lt;UPSDK/UPSDK.h>
+#import    <UPSDK/UPSDK.h>
 
 @interface STRewardViewController () <UPRewardDelegate>
 

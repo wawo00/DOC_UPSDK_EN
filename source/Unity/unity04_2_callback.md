@@ -6,33 +6,33 @@
 #### API reference
 
 ```csharp
-public static Action&lt;bool, string> UPSDKInitFinishedCallback = null;
+public static Action <bool, string> UPSDKInitFinishedCallback = null;
 
 /*
 * Rewarded Video Ads
 * trigger on ad open
 */
-public static Action&lt;string, string> UPRewardDidOpenCallback = null;
+public static Action <string, string> UPRewardDidOpenCallback = null;
 
 /*
 * trigger on ad click
 */
-public static Action&lt;string, string> UPRewardDidClickCallback = null;
+public static Action <string, string> UPRewardDidClickCallback = null;
 
 /*
 * trigger on ad close
 */
-public static Action&lt;string, string> UPRewardDidCloseCallback = null;  
+public static Action <string, string> UPRewardDidCloseCallback = null;  
 
 /*
 * trigger on ad reward OK
 */
-public static Action&lt;string, string> UPRewardDidGivenCallback = null;
+public static Action <string, string> UPRewardDidGivenCallback = null;
 
 /*
 * trigger on ad reward FAIL or not match reward conditions
 */
-public static Action&lt;string, string> UPRewardDidAbandonCallback = null;
+public static Action <string, string> UPRewardDidAbandonCallback = null;
 
 ```
 ### Sequence  of Callback interface  
@@ -54,17 +54,17 @@ The UPRewardDidCloseCallback is always called back when the RewardVidero  closed
 * Interstitial Ad 
 * trigger on ad display 
 */
-public static Action&lt;string, string> UPInterstitialDidShowCallback = null;
+public static Action <string, string> UPInterstitialDidShowCallback = null;
 
 /*
 * trigger on ad click
 */
-public static Action&lt;string, string> UPInterstitialDidClickCallback = null;
+public static Action <string, string> UPInterstitialDidClickCallback = null;
 
 /*
 * trigger on ad close
 */
-public static Action&lt;string, string> UPInterstitialDidCloseCallback = null;
+public static Action <string, string> UPInterstitialDidCloseCallback = null;
 
 ```
 
@@ -86,15 +86,15 @@ UPBannerDidShowCallback is only called when the banner is displayed at first tim
 * Banner Ad
 * trigger on ad display 
 */
-public static Action&lt;string, string> UPBannerDidShowCallback = null;
+public static Action <string, string> UPBannerDidShowCallback = null;
 
 /*
 * trigger on ad click
 */
-public static Action&lt;string, string> UPBannerDidClickCallback = null;
+public static Action <string, string> UPBannerDidClickCallback = null;
 
 /*
 * trigger on ad delete
 */
-public static Action&lt;string, string> UPBannerDidRemoveCallback = null;
+public static Action <string, string> UPBannerDidRemoveCallback = null;
 

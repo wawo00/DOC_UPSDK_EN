@@ -45,12 +45,12 @@ If there is an error `shrinking/minification is not supported with Multidex`，p
 If AndroidManifest.xml does not exist in `Assets/Plugins/Android/ `, copy the default AndroidManifest.xml from the Unity installation directory to this directory. If the **application** tag of AndroidManifest.xml does not have a subclass of MultiDexApplication or MultiDexApplication as `android:name`, add `android.support.multidex.MultiDexApplication` as `android:name`
 
 ```xml
-&lt;?xml version="1.0" encoding="utf-8"?>
-&lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"
+ <?xml version="1.0" encoding="utf-8"?>
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapp">
-    &lt;application
+     <application
             android:name="android.support.multidex.MultiDexApplication" >
         ...
-    &lt;/application>
-&lt;/manifest>
+     </application>
+ </manifest>
 ```

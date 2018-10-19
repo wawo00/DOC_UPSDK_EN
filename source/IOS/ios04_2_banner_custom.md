@@ -7,7 +7,7 @@ UPSDK offers two banner advertisements, one based on the long bar of the *UPBann
 There are two header files of banner : UPBannerStripWrapper.h and UPBannerRectangleWrapper.h. The header file is introduced as follows:
 
 ```objective-c
-#import   &lt;UPSDK/UPSDK.h>
+#import    <UPSDK/UPSDK.h>
 ```
 
 <br>
