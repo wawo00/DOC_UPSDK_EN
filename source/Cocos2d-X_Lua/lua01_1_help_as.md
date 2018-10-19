@@ -5,7 +5,7 @@
 Regarding to Android Studio or Gradle built project, UPSDK suggests it should be import by other main project in  *.aar  format. Download UPSDK LuaPlugin( [Android-LuaSDK](http://ads-sdk-doc.haloapps.com/docs/show/13 "SDK下载页面") UPSDK LuaPlugin)You will see the structure of directory when you unzip it:
 
 
-![as-1-1](http://docs.upltv.com/uploads/201805/5afe99d977ef8_5afe99d9.png "as-1-1")
+![as-1-1](http://docc.upltv.com/uploads/201805/5afe99d977ef8_5afe99d9.png "as-1-1")
 > The UPSDK JsPlugin main package is named`UPAdsSdk_Lua_x.x.xx_dex.aar`.
 
 - `Android Studio`
@@ -22,7 +22,7 @@ Regarding to Android Studio or Gradle built project, UPSDK suggests it should be
 According to the above introduction, find the file named `UPAdsSdk_Lua_x.x.xx_dex..aar` in the file directory you downloaded and add it to the `libs` directory of the project (Note: If there is no this directory, try to  create it and in the same directory as src.
 After adding, it looks like this:
 
-![as-2-1](http://docs.upltv.com/uploads/201805/5afe9acd622e6_5afe9acd.png "as-2-1")
+![as-2-1](http://docc.upltv.com/uploads/201805/5afe9acd622e6_5afe9acd.png "as-2-1")
 > `UPAdsSdk_Lua_3.0.03_dex`just only for reference
 
 To ensure that the aar package in the libs directory is correctly referenced by the project, check the `build.gradle` file in the `app` directory to add the following  parameters:

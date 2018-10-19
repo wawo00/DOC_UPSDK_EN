@@ -2,7 +2,7 @@
 
 When the number of methods exceeds the limit of 65535, the following failures occur when apk is generated:
 
-![222](http://docs.upltv.com/uploads/201807/5b39ca2058b2a_5b39ca20.png "222")
+![222](http://docc.upltv.com/uploads/201807/5b39ca2058b2a_5b39ca20.png "222")
 
 > `trouble writing output: Too many method references to fit in one dex file: 67449; max is 65536.`
 

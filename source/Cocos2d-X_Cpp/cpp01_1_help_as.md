@@ -4,7 +4,7 @@
 Regarding to Android Studio or Gradle built project, UPSDK suggests it should be import by other main project in  *.aar  format. Download UPSDK CppPlugin( [Android-CPPSDK](http://ads-sdk-doc.haloapps.com/docs/show/13 "SDK下载页面") UPSDK CppPlugin)You will see the structure of directory when you unzip it:
 
 
-![as-1-1](http://docs.upltv.com/uploads/201805/5afd2c552eab2_5afd2c55.png "as-1-1")
+![as-1-1](http://docc.upltv.com/uploads/201805/5afd2c552eab2_5afd2c55.png "as-1-1")
 >The UPSDK CppPlugin main package is named `UPAdsSdk_Cpp_x.x.xx_dex.aar`.
 
 - `Android Studio`
@@ -21,7 +21,7 @@ Regarding to Android Studio or Gradle built project, UPSDK suggests it should be
 #### 1.Add files of UPSDK
 According to the above introduction, find the file named `UPAdsSdk_Cpp_x.x.xx_dex.aar` in the file directory you downloaded and add it to the `libs` directory of the project (Note: If there is no this directory, try to  create it and in the same directory as src.
 After adding, it looks like this:
-![as-2-1](http://docs.upltv.com/uploads/201805/5afd2d4e483b6_5afd2d4e.png "as-2-1")
+![as-2-1](http://docc.upltv.com/uploads/201805/5afd2d4e483b6_5afd2d4e.png "as-2-1")
 > `UPAdsSdk_Cpp_3.0.03_dex` just only for reference
 
 To ensure that the aar package in the libs directory is correctly referenced by the project, check the `build.gradle` file in the `app` directory to add the following  parameters:
@@ -180,7 +180,7 @@ dependencies {
 The UPSDK implements cross-platform calls to the native interface via the *cpp source file, so all *.cpp and *.h files in `cpp/upltv` must be copied to the current project.
 
 Cocos2d-x 3.16 version can be copied to the Classes folder. If there are differences in other versions, please refer to the modification. The effect is as follows：
-![classes](http://docs.upltv.com/uploads/201804/5acacf5c67cbc_5acacf5c.png "classes")
+![classes](http://docc.upltv.com/uploads/201804/5acacf5c67cbc_5acacf5c.png "classes")
 >This article is based on cocos2dx-3.16. If your directory does not match this, ask our support team for help.
 
 ### 2.Modify android.mk in jni directory

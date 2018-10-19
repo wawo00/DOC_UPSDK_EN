@@ -9,7 +9,7 @@ Do `PolyADSDK/Plugins/IOS/frameworks` and `PolyADSDK/Plugins/IOS/resources` thes
 
 After plugin for iOS has been successfully import, files will be like the structure below under Assets: 
 
-![aaa](http://docs.upltv.com/uploads/201805/5af573a34f61b_5af573a3.png "aaa")
+![aaa](http://docc.upltv.com/uploads/201805/5af573a34f61b_5af573a3.png "aaa")
 
 
 From the screenshot above which showing the structure, please check whether the following files exist: 

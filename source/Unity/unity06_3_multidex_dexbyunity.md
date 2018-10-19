@@ -10,11 +10,11 @@ Unity 5.5 and above support multidex, no need to export to Android Studio projec
 
 Maybe **Build Settings** are slightly different in many Unity IDE , please be flexible to complete this process
 
-![666](http://docs.upltv.com/uploads/201807/5b39e51a967db_5b39e51a.jpeg "666")
+![666](http://docc.upltv.com/uploads/201807/5b39e51a967db_5b39e51a.jpeg "666")
 
 ### 2.Modify `Gradle settings`
 ####  (1)  s For Unity2017.2 and above, you can open `Player Settings` and check the `Custom Gradle Template` checkbox as follows. For other versions, you need to copy the `mainTemplate.gradle` file (search for the mainTemplate in the Unity installation directory) to `Assets/Plugins/Android/mainTemplate.gradle`.
-![777](http://docs.upltv.com/uploads/201807/5b39ec4b74539_5b39ec4b.jpeg "777")
+![777](http://docc.upltv.com/uploads/201807/5b39ec4b74539_5b39ec4b.jpeg "777")
 
 #### (2) Add **multiDexEnabled true** in **defaultConfig**
 

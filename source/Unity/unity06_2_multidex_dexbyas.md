@@ -5,17 +5,17 @@ Unity 5.5 starts to support the Gradle build system. For the 65535 excess error,
 
 ### 1.Import project to Android Studio
 
-![3333](http://docs.upltv.com/uploads/201807/5b39cc6bd83bb_5b39cc6b.png "3333")
+![3333](http://docc.upltv.com/uploads/201807/5b39cc6bd83bb_5b39cc6b.png "3333")
 
 
 ### 2.Open Android Studio
 Android Studio 2.2.3 or above must be installed.
 
-![4444](http://docs.upltv.com/uploads/201807/5b39ccc80a994_5b39ccc8.png "4444")
+![4444](http://docc.upltv.com/uploads/201807/5b39ccc80a994_5b39ccc8.png "4444")
 
 ### 3.Configure build.gradle
 Android Studio 2.2.3 or above must be installed.
-![555](http://docs.upltv.com/uploads/201807/5b39cd2136c17_5b39cd21.png "555")
+![555](http://docc.upltv.com/uploads/201807/5b39cd2136c17_5b39cd21.png "555")
 
 Add the subcontract settings in the build.gradle file:：
 

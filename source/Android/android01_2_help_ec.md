@@ -3,7 +3,7 @@
 ### I. Structure of UPSDK Directory
 If you are using Eclipse or Ant to build Android project, it will be more complex than using Android Studio to build. The structure of UPSDK Eclipse version is like following when after unarchive:
 
-![](http://docs.upltv.com/uploads/201808/5b8756d508084_5b8756d5.png)
+![](http://docc.upltv.com/uploads/201808/5b8756d508084_5b8756d5.png)
 
 
 Main package of UPSDK Eclipse is located in `upsdk_ads` folder, please refer to the screenshot, `upsdk_ads` is the main package of Eclipse project, it must be added into your porject.

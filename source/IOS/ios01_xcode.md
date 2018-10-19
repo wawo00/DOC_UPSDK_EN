@@ -10,13 +10,13 @@ Download latest SDK from [here](http://ads-sdk-doc.haloapps.com/docs/show/13  "S
 
 ### Add SDK to your Xcode project
 Add `UPSDK.framework` and `UPSDK.bundle` to you Xcode project , as sample `FrameWork`:
-![IOS_01](http://docs.upltv.com/uploads/201808/5b88d60fe148e_5b88d60f.png "IOS_01")
+![IOS_01](http://docc.upltv.com/uploads/201808/5b88d60fe148e_5b88d60f.png "IOS_01")
 
 ### Add 3rd part library required
 We need 3rd part library to display ads. Please import these libraries to your project.
 **Please downlaod 3rd library from [here](http://ads-sdk-doc.haloapps.com/docs/show/13 "3rd libraries") **。
 
-![ios_02](http://docs.upltv.com/uploads/201808/5b88d65b062ae_5b88d65b.png "ios_02")
+![ios_02](http://docc.upltv.com/uploads/201808/5b88d65b062ae_5b88d65b.png "ios_02")
 <br>
 - **3rd party library is optional, please add it according to our suggestion. If you have any problems, please contact us.**
 </br>
@@ -60,7 +60,7 @@ Add depends library in: TARGETS → General → Linked Frameworks Libraries
 #### 1 Add linker flags
 
 - Add `-ObjC` and `-fobjc-arc` through `TARGETS` → `Build Setting` → `Linking` → `Other Linker Flags`  as following image:
-![ios_03](http://docs.upltv.com/uploads/201808/5b88d8fb6b6a9_5b88d8fb.png "ios_03")
+![ios_03](http://docc.upltv.com/uploads/201808/5b88d8fb6b6a9_5b88d8fb.png "ios_03")
 
 
 #### 2 Add nodes in info.plist to allow http protocol 
@@ -94,7 +94,7 @@ Note: Youlan and Domob SDK do not support Bitcode.
 5.Configuration of Cocos engine
 If you build project with cocos,please make sure  `Version` filed has been filled,as following:
 
-![cocos项目Version字段配置](http://docs.upltv.com/uploads/201709/59afb01ec7612_59afb01e.png "cocos项目Version字段配置")
+![cocos项目Version字段配置](http://docc.upltv.com/uploads/201709/59afb01ec7612_59afb01e.png "cocos项目Version字段配置")
 <br>
 
 ### Version

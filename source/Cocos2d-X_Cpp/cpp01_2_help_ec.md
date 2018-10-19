@@ -4,7 +4,7 @@
 ### I.Structure of UPSDK CppPlugin 
 For projects built with Eclipse, UPSDK is imported into the project as `*.jar`. Download UPSDK CppPlugin in ( [Android-CPPSDK下载](http://ads-sdk-doc.haloapps.com/docs/show/13 "download"))and unzip：
 
-![ec-1-1](http://docs.upltv.com/uploads/201805/5afd3722e5ab6_5afd3722.png "ec-1-1")
+![ec-1-1](http://docc.upltv.com/uploads/201805/5afd3722e5ab6_5afd3722.png "ec-1-1")
 
 
 - `Eclipse`
@@ -23,7 +23,7 @@ Take UPSDK v3.0.03 as an example. In the `upsdk_ads` directory, there are three 
 
 As follows：
 
-![ec-2-1](http://docs.upltv.com/uploads/201805/5afd39e93c234_5afd39e9.png "ec-2-1")
+![ec-2-1](http://docc.upltv.com/uploads/201805/5afd39e93c234_5afd39e9.png "ec-2-1")
 > `UPAdsSdk_Cpp_3.0.03.jar`just for reference
 
 #### 2.Check minSdkVersion and targetSdkVersion in `Manifest`
@@ -43,7 +43,7 @@ According to your needs, just delete the unwanted CPU architecture in the libs d
 #### 1.Add Google Ads SDK
 Please refer to**Add files of UPSDK** to add Google Ads into your porject,as follows：
 
-![ec-3-1](http://docs.upltv.com/uploads/201805/5afd45a3b7d61_5afd45a3.png "ec-3-1")
+![ec-3-1](http://docc.upltv.com/uploads/201805/5afd45a3b7d61_5afd45a3.png "ec-3-1")
 > In particular, if your project already has a different version of google play service, use the higher version.
 
 #### 2.Add other networdks
@@ -54,7 +54,7 @@ Folder named `optional_ads` contents  network dependencies file that exists in t
 
 ### IV. Add Android Support library 
 The display of the ad requires the support of the `support` library, so please bring it into your project. We have the corresponding `xxx.jar` file for you in the `android_support_library/libs` folder. You just need to added those files into the `libs` directory,as follows：
-![ec-4-1](http://docs.upltv.com/uploads/201805/5afd4483c57c1_5afd4483.png "ec-4-1")
+![ec-4-1](http://docc.upltv.com/uploads/201805/5afd4483c57c1_5afd4483.png "ec-4-1")
 
 
 ### V. Modify AndroidManifest.xml file
@@ -69,7 +69,7 @@ The UPSDK implements cross-platform calls to the native interface via the *cpp s
 
 Cocos2d-x 3.16 version can be copied to the Classes folder. If there are differences in other versions, please refer to the modification. The effect is as follows：
 
-![classes](http://docs.upltv.com/uploads/201804/5acac9170fddc_5acac917.png "classes")
+![classes](http://docc.upltv.com/uploads/201804/5acac9170fddc_5acac917.png "classes")
 >This article is based on cocos2dx-3.16. If your directory does not match this, ask our support team for help.
 
 ### 2.Modify android.mk in jni directory

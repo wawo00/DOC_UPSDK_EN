@@ -5,7 +5,7 @@ Regarding to the supports for Studio, this article will explain in four sections
 ### I. Structure of UPSDK Directory
 Regarding to Android Studio or Gradle built project, UPSDK suggests it should be import by other main project in `*.aar` format. You will see the structure of directory for UPSDK Studio when you unzip it:
 
-![as_91](http://docs.upltv.com/uploads/201808/5b7fdca87b9ae_5b7fdca8.png "as_91")
+![as_91](http://docc.upltv.com/uploads/201808/5b7fdca87b9ae_5b7fdca8.png "as_91")
 
 #### 1. Main Package of UPSDK
 Please refer to the screenshot above, the file named `UPAdsSdk_x.x.xx.aar` is the main package of UPSDK, you have to add it into your main project.
@@ -24,7 +24,7 @@ Among UPSDK local files, it provides aar dependencies for Admob and Facebook in 
 Please refer to the introduction above, add the downloaded files which named  `UPAdsSdk_x.x.xx.aar` into `libs` directory in your project.
 After they are added, the effects of Studio project acts like the following screenshot:
 
-![as_02](http://docs.upltv.com/uploads/201808/5b7fddd4a0a05_5b7fddd4.png "as_02")
+![as_02](http://docc.upltv.com/uploads/201808/5b7fddd4a0a05_5b7fddd4.png "as_02")
 
 > `UPAdsSdk_3.0.03.aar` is specified only for example
 

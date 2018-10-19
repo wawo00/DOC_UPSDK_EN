@@ -3,7 +3,7 @@
 ### I.Structure of UPSDK CppPlugin 
 For projects built with Eclipse, UPSDK is imported into the project as `*.jar`. Download UPSDK JavaScriptPlugin in ( [Android-JsSDK下载](http://ads-sdk-doc.haloapps.com/docs/show/13 "download"))and unzip：
 
-![ec-1-1](http://docs.upltv.com/uploads/201805/5af3e73af0172_5af3e73a.png "ec-1-1")
+![ec-1-1](http://docc.upltv.com/uploads/201805/5af3e73af0172_5af3e73a.png "ec-1-1")
 - `Eclipse`
    This directory mainly contains the ad dependency library files required for Eclipse project access.
 - `js`文件夹
@@ -21,7 +21,7 @@ Take UPSDK v3.0.03 as an example. In the `upsdk_ads` directory, there are three 
 
 As follows:
 
-![ec-2-1](http://docs.upltv.com/uploads/201805/5af3e8f29e3c9_5af3e8f2.png "ec-2-1")
+![ec-2-1](http://docc.upltv.com/uploads/201805/5af3e8f29e3c9_5af3e8f2.png "ec-2-1")
 
 > `UPAdsSdk_Js_3.0.03.jar`just for reference
 
@@ -43,7 +43,7 @@ According to your needs, just delete the unwanted CPU architecture in the libs d
 
 Please refer to**Add files of UPSDK** to add Google Ads into your porject,as follows：
 
-![ec-3-1](http://docs.upltv.com/uploads/201805/5af3ebc528686_5af3ebc5.png "ec-3-1")
+![ec-3-1](http://docc.upltv.com/uploads/201805/5af3ebc528686_5af3ebc5.png "ec-3-1")
 > In particular, if your project already has a different version of google play service, use the higher version.
 
 
@@ -55,7 +55,7 @@ Folder named `optional_ads` contents  network dependencies file that exists in t
 ### IV. Add Android Support library 
 
 The display of the ad requires the support of the `support` library, so please bring it into your project. We have the corresponding `xxx.jar` file for you in the `android_support_library/libs` folder. You just need to added those files into the `libs` directory,as follows：
-![ec-4-1](http://docs.upltv.com/uploads/201805/5af3e9c639e11_5af3e9c6.png "ec-4-1")
+![ec-4-1](http://docc.upltv.com/uploads/201805/5af3e9c639e11_5af3e9c6.png "ec-4-1")
 
 ### V. Modify AndroidManifest.xml file
 Please duplicate the content of `AndroidManifest.xml` file into the related location in your project.
@@ -66,7 +66,7 @@ Please duplicate the content of `AndroidManifest.xml` file into the related loca
 The UPSDK implements cross-platform calls to the native interface via the *js source file, so all *.js files in `js/upltv` must be copied to the project.
 
 For Cocos2d-x 3.16 version ,we can copy files  to assets/sr. If there are differences in other versions, please refer to the modification, as follows：
-![ec-4-1](http://docs.upltv.com/uploads/201805/5af3ea86801bf_5af3ea86.png "ec-4-1")
+![ec-4-1](http://docc.upltv.com/uploads/201805/5af3ea86801bf_5af3ea86.png "ec-4-1")
 >This article is based on cocos2dx-3.16. If your directory does not match this, ask our support team for help.
 
 ### 2.Modify android.mk in jni directory

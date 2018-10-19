@@ -5,7 +5,7 @@
 For projects built with Eclipse, UPSDK is imported into the project as `*.jar`. Download UPSDK LuaPlugin in ( [Android-LuaSDK下载](http://ads-sdk-doc.haloapps.com/docs/show/13 "download"))and unzip：
 
 
-![ec-1-1](http://docs.upltv.com/uploads/201805/5afe9bd143673_5afe9bd1.png "ec-1-1")
+![ec-1-1](http://docc.upltv.com/uploads/201805/5afe9bd143673_5afe9bd1.png "ec-1-1")
 - `Eclipse`
   This directory mainly contains the ad dependency library files required for Eclipse project access.
 - `lua`文件夹
@@ -23,7 +23,7 @@ Take UPSDK v3.0.03 as an example. In the `upsdk_ads` directory, there are three 
 
 As follow：
 
-![ec-2-1](http://docs.upltv.com/uploads/201805/5afe9cf8d18fd_5afe9cf8.png "ec-2-1")
+![ec-2-1](http://docc.upltv.com/uploads/201805/5afe9cf8d18fd_5afe9cf8.png "ec-2-1")
 > `UPAdsSdk_Lua_3.0.03.jar`just for reference
 
 #### 2.Check minSdkVersion and targetSdkVersion in `Manifest`
@@ -43,7 +43,7 @@ According to your needs, just delete the unwanted CPU architecture in the libs d
 #### 1.Add Google Ads SDK
 Please refer to**Add files of UPSDK** to add Google Ads into your porject,as follows：：
 
-![ec-3-1](http://docs.upltv.com/uploads/201805/5afea0b542f2f_5afea0b5.png "ec-3-1")
+![ec-3-1](http://docc.upltv.com/uploads/201805/5afea0b542f2f_5afea0b5.png "ec-3-1")
 > In particular, if your project already has a different version of google play service, use the higher version.
 
 #### 2.Add other networdks
@@ -53,7 +53,7 @@ Folder named `optional_ads` contents  network dependencies file that exists in t
 ### IV.Add Android Support library
 The display of the ad requires the support of the `support` library, so please bring it into your project. We have the corresponding `xxx.jar` file for you in the `android_support_library/libs` folder. You just need to added those files into the `libs` directory,as follows：
 
-![ec-4-1](http://docs.upltv.com/uploads/201805/5afea104016ef_5afea104.png "ec-4-1")
+![ec-4-1](http://docc.upltv.com/uploads/201805/5afea104016ef_5afea104.png "ec-4-1")
 
 ### V.Modify AndroidManifest.xml file
 Please duplicate the content of `AndroidManifest.xml` file into the related location in your project.

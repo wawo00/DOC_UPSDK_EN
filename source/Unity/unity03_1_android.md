@@ -8,7 +8,7 @@ When Unity plugin for Android finishes to be import, please check whether `PolyA
 
 - 3.0.02 and lower plugin version
 Soon after the successful import, there will be like as below in Assets catalog:
-![import](http://docs.upltv.com/uploads/201804/5acc569aeb642_5acc569a.png "工程结构")
+![import](http://docc.upltv.com/uploads/201804/5acc569aeb642_5acc569a.png "工程结构")
 
 #### 1. `libs_res`
 This directory includes `AvidlyAdsSdk_2.0.xx_dex.aar`, `support-v4-24.1.1.aar`, and `proguard-project.txt` files.
@@ -22,7 +22,7 @@ This directory includes many third-party networdk that named like 'dex_xxx.jar' 
 
 - 3.0.03 (included) and higher plugin version
 Soon after the successful import, there will be like as below in  `Assets` catalog:
-![工程结构](http://docs.upltv.com/uploads/201805/5b026a7687a70_5b026a76.jpeg "55333")
+![工程结构](http://docc.upltv.com/uploads/201805/5b026a7687a70_5b026a76.jpeg "55333")
 
 In 3.0.03 and higher plugin version, in order to Simplify access steps,we remove`avidly_android` and change `AvidlyAdsSdk_x.x.xx_dex.aar` to `UPAdsSdk_3.0.xx_dex.aar`。
 

@@ -3,7 +3,7 @@
 ### I.Structure of  UPSDK JavaScriptPlugin
 Regarding to Android Studio or Gradle built project, UPSDK suggests it should be import by other main project in  *.aar  format. Download UPSDK CppPlugin( [Android-JsSDK](http://ads-sdk-doc.haloapps.com/docs/show/13 "SDK下载页面") UPSDK JsPlugin)You will see the structure of directory when you unzip it:
 
-![as-1-1](http://docs.upltv.com/uploads/201805/5af3e11a11839_5af3e11a.png "as-1-1")
+![as-1-1](http://docc.upltv.com/uploads/201805/5af3e11a11839_5af3e11a.png "as-1-1")
 
 > The UPSDK JsPlugin main package is named`UPAdsSdk_Js_x.x.xx_dex.aar`.
 
@@ -22,7 +22,7 @@ Regarding to Android Studio or Gradle built project, UPSDK suggests it should be
 According to the above introduction, find the file named `UPAdsSdk_Js_x.x.xx_dex..aar` in the file directory you downloaded and add it to the `libs` directory of the project (Note: If there is no this directory, try to  create it and in the same directory as src.
 After adding, it looks like this:
 
-![as-2-1](http://docs.upltv.com/uploads/201805/5af3e2cdeb793_5af3e2cd.png "as-2-1")
+![as-2-1](http://docc.upltv.com/uploads/201805/5af3e2cdeb793_5af3e2cd.png "as-2-1")
 > `UPAdsSdk_Js_3.0.03_dex`just only for reference
 
 To ensure that the aar package in the libs directory is correctly referenced by the project, check the `build.gradle` file in the `app` directory to add the following  parameters:
@@ -178,7 +178,7 @@ dependencies {
 The UPSDK implements cross-platform calls to the native interface via the *js source file, so all *.js and *.h files in `js/upltv` must be copied to the current project.
 
 Cocos2d-x 3.16 version can be copied to the Classes folder. If there are differences in other versions, please refer to the modification. The effect is as follows：
-![classes](http://docs.upltv.com/uploads/201805/5af3e577f12a1_5af3e577.png "classes")
+![classes](http://docc.upltv.com/uploads/201805/5af3e577f12a1_5af3e577.png "classes")
 >This article is based on cocos2dx-3.16. If your directory does not match this, ask our support team for help.
 
 ### Ⅵ.Modify Proguard setting 
