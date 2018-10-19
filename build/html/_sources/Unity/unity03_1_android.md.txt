@@ -30,7 +30,7 @@ In 3.0.03 and higher plugin version, in order to Simplify access steps,we remove
 1、 5.1.1, during compile-build-package, unity can not find error for armeabi structure-----it needs to remove armeabi structure in .arr(using unarchiver to open it and delete armeabi folder directly)；
 
 2、5.0.0，during the apk packaging process, merge AndroidManifest.xml jurisdiction losses-----it needs to add AndroidManifest.xml into \Assets\Plugins\Android\
-Download page:  [5.0.0 AndroidManifest Download Page](http://docs.upltv.com/docs/show/50 "SDK下载页面")
+Download page:  [5.0.0 AndroidManifest Download Page](http://docs.upltv.com/docs/show/50 "SDKDownLoad")
 > If you have not found any needed file, please contact our technical colleagues for supports.
 
 ### IV. Compile Error for Unity Project 
