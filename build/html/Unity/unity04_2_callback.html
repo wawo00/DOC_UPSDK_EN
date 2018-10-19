@@ -26,7 +26,7 @@
 
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/main.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="UnityPlugin API" href="unity05_sample_catalog.html" />
@@ -58,9 +58,6 @@
           
           </a>
 
-          
-            
-            
           
 
           
@@ -158,14 +155,7 @@
       <li>PolyADSDK Callback interfaces</li>
     
     
-      <li class="wy-breadcrumbs-aside">
-        
-            
-            <a href="../_sources/Unity/unity04_2_callback.md.txt" rel="nofollow"> View page source</a>
-          
-        
-      </li>
-    
+
   </ul>
 
   
@@ -180,33 +170,33 @@
 <span id="callback-interfaces-for-rewardvideo"></span><h2>1. Callback interfaces for RewardVideo：<a class="headerlink" href="#callback-interfaces-for-rewardvideo" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="api-reference">
 <span id="api-reference"></span><h3>API reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">bool</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPSDKInitFinishedCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="n">Action</span> <span class="p">&lt;</span><span class="kt">bool</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPSDKInitFinishedCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
 
 <span class="cm">/*</span>
 <span class="cm">* Rewarded Video Ads</span>
 <span class="cm">* trigger on ad open</span>
 <span class="cm">*/</span>
-<span class="k">public</span> <span class="k">static</span> <span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPRewardDidOpenCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
+<span class="k">public</span> <span class="k">static</span> <span class="n">Action</span> <span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPRewardDidOpenCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
 
 <span class="cm">/*</span>
 <span class="cm">* trigger on ad click</span>
 <span class="cm">*/</span>
-<span class="k">public</span> <span class="k">static</span> <span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPRewardDidClickCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
+<span class="k">public</span> <span class="k">static</span> <span class="n">Action</span> <span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPRewardDidClickCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
 
 <span class="cm">/*</span>
 <span class="cm">* trigger on ad close</span>
 <span class="cm">*/</span>
-<span class="k">public</span> <span class="k">static</span> <span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPRewardDidCloseCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>  
+<span class="k">public</span> <span class="k">static</span> <span class="n">Action</span> <span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPRewardDidCloseCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>  
 
 <span class="cm">/*</span>
 <span class="cm">* trigger on ad reward OK</span>
 <span class="cm">*/</span>
-<span class="k">public</span> <span class="k">static</span> <span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPRewardDidGivenCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
+<span class="k">public</span> <span class="k">static</span> <span class="n">Action</span> <span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPRewardDidGivenCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
 
 <span class="cm">/*</span>
 <span class="cm">* trigger on ad reward FAIL or not match reward conditions</span>
 <span class="cm">*/</span>
-<span class="k">public</span> <span class="k">static</span> <span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPRewardDidAbandonCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
+<span class="k">public</span> <span class="k">static</span> <span class="n">Action</span> <span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPRewardDidAbandonCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
 </pre></div>
 </div>
 </div>
@@ -240,17 +230,17 @@
 <span class="cm">* Interstitial Ad </span>
 <span class="cm">* trigger on ad display </span>
 <span class="cm">*/</span>
-<span class="k">public</span> <span class="k">static</span> <span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPInterstitialDidShowCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
+<span class="k">public</span> <span class="k">static</span> <span class="n">Action</span> <span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPInterstitialDidShowCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
 
 <span class="cm">/*</span>
 <span class="cm">* trigger on ad click</span>
 <span class="cm">*/</span>
-<span class="k">public</span> <span class="k">static</span> <span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPInterstitialDidClickCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
+<span class="k">public</span> <span class="k">static</span> <span class="n">Action</span> <span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPInterstitialDidClickCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
 
 <span class="cm">/*</span>
 <span class="cm">* trigger on ad close</span>
 <span class="cm">*/</span>
-<span class="k">public</span> <span class="k">static</span> <span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPInterstitialDidCloseCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
+<span class="k">public</span> <span class="k">static</span> <span class="n">Action</span> <span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPInterstitialDidCloseCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
 </pre></div>
 </div>
 </div>
@@ -279,17 +269,17 @@
 <span class="cm">* Banner Ad</span>
 <span class="cm">* trigger on ad display </span>
 <span class="cm">*/</span>
-<span class="k">public</span> <span class="k">static</span> <span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPBannerDidShowCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
+<span class="k">public</span> <span class="k">static</span> <span class="n">Action</span> <span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPBannerDidShowCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
 
 <span class="cm">/*</span>
 <span class="cm">* trigger on ad click</span>
 <span class="cm">*/</span>
-<span class="k">public</span> <span class="k">static</span> <span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPBannerDidClickCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
+<span class="k">public</span> <span class="k">static</span> <span class="n">Action</span> <span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPBannerDidClickCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
 
 <span class="cm">/*</span>
 <span class="cm">* trigger on ad delete</span>
 <span class="cm">*/</span>
-<span class="k">public</span> <span class="k">static</span> <span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPBannerDidRemoveCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
+<span class="k">public</span> <span class="k">static</span> <span class="n">Action</span> <span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPBannerDidRemoveCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
 </pre></div>
 </div>
 </div>
@@ -315,7 +305,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, upltv
+        &copy; Copyright 2018, upltv.
 
     </p>
   </div>
@@ -334,14 +324,22 @@
 
   
 
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/js/custom.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
