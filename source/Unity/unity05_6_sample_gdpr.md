@@ -27,7 +27,6 @@ Sample:
 }
 
 private void isEuropeanUserCallback(bool result, string msg) {
-    // result: true 表示欧盟地区用户，否则非欧盟地区用户
     if (result) {
            // client in the EU，ask for authorizing
             // ......

@@ -3,7 +3,7 @@
 This access document is based on cocos2d-x 3.16. If you have problems when using other versions of cocos2d-x, please contact us.
 
 ### 1 Download SDK package
-First from [UPSDK Download](http://doc.upltv.com/en/master/chapters/chapter09.html "SDK下载页面") download UPSDK JsPlugin package，The uncompressed directory contains the following three files：
+First from [UPSDK Download](http://doc.upltv.com/en/master/chapters/chapter09.html "SDKDownLoad") download UPSDK JsPlugin package，The uncompressed directory contains the following three files：
 - `UPSDK.framework` This is the UPSDK master package, so be sure to add it to your current project
 - `UPSDK.bundle` Be sure to add the external file resources  because that the UPSDK master package needs to access to the current project
 - `UpltvJsBridge` This directory contains *. CPP source files for bridging the current cocos2d-x JS project and UPSDK AD interface calls

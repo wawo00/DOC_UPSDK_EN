@@ -3,7 +3,7 @@
 本接入文档以Egret 5.2.8为蓝本，如果您使用Egret其它版本，不同之处请灵活处理。
 
 ### 一、下载SDK包
-首先从 [UPSDK下载页](http://docs.upltv.com/docs/show/13 "SDK下载页面")下载UPSDK Egret TypeScriptPlugin包，解压后的目录包含如下三个文件：
+首先从 [UPSDKDownLoad](http://docs.upltv.com/docs/show/13 "SDKDownLoad")下载UPSDK Egret TypeScriptPlugin包，解压后的目录包含如下三个文件：
 - `UPSDK.framework` 这是UPSDK的主包，请务必添加到当前工程中
 - `UPSDK.bundle` UPSDK主包需要访问的外部文件资源，请务必添加到当前工程中
 - `UpltvEgretTsBridge` 此目录包含一些*.ts源码文件，用于桥接当前Egret TypeScript工程与UPSDK广告接口调用

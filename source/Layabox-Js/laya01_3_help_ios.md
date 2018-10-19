@@ -1,6 +1,6 @@
 ## IOS 接入帮助
 ### 一、下载SDK包
-首先从 [UPSDK下载页](http://doc.upltv.com/en/master/chapters/chapter09.html "SDK下载页面") 下载UPSDK Layabox JavaScriptPlugin包，解压后的目录包含如下三个文件：
+首先从 [UPSDK下载页](http://doc.upltv.com/en/master/chapters/chapter09.html "SDKDownLoad") 下载UPSDK Layabox JavaScriptPlugin包，解压后的目录包含如下三个文件：
 - `UPSDK.framework` 这是UPSDK的主包，请务必添加到当前工程中
 - `UPSDK.bundle` UPSDK主包需要访问的外部文件资源，请务必添加到当前工程中
 - `UpltvLayaboxJsBridge` 此目录包含一些*.js源码文件，用于桥接当前Layabox JavaScript工程与UPSDK广告接口调用

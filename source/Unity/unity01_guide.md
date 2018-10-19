@@ -24,4 +24,4 @@ The UPSDK Unity Plugin contains the support components needed for the android an
 
 	If your app designed  for both Android and iOS markets, such plugin will be your best choice. This package includes Android and Ios support of UPSDK and corresponding third-party libraries (about 550M, please keep the network work well when downloading),
 
-#### Download in [UPSDK Unity Plugin 下载页](http://doc.upltv.com/en/master/chapters/chapter09.html "SDK下载页面") 。
+#### Download in [UPSDK Unity Plugin DownLoad](http://doc.upltv.com/en/master/chapters/chapter09.html "SDKDownLoad") 。

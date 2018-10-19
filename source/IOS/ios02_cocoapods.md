@@ -29,7 +29,7 @@ end
 
 `~>  3.0.03` means version to download, we recommend to use the lastest version.
 
-然后进入您的工程目录，运行以下命令
+Enter the project,and run this command:
 Switch into your project directory and run command `pod install`
 
 ```

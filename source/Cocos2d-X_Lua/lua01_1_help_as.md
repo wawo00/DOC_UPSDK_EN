@@ -2,7 +2,7 @@
 
 ### I.Structure of  UPSDK LuaPlugin
 
-Regarding to Android Studio or Gradle built project, UPSDK suggests it should be import by other main project in  *.aar  format. Download UPSDK LuaPlugin( [Android-LuaSDK](http://doc.upltv.com/en/master/chapters/chapter09.html "SDK下载页面") UPSDK LuaPlugin)You will see the structure of directory when you unzip it:
+Regarding to Android Studio or Gradle built project, UPSDK suggests it should be import by other main project in  *.aar  format. Download UPSDK LuaPlugin( [Android-LuaSDK](http://doc.upltv.com/en/master/chapters/chapter09.html "SDKDownLoad") UPSDK LuaPlugin)You will see the structure of directory when you unzip it:
 
 
 ![as-1-1](http://docc.upltv.com/uploads/201805/5afe99d977ef8_5afe99d9.png "as-1-1")
