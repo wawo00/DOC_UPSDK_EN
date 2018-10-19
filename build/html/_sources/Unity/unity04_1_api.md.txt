@@ -124,11 +124,11 @@ using Polymer.PolyADSDK ;
 		 * @param success  callback of successful loading
 		 * @param fail     callback of failed loading
 		 * 
-		 * Types of callback parameters: Action&lt;string,string>
+		 * Types of callback parameters: Action <string,string>
 		 * The first one is cpPlaceId, placementid of ads, could be empty or null; The second parameter is the decribed info, could be empty or null
 		 * supported from 2028
 		 */
-		public static void setRewardVideoLoadCallback(Action&lt;string,string> success, Action&lt;string, string> fail);
+		public static void setRewardVideoLoadCallback(Action <string,string> success, Action <string, string> fail);
 		
 		/*
 		 * Adding callback API for loading Intersitial ads
@@ -136,11 +136,11 @@ using Polymer.PolyADSDK ;
 		 * @param success  callback of successful loading
 		 * @param fail t   callback of failed loading
 		 * 
-		 * Types of callback parameters: Action&lt;string,string>
+		 * Types of callback parameters: Action <string,string>
 		 * The first one is cpPlaceId, placementId of ads, could be empty or null: The second parameter is described info, could be empty or null
 		 * supported from 2028
 		 */
-		public static void setIntersitialLoadCallback(string cpPlaceId, Action&lt;string,string> success, Action&lt;string, string> fail)
+		public static void setIntersitialLoadCallback(string cpPlaceId, Action <string,string> success, Action <string, string> fail)
 		
 		/*
 		 * It is using for showing reward video debug info 
@@ -182,7 +182,7 @@ using Polymer.PolyADSDK ;
          * @param callback
          * Version 3003 and above support this method
          */
-         public static void notifyAccessPrivacyInfoStatus(Action&lt;UPConstant.         UPAccessPrivacyInfoStatusEnum, string> callback);
+         public static void notifyAccessPrivacyInfoStatus(Action <UPConstant.         UPAccessPrivacyInfoStatusEnum, string> callback);
          
          /**
          * Conducting the GDPR authorization and notice the authorization results to UPSDK,which should be called before the initial UPSDK
@@ -203,7 +203,7 @@ using Polymer.PolyADSDK ;
          * Asynchronous callback, which should be called before the initial UPSDK
          * Version 3003 and above support this method
          */
-         public static void isEuropeanUnionUser(Action&lt;bool, string> callback);
+         public static void isEuropeanUnionUser(Action <bool, string> callback);
          
 ```
 

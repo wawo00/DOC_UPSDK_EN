@@ -26,7 +26,7 @@
 
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/main.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="PolyADSDK Callback interfaces" href="unity04_2_callback.html" />
@@ -58,9 +58,6 @@
           
           </a>
 
-          
-            
-            
           
 
           
@@ -158,14 +155,7 @@
       <li>API description</li>
     
     
-      <li class="wy-breadcrumbs-aside">
-        
-            
-            <a href="../_sources/Unity/unity04_1_api.md.txt" rel="nofollow"> View page source</a>
-          
-        
-      </li>
-    
+
   </ul>
 
   
@@ -299,11 +289,11 @@
 <span class="cm">         * @param success  callback of successful loading</span>
 <span class="cm">         * @param fail     callback of failed loading</span>
 <span class="cm">         * </span>
-<span class="cm">         * Types of callback parameters: Action&amp;lt;string,string&gt;</span>
+<span class="cm">         * Types of callback parameters: Action &lt;string,string&gt;</span>
 <span class="cm">         * The first one is cpPlaceId, placementid of ads, could be empty or null; The second parameter is the decribed info, could be empty or null</span>
 <span class="cm">         * supported from 2028</span>
 <span class="cm">         */</span>
-        <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">setRewardVideoLoadCallback</span><span class="p">(</span><span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">success</span><span class="p">,</span> <span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">fail</span><span class="p">);</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">setRewardVideoLoadCallback</span><span class="p">(</span><span class="n">Action</span> <span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">success</span><span class="p">,</span> <span class="n">Action</span> <span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">fail</span><span class="p">);</span>
         
         <span class="cm">/*</span>
 <span class="cm">         * Adding callback API for loading Intersitial ads</span>
@@ -311,11 +301,11 @@
 <span class="cm">         * @param success  callback of successful loading</span>
 <span class="cm">         * @param fail t   callback of failed loading</span>
 <span class="cm">         * </span>
-<span class="cm">         * Types of callback parameters: Action&amp;lt;string,string&gt;</span>
+<span class="cm">         * Types of callback parameters: Action &lt;string,string&gt;</span>
 <span class="cm">         * The first one is cpPlaceId, placementId of ads, could be empty or null: The second parameter is described info, could be empty or null</span>
 <span class="cm">         * supported from 2028</span>
 <span class="cm">         */</span>
-        <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">setIntersitialLoadCallback</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpPlaceId</span><span class="p">,</span> <span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">success</span><span class="p">,</span> <span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">fail</span><span class="p">)</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">setIntersitialLoadCallback</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpPlaceId</span><span class="p">,</span> <span class="n">Action</span> <span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">success</span><span class="p">,</span> <span class="n">Action</span> <span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">fail</span><span class="p">)</span>
         
         <span class="cm">/*</span>
 <span class="cm">         * It is using for showing reward video debug info </span>
@@ -357,7 +347,7 @@
 <span class="cm">         * @param callback</span>
 <span class="cm">         * Version 3003 and above support this method</span>
 <span class="cm">         */</span>
-         <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">notifyAccessPrivacyInfoStatus</span><span class="p">(</span><span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">UPConstant</span><span class="p">.</span>         <span class="n">UPAccessPrivacyInfoStatusEnum</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">callback</span><span class="p">);</span>
+         <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">notifyAccessPrivacyInfoStatus</span><span class="p">(</span><span class="n">Action</span> <span class="p">&lt;</span><span class="n">UPConstant</span><span class="p">.</span>         <span class="n">UPAccessPrivacyInfoStatusEnum</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">callback</span><span class="p">);</span>
          
          <span class="cm">/**</span>
 <span class="cm">         * Conducting the GDPR authorization and notice the authorization results to UPSDK,which should be called before the initial UPSDK</span>
@@ -378,7 +368,7 @@
 <span class="cm">         * Asynchronous callback, which should be called before the initial UPSDK</span>
 <span class="cm">         * Version 3003 and above support this method</span>
 <span class="cm">         */</span>
-         <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">isEuropeanUnionUser</span><span class="p">(</span><span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">bool</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">callback</span><span class="p">);</span>
+         <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">isEuropeanUnionUser</span><span class="p">(</span><span class="n">Action</span> <span class="p">&lt;</span><span class="kt">bool</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">callback</span><span class="p">);</span>
          
 </pre></div>
 </div>
@@ -416,7 +406,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, upltv
+        &copy; Copyright 2018, upltv.
 
     </p>
   </div>
@@ -435,14 +425,22 @@
 
   
 
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/js/custom.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
