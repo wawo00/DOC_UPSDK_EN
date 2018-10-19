@@ -1,129 +1,109 @@
 ## GDPR
-`GDPR《一般数据保护法案》`是欧盟出台的数据保护方案，如果您的产品会面向欧盟用户，我们提供如下方案确保`UPSDK`遵守`GDPR`规范。
 
-`UPSDK`在`3.0.03`版本支持欧盟`GDPR`规范，发行区域包含欧盟或涵盖欧盟用户的开发者必须处理此逻辑。
+`GDPR "The General Data Protection Regulation" is a data protection program issued by the European Union. `
+If your product is intended for EU users, we offer the following solutions to ensure that `UPSDK` complies with the `GDPR' rules.
 
-### GDPR 推荐用例
-#### 方案一
-推荐根据自己游戏的画面风格自定义GDPR的授权弹框界面，保证产品体验最佳。
-采用此方案时，仅需要将授权结果同步给UPSDK后再初始化UPSDK。
+`UPSDK` supports the EU `GDPR` rules in the `3.0.03` version, and developers who will distribute in EU region must handle this logic.
 
-示例代码：
+### GDPR Samples
+#### Customizing implementation
+Customized dialog of GDPR according to the style of your game to ensure the best product experience.
+When adopting this scheme, it is only necessary to inform the UPSDK of the authorization result before initializing the UPSDK.
+
+Sample：
 ```objective-c
 {
-    // 旧的初始化代码
-    // [UPSDK initSDK];
-    
-    // 判断是否为第一次运行
+    // old code for initialization
+    // AvidlyAdsSdk.init(xxxx);
+
+    // new code for GDPR
     UPAccessPrivacyInfoStatus result1 = [UPSDK getCurrentAccessPrivacyInfoStatus];
     if (result1 == UPAccessPrivacyInfoStatusNone) {
-        // 是第一次运行
-        // 查询用户归属
         [UPSDK checkIsEuropeanUnionUser:^(BOOL isEuropeanUnion) {
             if (isEuropeanUnion) {
-                // 是欧盟用户
-                // 请注意 [Test yourOwnMethod: completion]是伪代码,请根据实际需求进行修改
+             // if the user is in the EU
                 [Test yourOwnMethod:nil completion:^(BOOL isAccepted) {
-                     // isAccepted为YES表示用户同意使用隐私信息，为NO表示用户不同意使用隐私信息
-                     // 更新GDPR状态,获取用户信息授权
-                    NSLog(@"CP可自由在这里写入自己的逻辑，接下来只需要更新一下GDPR状态即可");
+                    NSLog(@"TODO");
                     if (isAccepted) {
-                        // 用户同意使用隐私信息：
                         [UPSDK updateAccessPrivacyInfoStatus:UPAccessPrivacyInfoStatusAccepted];
                     }
                     else {
-                        // 用户拒绝使用隐私信息：
                         [UPSDK updateAccessPrivacyInfoStatus:UPAccessPrivacyInfoStatusDenied];
                     }
-                    // 初始化SDK
-                    // 假设发行地区为海外，则如下所示：
+              
                     [UPSDK initSDK:UPSDKGlobalZoneForeign];
                 }];
             }
             else {
-                // 不是欧盟用户
-                // 初始化SDK
-                // 假设发行地区为海外，则如下所示：
+              
                 [UPSDK initSDK:UPSDKGlobalZoneForeign];
             }
         }];
     }
     else {
-        // 不是第一次运行
-        // 假设发行地区为海外，则如下所示：
+       
         [UPSDK initSDK:UPSDKGlobalZoneForeign];
     }
 }
 ```
-#### 方案二
-如果采用UPSDK提供的标准授权处理机制，请参考以下代码修改UPSDK的初始化流程。
+#### Quick implementation
+If you use the standard authorization process provided by UPSDK, please refer to the following code .
 
-示例代码：
+
+Sample：
 ```objective-c
 {
-    // 旧的初始化代码
-    // [UPSDK initSDK];
+    // old code for initialization
+    // AvidlyAdsSdk.init(xxxx);
 
-    // 判断是否为第一次运行
+    // new code for GDPR
     UPAccessPrivacyInfoStatus result = [UPSDK getCurrentAccessPrivacyInfoStatus];
     if (result == UPAccessPrivacyInfoStatusNone) {
-        // 是第一次运行
-        // 查询用户归属
+      
         [UPSDK checkIsEuropeanUnionUser:^(BOOL isEuropeanUnion) {
             if (isEuropeanUnion) {
                 // 是欧盟用户
                 [UPSDK requestAuthorizationWithAlert:nil completion:^(BOOL isAccepted) {
-                    // isAccepted为YES表示用户同意使用隐私信息，为NO表示用户不同意使用隐私信息
-                    // 初始化SDK
-                    // 假设发行地区为海外，则如下所示：
                     [UPSDK initSDK:UPSDKGlobalZoneForeign];
                 }];
             }
             else {
-                // 不是欧盟用户
-                // 初始化SDK
-                // 假设发行地区为海外，则如下所示：
                 [UPSDK initSDK:UPSDKGlobalZoneForeign];
             }
         }];
     }
     else {
-        // 不是第一次运行
-        // 假设发行地区为海外，则如下所示：
         [UPSDK initSDK:UPSDKGlobalZoneForeign];
     }
 }
 ```
-### GDPR API介绍
-#### 一、开发者可以自行获取GDPR状态的
+### GDPR API
 
- 针对可以自行获取GDPR状态的的开发者，UPSDK提供了设置GDPR状态的API`(此API需要在SDK初始化之前调用)`，即
+#### 1.notifyAccessPrivacyInfoStatus
+
+The authorization window pops up to explain to the user that we will collect data and ask the user whether to approve the authorization.
+ If the user refuses to authorize, the collection of related data will be abandoned. Please call before initializing the UPSDK.
  
 ```objective-c
- /**
- 更新访问用户隐私信息状态
- 
- @param status 访问用户隐私信息状态，不能传UPAccessPrivacyInfoStatusNone
- */
+
 + (void)updateAccessPrivacyInfoStatus:(UPAccessPrivacyInfoStatus)status;
 ```
 
-其中`UPAccessPrivacyInfoStatus`枚举的值为
+`UPAccessPrivacyInfoStatus`:
 ```objective-c
 typedef NS_ENUM (NSInteger, UPAccessPrivacyInfoStatus) {
-    UPAccessPrivacyInfoStatusNone = 0,      //未知
-    UPAccessPrivacyInfoStatusAccepted = 1,  //用户同意使用隐私信息
-    UPAccessPrivacyInfoStatusDenied = 2,    //用户拒绝使用隐私信息
+    UPAccessPrivacyInfoStatusNone = 0,      //unknown
+    UPAccessPrivacyInfoStatusAccepted = 1,  //agree
+    UPAccessPrivacyInfoStatusDenied = 2,    //disagree
 };
 ```
 
-注：不能传入`UPAccessPrivacyInfoStatusNone `这个枚举值
+Notice:Do not send `UPAccessPrivacyInfoStatusNone `
 
-demo示例
+Sample:
 
 ```objective-c
-//------ 用户可以自行获取GDPR状态 ------
-//设置GDPR状态
+
 [UPSDK updateAccessPrivacyInfoStatus:UPAccessPrivacyInfoStatusAccepted];
 //SDK init
 [UPSDK initSDK:UPSDKGlobalZoneForeign];
@@ -131,39 +111,31 @@ demo示例
 
 ---------
 
-#### 二、开发者无法自行判断用户是否为欧盟用户的
-
-针对此种情况，UPSDK提供了异步查询当前用户是否为欧盟用户的API，即
+#### 2、checkIsEuropeanUnionUser
+Determine whether the user belongs to the EU region,which can be called before initializing the UPSDK 
 
 ```objective-c
-/**
- 查询用户是否是欧盟用户
- 
- @param completionBlock 回调 isEuropeanUnion为YES表示是欧盟用户
- */
+
 + (void)checkIsEuropeanUnionUser:(void (^)(BOOL isEuropeanUnion))completionBlock;
 ```
 
-其中`isEuropeanUnion`为`YES`表示是欧盟用户,为`NO`表示非欧盟用户
 
-demo示例
+
+Sample:
 
 ```objective-c
-//准备查询用户归属
 [UPSDK checkIsEuropeanUnionUser:^(BOOL isEuropeanUnion) {
     if (isEuropeanUnion) {
-        //欧盟用户 
     }
     else {
-        //非欧盟用户
 }];
 ```
 
 ---------
 
-#### 三、开发者无法自行向用户请求授权使用隐私信息的
+#### 3、the developer can not request the user to authorize the use of private information.
 
-针对此种情况，UPSDK提供了使用Alter向用户请求授权使用隐私信息的API，即
+In response to this situation, UPSDK provides an API for using Alter to request authorization to use private information from users, as following:
 
 ```objective-c
 /**
