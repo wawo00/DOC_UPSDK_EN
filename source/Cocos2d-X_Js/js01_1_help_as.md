@@ -1,7 +1,7 @@
 ## Android Studio
 
 ### I.Structure of  UPSDK JavaScriptPlugin
-Regarding to Android Studio or Gradle built project, UPSDK suggests it should be import by other main project in  *.aar  format. Download UPSDK CppPlugin( [Android-JsSDK](http://ads-sdk-doc.haloapps.com/docs/show/13 "SDK下载页面") UPSDK JsPlugin)You will see the structure of directory when you unzip it:
+Regarding to Android Studio or Gradle built project, UPSDK suggests it should be import by other main project in  *.aar  format. Download UPSDK CppPlugin( [Android-JsSDK](http://doc.upltv.com/en/master/chapters/chapter09.html "SDK下载页面") UPSDK JsPlugin)You will see the structure of directory when you unzip it:
 
 ![as-1-1](http://docc.upltv.com/uploads/201805/5af3e11a11839_5af3e11a.png "as-1-1")
 

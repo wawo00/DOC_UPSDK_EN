@@ -34,13 +34,13 @@ When you failed to export Xcode in a project, please inspect all adaption config
 In Target->General panel, set Deployent Target 7.0 or higher. Some frameworks which the third-party rely on required 7.0 or higher.
 
 Examples：
-![ios-target](http://ads-sdk-doc.haloapps.com/uploads/201706/59535d81cf339_59535d81.png "ios-target")
+![ios-target](http://docc.upltv.com/uploads/201706/59535d81cf339_59535d81.png "ios-target")
 
 #### 2. Link Binary with Libraries inspection
 In Build Phases -> Link Binary with Libraries, inspect whether you have added framework and .a files which plugin contained.
 
 After the successful addition, the library files marked in red box in the following screenshot, will be added.
-![ios-lib](http://ads-sdk-doc.haloapps.com/uploads/201706/595361be1b87e_595361be.png "ios-lib")
+![ios-lib](http://docc.upltv.com/uploads/201706/595361be1b87e_595361be.png "ios-lib")
 
 If missing some library files in `PolyADSDK/Plugins/IOS/frameworks`, please manually add files which `PolyADSDK/Plugins/IOS/frameworks` contain in the project by using Xcode project. 
 
@@ -51,7 +51,7 @@ If missing some library files in `PolyADSDK/Plugins/IOS/frameworks`, please manu
 In Build Phases -> Copy Bundle Resources, inspecting whether you add resources which plugin contained.
 
 After the successful addition, resource files will be added. Please refer to the screenshot marked in red box.
-![ios-resources](http://ads-sdk-doc.haloapps.com/uploads/201706/59536339b4e91_59536339.png "ios-resources")
+![ios-resources](http://docc.upltv.com/uploads/201706/59536339b4e91_59536339.png "ios-resources")
 
 If the resources which `PolyADSDK/Plugins/IOS/resources` should contain is missing, please manually add the resources of `PolyADSDK/Plugins/IOS/resources` in the project by Xcode project.
 
@@ -60,7 +60,7 @@ Following the steps: Build Settings -> Linking -> Other Linker Flags.
 Please inspect whether add `-ObjC` and `-fobjc-arc` configuration.
 
 After the successful additon, configuration parameters marked in red box in the following screenshot will be added. If they are missing, please add them manually.
-![ios-link-set](http://ads-sdk-doc.haloapps.com/uploads/201706/59536443253fc_59536443.png "ios-link-set")
+![ios-link-set](http://docc.upltv.com/uploads/201706/59536443253fc_59536443.png "ios-link-set")
 
 #### 5. Solution to Compatibility problems for some Unity versions
 

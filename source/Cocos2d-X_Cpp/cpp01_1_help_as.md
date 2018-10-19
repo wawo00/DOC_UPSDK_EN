@@ -1,7 +1,7 @@
 ## Android Studio 
 
 ### I.Structure of UPSDK CppPlugin
-Regarding to Android Studio or Gradle built project, UPSDK suggests it should be import by other main project in  *.aar  format. Download UPSDK CppPlugin( [Android-CPPSDK](http://ads-sdk-doc.haloapps.com/docs/show/13 "SDK下载页面") UPSDK CppPlugin)You will see the structure of directory when you unzip it:
+Regarding to Android Studio or Gradle built project, UPSDK suggests it should be import by other main project in  *.aar  format. Download UPSDK CppPlugin( [Android-CPPSDK](http://doc.upltv.com/en/master/chapters/chapter09.html "SDK下载页面") UPSDK CppPlugin)You will see the structure of directory when you unzip it:
 
 
 ![as-1-1](http://docc.upltv.com/uploads/201805/5afd2c552eab2_5afd2c55.png "as-1-1")

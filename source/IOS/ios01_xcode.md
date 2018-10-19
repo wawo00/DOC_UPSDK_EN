@@ -1,6 +1,6 @@
 ## Xcode Access Document
 ### Download SDK
-Download latest SDK from [here](http://ads-sdk-doc.haloapps.com/docs/show/13  "SDK Download Page") and unzip. You will got 2 files：
+Download latest SDK from [here](http://doc.upltv.com/en/master/chapters/chapter09.html  "SDK Download Page") and unzip. You will got 2 files：
 - UPSDK.framework
 - UPSDK.bundle
 
@@ -14,7 +14,7 @@ Add `UPSDK.framework` and `UPSDK.bundle` to you Xcode project , as sample `Frame
 
 ### Add 3rd part library required
 We need 3rd part library to display ads. Please import these libraries to your project.
-**Please downlaod 3rd library from [here](http://ads-sdk-doc.haloapps.com/docs/show/13 "3rd libraries") **。
+**Please downlaod 3rd library from [here](http://doc.upltv.com/en/master/chapters/chapter09.html "3rd libraries") **。
 
 ![ios_02](http://docc.upltv.com/uploads/201808/5b88d65b062ae_5b88d65b.png "ios_02")
 <br>

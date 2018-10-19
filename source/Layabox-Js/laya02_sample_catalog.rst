@@ -1,5 +1,5 @@
 =============================
-JavaScript 使用文档
+JavaScript 
 =============================
 
 ### 1. Layabox JavaScript Plugin [初始化](http://docs.upltv.com/docs/show/264 " [初始化]")
