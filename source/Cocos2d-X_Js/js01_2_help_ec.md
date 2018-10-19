@@ -8,7 +8,7 @@ For projects built with Eclipse, UPSDK is imported into the project as `*.jar`. 
    This directory mainly contains the ad dependency library files required for Eclipse project access.
 - `js`文件夹
 	This directory mainly contains some *.js source files for bridging the current Cocos2d-X js project with the UPSDK interface call.
-- `AndroidStudio`文件夹
+- `Android Studio`文件夹
     If you build project through,please ignore this directory.
 - `proguard-project.txt`文件
 	The configuration file of confusion,if you need to obfuscate code, add the contents of this file to the file that the project depends on.

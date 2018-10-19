@@ -1,14 +1,14 @@
 ## Eclipse
 
-### I. Structure of UP ADSDK Directory
-If you are using Eclipse or Ant to build Android project, it will be more complex than using Android Studio to build. The structure of UP ADSDK Eclipse version is like following when after unarchive:
+### I. Structure of UPSDK Directory
+If you are using Eclipse or Ant to build Android project, it will be more complex than using Android Studio to build. The structure of UPSDK Eclipse version is like following when after unarchive:
 
 ![](http://docs.upltv.com/uploads/201808/5b8756d508084_5b8756d5.png)
 
 
-Main package of UP ADSDK Eclipse is located in `upsdk_ads` folder, please refer to the screenshot, `upsdk_ads` is the main package of Eclipse project, it must be added into your porject.
+Main package of UPSDK Eclipse is located in `upsdk_ads` folder, please refer to the screenshot, `upsdk_ads` is the main package of Eclipse project, it must be added into your porject.
 
-### II. Duplicate main package of UP ADSDK Eclipse into your project
+### II. Duplicate main package of UPSDK Eclipse into your project
 In the directory of `upsdk_ads`, there are `libs` and `res`, and other folders. Please duplicate all content to
 these folder into equivalent folders of your Eclipse project.
 
@@ -16,11 +16,11 @@ these folder into equivalent folders of your Eclipse project.
 
 ### III. Add other dependencies
 The SDKs of some affiliate networks need to depend on some public third-party libraries, so you may need to include them in your project manually. These library files are existing as  `xxx_ads`folders among the folders you downloaded.
-The relationships between UP ADSDK and other networks are loose and coupled. If you do not want to import some affiliate networks, you do not need to import those files.
+The relationships between UPSDK and other networks are loose and coupled. If you do not want to import some affiliate networks, you do not need to import those files.
 
 `batmobi_ads` as the sample, if your project needs filled with Mobvista ads, please duplicate related files under the directories of `batmobi_ads/libs/` and `batmobi_ads/res/` into the directories of `libs` and `res` in your project,plus,add content of `AndroidManifest_Inmobi`  into  `manifest.xml` which in your project.
 
-**Please make sure to follow the suggestions below to import 3rd-party libraries which UP ADSDK needs to depend on in your project. Or the system may crash due to lacking of some neccessary supports.**
+**Please make sure to follow the suggestions below to import 3rd-party libraries which UPSDK needs to depend on in your project. Or the system may crash due to lacking of some neccessary supports.**
 
 #### IV. Add Android Support library 
 

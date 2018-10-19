@@ -1,6 +1,6 @@
 ## Use Unity
 
-Unity 5.5 and above support multidex, no need to export to AndroidStudio project, complete the subcontracting settings directly in Unity IDE.
+Unity 5.5 and above support multidex, no need to export to Android Studio project, complete the subcontracting settings directly in Unity IDE.
 
 ### 1.Open `Gradle build system`
 

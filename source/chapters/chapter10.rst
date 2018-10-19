@@ -5,7 +5,7 @@ GDPR
 
 
 
-`GDPR "The General Data Protection Regulation" is a data protection program issued by the European Union. If your product is intended for EU users, we offer the following solutions to ensure that `UP ADSDK` complies with the `GDPR' rules.
+`GDPR "The General Data Protection Regulation" is a data protection program issued by the European Union. If your product is intended for EU users, we offer the following solutions to ensure that `UPSDK` complies with the `GDPR' rules.
 
 
 ## Support List
@@ -13,7 +13,7 @@ GDPR
 ----------------
 
 +----------------------------+------------------------------+
-|            联盟            |          兼容版本            |
+|            Net work        |          Version            |
 +============================+==============================+
 |          AppLovin          |  iOS: 5.0.1, Android: 8.0.1  |
 +----------------------------+------------------------------+
