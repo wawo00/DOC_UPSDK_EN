@@ -175,7 +175,7 @@
 <p>When Unity plugin for iOS has been successfully  import, please check under Assets catalog:
 Do <code class="docutils literal notranslate"><span class="pre">PolyADSDK/Plugins/IOS/frameworks</span></code> and <code class="docutils literal notranslate"><span class="pre">PolyADSDK/Plugins/IOS/resources</span></code> these two catalogs really exist. If not, it means plugin has not been successfully impor.</p>
 <p>After plugin for iOS has been successfully import, files will be like the structure below under Assets:</p>
-<p><img alt="aaa" src="http://docs.upltv.com/uploads/201805/5af573a34f61b_5af573a3.png" /></p>
+<p><img alt="aaa" src="http://docc.upltv.com/uploads/201805/5af573a34f61b_5af573a3.png" /></p>
 <p>From the screenshot above which showing the structure, please check whether the following files exist:</p>
 <div class="section" id="upsdk-adsdk-main-package">
 <span id="upsdk-adsdk-main-package"></span><h3>1. UPSDK ADSDK Main Package<a class="headerlink" href="#upsdk-adsdk-main-package" title="Permalink to this headline">¶</a></h3>
@@ -202,13 +202,13 @@ If it is lack of this catalog, it will lead a unautomatically adaption. But you 
 <span id="deployent-target-settings"></span><h3>1. Deployent Target Settings<a class="headerlink" href="#deployent-target-settings" title="Permalink to this headline">¶</a></h3>
 <p>In Target-&gt;General panel, set Deployent Target 7.0 or higher. Some frameworks which the third-party rely on required 7.0 or higher.</p>
 <p>Examples：
-<img alt="ios-target" src="http://ads-sdk-doc.haloapps.com/uploads/201706/59535d81cf339_59535d81.png" /></p>
+<img alt="ios-target" src="http://docc.upltv.com/uploads/201706/59535d81cf339_59535d81.png" /></p>
 </div>
 <div class="section" id="link-binary-with-libraries-inspection">
 <span id="link-binary-with-libraries-inspection"></span><h3>2. Link Binary with Libraries inspection<a class="headerlink" href="#link-binary-with-libraries-inspection" title="Permalink to this headline">¶</a></h3>
 <p>In Build Phases -&gt; Link Binary with Libraries, inspect whether you have added framework and .a files which plugin contained.</p>
 <p>After the successful addition, the library files marked in red box in the following screenshot, will be added.
-<img alt="ios-lib" src="http://ads-sdk-doc.haloapps.com/uploads/201706/595361be1b87e_595361be.png" /></p>
+<img alt="ios-lib" src="http://docc.upltv.com/uploads/201706/595361be1b87e_595361be.png" /></p>
 <p>If missing some library files in <code class="docutils literal notranslate"><span class="pre">PolyADSDK/Plugins/IOS/frameworks</span></code>, please manually add files which <code class="docutils literal notranslate"><span class="pre">PolyADSDK/Plugins/IOS/frameworks</span></code> contain in the project by using Xcode project.</p>
 <p><strong>Among them：
 <code class="docutils literal notranslate"><span class="pre">libsqlite3.tbd</span></code>, <code class="docutils literal notranslate"><span class="pre">libxml2.tbd</span></code>, <code class="docutils literal notranslate"><span class="pre">libz.tbd</span></code>, <code class="docutils literal notranslate"><span class="pre">libstdc++.tbd</span></code>, <code class="docutils literal notranslate"><span class="pre">WebKit.framework</span></code> and <code class="docutils literal notranslate"><span class="pre">JavaScriptCore.framework</span></code> are system library, they must be added. Because some third-party Ad Networks depend on them. If they are missing, please add manually.</strong></p>
@@ -217,7 +217,7 @@ If it is lack of this catalog, it will lead a unautomatically adaption. But you 
 <span id="bundle-resources-inspection"></span><h3>3. bundle resources inspection<a class="headerlink" href="#bundle-resources-inspection" title="Permalink to this headline">¶</a></h3>
 <p>In Build Phases -&gt; Copy Bundle Resources, inspecting whether you add resources which plugin contained.</p>
 <p>After the successful addition, resource files will be added. Please refer to the screenshot marked in red box.
-<img alt="ios-resources" src="http://ads-sdk-doc.haloapps.com/uploads/201706/59536339b4e91_59536339.png" /></p>
+<img alt="ios-resources" src="http://docc.upltv.com/uploads/201706/59536339b4e91_59536339.png" /></p>
 <p>If the resources which <code class="docutils literal notranslate"><span class="pre">PolyADSDK/Plugins/IOS/resources</span></code> should contain is missing, please manually add the resources of <code class="docutils literal notranslate"><span class="pre">PolyADSDK/Plugins/IOS/resources</span></code> in the project by Xcode project.</p>
 </div>
 <div class="section" id="other-linker-flag-inspection">
@@ -225,7 +225,7 @@ If it is lack of this catalog, it will lead a unautomatically adaption. But you 
 <p>Following the steps: Build Settings -&gt; Linking -&gt; Other Linker Flags.
 Please inspect whether add <code class="docutils literal notranslate"><span class="pre">-ObjC</span></code> and <code class="docutils literal notranslate"><span class="pre">-fobjc-arc</span></code> configuration.</p>
 <p>After the successful additon, configuration parameters marked in red box in the following screenshot will be added. If they are missing, please add them manually.
-<img alt="ios-link-set" src="http://ads-sdk-doc.haloapps.com/uploads/201706/59536443253fc_59536443.png" /></p>
+<img alt="ios-link-set" src="http://docc.upltv.com/uploads/201706/59536443253fc_59536443.png" /></p>
 </div>
 <div class="section" id="solution-to-compatibility-problems-for-some-unity-versions">
 <span id="solution-to-compatibility-problems-for-some-unity-versions"></span><h3>5. Solution to Compatibility problems for some Unity versions<a class="headerlink" href="#solution-to-compatibility-problems-for-some-unity-versions" title="Permalink to this headline">¶</a></h3>

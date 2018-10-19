@@ -16,15 +16,15 @@ Please continue **NEXT STEP**.
 
 ### 2. In your project, select Assets, right click and select: Import Package -> Custom Package
 
-![import](http://ads-sdk-doc.haloapps.com/uploads/201705/592e66a727d89_592e66a7.png "import")
+![import](http://docc.upltv.com/uploads/201705/592e66a727d89_592e66a7.png "import")
 
 ### 3. Choose your downloaded plugin package: such as  export.unitypackage. Then please click "open" button, Unity will automatically load the plugin package.
 
-![open file](http://ads-sdk-doc.haloapps.com/uploads/201705/592e684f54573_592e684f.png "open file")
+![open file](http://docc.upltv.com/uploads/201705/592e684f54573_592e684f.png "open file")
 
 ### 4.When Untiy finishes loading the plugin package, you will see a pop-up window that shows you which plugin resources to import, like the picture below:
 
-![import plugin](http://ads-sdk-doc.haloapps.com/uploads/201705/592e69ba77ebf_592e69ba.png "import plugin")
+![import plugin](http://docc.upltv.com/uploads/201705/592e69ba77ebf_592e69ba.png "import plugin")
 
 
 Generally select "All" button, then click "Import" to import. If your project only supports Android, you should ignore “**IOS**” button; if your project only supports iOS, please ignore “**Android**” button.
@@ -32,5 +32,5 @@ Generally select "All" button, then click "Import" to import. If your project on
 ### 5. After importing plugin for UPSDK successfully, you could see a folder named **PolyADSDK******in your project. Among the examples, all resources for plugin will be imported completely as we considered about the supports for both Android and iOS.
 
 
-![load ok](http://ads-sdk-doc.haloapps.com/uploads/201705/592e6b65dd56e_592e6b65.png "load ok")
+![load ok](http://docc.upltv.com/uploads/201705/592e6b65dd56e_592e6b65.png "load ok")
 
