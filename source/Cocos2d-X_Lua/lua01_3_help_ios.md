@@ -26,7 +26,7 @@ Will  ` UPAdsBrigeLua. h ` and ` UPAdsBrigeLua. mm ` introduced in engineering, 
 ![](http://docc.upltv.com/uploads/201804/5ae18fc73aa86_5ae18fc7.png)
 
 ### 3 Add third-party dependency libraries
-UPSDK will rely on third-party advertising unions when it runs, so you'll need to manually import the alliance's dependent library files into your project. To ensure that you can properly add third-party dependency packages, please click here[Download UPSDK union package](http://doc.upltv.com/en/master/chapters/chapter09.html "SDK第三方包下载") 。
+UPSDK will rely on third-party advertising unions when it runs, so you'll need to manually import the alliance's dependent library files into your project. To ensure that you can properly add third-party dependency packages, please click here[Download UPSDK union package](http://doc.upltv.com/en/master/chapters/chapter09.html "SDKDownLoad") 。
 
 UPSDK currently relies on the following third-party advertising union：
 

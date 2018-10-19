@@ -2,13 +2,13 @@
 
 
 ### I.Structure of UPSDK LuaPlugin
-For projects built with Eclipse, UPSDK is imported into the project as `*.jar`. Download UPSDK LuaPlugin in ( [Android-LuaSDK下载](http://doc.upltv.com/en/master/chapters/chapter09.html "download"))and unzip：
+For projects built with Eclipse, UPSDK is imported into the project as `*.jar`. Download UPSDK LuaPlugin in ( [Android-LuaSDK](http://doc.upltv.com/en/master/chapters/chapter09.html "download"))and unzip：
 
 
 ![ec-1-1](http://docc.upltv.com/uploads/201805/5afe9bd143673_5afe9bd1.png "ec-1-1")
 - `Eclipse`
   This directory mainly contains the ad dependency library files required for Eclipse project access.
-- `lua`文件夹
+- `lua`
   This directory mainly contains some *.lua source files for bridging the current Cocos2d-X lua project with the UPSDK interface call.
 - `Android Studio`
 If you build project through,please ignore this directory.
@@ -74,4 +74,4 @@ You have to copy contents from `proguard-project.txt` to right location of your 
 
 ### Ⅷ.Demo Project
 To help you integrate ads SDK easier and faster, here we provide you a simple [DemoProject]
-(https://github.com/AvidlyGit/AdSdkDemo-Studio "Demo工程")。
+(https://github.com/AvidlyGit/AdSdkDemo-Studio "Demo")。

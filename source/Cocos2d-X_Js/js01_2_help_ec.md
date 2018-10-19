@@ -1,7 +1,7 @@
 ## Eclipse
 
 ### I.Structure of UPSDK CppPlugin 
-For projects built with Eclipse, UPSDK is imported into the project as `*.jar`. Download UPSDK JavaScriptPlugin in ( [Android-JsSDK下载](http://doc.upltv.com/en/master/chapters/chapter09.html "download"))and unzip：
+For projects built with Eclipse, UPSDK is imported into the project as `*.jar`. Download UPSDK JavaScriptPlugin in ( [Android-JsSDK](http://doc.upltv.com/en/master/chapters/chapter09.html "download"))and unzip：
 
 ![ec-1-1](http://docc.upltv.com/uploads/201805/5af3e73af0172_5af3e73a.png "ec-1-1")
 - `Eclipse`

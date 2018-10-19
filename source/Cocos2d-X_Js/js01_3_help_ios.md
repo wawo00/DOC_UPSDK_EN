@@ -26,7 +26,7 @@ Add `UPAdsBrigeJs.h` and `UPAdsBrigeJs.mm` to the current project, it is recomme
 ![](http://docc.upltv.com/uploads/201805/5b02736e0f931_5b02736e.png)
 
 ### 3 Add third-party dependency libraries
-UPSDK will rely on third-party advertising unions when it runs, so you'll need to manually import the alliance's dependent library files into your project. To ensure that you can properly add third-party dependency packages, please click here[Download UPSDK union package](http://doc.upltv.com/en/master/chapters/chapter09.html "SDK第三方包下载") 。
+UPSDK will rely on third-party advertising unions when it runs, so you'll need to manually import the alliance's dependent library files into your project. To ensure that you can properly add third-party dependency packages, please click here[Download UPSDK union package](http://doc.upltv.com/en/master/chapters/chapter09.html "SDKDownLoad") 。
 
 UPSDK currently relies on the following third-party advertising union：
 

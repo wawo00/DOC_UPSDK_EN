@@ -2,7 +2,7 @@
 Banner ads are divided into top banner and bottom banner, and CppPlugin further simplifies the implementation of banner ads, providing interfaces such as show, hiding, removal, and event callbacks.
 
 ### 1. Callback of banner
-Banner ad needs to set up the show of banner ad, click and remove the callback interface of events. The callback interface is saved internally by the plug-in, so you don't need to set it up multiple times, only calling 用upltv:removeBannerAdAt(cpPlaceId) will be deleted.
+Banner ad needs to set up the show of banner ad, click and remove the callback interface of events. The callback interface is saved internally by the plug-in, so you don't need to set it up multiple times, only calling upltv:removeBannerAdAt(cpPlaceId) will be deleted.
 
 ```lua
 -- Set the display callback interface for a banner AD bit, and the callback interface will be saved and only removed by calling upltv:removeBannerAdAt(cpPlaceId)
@@ -113,7 +113,7 @@ btnhideallbanner:addTouchEventListener(function(sender, eventType)
     end
 end)
 ```
-### 6. Remove banner ads告
+### 6. Remove banner ads
 UPSDK supports removing Banner ads from an ad placement ID.
 ```lua
 upltv:removeBannerAdAt(cpPlaceId)
