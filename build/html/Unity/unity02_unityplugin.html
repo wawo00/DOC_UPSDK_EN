@@ -1,0 +1,259 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>How to add plugin in Unity project &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="UnityPlugin Access" href="unity03_integrate_catalog.html" />
+    <link rel="prev" title="UnityPlugin Guide" href="unity01_guide.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter01.html">UPSDK Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter02.html">UPSDK IOS</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../chapters/chapter03.html">UPSDK UnityPlugin</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="unity01_guide.html">UnityPlugin Guide</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">How to add plugin in Unity project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unity03_integrate_catalog.html">UnityPlugin Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unity04_api_catalog.html">UnityPlugin API Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unity05_sample_catalog.html">UnityPlugin API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unity06_multidex_catalog.html">UnityPlugin Android MultiDex</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter04.html">UPSDK Cocos2d-X Cpp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter05.html">UPSDK Cocos2d-X Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter06.html">UPSDK Cocos2d-X JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter07.html">UPSDK Layabox JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter08.html">UPSDK Egret TypeScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter09.html">UPSDK Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter10.html">GDPR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter11.html">FAQ</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../chapters/chapter03.html">UPSDK UnityPlugin</a> &raquo;</li>
+        
+      <li>How to add plugin in Unity project</li>
+    
+    
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="how-to-add-plugin-in-unity-project">
+<span id="how-to-add-plugin-in-unity-project"></span><h1>How to add plugin in Unity project<a class="headerlink" href="#how-to-add-plugin-in-unity-project" title="Permalink to this headline">¶</a></h1>
+<p>The downloaded UPSDK Unity Plugin, is a kind of *.unitypackage file. This document will give typical examples in two different platforms, please refer them as followed:</p>
+<blockquote>
+<div>Egineer who is familiar with this procedure, please skpi this section.</div></blockquote>
+<div class="section" id="updating-the-plugin">
+<span id="updating-the-plugin"></span><h2>1. Updating the plugin<a class="headerlink" href="#updating-the-plugin" title="Permalink to this headline">¶</a></h2>
+<p>If you have integrated UPSDK Unity Plugin before, to make sure the correctness of plugin library after updating, we suggest that please completely delete UPSDK Unity Plugin before the updating.</p>
+<p>In your Unity project, please check whether <code class="docutils literal notranslate"><span class="pre">Assets/PolyADSDK/Plugins/</span></code> and <code class="docutils literal notranslate"><span class="pre">Assets/StreamingAssets/UPSDK_android/</span></code> exist. Generally, when you delete <code class="docutils literal notranslate"><span class="pre">PolyADSDK</span></code> and <code class="docutils literal notranslate"><span class="pre">UPSDK_android</span></code> folder(including its subcatalog), the whole import plugin will be completely deleted.</p>
+<p>If you have edit the name of <code class="docutils literal notranslate"><span class="pre">PolyADSDK</span></code> catalog or the location of its subcatalog, please find out its corrected location and delete it. Specially, if you added some files after updating <code class="docutils literal notranslate"><span class="pre">PolyADSDK</span></code> and those files need to be retained, please be careful in case deleting them.</p>
+<p>Please continue <strong>NEXT STEP</strong>.</p>
+</div>
+<div class="section" id="in-your-project-select-assets-right-click-and-select-import-package-custom-package">
+<span id="in-your-project-select-assets-right-click-and-select-import-package-custom-package"></span><h2>2. In your project, select Assets, right click and select: Import Package -&gt; Custom Package<a class="headerlink" href="#in-your-project-select-assets-right-click-and-select-import-package-custom-package" title="Permalink to this headline">¶</a></h2>
+<p><img alt="import" src="http://docc.upltv.com/uploads/201705/592e66a727d89_592e66a7.png" /></p>
+</div>
+<div class="section" id="choose-your-downloaded-plugin-package-such-as-export-unitypackage-then-please-click-open-button-unity-will-automatically-load-the-plugin-package">
+<span id="choose-your-downloaded-plugin-package-such-as-export-unitypackage-then-please-click-open-button-unity-will-automatically-load-the-plugin-package"></span><h2>3. Choose your downloaded plugin package: such as  export.unitypackage. Then please click “open” button, Unity will automatically load the plugin package.<a class="headerlink" href="#choose-your-downloaded-plugin-package-such-as-export-unitypackage-then-please-click-open-button-unity-will-automatically-load-the-plugin-package" title="Permalink to this headline">¶</a></h2>
+<p><img alt="open file" src="http://docc.upltv.com/uploads/201705/592e684f54573_592e684f.png" /></p>
+</div>
+<div class="section" id="when-untiy-finishes-loading-the-plugin-package-you-will-see-a-pop-up-window-that-shows-you-which-plugin-resources-to-import-like-the-picture-below">
+<span id="when-untiy-finishes-loading-the-plugin-package-you-will-see-a-pop-up-window-that-shows-you-which-plugin-resources-to-import-like-the-picture-below"></span><h2>4.When Untiy finishes loading the plugin package, you will see a pop-up window that shows you which plugin resources to import, like the picture below:<a class="headerlink" href="#when-untiy-finishes-loading-the-plugin-package-you-will-see-a-pop-up-window-that-shows-you-which-plugin-resources-to-import-like-the-picture-below" title="Permalink to this headline">¶</a></h2>
+<p><img alt="import plugin" src="http://docc.upltv.com/uploads/201705/592e69ba77ebf_592e69ba.png" /></p>
+<p>Generally select “All” button, then click “Import” to import. If your project only supports Android, you should ignore “<strong>IOS</strong>” button; if your project only supports iOS, please ignore “<strong>Android</strong>” button.</p>
+</div>
+<div class="section" id="after-importing-plugin-for-upsdk-successfully-you-could-see-a-folder-named-polyadsdk-in-your-project-among-the-examples-all-resources-for-plugin-will-be-imported-completely-as-we-considered-about-the-supports-for-both-android-and-ios">
+<span id="after-importing-plugin-for-upsdk-successfully-you-could-see-a-folder-named-polyadsdk-in-your-project-among-the-examples-all-resources-for-plugin-will-be-imported-completely-as-we-considered-about-the-supports-for-both-android-and-ios"></span><h2>5. After importing plugin for UPSDK successfully, you could see a folder named **PolyADSDK******in your project. Among the examples, all resources for plugin will be imported completely as we considered about the supports for both Android and iOS.<a class="headerlink" href="#after-importing-plugin-for-upsdk-successfully-you-could-see-a-folder-named-polyadsdk-in-your-project-among-the-examples-all-resources-for-plugin-will-be-imported-completely-as-we-considered-about-the-supports-for-both-android-and-ios" title="Permalink to this headline">¶</a></h2>
+<p><img alt="load ok" src="http://docc.upltv.com/uploads/201705/592e6b65dd56e_592e6b65.png" /></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="unity03_integrate_catalog.html" class="btn btn-neutral float-right" title="UnityPlugin Access" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="unity01_guide.html" class="btn btn-neutral" title="UnityPlugin Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, upltv.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/js/custom.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
