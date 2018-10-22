@@ -1,0 +1,415 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Android Studio &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Android Eclipse" href="lua01_2_help_ec.html" />
+    <link rel="prev" title="LuaPlugin" href="lua01_help_catalog.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter01.html">UPSDK Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter02.html">UPSDK IOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter03.html">UPSDK UnityPlugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter04.html">UPSDK Cocos2d-X Cpp</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../chapters/chapter05.html">UPSDK Cocos2d-X Lua</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="lua01_help_catalog.html">LuaPlugin</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Android Studio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lua01_2_help_ec.html">Android Eclipse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lua01_3_help_ios.html">IOS Xcode</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="lua02_sample_catalog.html">LuaPlugin Sample</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter06.html">UPSDK Cocos2d-X JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter07.html">UPSDK Layabox JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter08.html">UPSDK Egret TypeScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter09.html">UPSDK Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter10.html">GDPR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter11.html">FAQ</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../chapters/chapter05.html">UPSDK Cocos2d-X Lua</a> &raquo;</li>
+        
+          <li><a href="lua01_help_catalog.html">LuaPlugin</a> &raquo;</li>
+        
+      <li>Android Studio</li>
+    
+    
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="android-studio">
+<span id="android-studio"></span><h1>Android Studio<a class="headerlink" href="#android-studio" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="i-structure-of-upsdk-luaplugin">
+<span id="i-structure-of-upsdk-luaplugin"></span><h2>I.Structure of  UPSDK LuaPlugin<a class="headerlink" href="#i-structure-of-upsdk-luaplugin" title="Permalink to this headline">¶</a></h2>
+<p>Regarding to Android Studio or Gradle built project, UPSDK suggests it should be import by other main project in  *.aar  format. Download UPSDK LuaPlugin( <a class="reference external" href="http://doc.upltv.com/en/master/chapters/chapter09.html">Android-LuaSDK</a> UPSDK LuaPlugin)You will see the structure of directory when you unzip it:</p>
+<p><img alt="as-1-1" src="http://docc.upltv.com/uploads/201805/5afe99d977ef8_5afe99d9.png" /></p>
+<blockquote>
+<div>The UPSDK JsPlugin main package is named<code class="docutils literal notranslate"><span class="pre">UPAdsSdk_Lua_x.x.xx_dex.aar</span></code>.</div></blockquote>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">Android</span> <span class="pre">Studio</span></code>
+This directory mainly contains the ad dependency library files required for Android Studio.</li>
+<li><code class="docutils literal notranslate"><span class="pre">Lua</span></code>
+This directory mainly contains Demo source files.</li>
+<li><code class="docutils literal notranslate"><span class="pre">Eclipse</span></code>
+This directory contains some jars and resource files. Please ignore this directory if you use  Android Studio to build apk.</li>
+<li><code class="docutils literal notranslate"><span class="pre">proguard-project.txt</span></code>
+The configuration file of confusion,if you need to obfuscate code, add the contents of this file to the file that the project depends on.</li>
+</ul>
+</div>
+<div class="section" id="ii-import-upsdk-main-package">
+<span id="ii-import-upsdk-main-package"></span><h2>II.Import UPSDK main package<a class="headerlink" href="#ii-import-upsdk-main-package" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="add-files-of-upsdk">
+<span id="add-files-of-upsdk"></span><h3>1.Add files of UPSDK<a class="headerlink" href="#add-files-of-upsdk" title="Permalink to this headline">¶</a></h3>
+<p>According to the above introduction, find the file named <code class="docutils literal notranslate"><span class="pre">UPAdsSdk_Lua_x.x.xx_dex..aar</span></code> in the file directory you downloaded and add it to the <code class="docutils literal notranslate"><span class="pre">libs</span></code> directory of the project (Note: If there is no this directory, try to  create it and in the same directory as src.
+After adding, it looks like this:</p>
+<p><img alt="as-2-1" src="http://docc.upltv.com/uploads/201805/5afe9acd622e6_5afe9acd.png" /></p>
+<blockquote>
+<div><code class="docutils literal notranslate"><span class="pre">UPAdsSdk_Lua_3.0.03_dex</span></code>just only for reference</div></blockquote>
+<p>To ensure that the aar package in the libs directory is correctly referenced by the project, check the <code class="docutils literal notranslate"><span class="pre">build.gradle</span></code> file in the <code class="docutils literal notranslate"><span class="pre">app</span></code> directory to add the following  parameters:</p>
+<div class="highlight-groovy notranslate"><div class="highlight"><pre><span></span><span class="n">repositories</span> <span class="o">{</span>
+        <span class="n">flatDir</span> <span class="o">{</span>
+             <span class="n">dirs</span> <span class="s1">&#39;libs&#39;</span>
+        <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>Finally add aar to the dependencies scope</p>
+<div class="highlight-groovy notranslate"><div class="highlight"><pre><span></span><span class="n">dependencies</span> <span class="o">{</span>
+<span class="c1">// Please replace UPAdsSdk_Lua_3.0.03_dex with the actual file name.</span>
+<span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;UPAdsSdk_Lua_3.0.03_dex&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="check-minsdkversion-and-targetsdkversion-in-build-gradle">
+<span id="check-minsdkversion-and-targetsdkversion-in-build-gradle"></span><h3>2.Check minSdkVersion and targetSdkVersion in <code class="docutils literal notranslate"><span class="pre">build.gradle</span></code><a class="headerlink" href="#check-minsdkversion-and-targetsdkversion-in-build-gradle" title="Permalink to this headline">¶</a></h3>
+<p>UPSDK requires that minSdkVersion cannot be lower than 15, and targetSdkVersion cannot be higher than 26, so check it in the <code class="docutils literal notranslate"><span class="pre">build.gradle</span></code> file .</p>
+<p>Sample：</p>
+<div class="highlight-groovy notranslate"><div class="highlight"><pre><span></span> <span class="n">defaultConfig</span> <span class="o">{</span>
+        <span class="n">minSdkVersion</span> <span class="mi">16</span>
+        <span class="n">targetSdkVersion</span> <span class="mi">26</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>The Cocos2dx-3.X project will automatically generates the default configuration of PROP_MIN_SDK_VERSION and PROP_TARGET_SDK_VERSION in gradle.properties, you only need to modify the values of both.</p>
+<p>Recommended changes are as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="n">PROP_MIN_SDK_VERSION</span><span class="o">=</span><span class="mi">16</span>
+ <span class="n">PROP_TARGET_SDK_VERSION</span><span class="o">=</span><span class="mi">26</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="make-sure-so-files-are-aligned">
+<span id="make-sure-so-files-are-aligned"></span><h3>3.Make sure *.so files are aligned<a class="headerlink" href="#make-sure-so-files-are-aligned" title="Permalink to this headline">¶</a></h3>
+<p>There are 3 types of .so files of the cpu type in <code class="docutils literal notranslate"><span class="pre">UPAdsSdk_Lua_x.x.xx_dex.aar</span></code>：</p>
+<ul class="simple">
+<li>armeabi</li>
+<li>armeabi-v7a</li>
+<li>x86</li>
+</ul>
+<p>Please add abiFilters configuration to the <code class="docutils literal notranslate"><span class="pre">gradle.build</span></code> file according to the cup type supported by the project ,that can ensure these files are aligned.</p>
+<p>If the current project only supports armeabi-v7a, please refer to the following modifications:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">defaultConfig</span> <span class="p">{</span>
+        <span class="n">ndk</span> <span class="p">{</span>
+            <span class="n">abiFilters</span> <span class="s1">&#39;armeabi-v7a&#39;</span>
+        <span class="p">}</span>
+ <span class="p">}</span>
+</pre></div>
+</div>
+<blockquote>
+<div>abiFilters ‘armeabi-v7a’ means this app will be supported in devices which base on armeabi-v7a architecture.</div></blockquote>
+</div>
+</div>
+<div class="section" id="iii-add-ad-networdks">
+<span id="iii-add-ad-networdks"></span><h2>III.Add ad networdks<a class="headerlink" href="#iii-add-ad-networdks" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="add-google-ads-sdk">
+<span id="add-google-ads-sdk"></span><h3>1.Add Google Ads SDK<a class="headerlink" href="#add-google-ads-sdk" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="sample-code">
+<span id="sample-code"></span><h4>1.<strong>Sample code</strong><a class="headerlink" href="#sample-code" title="Permalink to this headline">¶</a></h4>
+<p>In the <code class="docutils literal notranslate"><span class="pre">build.gradle</span></code> , download the gms play-service15.0.1 package from Google’s remote repository via the compile command.Like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dependencies</span> <span class="p">{</span>
+    <span class="nb">compile</span> <span class="s1">&#39;com.google.android.gms:play-services-ads:15.0.1&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<blockquote>
+<div>In particular, if your project already has a different version of google play service, use the higher version.</div></blockquote>
+</div>
+</div>
+<div class="section" id="add-other-networdks">
+<span id="add-other-networdks"></span><h3>2.Add other networdks<a class="headerlink" href="#add-other-networdks" title="Permalink to this headline">¶</a></h3>
+<p>To ensure you get more revenue, add as many ad libraries as possible to your project.
+Please refer to the following method to add the file named <code class="docutils literal notranslate"><span class="pre">xxx_ads.aar</span></code> in <code class="docutils literal notranslate"><span class="pre">Android</span> <span class="pre">Studio/aar</span></code> to the project.</p>
+<div class="section" id="global-except-china">
+<span id="global-except-china"></span><h4>Global except China<a class="headerlink" href="#global-except-china" title="Permalink to this headline">¶</a></h4>
+<p>The build.gradle is as follows下：</p>
+<div class="highlight-groovy notranslate"><div class="highlight"><pre><span></span><span class="n">dependencies</span> <span class="o">{</span>
+    <span class="c1">//other ads-libs</span>
+    <span class="c1">//gson-2.7.jar in folder named android_support_library</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;gson-2.7&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;jar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;facebook_ads&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;facebook_exo_player&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;mobvista_ads&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;unity_ads&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;vungle_ads&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;chartboost_ads&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;ironsource_ads&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;adcolony_ads&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;applovin_ads&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;playable_ads&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;tapjoy_ads&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="only-in-china">
+<span id="only-in-china"></span><h4>Only in China<a class="headerlink" href="#only-in-china" title="Permalink to this headline">¶</a></h4>
+<p>The build.gradle is as follows：</p>
+<div class="highlight-groovy notranslate"><div class="highlight"><pre><span></span><span class="n">dependencies</span> <span class="o">{</span>
+    <span class="c1">//other ads-libs</span>
+    <span class="c1">//gson-2.7.jar in folder named android_support_library</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;gson-2.7&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;jar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;centrixlink_ads&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;mobvista_ads&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;vungle_ads&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;chartboost_ads&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;inmobi_ads&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;oneway_ads&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;playable_ads&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="global">
+<span id="global"></span><h4>Global<a class="headerlink" href="#global" title="Permalink to this headline">¶</a></h4>
+<p>Merge the above two files into one file.</p>
+</div>
+</div>
+</div>
+<div class="section" id="iv-add-android-support-library">
+<span id="iv-add-android-support-library"></span><h2>IV.Add Android Support library<a class="headerlink" href="#iv-add-android-support-library" title="Permalink to this headline">¶</a></h2>
+<p>Every affiliate needs <code class="docutils literal notranslate"><span class="pre">android.support.xxx</span></code>, so please import it to your project. If you are using Android Studio in your project, you can modify <code class="docutils literal notranslate"><span class="pre">build.gradle</span></code> file to add</p>
+<p>Starting with the 3004 version of UPSDK, we recommend the 26.1.0 version of the Android support library (including v4 and v7) because of the upgrade of Admob and other networks. Of course, in special cases, it is also possible to use a lower one such as v25.3.1 of  Android support library.</p>
+<div class="section" id="import-android-support-library">
+<span id="import-android-support-library"></span><h3>1.Import Android Support library<a class="headerlink" href="#import-android-support-library" title="Permalink to this headline">¶</a></h3>
+<p>In the <code class="docutils literal notranslate"><span class="pre">build.gradle</span></code> , download the support libraries  from Google’s remote repository via the compile command.Like this:</p>
+<div class="highlight-groovy notranslate"><div class="highlight"><pre><span></span><span class="n">dependencies</span> <span class="o">{</span> 
+    <span class="c1">//core lib</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;AvidlyAdsSdk_Lua_3.0.04_dex&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="c1">//support libs</span>
+    <span class="n">compile</span> <span class="s1">&#39;com.android.support:recyclerview-v7:26.1.0&#39;</span>
+    <span class="n">compile</span> <span class="s1">&#39;com.android.support:support-v4:26.1.0&#39;</span>
+    <span class="n">compile</span> <span class="s1">&#39;com.android.support:appcompat-v7:26.1.0&#39;</span>
+    <span class="n">compile</span> <span class="s1">&#39;com.android.support:support-annotations:26.1.0&#39;</span>
+    <span class="n">compile</span>  <span class="s1">&#39;com.android.support:customtabs:26.1.0&#39;</span>
+    <span class="n">compile</span> <span class="s1">&#39;com.android.support:cardview-v7:26.1.0&#39;</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p><strong>【Attention】Android Support
+Support libraries must be imported into your project!</strong></p>
+</div>
+</div>
+<div class="section" id="v-modify-proguard-setting">
+<span id="v-modify-proguard-setting"></span><h2>Ⅴ.Modify Proguard setting<a class="headerlink" href="#v-modify-proguard-setting" title="Permalink to this headline">¶</a></h2>
+<p>If your project used <code class="docutils literal notranslate"><span class="pre">proguard</span></code>.
+You have to copy contents from <code class="docutils literal notranslate"><span class="pre">proguard-project.txt</span></code> to right location of your project.</p>
+</div>
+<div class="section" id="vi-fix-up-65535-limitation">
+<span id="vi-fix-up-65535-limitation"></span><h2>Ⅵ.Fix up 65535 limitation<a class="headerlink" href="#vi-fix-up-65535-limitation" title="Permalink to this headline">¶</a></h2>
+<p>If the number of methods exceeds 65535 due to access to the UPSDK and cannot be builded correctly, please use the <code class="docutils literal notranslate"><span class="pre">MultiDex</span></code> . If you have any questions about it, please read the <a class="reference external" href="http://docs.upltv.com/docs/show/78">MultiDex Scheme</a>.</p>
+</div>
+<div class="section" id="viidemo">
+<span id="viidemo"></span><h2>Ⅶ、Demo<a class="headerlink" href="#viidemo" title="Permalink to this headline">¶</a></h2>
+<p>To help you integrate ads SDK easier and faster, here we provide you a simple <a class="reference external" href="https://github.com/AvidlyGit/AdSdkDemo-Studio">Demo Project </a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="lua01_2_help_ec.html" class="btn btn-neutral float-right" title="Android Eclipse" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="lua01_help_catalog.html" class="btn btn-neutral" title="LuaPlugin" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, upltv
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

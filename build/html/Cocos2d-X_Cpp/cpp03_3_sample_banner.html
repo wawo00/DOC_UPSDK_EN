@@ -1,0 +1,423 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Banner Ad &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Interstitial API" href="cpp03_4_sample_inter.html" />
+    <link rel="prev" title="A/B Testing" href="cpp03_2_sample_abtest.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter01.html">UPSDK Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter02.html">UPSDK IOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter03.html">UPSDK UnityPlugin</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../chapters/chapter04.html">UPSDK Cocos2d-X Cpp</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="cpp01_help_catalog.html">Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cpp02_api.html">UPSDK cocos2d-X Cpp API</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="cpp03_sample_catalog.html">CppPlugin Sample</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="cpp03_1_sample_init.html">Initial SDK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cpp03_2_sample_abtest.html">A/B Testing</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Banner Ad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cpp03_4_sample_inter.html">Interstitial API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cpp03_5_sample_video.html">Reward video Ad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cpp03_6_sample_gdpr.html">GDPR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cpp03_7_sample_demo.html">Download Demo</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter05.html">UPSDK Cocos2d-X Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter06.html">UPSDK Cocos2d-X JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter07.html">UPSDK Layabox JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter08.html">UPSDK Egret TypeScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter09.html">UPSDK Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter10.html">GDPR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter11.html">FAQ</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../chapters/chapter04.html">UPSDK Cocos2d-X Cpp</a> &raquo;</li>
+        
+          <li><a href="cpp03_sample_catalog.html">CppPlugin Sample</a> &raquo;</li>
+        
+      <li>Banner Ad</li>
+    
+    
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="banner-ad">
+<span id="banner-ad"></span><h1>Banner Ad<a class="headerlink" href="#banner-ad" title="Permalink to this headline">¶</a></h1>
+<p>Banner ads are divided into top banner and bottom banner, and CppPlugin further simplifies the implementation of banner ads, providing interfaces such as display, hide, remove, and event callbacks.</p>
+<div class="section" id="callback-of-banner">
+<span id="callback-of-banner"></span><h2>1.Callback of Banner<a class="headerlink" href="#callback-of-banner" title="Permalink to this headline">¶</a></h2>
+<p>Banner ad needs to set up the show of banner ad, click and remove the callback interface of events. The callback interface is saved internally by the plug-in, so you don’t need to set it up multiple times, only calling upltv:removeBannerAdAt(cpPlaceId) will be deleted.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* @param cpPlaceId banner placementID</span>
+<span class="cm">* @param callback</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">setBannerShowCallback</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">cpPlaceId</span><span class="p">,</span> <span class="n">UpltvSdkStringCallback_1</span> <span class="n">callback</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>For example：</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">bannerCallback</span><span class="p">(</span><span class="n">UpltvAdEventEnum</span><span class="o">::</span><span class="n">AdEventType</span> <span class="n">type</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">cpid</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">string</span> <span class="n">s</span> <span class="o">=</span> <span class="s">&quot;unkown&quot;</span><span class="p">;</span>
+    <span class="k">switch</span> <span class="p">(</span><span class="n">type</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="n">UpltvAdEventEnum</span><span class="o">::</span><span class="n">AdEventType</span><span class="o">::</span><span class="nl">BANNER_EVENT_DID_SHOW</span><span class="p">:{</span>
+            <span class="n">s</span> <span class="o">=</span> <span class="s">&quot;Did_Show&quot;</span><span class="p">;</span>
+        <span class="p">}</span>
+            <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="n">UpltvAdEventEnum</span><span class="o">::</span><span class="n">AdEventType</span><span class="o">::</span><span class="nl">BANNER_EVENT_DID_CLICK</span><span class="p">:{</span>
+            <span class="n">s</span> <span class="o">=</span> <span class="s">&quot;Did_Click&quot;</span><span class="p">;</span>
+        <span class="p">}</span>
+            <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="n">UpltvAdEventEnum</span><span class="o">::</span><span class="n">AdEventType</span><span class="o">::</span><span class="nl">BANNER_EVENT_DID_REMOVED</span><span class="p">:{</span>
+            <span class="n">s</span> <span class="o">=</span> <span class="s">&quot;Did_Removed&quot;</span><span class="p">;</span>
+        <span class="p">}</span>
+            <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">log</span><span class="p">(</span><span class="s">&quot;====&gt; Banner ad call event: %s, at cpid: %s&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="n">c_str</span><span class="p">()</span> <span class="o">!=</span> <span class="k">nullptr</span> <span class="o">?</span> <span class="n">s</span><span class="p">.</span><span class="n">c_str</span><span class="p">()</span> <span class="o">:</span> <span class="s">&quot;&quot;</span><span class="p">),</span> <span class="n">cpid</span><span class="o">?</span><span class="nl">cpid</span><span class="p">:</span><span class="s">&quot;&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="n">HelloWorld</span><span class="o">::</span><span class="n">touchEvent</span><span class="p">(</span><span class="n">cocos2d</span><span class="o">::</span><span class="n">Ref</span> <span class="o">*</span><span class="n">pSender</span><span class="p">,</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span> <span class="n">type</span><span class="p">,</span> <span class="kt">int</span> <span class="n">tag</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span><span class="o">::</span><span class="n">ENDED</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">log</span><span class="p">(</span><span class="s">&quot;===&gt; cpp button touch tag :%d&quot;</span><span class="p">,</span><span class="n">tag</span><span class="p">);</span>
+        <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">bannertopkey</span> <span class="o">=</span> <span class="s">&quot;BannerAd&quot;</span><span class="p">;</span> <span class="c1">//Define the banner placementID</span>
+        <span class="k">switch</span> <span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">case</span> <span class="mi">1001</span><span class="o">:</span>
+            <span class="p">{</span>
+                <span class="n">UpltvBridge</span><span class="o">::</span><span class="n">setBannerShowCallback</span><span class="p">(</span><span class="n">bannertopkey</span><span class="p">,</span> <span class="n">bannerCallback</span><span class="p">);</span>
+            <span class="p">}</span>
+                <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="show-top-banner-ads">
+<span id="show-top-banner-ads"></span><h2>2. Show top banner ads<a class="headerlink" href="#show-top-banner-ads" title="Permalink to this headline">¶</a></h2>
+<p>Show the banner at the top of the screen according to the placementID.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* @param cpPlaceId palcementid</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">showBannerAdAtTop</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span><span class="n">cpPlaceId</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Sample：</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="n">HelloWorld</span><span class="o">::</span><span class="n">touchEvent</span><span class="p">(</span><span class="n">cocos2d</span><span class="o">::</span><span class="n">Ref</span> <span class="o">*</span><span class="n">pSender</span><span class="p">,</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span> <span class="n">type</span><span class="p">,</span> <span class="kt">int</span> <span class="n">tag</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span><span class="o">::</span><span class="n">ENDED</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">log</span><span class="p">(</span><span class="s">&quot;===&gt; cpp button touch tag :%d&quot;</span><span class="p">,</span><span class="n">tag</span><span class="p">);</span>
+        <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">bannertopkey</span> <span class="o">=</span> <span class="s">&quot;BannerAd&quot;</span><span class="p">;</span> <span class="c1">//Define the banner placementID</span>
+        <span class="k">switch</span> <span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">case</span> <span class="mi">1001</span><span class="o">:</span>
+            <span class="p">{</span>
+               <span class="n">UpltvBridge</span><span class="o">::</span><span class="n">showBannerAdAtTop</span><span class="p">(</span><span class="n">bannertopkey</span><span class="p">);</span>
+            <span class="p">}</span>
+                <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>It should be noted that when the top Banner of the Iphonex phone is blocked by the status bar, it can be solved by adjusting the displacement of the top Banner.</strong></p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* On an Iphonex phone, when the top Banner is blocked by the status bar, you can solve this problem by adjusting the displacement of the top banner</span>
+<span class="cm">* @param padding: The top Banner&#39;s offset value, such as 32, will shift down 32 pixels</span>
+<span class="cm">* This feature is not supported on the Android platform</span>
+<span class="cm">* supported from 3002</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">setTopBannerPadingForIphonex</span><span class="p">(</span><span class="kt">int</span> <span class="n">padding</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="hide-top-banner-ads">
+<span id="hide-top-banner-ads"></span><h2>3.Hide top banner ads<a class="headerlink" href="#hide-top-banner-ads" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">void</span> <span class="nf">hideBannerAdAtTop</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>For example：</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="n">HelloWorld</span><span class="o">::</span><span class="n">touchEvent</span><span class="p">(</span><span class="n">cocos2d</span><span class="o">::</span><span class="n">Ref</span> <span class="o">*</span><span class="n">pSender</span><span class="p">,</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span> <span class="n">type</span><span class="p">,</span> <span class="kt">int</span> <span class="n">tag</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span><span class="o">::</span><span class="n">ENDED</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">log</span><span class="p">(</span><span class="s">&quot;===&gt; cpp button touch tag :%d&quot;</span><span class="p">,</span><span class="n">tag</span><span class="p">);</span>
+        <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">bannertopkey</span> <span class="o">=</span> <span class="s">&quot;BannerAd&quot;</span><span class="p">;</span> <span class="c1">//Define the banner placementID</span>
+        <span class="k">switch</span> <span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">case</span> <span class="mi">1001</span><span class="o">:</span>
+            <span class="p">{</span>
+              <span class="n">UpltvBridge</span><span class="o">::</span><span class="n">hideBannerAdAtTop</span><span class="p">();</span>
+            <span class="p">}</span>
+                <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="show-bottom-banner-ads">
+<span id="show-bottom-banner-ads"></span><h2>4. Show bottom banner ads<a class="headerlink" href="#show-bottom-banner-ads" title="Permalink to this headline">¶</a></h2>
+<p>Show the banner at the bottom of the screen according to the placementID.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* @param cpPlaceId</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">showBannerAdAtBottom</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span><span class="n">cpPlaceId</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>For example：</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="n">HelloWorld</span><span class="o">::</span><span class="n">touchEvent</span><span class="p">(</span><span class="n">cocos2d</span><span class="o">::</span><span class="n">Ref</span> <span class="o">*</span><span class="n">pSender</span><span class="p">,</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span> <span class="n">type</span><span class="p">,</span> <span class="kt">int</span> <span class="n">tag</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span><span class="o">::</span><span class="n">ENDED</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">log</span><span class="p">(</span><span class="s">&quot;===&gt; cpp button touch tag :%d&quot;</span><span class="p">,</span><span class="n">tag</span><span class="p">);</span>
+        <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">bannerbottomkey</span> <span class="o">=</span> <span class="s">&quot;BannerAd&quot;</span><span class="p">;</span> <span class="c1">//Define the banner placementID</span>
+        <span class="k">switch</span> <span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">case</span> <span class="mi">1001</span><span class="o">:</span>
+            <span class="p">{</span>
+              <span class="n">UpltvBridge</span><span class="o">::</span><span class="n">showBannerAdAtBottom</span><span class="p">(</span><span class="n">bannerbottomkey</span><span class="p">);</span>
+            <span class="p">}</span>
+                <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="hide-bottom-banner-ads">
+<span id="hide-bottom-banner-ads"></span><h2>5. Hide bottom banner ads<a class="headerlink" href="#hide-bottom-banner-ads" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">void</span> <span class="nf">hideBannerAdAtBottom</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>For example：</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="n">HelloWorld</span><span class="o">::</span><span class="n">touchEvent</span><span class="p">(</span><span class="n">cocos2d</span><span class="o">::</span><span class="n">Ref</span> <span class="o">*</span><span class="n">pSender</span><span class="p">,</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span> <span class="n">type</span><span class="p">,</span> <span class="kt">int</span> <span class="n">tag</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span><span class="o">::</span><span class="n">ENDED</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">log</span><span class="p">(</span><span class="s">&quot;===&gt; cpp button touch tag :%d&quot;</span><span class="p">,</span><span class="n">tag</span><span class="p">);</span>
+        <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">bannerbottomkey</span> <span class="o">=</span> <span class="s">&quot;BannerAd&quot;</span><span class="p">;</span> <span class="c1">//Define the banner placementID</span>
+        <span class="k">switch</span> <span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">case</span> <span class="mi">1001</span><span class="o">:</span>
+            <span class="p">{</span>
+              <span class="n">UpltvBridge</span><span class="o">::</span><span class="n">hideBannerAdAtBottom</span><span class="p">();</span>
+            <span class="p">}</span>
+                <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="remove-banner-ads">
+<span id="remove-banner-ads"></span><h2>6. Remove banner ads<a class="headerlink" href="#remove-banner-ads" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* @param cpPlaceId banner placementID</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">removeBannerAdAt</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span><span class="n">cpPlaceId</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>For example：</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="n">HelloWorld</span><span class="o">::</span><span class="n">touchEvent</span><span class="p">(</span><span class="n">cocos2d</span><span class="o">::</span><span class="n">Ref</span> <span class="o">*</span><span class="n">pSender</span><span class="p">,</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span> <span class="n">type</span><span class="p">,</span> <span class="kt">int</span> <span class="n">tag</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span><span class="o">::</span><span class="n">ENDED</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">log</span><span class="p">(</span><span class="s">&quot;===&gt; cpp button touch tag :%d&quot;</span><span class="p">,</span><span class="n">tag</span><span class="p">);</span>
+        <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">bannerbottomkey</span> <span class="o">=</span> <span class="s">&quot;BannerAd&quot;</span><span class="p">;</span> <span class="c1">//Define the banner placementID</span>
+        <span class="k">switch</span> <span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">case</span> <span class="mi">1001</span><span class="o">:</span>
+            <span class="p">{</span>
+              <span class="n">UpltvBridge</span><span class="o">::</span><span class="n">removeBannerAdAt</span><span class="p">(</span><span class="n">bannerbottomkey</span><span class="p">);</span>
+            <span class="p">}</span>
+                <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="cpp03_4_sample_inter.html" class="btn btn-neutral float-right" title="Interstitial API" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="cpp03_2_sample_abtest.html" class="btn btn-neutral" title="A/B Testing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, upltv
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
