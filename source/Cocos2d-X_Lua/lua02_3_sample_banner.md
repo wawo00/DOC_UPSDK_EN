@@ -52,7 +52,7 @@ btnshowtopbanner:addTouchEventListener(function(sender,eventType)
 end)
 ```
 
-**It should be noted that when the top Banner of the Iphonex phone is blocked by the status bar, it can be solved by adjusting the displacement of the top Banner。**
+**It should be noted that when the top Banner of the Iphonex phone is blocked by the status bar, it can be solved by adjusting the displacement of the top Banner.**
 ```lua
 -- @param padding: On an Iphonex phone, when the top Banner is blocked by the status bar, you can solve this problem by adjusting the displacement of the top banner
 * @param padding: The top Banner's offset value, such as 32, will shift down 32 pixels

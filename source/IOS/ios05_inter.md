@@ -71,7 +71,7 @@ It's not necessary to implement callback protocol of Interstitial Ad. You can im
 
 ```
 
-## Demo code - Xcode
+### Demo code - Xcode
 
 In demo project of XCode, declare `STInterstitialViewController` class, to display Interstitial Ads. Define class `STInterstitialViewController.h` first. The code here is pretty simple.
 

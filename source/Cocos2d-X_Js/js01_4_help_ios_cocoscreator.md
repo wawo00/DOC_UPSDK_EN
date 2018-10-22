@@ -8,7 +8,7 @@ include "cocos/scripting/js-bindings/jswrapper/SeApi.h"
 ```
 
 ### 2、Replace ScriptingCore with se::ScriptEngine
-In the `[UpAdsBrigeJs vokeMethod:arg1:arg2]` method, replace `ScriptingCore::getInstance()->evalString(jsCallStr.c_str());` with `se::ScriptEngine::getInstance()->evalString( jsCallStr.c_str());`。
+In the `[UpAdsBrigeJs vokeMethod:arg1:arg2]` method, replace `ScriptingCore::getInstance()->evalString(jsCallStr.c_str());` with `se::ScriptEngine::getInstance()->evalString( jsCallStr.c_str());`.
 
 Sample：
 ```objective-c

@@ -180,7 +180,7 @@ You have to copy contents from `proguard-project.txt` to right location of your 
 
 ### Ⅵ.Fix up 65535 limitation
 
-If the number of methods exceeds 65535 due to access to the UPSDK and cannot be builded correctly, please use the `MultiDex` . If you have any questions about it, please read the [MultiDex Scheme] provided by us.(http://docs.upltv.com/docs/show/78 "如下方案")。
+If the number of methods exceeds 65535 due to access to the UPSDK and cannot be builded correctly, please use the `MultiDex` . If you have any questions about it, please read the [MultiDex Scheme](http://docs.upltv.com/docs/show/78 "Fix up").
 
 ### Ⅶ、Demo
-To help you integrate ads SDK easier and faster, here we provide you a simple [Demo Project ](https://github.com/AvidlyGit/AdSdkDemo-Studio "Demo工程")。
+To help you integrate ads SDK easier and faster, here we provide you a simple [Demo Project ](https://github.com/AvidlyGit/AdSdkDemo-Studio "Demo工程").

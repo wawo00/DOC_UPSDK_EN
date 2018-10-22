@@ -1,8 +1,8 @@
 ## SDK初始化
 
-仅以Xcode工程作示例讲解，若你使用的是其它工程请参考Xcode工程操作，若有不便敬请谅解。
+仅以Xcode工程作示例讲解，若你使用的是其它工程请参考Xcode工程操作，若有不便敬请谅解.
 
-在UPSDK所有API接口中，初始化API最早被调用，即只有初始化UPSDK之后，才能正常使用UPSDK所支持的广告功能。
+在UPSDK所有API接口中，初始化API最早被调用，即只有初始化UPSDK之后，才能正常使用UPSDK所支持的广告功能.
 
 ###  初始化UPSDK
 ```javascript
@@ -25,7 +25,7 @@ initSdkButton.addTouchEventListener(function(sender, type) {
 }, this);
 ```
 ####  setCustomerId()
-仅Android支持，对于非GP的包，可以传androidid，避免用户新增统计错误。
+仅Android支持，对于非GP的包，可以传androidid，避免用户新增统计错误.
 ```asp
 
 // 请在初始化SDK之前调用
@@ -36,7 +36,7 @@ upltv.setCustomerId(androidid)
 ```
 
 ###  UPSDK前后台控制
-对于Android平台，我们强烈要求在当前游戏的前台后切换时，调用UPSDK以下两个接口，以便UPSDK内部做出正确的响应，避免不必要的出错。
+对于Android平台，我们强烈要求在当前游戏的前台后切换时，调用UPSDK以下两个接口，以便UPSDK内部做出正确的响应，避免不必要的出错.
 
 #### 游戏恢复到前台时调用API
 ```java

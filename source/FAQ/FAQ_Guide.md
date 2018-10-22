@@ -17,7 +17,7 @@ If you've set up an "placementid," please make sure you 've sent the correct pla
 
 
 <br />
-4.	我们更认为变现并不是简单的SDK对接，而是一种持续的服务。MaaS（Monetization as a Service） 。我们同样重视根据客户的游戏内容提供最佳的广告露出逻辑，这个更依赖于深度的机器学习和人工干预相结合的手段。
+4.	我们更认为变现并不是简单的SDK对接，而是一种持续的服务.MaaS（Monetization as a Service） .我们同样重视根据客户的游戏内容提供最佳的广告露出逻辑，这个更依赖于深度的机器学习和人工干预相结合的手段.
 
 ### Q: Why is UpLTV more efficient than other integration platforms such as YoMob , Heyzap , and Fyber ?
 1. UPLTV has better loading strategies, traffic distribution and scheduling logic.

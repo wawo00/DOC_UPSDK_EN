@@ -1,7 +1,7 @@
 ## Eclipse
 
 ### I.Structure of UPSDK CppPlugin 
-For projects built with Eclipse, UPSDK is imported into the project as `*.jar`. Download UPSDK JavaScriptPlugin in ( [Android-JsSDK下载](http://doc.upltv.com/en/master/chapters/chapter09.html "download"))and unzip：
+For projects built with Eclipse, UPSDK is imported into the project as `*.jar`. Download UPSDK JavaScriptPlugin in ( [Android-JsSDK](http://doc.upltv.com/en/master/chapters/chapter09.html "download"))and unzip：
 
 ![ec-1-1](http://docc.upltv.com/uploads/201805/5af3e73af0172_5af3e73a.png "ec-1-1")
 - `Eclipse`
@@ -55,6 +55,7 @@ Folder named `optional_ads` contents  network dependencies file that exists in t
 ### IV. Add Android Support library 
 
 The display of the ad requires the support of the `support` library, so please bring it into your project. We have the corresponding `xxx.jar` file for you in the `android_support_library/libs` folder. You just need to added those files into the `libs` directory,as follows：
+
 ![ec-4-1](http://docc.upltv.com/uploads/201805/5af3e9c639e11_5af3e9c6.png "ec-4-1")
 
 ### V. Modify AndroidManifest.xml file
@@ -66,6 +67,7 @@ Please duplicate the content of `AndroidManifest.xml` file into the related loca
 The UPSDK implements cross-platform calls to the native interface via the *js source file, so all *.js files in `js/upltv` must be copied to the project.
 
 For Cocos2d-x 3.16 version ,we can copy files  to assets/sr. If there are differences in other versions, please refer to the modification, as follows：
+
 ![ec-4-1](http://docc.upltv.com/uploads/201805/5af3ea86801bf_5af3ea86.png "ec-4-1")
 >This article is based on cocos2dx-3.16. If your directory does not match this, ask our support team for help.
 
@@ -83,4 +85,4 @@ If your project used `proguard`.
 You have to copy contents from `proguard-project.txt` to right location of your project.
 
 ### Ⅷ.Demo Project
-To help you integrate ads SDK easier and faster, here we provide you a simple [Demo Project ](https://github.com/AvidlyGit/AdSdkDemo-Studio "Demo工程")。
+To help you integrate ads SDK easier and faster, here we provide you a simple [Demo Project ](https://github.com/AvidlyGit/AdSdkDemo-Studio "Demo工程").

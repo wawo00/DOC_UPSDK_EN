@@ -24,7 +24,7 @@ This directory includes many third-party networdk that named like 'dex_xxx.jar' 
 Soon after the successful import, there will be like as below in  `Assets` catalog:
 ![工程结构](http://docc.upltv.com/uploads/201805/5b026a7687a70_5b026a76.jpeg "55333")
 
-In 3.0.03 and higher plugin version, in order to Simplify access steps,we remove`avidly_android` and change `AvidlyAdsSdk_x.x.xx_dex.aar` to `UPAdsSdk_3.0.xx_dex.aar`。
+In 3.0.03 and higher plugin version, in order to Simplify access steps,we remove`avidly_android` and change `AvidlyAdsSdk_x.x.xx_dex.aar` to `UPAdsSdk_3.0.xx_dex.aar`.
 
 ### III. Adaption for Unity specific version
 1、 5.1.1, during compile-build-package, unity can not find error for armeabi structure-----it needs to remove armeabi structure in .arr(using unarchiver to open it and delete armeabi folder directly)；

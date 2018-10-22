@@ -21,6 +21,7 @@ Regarding to Android Studio or Gradle built project, UPSDK suggests it should be
 #### 1.Add files of UPSDK
 According to the above introduction, find the file named `UPAdsSdk_Cpp_x.x.xx_dex.aar` in the file directory you downloaded and add it to the `libs` directory of the project (Note: If there is no this directory, try to  create it and in the same directory as src.
 After adding, it looks like this:
+
 ![as-2-1](http://docc.upltv.com/uploads/201805/5afd2d4e483b6_5afd2d4e.png "as-2-1")
 > `UPAdsSdk_Cpp_3.0.03_dex` just only for reference
 
@@ -185,7 +186,7 @@ Cocos2d-x 3.16 version can be copied to the Classes folder. If there are differe
 
 ### 2.Modify android.mk in jni directory
 Open the android.mk file which in the jni directory of project.
-Please copy **UpltvAndroid.cpp，CocosUpLtv.cpp，UpltvBridge.cpp** those files into **LOCAL_SRC_FILES**。
+Please copy **UpltvAndroid.cpp，CocosUpLtv.cpp，UpltvBridge.cpp** those files into **LOCAL_SRC_FILES**.
 Take Cocos2d-X 3.16 as an example. The addition method is as follows. For other versions, please modify the relative path.:
 
 ```groovy
@@ -202,7 +203,7 @@ You have to copy contents from `proguard-project.txt` to right location of your 
 
 ### Ⅶ.Fix up 65535 limitation
 
-If the number of methods exceeds 65535 due to access to the UPSDK and cannot be builded correctly, please use the `MultiDex` . If you have any questions about it, please read the [MultiDex Scheme] provided by us.(http://docs.upltv.com/docs/show/78 "如下方案")。
+If the number of methods exceeds 65535 due to access to the UPSDK and cannot be builded correctly, please use the `MultiDex` . If you have any questions about it, please read the [MultiDex Scheme](http://docs.upltv.com/docs/show/78 "Fix up 65535").
 
 ### Ⅷ.Demo Project
-To help you integrate ads SDK easier and faster, here we provide you a simple [Demo Project ](https://github.com/AvidlyGit/AdSdkDemo-Studio "Demo工程")。
+To help you integrate ads SDK easier and faster, here we provide you a simple [Demo Project ](https://github.com/AvidlyGit/AdSdkDemo-Studio "Demo工程").

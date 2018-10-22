@@ -54,6 +54,7 @@ Folder named `optional_ads` contents  network dependencies file that exists in t
 
 ### IV. Add Android Support library 
 The display of the ad requires the support of the `support` library, so please bring it into your project. We have the corresponding `xxx.jar` file for you in the `android_support_library/libs` folder. You just need to added those files into the `libs` directory,as follows：
+
 ![ec-4-1](http://docc.upltv.com/uploads/201805/5afd4483c57c1_5afd4483.png "ec-4-1")
 
 
@@ -74,7 +75,7 @@ Cocos2d-x 3.16 version can be copied to the Classes folder. If there are differe
 
 ### 2.Modify android.mk in jni directory
 Open the android.mk file which in the jni directory of project.
-Please copy **UpltvAndroid.cpp，CocosUpLtv.cpp，UpltvBridge.cpp** those files into **LOCAL_SRC_FILES**。
+Please copy **UpltvAndroid.cpp，CocosUpLtv.cpp，UpltvBridge.cpp** those files into **LOCAL_SRC_FILES**.
 Take Cocos2d-X 3.16 as an example. The addition method is as follows. For other versions, please modify the relative path.:
 
 ```groovy
@@ -92,4 +93,4 @@ You have to copy contents from `proguard-project.txt` to right location of your 
 
 
 ### Ⅷ.Demo Project
-To help you integrate ads SDK easier and faster, here we provide you a simple [Demo Project ](https://github.com/AvidlyGit/AdSdkDemo-Studio "Demo project")。
+To help you integrate ads SDK easier and faster, here we provide you a simple [Demo Project ](https://github.com/AvidlyGit/AdSdkDemo-Studio "Demo project").

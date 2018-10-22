@@ -106,6 +106,8 @@ Sample：
 <br>
 
 ### Recycle memory：
-`Please set banner to nil for recyele when the ViewController where the banner view is located is destroyed (such as, removed in the interface, popped from nav, memory is recycled)`
+
+Please set banner to nil for recyele when the ViewController where the banner view is located is destroyed (such as, removed in the interface, popped from nav, memory is recycled)
+
 <br>
 

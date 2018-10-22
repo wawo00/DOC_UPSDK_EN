@@ -30,7 +30,7 @@ defaultConfig {
 ```
 
 #### (3) Add **com.android.support:multidex:1.0.1** in dependencies
-**com.android.support:multidex:1.0.1**。
+**com.android.support:multidex:1.0.1**.
 ```groovy
 dependencies {
     compile 'com.android.support:multidex:1.0.1'

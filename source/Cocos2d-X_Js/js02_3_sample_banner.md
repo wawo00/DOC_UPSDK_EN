@@ -60,7 +60,7 @@ bnTopButton.addTouchEventListener(function(sender, type) {
 }, this);
 ```
 
-**It should be noted that when the top Banner of the Iphonex phone is blocked by the status bar, it can be solved by adjusting the displacement of the top Banner。**
+**It should be noted that when the top Banner of the Iphonex phone is blocked by the status bar, it can be solved by adjusting the displacement of the top Banner.**
 
 ```cpp
 /**

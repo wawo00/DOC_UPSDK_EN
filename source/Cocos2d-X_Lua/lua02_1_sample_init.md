@@ -56,7 +56,7 @@ UPAdsSdk.onApplicationPause();
 
 For example：
 
-Usually Cocos2d - X engine generates game Activity, inheritance in org. Cocos2dx. Lib. Cocos2dxActivity subclass. In the Demo project, this class is AppActivity。
+Usually Cocos2d - X engine generates game Activity, inheritance in org. Cocos2dx. Lib. Cocos2dxActivity subclass. In the Demo project, this class is AppActivity.
 
 ```java
 @Override

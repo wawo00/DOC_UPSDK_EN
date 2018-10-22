@@ -1,6 +1,6 @@
 ## IOS接入帮助
 
-本接入文档以Egret 5.2.8为蓝本，如果您使用Egret其它版本，不同之处请灵活处理。
+本接入文档以Egret 5.2.8为蓝本，如果您使用Egret其它版本，不同之处请灵活处理.
 
 ### 一、下载SDK包
 首先从 [UPSDKDownLoad](http://docs.upltv.com/docs/show/13 "SDKDownLoad")下载UPSDK Egret TypeScriptPlugin包，解压后的目录包含如下三个文件：
@@ -12,31 +12,31 @@
 
 ### 二、EgretIDE工程配置
 
-1)、将`UpltvEgretTsBridge`拷贝到Egret工程的src文件夹下，只留.ts文件。
+1)、将`UpltvEgretTsBridge`拷贝到Egret工程的src文件夹下，只留.ts文件.
 如下图所示
 ![](http://docc.upltv.com/uploads/201809/5ba096f858faf_5ba096f8.png)
 </br>
 ### 三、XCode工程配置
 
 #### 1、接入UPSDK主包与源文件
-请将UPSDK.framework、UPSDK.bundle以及UpltvEgretTsBridge文件夹同时添加到你的Xcode工程目录下。
+请将UPSDK.framework、UPSDK.bundle以及UpltvEgretTsBridge文件夹同时添加到你的Xcode工程目录下.
 
 移除UpltvEgretTsBridge文件夹包含的*.ts脚本文件，只留Object-C++源码，如下图如示：
 ![](http://docc.upltv.com/uploads/201809/5ba095754ee34_5ba09575.png)
 
 
 #### 2、加入第三方依赖库
-UPSDK运行时会依赖第三方广告联盟，所以需要手动将这些联盟的依赖库文件导入到你的项目中。为了保证你能正确添加第三方依赖包，请从这里[下载UPSDK联盟包](http://doc.upltv.com/en/master/chapters/chapter09.html "SDK第三方包下载") 。
+UPSDK运行时会依赖第三方广告联盟，所以需要手动将这些联盟的依赖库文件导入到你的项目中.为了保证你能正确添加第三方依赖包，请从这里[下载UPSDK联盟包](http://doc.upltv.com/en/master/chapters/chapter09.html "SDK第三方包下载") .
 
 UPSDK当前依赖第三方广告联盟如下：
 
 ![添加所有第三方SDK包](http://docc.upltv.com/uploads/201709/59afafb9143e9_59afafb9.png "添加所有第三方SDK包")
 
-> 每个联盟对应一个文件夹，且命名都以广告联盟的名字为前缀，以版本号为后缀，因此很好识别。文件夹中除了包括广告联盟的依赖库或源码文件外，还有可能包括配套的资源文件，因此添加广告联盟时依赖库与对应的配套的资源要一同添加。
+> 每个联盟对应一个文件夹，且命名都以广告联盟的名字为前缀，以版本号为后缀，因此很好识别.文件夹中除了包括广告联盟的依赖库或源码文件外，还有可能包括配套的资源文件，因此添加广告联盟时依赖库与对应的配套的资源要一同添加.
 
-虽然并不要求将全部的第三方联盟广告添加到当前项目中，但为了扩大收益，我们仍然建议在你的项目中尽量多地添加以上的联盟广告的依赖库及其配套的资源包。在实际操作中，如有疑问请联系我们的技术支持人员。
+虽然并不要求将全部的第三方联盟广告添加到当前项目中，但为了扩大收益，我们仍然建议在你的项目中尽量多地添加以上的联盟广告的依赖库及其配套的资源包.在实际操作中，如有疑问请联系我们的技术支持人员.
 
-当你完成第三方联盟广告添加后，在XCode工程中检查下`Linked Frameworks Libraries`是否正确引入了相应的库文件，避免不必要的失误。
+当你完成第三方联盟广告添加后，在XCode工程中检查下`Linked Frameworks Libraries`是否正确引入了相应的库文件，避免不必要的失误.
 
 假设在当前项目中接入Applovin、Unity、Vungle、Tapjoy四家广告，需要先将这四家广告的库文件(依次是AppLovinSDK.framework,UnityAds.framework,VungleSDK.framework,Tapjoy.framework四个静态库)添加到工程里，成功添加后的效果图如下：
 ![](http://docc.upltv.com/uploads/201804/5acc6644c33a5_5acc6644.png)
@@ -105,20 +105,20 @@ UPSDK当前依赖第三方广告联盟如下：
  <string>Some ad content may require access to the photo library. </string>
 ```
 
-注：根据不同语言和不同使用场景，使用者可以适当调整获取权限的描述文字。
+注：根据不同语言和不同使用场景，使用者可以适当调整获取权限的描述文字.
 <br>
 
 #### 4)、Bitcode
 支持Bitcode，请使用者根据需求选择是否使用Bitcode（Domob不支持Bitcode）
 <br>
 ### 5 查看版本号
-在*UPSDKVersion.h*文件中，可以直接查看当前SDK的版本号。
+在*UPSDKVersion.h*文件中，可以直接查看当前SDK的版本号.
 
 ```objective-c
 //sdk版本号
 ##define AvidlyAdsSDKVERSION  @"3005"
 ```
-> AvidlyAdsSDKVERSION，3005表示当前的版本号数字编号。
+> AvidlyAdsSDKVERSION，3005表示当前的版本号数字编号.
 <br>
 
 ### 6、修改代码

@@ -106,7 +106,7 @@ Couldn't load cocos2dlua from loader dalvik.system.PathClassLoader
               at org.cocos2dx.lua.AppActivity.onCreate(AppActivity.java:57)
 
 ```
-The reason is .so files **unaligned**。
+The reason is .so files **unaligned**.
 
 Second method for solving:
 1. Regarding to gradle project, please directly add to support framework in gradle.build file under app catalog :

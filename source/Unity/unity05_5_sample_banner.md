@@ -62,7 +62,6 @@ public static void removeBannerAdAt(string cpPlaceId);
 #### Sample:
 
 ```csharp
-// 将广告位为‘banner_aaa’的顶部Banner移除
 //  Remove banner ad named 'banner_aaa'
 public void onBtnBanner_TopRemove_Click()
 {

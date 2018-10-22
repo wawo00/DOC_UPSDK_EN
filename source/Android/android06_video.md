@@ -70,4 +70,5 @@ The page looks like this. Columns (left to right):
 
 You can play ads by clicking the item if the ads successfully loaded.
 
-![as_03](http://docc.upltv.com/uploads/201808/5b7fe851cb4b4_5b7fe851.png "as_03")
+![as_debug_video_view1](http://docc.upltv.com/uploads/201810/5bcd40ce08dbf_5bcd40ce.jpg "as_debug_video_view1")
+![as_debug_video_view2](http://docc.upltv.com/uploads/201810/5bcd40de0f43d_5bcd40de.jpg "as_debug_video_view2")

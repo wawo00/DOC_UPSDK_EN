@@ -8,7 +8,7 @@ Use the following code to initialize Interstitial Ads
 
     mInterstitialAd = new UPInterstitialAd(this, "Placement ID");
     
-###Load Callback
+### Load Callback
 You can use interface `load` to check process of loading. This is optional. You can ignore it if there are no special requirements.
 ```java
 public void load(UPInterstitialLoadCallback callback)
@@ -84,5 +84,5 @@ In order to make you understand the working and loading status for video ads eas
 
 You can play ads by clicking the item if the ads successfully loaded.
 
-![](http://docs.UP.com/uploads/201706/5954e83c315b0_5954e83c.png)
-
+![as_debug_inter_view1](http://docc.upltv.com/uploads/201810/5bcd4065a93a4_5bcd4065.png "as_debug_inter_view1")
+![as_debug_inter_view2](http://docc.upltv.com/uploads/201810/5bcd408d13bcb_5bcd408d.png "as_debug_inter_view2")

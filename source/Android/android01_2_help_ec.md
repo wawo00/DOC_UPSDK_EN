@@ -54,4 +54,4 @@ If your project used `proguard`.
 You have to copy contents from `proguard-project.txt` to right location of your project.
 
 ### VIII. Demo Project
-To help you integrate ads SDK easier and faster, here we provide you a simple[Demo Project](https://github.com/AvidlyGit/AdSdkDemo-Eclipse "Demo")。
+To help you integrate ads SDK easier and faster, here we provide you a simple[Demo Project](https://github.com/AvidlyGit/AdSdkDemo-Eclipse "Demo").

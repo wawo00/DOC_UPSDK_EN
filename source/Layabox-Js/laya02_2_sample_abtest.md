@@ -1,7 +1,7 @@
 ## A/B Test接口调用
 
 ### 1. A/B Test初始化
-进行A/B测试时，请在初始化SDK之后，调用此方法完成A/B Test初始化。
+进行A/B测试时，请在初始化SDK之后，调用此方法完成A/B Test初始化.
 ```javascript
 /*
  进行A/B测试时，先初始化广告配置
@@ -27,7 +27,7 @@ initAbButton.addTouchEventListener(function(sender, type) {
 ```
 
 ### 2. 获取A/B Test的结果
-完成A/B Test初始化后，通过此方法获取结果。
+完成A/B Test初始化后，通过此方法获取结果.
 ```javascript
 /**
  完成A/B Testing初始化后，通过此方法获取结果
