@@ -29,8 +29,8 @@
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Demo下载" href="egret02_7_sample_demo.html" />
-    <link rel="prev" title="激励视频" href="egret02_5_sample_video.html" /> 
+    <link rel="next" title="Demo download" href="egret02_7_sample_demo.html" />
+    <link rel="prev" title="Reward video Ad" href="egret02_5_sample_video.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -90,13 +90,13 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../chapters/chapter08.html">UPSDK Egret TypeScript</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="egret01_help_catalog.html">TypeScriptPlugin</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="egret02_sample_catalog.html">TypeScript</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="egret02_1_sample_init.html">SDK初始化</a></li>
-<li class="toctree-l3"><a class="reference internal" href="egret02_2_sample_abtest.html">A/B Test接口调用</a></li>
-<li class="toctree-l3"><a class="reference internal" href="egret02_3_sample_banner.html">横幅广告</a></li>
-<li class="toctree-l3"><a class="reference internal" href="egret02_4_sample_inter.html">插屏广告</a></li>
-<li class="toctree-l3"><a class="reference internal" href="egret02_5_sample_video.html">激励视频</a></li>
+<li class="toctree-l3"><a class="reference internal" href="egret02_1_sample_init.html">Initial SDK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="egret02_2_sample_abtest.html">A/B Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="egret02_3_sample_banner.html">Banner Ad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="egret02_4_sample_inter.html">Interstitial API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="egret02_5_sample_video.html">Reward video Ad</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">GDPR</a></li>
-<li class="toctree-l3"><a class="reference internal" href="egret02_7_sample_demo.html">Demo下载</a></li>
+<li class="toctree-l3"><a class="reference internal" href="egret02_7_sample_demo.html">Demo download</a></li>
 </ul>
 </li>
 </ul>
@@ -167,40 +167,39 @@
             
   <div class="section" id="gdpr">
 <span id="gdpr"></span><h1>GDPR<a class="headerlink" href="#gdpr" title="Permalink to this headline">¶</a></h1>
-<p><code class="docutils literal notranslate"><span class="pre">GDPR《一般数据保护法案》</span></code>是欧盟出台的数据保护方案，如果您的产品会面向欧盟用户，我们提供如下方案确保<code class="docutils literal notranslate"><span class="pre">UPSDK</span></code>遵守<code class="docutils literal notranslate"><span class="pre">GDPR</span></code>规范.</p>
-<p><code class="docutils literal notranslate"><span class="pre">UPSDK</span></code>在<code class="docutils literal notranslate"><span class="pre">3.0.03</span></code>版本支持欧盟<code class="docutils literal notranslate"><span class="pre">GDPR</span></code>规范，发行区域包含欧盟或涵盖欧盟用户的开发者必须处理此逻辑.</p>
-<div class="section" id="gdpr">
-<span id="id1"></span><h2>GDPR 推荐用例<a class="headerlink" href="#gdpr" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="">
-<span id="id2"></span><h3>方案一<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h3>
-<p>推荐根据自己游戏的画面风格自定义GDPR的授权弹框界面，保证产品体验最佳.
-采用此方案时，仅需要将授权结果同步给UPSDK后再初始化UPSDK.</p>
-<p>示例代码：</p>
+<p><code class="docutils literal notranslate"><span class="pre">GDPR</span> <span class="pre">&quot;The</span> <span class="pre">General</span> <span class="pre">Data</span> <span class="pre">Protection</span> <span class="pre">Regulation&quot;</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">data</span> <span class="pre">protection</span> <span class="pre">program</span> <span class="pre">issued</span> <span class="pre">by</span> <span class="pre">the</span> <span class="pre">European</span> <span class="pre">Union.</span></code>
+If your product is intended for EU users, we offer the following solutions to ensure that <code class="docutils literal notranslate"><span class="pre">UPSDK</span></code> complies with the GDPR’ rules.</p>
+<div class="section" id="gdpr-recommend-the-use-case">
+<span id="gdpr-recommend-the-use-case"></span><h2>GDPR recommend the use case<a class="headerlink" href="#gdpr-recommend-the-use-case" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="plan-1">
+<span id="plan-1"></span><h3>Plan 1<a class="headerlink" href="#plan-1" title="Permalink to this headline">¶</a></h3>
+<p>It is recommended to customize the authorization popover interface of GDPR according to the picture style of your game to ensure the best product experience.
+With this scheme, you only need to synchronize the authorization results to the UPSDK and then initialize the UPSDK.</p>
+<p>Sample：</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">yourOwnGDPRCallback</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">// 如果result : &quot;true&quot; 表示用户接受授权，false拒绝授权</span>
-        <span class="c1">// 请参考以下代码完成UPSDK的授权同步与初始化</span>
+        <span class="c1">// result : true means that the user accepts authorization, and false rejects authorization</span>
+        <span class="c1">// Please refer to the following code to complete authorization synchronization and initialization of UPSDK</span>
         <span class="k">if</span> <span class="p">(</span><span class="nx">result</span><span class="o">==</span><span class="s2">&quot;true&quot;</span><span class="p">)</span> <span class="p">{</span>
             <span class="nx">upltv</span><span class="p">.</span><span class="nx">updateAccessPrivacyInfoStatus</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
         <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
             <span class="nx">upltv</span><span class="p">.</span><span class="nx">updateAccessPrivacyInfoStatus</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
         <span class="p">}</span>
-        <span class="c1">// 调用updateAccessPrivacyInfoStatus()之后再初始化UPSDK</span>
-        <span class="c1">// 假定发行地区是海外，且不需要回调</span>
+         <span class="c1">// Please call updateAccessPrivacyInfoStatus () before initializing UPSDK</span>
         <span class="nx">upltv</span><span class="p">.</span><span class="nx">initSDK</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
    <span class="p">}</span>
 
    <span class="nx">europeanUnionUserCallBack</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;=====&gt; ts europeanUnionUserCallBack result: &quot;</span> <span class="o">+</span> <span class="nx">result</span><span class="p">);</span>
-        <span class="c1">// result: &quot;true&quot; 表示欧盟地区用户，否则非欧盟地区用户</span>
+        <span class="c1">// true represents users in the EU, otherwise users are not in the EU</span>
         <span class="k">if</span> <span class="p">(</span><span class="nx">result</span><span class="o">==</span><span class="s2">&quot;true&quot;</span><span class="p">)</span> <span class="p">{</span>
-            <span class="c1">// 欧盟地区用户，调用自定义授权询问方法</span>
-            <span class="c1">// callYourOwnGDPRDialog()，是我们假定的方法</span>
-            <span class="c1">// yourOwnGDPRCallback，是我们假定的授权回调方法</span>
-            <span class="c1">// 请根据实际代码替换</span>
+            <span class="c1">//  is EU user, calls custom authorization inquiry method</span>
+            <span class="c1">// callYourOwnGDPRDialog()，That&#39;s our hypothetical method</span>
+            <span class="c1">// yourOwnGDPRCallback，it&#39;s our hypothetical authorization callback method</span>
+            <span class="c1">// Please replace according to the actual code</span>
             <span class="nx">callYourOwnGDPRDialog</span><span class="p">(</span><span class="nx">yourOwnGDPRCallback</span><span class="p">);</span>
         <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-            <span class="c1">// 非欧盟地区用户，直接初始化SDK</span>
-            <span class="c1">// 假定发行地区是海外，且不需要回调</span>
+            <span class="c1">// if the user is Non-eu users, directly initialize the SDK</span>
+            <span class="c1">// Assume the issuing area is overseas, and the parameter passes 0</span>
             <span class="nx">upltv</span><span class="p">.</span><span class="nx">initSDK</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
         <span class="p">}</span>
     <span class="p">}</span>
@@ -210,15 +209,14 @@
 <span class="nx">checkGDPR</span><span class="p">()</span> <span class="p">{</span>
         <span class="nx">upltv</span><span class="p">.</span><span class="nx">getAccessPrivacyInfoStatus</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">permission</span><span class="o">:</span><span class="nx">number</span><span class="p">){</span>
             <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;=====&gt; ts getAccessPrivacyInfoStatus status: %d&quot;</span><span class="p">,</span> <span class="nx">permission</span><span class="p">)</span>
-            <span class="c1">// 如果没有询问过授权</span>
+            <span class="c1">// If you have not asked for authorization</span>
             <span class="k">if</span> <span class="p">(</span><span class="nx">permission</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span>
             <span class="p">{</span>
-                <span class="c1">// 先定位用户是否是欧盟地区</span>
+                <span class="c1">// Determine if the user belongs to the EU</span>
                 <span class="nx">upltv</span><span class="p">.</span><span class="nx">isEuropeanUnionUser</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">isEuropean</span><span class="o">:</span><span class="kr">boolean</span><span class="p">){</span>
 
                 <span class="p">});</span>
             <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-                <span class="c1">// 假定发行地区是海外，且不需要回调</span>
                 <span class="nx">upltv</span><span class="p">.</span><span class="nx">initSDK</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
             <span class="p">}</span>
         <span class="p">});</span> 
@@ -226,10 +224,10 @@
 </pre></div>
 </div>
 </div>
-<div class="section" id="">
-<span id="id3"></span><h3>方案二<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h3>
-<p>如果采用UPSDK提供的标准授权处理机制，请参考以下代码修改UPSDK的初始化流程.</p>
-<p>示例代码：</p>
+<div class="section" id="plan-2">
+<span id="plan-2"></span><h3>Plan 2<a class="headerlink" href="#plan-2" title="Permalink to this headline">¶</a></h3>
+<p>If you use the standard authorization mechanism provided by UPSDK, refer to the following code to modify the UPSDK initialization process.</p>
+<p>Sample：</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">notifyAccessPrivacyInfoStatusCallBack</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;=====&gt; ts notifyAccessPrivacyInfoStatusCallBack callback: %d &quot;</span><span class="p">,</span>  <span class="nx">value</span><span class="p">);</span>
         <span class="nx">upltv</span><span class="p">.</span><span class="nx">initSDK</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
@@ -237,15 +235,14 @@
 
     <span class="nx">europeanUnionUserCallBack</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;=====&gt; ts europeanUnionUserCallBack result: &quot;</span> <span class="o">+</span> <span class="nx">result</span><span class="p">)</span>
-        <span class="c1">// result: &quot;true&quot; 表示欧盟地区用户，否则非欧盟地区用户</span>
         <span class="k">if</span> <span class="p">(</span><span class="nx">result</span><span class="o">==</span><span class="s2">&quot;true&quot;</span><span class="p">){</span>
-            <span class="c1">// 弹出系统弹窗询问</span>
+            <span class="c1">// Pop up system popup to ask authorization</span>
             <span class="nx">upltv</span><span class="p">.</span><span class="nx">notifyAccessPrivacyInfoStatus</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">permission</span><span class="o">:</span><span class="nx">number</span><span class="p">){</span>
 
             <span class="p">});</span>
         <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-            <span class="c1">// 非欧盟地区用户，直接初始化SDK</span>
-            <span class="c1">// 假定发行地区是海外，且不需要回调</span>
+            <span class="c1">// Non-eu users, directly initialize the SDK</span>
+            <span class="c1">// Assume the issuing area is overseas</span>
             <span class="nx">upltv</span><span class="p">.</span><span class="nx">initSDK</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
         <span class="p">}</span>
     <span class="p">}</span>
@@ -256,12 +253,10 @@
             <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;=====&gt; ts getAccessPrivacyInfoStatus status: %d &quot;</span><span class="p">,</span> <span class="nx">e</span><span class="p">);</span>
             <span class="k">if</span> <span class="p">(</span><span class="nx">permission</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span>
             <span class="p">{</span>
-                <span class="c1">// 先定位用户是否是欧盟地区</span>
                 <span class="nx">upltv</span><span class="p">.</span><span class="nx">isEuropeanUnionUser</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">isEuropean</span><span class="o">:</span><span class="kr">boolean</span><span class="p">){</span>
 
                 <span class="p">});</span>
             <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-                <span class="c1">// 假定发行地区是海外，且不需要回调</span>
                 <span class="nx">upltv</span><span class="p">.</span><span class="nx">initSDK</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
             <span class="p">}</span>
         <span class="p">});</span>
@@ -272,13 +267,11 @@
 </div>
 </div>
 <div class="section" id="gdpr-api">
-<span id="gdpr-api"></span><h2>GDPR API介绍<a class="headerlink" href="#gdpr-api" title="Permalink to this headline">¶</a></h2>
+<span id="gdpr-api"></span><h2>GDPR API<a class="headerlink" href="#gdpr-api" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="notifyaccessprivacyinfostatus">
 <span id="notifyaccessprivacyinfostatus"></span><h3>1.notifyAccessPrivacyInfoStatus<a class="headerlink" href="#notifyaccessprivacyinfostatus" title="Permalink to this headline">¶</a></h3>
-<p>弹出授权窗口，向用户说明重要数据收集的情况并询问用户是否同意授权，如果用户拒绝授权将放弃相关数据的收集.请在初始化UPSDK之前调用.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// 弹出授权窗口，向用户说明重要数据收集的情况并询问用户是否同意授权</span>
-<span class="c1">// 如果用户拒绝授权将放弃相关数据的收集</span>
-<span class="c1">// 请在初始化UPSDK之前调用</span>
+<p>The authorization window pops up to explain to the user that we will collect data and ask the user whether to approve the authorization. If the user refuses to authorize, the collection of related data will be abandoned. Please call before initializing the UPSDK.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// please call this method before initializing UPSDK</span>
 <span class="c1">// @param callback  permission： 0 Unkown，1 Accepted，2 Defined</span>
 <span class="c1">// Version 3003 and above support  upltvoc method</span>
     <span class="kr">static</span> <span class="nx">notifyAccessPrivacyInfoStatus</span><span class="p">(</span><span class="nx">callback</span><span class="o">:</span><span class="p">(</span><span class="nx">permission</span><span class="o">:</span><span class="nx">number</span><span class="p">)=&gt;</span><span class="k">void</span><span class="p">)</span>
@@ -287,10 +280,8 @@
 </div>
 <div class="section" id="updateaccessprivacyinfostatus">
 <span id="updateaccessprivacyinfostatus"></span><h3>2.updateAccessPrivacyInfoStatus<a class="headerlink" href="#updateaccessprivacyinfostatus" title="Permalink to this headline">¶</a></h3>
-<p>外部进行GDPR授权时，调用此方法将用户授权结果同步到UPSDK，UPSDK将不再进行授权弹窗管理.请在初始化UPSDK之前调用.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// 外部进行GDPR授权时，将用户授权结果同步到UPSDK时，调用此方法</span>
-<span class="c1">// 请在初始UPSDK之前调用</span>
-<span class="c1">// @param permission： 0 Unkown，1 Accepted，2 Defined</span>
+<p>When externally asking GDPR authorization, this method is called to inform the UPSDK of the user authorization result, and UPSDK will no longer perform authorization popup management. Please call before initializing the UPSDK.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// @param permission： 0 Unkown，1 Accepted，2 Defined</span>
 <span class="c1">// Version 3003 and above support  upltvoc method</span>
     <span class="kr">static</span> <span class="nx">updateAccessPrivacyInfoStatus</span> <span class="p">(</span><span class="nx">permission</span><span class="o">:</span><span class="nx">number</span><span class="p">)</span>
 </pre></div>
@@ -298,18 +289,17 @@
 </div>
 <div class="section" id="getaccessprivacyinfostatus">
 <span id="getaccessprivacyinfostatus"></span><h3>3.getAccessPrivacyInfoStatus<a class="headerlink" href="#getaccessprivacyinfostatus" title="Permalink to this headline">¶</a></h3>
-<p>获取用户授权结果，可以在初始化UPSDK之前调用.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">//获取当前GDPR授权状态，返回 0 Unkown，1 Accepted，2 Defined</span>
-<span class="c1">// 可在初始UPSDK之前调用</span>
-<span class="c1">// Version 3003 and above support  upltvoc method</span>
+<p>Obtain the user authorization result, which can be called before initializing the UPSDK.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// 0 means Unkown，1 means Accepted，2 means Defined</span>
+<span class="c1">// </span>
+<span class="c1">// Version 3003 and above support this method </span>
     <span class="kr">static</span> <span class="nx">getAccessPrivacyInfoStatus</span><span class="p">(</span><span class="nx">callback</span><span class="o">:</span><span class="p">(</span><span class="nx">permission</span><span class="o">:</span><span class="nx">number</span><span class="p">)=&gt;</span><span class="k">void</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="iseuropeanunionuser">
 <span id="iseuropeanunionuser"></span><h3>4.isEuropeanUnionUser<a class="headerlink" href="#iseuropeanunionuser" title="Permalink to this headline">¶</a></h3>
-<p>判断用户是否属于欧盟地区，异步返回结果.
-可以在初始化UPSDK之前调用.</p>
+<p>Determine whether the user belongs to the EU region,which can be called before initializing the UPSDK.</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">static</span> <span class="nx">isEuropeanUnionUser</span><span class="p">(</span><span class="nx">callback</span><span class="o">:</span><span class="p">(</span><span class="nx">param</span><span class="o">:</span><span class="kr">boolean</span><span class="p">)=&gt;</span><span class="k">void</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -325,10 +315,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="egret02_7_sample_demo.html" class="btn btn-neutral float-right" title="Demo下载" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="egret02_7_sample_demo.html" class="btn btn-neutral float-right" title="Demo download" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="egret02_5_sample_video.html" class="btn btn-neutral" title="激励视频" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="egret02_5_sample_video.html" class="btn btn-neutral" title="Reward video Ad" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

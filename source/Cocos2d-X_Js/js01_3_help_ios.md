@@ -11,7 +11,7 @@ First from [UPSDK Download](http://doc.upltv.com/en/master/chapters/chapter09.ht
 </br>
 
 
-### 2  Add the UPSDK main package and source 
+### 2 Add the UPSDK main package and source 
 Add UPSDK. Framework, UPSDK. Bundle, and UpltvCppBridge folders to your Xcode project directory at the same time.
 UpltvJsBridge folder contains to ` UpltvCppBridge ` and ` UpltvIos ` *. H and *. CPP file exists.
 The UpltvJsBridge folder contains Object-C++ source code and *.js script files, as shown below：
@@ -31,7 +31,7 @@ UPSDK will rely on third-party advertising unions when it runs, so you'll need t
 
 UPSDK currently relies on the following third-party advertising union：
 
-![Add all third party SDK packages](http://docc.upltv.com/uploads/201709/59afafb9143e9_59afafb9.png "添加所有第三方SDK包")
+![Add all third party SDK packages](http://docc.upltv.com/uploads/201709/59afafb9143e9_59afafb9.png)
 
 > Each alliance corresponds to a folder, and the name is prefixed with the name of the advertising coalition and suffixed with the version number, so it is easy to identify. The folder may contain supporting resource files in addition to the other dependent library or source file, so the dependent library should be added in conjunction with the corresponding supporting resource.
 

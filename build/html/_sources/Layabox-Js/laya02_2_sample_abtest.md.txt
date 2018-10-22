@@ -1,22 +1,21 @@
-## A/B Test接口调用
-
-### 1. A/B Test初始化
-进行A/B测试时，请在初始化SDK之后，调用此方法完成A/B Test初始化.
+## A/B Testing
+### 1. A/B Test Initialzation and got data
+Call this method to complete A/B Test initialization after initializing the SDK when performing A/B tests
 ```javascript
-/*
- 进行A/B测试时，先初始化广告配置
- 参数 gameAccountId ：        string类型， 用户在游戏中的帐号id（必填）
- 参数 isCompleteTask  ：      boolean类型，是否完成了游戏中的新手任务
- 参数 isPaid ：               number类型，是否付费用户，0则未付费
- 参数 promotionChannelName ： string类型，推广渠道，没有可以传 ""
- 参数 gender ：               string类型，"M", "F"，未知可以传""
- 参数 age ：                  number类型，未知可以传-1
- 参数 tags ：                 Array类型（string数组），标签，没有可以传 null
+
+/** call this method after initializing sdk
+* @param gameAccountId          string type,user's account id in the game (required)
+* @param completeTask           bool type，Whether or not the novice task in the game has been completed
+* @param isPaid                 number type，If the user pays, 0 does not pay
+* @param promotionChannelName   string type，Promotion channels, no value can be passed ""
+* @param gender                 string type，"M", "F"，Unknown can be passed" "
+* @param age                    number type，Unknown can be passed -1
+* @param tags                   String array type,tips，no value can be passed null
 */
 initAbtConfigJson : function(gameAccountId, isCompleteTask, isPaid, promotionChannelName, gender, age, tags)
 ```
 
-示例代码：
+Sample：
 ```javascript
 var initAbButton = this.createButton(x, y, "initABTest");
 initAbButton.addTouchEventListener(function(sender, type) {
@@ -26,18 +25,18 @@ initAbButton.addTouchEventListener(function(sender, type) {
 }, this);
 ```
 
-### 2. 获取A/B Test的结果
-完成A/B Test初始化后，通过此方法获取结果.
+### 2. Get the result of A/B Test
+After the initialization of A/B Test, the results are obtained through this method.
 ```javascript
 /**
- 完成A/B Testing初始化后，通过此方法获取结果
- 为了保证正确获取结果，调用时间建议延后initAbtConfigJson() 2秒以上
- 参数 cpPlaceId ：string类型， 广告位
+* To ensure that the results are correctly obtained, the call time is recommended to delay initAbtConfigJson() by more than 2 seconds
+* @param cpPlaceId  string type
+* @return const char*
 */
 getAbtConfig : function(cpPlaceId)
 ```
 
-示例代码：
+Sample:
 ```javascript
 var getAbButton = this.createButton(x, y, "getABConfig");
 getAbButton.addTouchEventListener(function(sender, type) {

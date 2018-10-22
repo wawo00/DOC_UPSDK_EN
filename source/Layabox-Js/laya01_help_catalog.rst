@@ -1,27 +1,13 @@
 =============================
-JavaScript 
+JavaScriptPlugin 
 =============================
 
 
-      **请注意，本接入文档以Layabox 1.7.20为蓝本，如果您使用Layabox其它版本，不同之处请灵活处理.**
-   
-请根据你的开发工具，选择合适的帮助文档:
+Although UPLTV ADSDK has done well in mediation and packaging, but there will be some problems when some of our partners integrate at first time. So we optimized the process for integration, and we also gave some suggestion towards those FAQ.
 
-### Android Studio工程
+In order to help you integrate UPLTV ADSDK successfully, please read and refer to the contents under this label carefully. We, with all our heart wish  that it will help you and bring much convenience to your business. 
 
-请浏览[Android Studio接入帮助 ](http://docs.upltv.com/docs/show/168 "Android Studio ")
-
-### Android Eclipse工程
-
-请浏览[Android Eclipse接入帮助](http://docs.upltv.com/docs/show/169 "Eclipse")
-
-### iOS Xcode工程
-
-请浏览[iOS Xcode接入帮助](http://docs.upltv.com/docs/show/263 "iOS")
-
-   请根据你的开发工具，选择合适的帮助文档:
-
-Contents:
+  **Please note that this access document is based on Layabox 1.7.20. If you use other versions of Cocos2d-X and have problem,please ask us for help**
 
 .. toctree::
    :maxdepth: 1

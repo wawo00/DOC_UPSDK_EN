@@ -1,10 +1,12 @@
-## Demo 下载
+## Download Demo
 
 ### Android
-Demo以Layabox 1.7.19版本创建，下载地址：[Download](http://cnimg.dataverse.cn/upsdk/Layabox_Android_JS_demo.zip "Download")
+Demo was created with Layabox 1.7.19，download address：
+[Download](http://cnimg.dataverse.cn/upsdk/Layabox_Android_JS_demo.zip "Download")
 
 ### iOS
-Demo以Layabox 1.7.20版本创建，下载地址：[Download](http://cnimg.dataverse.cn/upsdk/LayaboxDemo.zip "Download")
+Demo was created with Layabox 1.7.download address：[Download](http://cnimg.dataverse.cn/upsdk/LayaboxDemo.zip "Download")
 
-为了减少Layabox Demo工程包体大小，依赖的第三方广告库未添加，请自行[下载UPSDK联盟包](http://doc.upltv.com/en/master/chapters/chapter09.html "SDK第三方包下载")添加.
+
+In order to reduce the size of the Layabox Demo project package, the dependent third-party libraries are not added.[Download](http://doc.upltv.com/en/master/chapters/chapter09.html "SDK第三方包下载").
 

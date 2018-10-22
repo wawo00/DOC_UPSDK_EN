@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>插屏广告 &mdash; UPInteractive Document  documentation</title>
+  <title>Interstitial API &mdash; UPInteractive Document  documentation</title>
   
 
   
@@ -29,8 +29,8 @@
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="激励视频" href="laya02_5_sample_video.html" />
-    <link rel="prev" title="横幅广告" href="laya02_3_sample_banner.html" /> 
+    <link rel="next" title="Reward video Ad" href="laya02_5_sample_video.html" />
+    <link rel="prev" title="Banner Ad" href="laya02_3_sample_banner.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -87,16 +87,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../chapters/chapter05.html">UPSDK Cocos2d-X Lua</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapters/chapter06.html">UPSDK Cocos2d-X JavaScript</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../chapters/chapter07.html">UPSDK Layabox JavaScript</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="laya01_help_catalog.html">JavaScript</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="laya02_sample_catalog.html">JavaScript</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="laya02_1_sample_init.html">SDK初始化</a></li>
-<li class="toctree-l3"><a class="reference internal" href="laya02_2_sample_abtest.html">A/B Test接口调用</a></li>
-<li class="toctree-l3"><a class="reference internal" href="laya02_3_sample_banner.html">横幅广告</a></li>
-<li class="toctree-l3"><a class="reference internal" href="laya02_3_sample_banner.html">横幅广告</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">插屏广告</a></li>
-<li class="toctree-l3"><a class="reference internal" href="laya02_5_sample_video.html">激励视频</a></li>
+<li class="toctree-l2"><a class="reference internal" href="laya01_help_catalog.html">JavaScriptPlugin</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="laya02_sample_catalog.html">JavaScriptPlugin Sample</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="laya02_1_sample_init.html">Initial SDK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="laya02_2_sample_abtest.html">A/B Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="laya02_3_sample_banner.html">Banner Ad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="laya02_3_sample_banner.html">Banner Ad</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Interstitial API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="laya02_5_sample_video.html">Reward video Ad</a></li>
 <li class="toctree-l3"><a class="reference internal" href="laya02_6_sample_gdpr.html">GDPR</a></li>
-<li class="toctree-l3"><a class="reference internal" href="laya02_7_sample_demo.html">Demo 下载</a></li>
+<li class="toctree-l3"><a class="reference internal" href="laya02_7_sample_demo.html">Download Demo</a></li>
 </ul>
 </li>
 </ul>
@@ -152,9 +152,9 @@
         
           <li><a href="../chapters/chapter07.html">UPSDK Layabox JavaScript</a> &raquo;</li>
         
-          <li><a href="laya02_sample_catalog.html">JavaScript</a> &raquo;</li>
+          <li><a href="laya02_sample_catalog.html">JavaScriptPlugin Sample</a> &raquo;</li>
         
-      <li>插屏广告</li>
+      <li>Interstitial API</li>
     
     
 
@@ -166,44 +166,45 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="">
-<span id="id1"></span><h1>插屏广告<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="">
-<span id="id2"></span><h2>1. 插屏广告加载回调<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
-<p>插屏广告需要根据广告位来设置加载回调，此API用于监听插屏广告的加载结果.此接口一旦完成回调，内部会自动释放，再次监听时需要重新设置回调接口.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// 根据广告位，设置某个插屏广告加载回调接口</span>
-<span class="c1">// 用于监听插屏广告的加载结果（成功或失败）</span>
-<span class="c1">// 此接口一旦回调，内部会自动释放，再次监听时需要重新设定回调接口</span>
+  <div class="section" id="interstitial-api">
+<span id="interstitial-api"></span><h1>Interstitial API<a class="headerlink" href="#interstitial-api" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="set-the-interstitial-load-callback">
+<span id="set-the-interstitial-load-callback"></span><h2>1. Set the interstitial load callback<a class="headerlink" href="#set-the-interstitial-load-callback" title="Permalink to this headline">¶</a></h2>
+<p>Load results (success or failure) to listen for the current interstitial ad .This interface is automatically released once a callback is made, and the callback interface needs to be reset when listening again.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// @param cpPlaceId   placement ID</span>
+<span class="c1">// @param loadSuccess Motivate the callback when the video is //loaded successfully，successCall(cpadid, msg)</span>
+<span class="c1">// @param loadFail    Motivate the callback when the video is //loaded failed， loadFail(cpid, message)</span>
+<span class="c1">//Once this interface is called back, the internal will be //automatically released, and the callback interface needs to //be reset when listening again.</span>
 <span class="nx">setInterstitialLoadCallback</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">cpPlaceId</span><span class="p">,</span> <span class="nx">loadsuccess</span><span class="p">,</span> <span class="nx">locadfail</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>示例代码：</p>
+<p>Sample：</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">ilLoadCallUIButton</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">createButton</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="s2">&quot;ilLoadCall&quot;</span><span class="p">);</span>
 <span class="nx">ilLoadCallUIButton</span><span class="p">.</span><span class="nx">addTouchEventListener</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">sender</span><span class="p">,</span> <span class="nx">type</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="nx">type</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
         <span class="nx">upltv</span><span class="p">.</span><span class="nx">setInterstitialLoadCallback</span><span class="p">(</span><span class="nx">cpPlaceId</span><span class="p">,</span>
             <span class="kd">function</span><span class="p">(</span><span class="nx">cpid</span><span class="p">,</span> <span class="nx">msg</span><span class="p">)</span> <span class="p">{</span>
-                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;===&gt; js il load callback success: %s at placementid:%s&quot;</span><span class="p">,</span> <span class="nx">msg</span><span class="p">,</span> <span class="nx">cpid</span><span class="p">);</span>
+                <span class="nx">cc</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;===&gt; js il load callback success: %s at placementid:%s&quot;</span><span class="p">,</span> <span class="nx">msg</span><span class="p">,</span> <span class="nx">cpid</span><span class="p">);</span>
             <span class="p">},</span>
             <span class="kd">function</span><span class="p">(</span><span class="nx">cpid</span><span class="p">,</span> <span class="nx">msg</span><span class="p">)</span> <span class="p">{</span>
-                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;===&gt; js il load callback fail: %s at placementid:%s&quot;</span><span class="p">,</span> <span class="nx">msg</span><span class="p">,</span> <span class="nx">cpid</span><span class="p">);</span>
+                <span class="nx">cc</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;===&gt; js il load callback fail: %s at placementid:%s&quot;</span><span class="p">,</span> <span class="nx">msg</span><span class="p">,</span> <span class="nx">cpid</span><span class="p">);</span>
             <span class="p">});</span>
     <span class="p">}</span>
 <span class="p">},</span> <span class="k">this</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="">
-<span id="id3"></span><h2>2. 插屏广告展示回调<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
-<p>设置插屏广告展示时的回调接口，用于监听插屏广告的在某次展示时诸如点击，关闭等回调事件.插件展示回调接口的引用会被内部保存，不会释放，因此不用多次设置.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// 设置插屏广告展示时的回调接口，用于监听插屏广告的在某次展示时诸如点击，关闭等事件回调</span>
-<span class="c1">// 插件展示回调接口的引用会被内部保存，不会释放</span>
-<span class="c1">// 回调接口功能顺序：展示回调，点击回调，关闭回调</span>
-<span class="c1">// 回调接口参数：事件类型，广告位，showCall(type, cpPlaceId)</span>
+<div class="section" id="set-show-callback-of-interstitial-ad">
+<span id="set-show-callback-of-interstitial-ad"></span><h2>2. Set show callback of Interstitial Ad<a class="headerlink" href="#set-show-callback-of-interstitial-ad" title="Permalink to this headline">¶</a></h2>
+<p>Set up the callback interface for the display of interstitial ad which is used to listen to the callback of showing .The  interstitial ad shows that references to the callback interface are stored  and not released.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* @param cpPlaceId placementid</span>
+<span class="cm">* @param showCall  callback</span>
+<span class="cm">*/</span>
 <span class="nx">setInterstitialShowCallback</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">cpPlaceId</span><span class="p">,</span> <span class="nx">showCall</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>示例代码：</p>
+<p>Sample:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">ilShowCallUIButton</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">createButton</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="s2">&quot;ilShowCall&quot;</span><span class="p">);</span>
 <span class="nx">ilShowCallUIButton</span><span class="p">.</span><span class="nx">addTouchEventListener</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">sender</span><span class="p">,</span> <span class="nx">type</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="nx">type</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
@@ -226,35 +227,33 @@
 </pre></div>
 </div>
 </div>
-<div class="section" id="">
-<span id="id4"></span><h2>3. 判断插屏广告加载状态<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
-<p>根据广告位，判断某个插屏广告是否准备就绪，并同步返回bool结果，true 表示广告准备就绪可以展示，false表示广告还在请求中无法展示.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// 根据广告位，判断某个插屏广告是否准备就绪</span>
-<span class="c1">// 同步返回boolean结果，true 表示广告准备就绪可以展示，false表示广告还在请求中无法展示</span>
-<span class="c1">// 参数cpPlaceId：广告位</span>
+<div class="section" id="judge-if-the-interstitial-ad-is-ready">
+<span id="judge-if-the-interstitial-ad-is-ready"></span><h2>3. Judge if the interstitial ad is ready<a class="headerlink" href="#judge-if-the-interstitial-ad-is-ready" title="Permalink to this headline">¶</a></h2>
+<p>Judge if the interstitial ad is ready accroding placementid, and  return Boolean results synchronously, true means that the AD is ready to be displayed, and false means that the AD is not show and still in the request.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// @param cpPlaceId  cpPlaceId</span>
 <span class="nx">isInterstitialReady</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">cpPlaceId</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>示例代码：</p>
+<p>Sample:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">ilReadyAsynUIButton</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">createButton</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="s2">&quot;ilReadyAsyn&quot;</span><span class="p">);</span>
 <span class="nx">ilReadyAsynUIButton</span><span class="p">.</span><span class="nx">addTouchEventListener</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">sender</span><span class="p">,</span> <span class="nx">type</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="nx">type</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
         <span class="nx">upltv</span><span class="p">.</span><span class="nx">isInterstitialReadyAsyn</span><span class="p">(</span><span class="nx">cpPlaceId</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">r</span><span class="p">)</span> <span class="p">{</span>
-            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;===&gt; js il ad isreadyasyn: %s at placementid:%s&quot;</span><span class="p">,</span> <span class="nx">r</span><span class="p">,</span> <span class="nx">cpPlaceId</span><span class="p">);</span>
+            <span class="nx">cc</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;===&gt; js il ad isreadyasyn: %s at placementid:%s&quot;</span><span class="p">,</span> <span class="nx">r</span><span class="p">,</span> <span class="nx">cpPlaceId</span><span class="p">);</span>
         <span class="p">});</span>
     <span class="p">}</span>
 <span class="p">},</span> <span class="k">this</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="">
-<span id="id5"></span><h2>4. 展示插屏广告<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
-<p>根据广告位，展示相应的插屏广告.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// 根据广告位，展示某个插屏广告</span>
+<div class="section" id="show-interstitial-ad">
+<span id="show-interstitial-ad"></span><h2>4. Show interstitial AD<a class="headerlink" href="#show-interstitial-ad" title="Permalink to this headline">¶</a></h2>
+<p>show a interstitial ad according to the ad placement ID.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// @param cpPlaceId placementid</span>
 <span class="nx">showInterstitialAd</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">cpPlaceId</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>示例代码：</p>
+<p>Sample：</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">ilShowUIButton</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">createButton</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="s2">&quot;ilShow&quot;</span><span class="p">);</span>
 <span class="nx">ilShowUIButton</span><span class="p">.</span><span class="nx">addTouchEventListener</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">sender</span><span class="p">,</span> <span class="nx">type</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="nx">type</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
@@ -267,13 +266,13 @@
 </pre></div>
 </div>
 </div>
-<div class="section" id="">
-<span id="id6"></span><h2>5. 插屏广告调试模式<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
-<p>为了方便开发者查看广告的使用和加载状态，我们提供了插屏广告的调试页面，可以通过以下方法打开此界面观察插屏广告的配置参数与加载状态.</p>
+<div class="section" id="debug-view-of-interstital-ad">
+<span id="debug-view-of-interstital-ad"></span><h2>5. Debug view of Interstital Ad<a class="headerlink" href="#debug-view-of-interstital-ad" title="Permalink to this headline">¶</a></h2>
+<p>In order to help developers to view the use and loading status of ad, we provide a debug page for the ad of the screen, which can be opened to observe the configuration parameters and loading status of the ad.</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">showInterstitialDebugUI</span> <span class="o">:</span> <span class="kd">function</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>示例代码：</p>
+<p>sample：</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">ilShowUIButton</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">createButton</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="s2">&quot;ilShowUI&quot;</span><span class="p">);</span>
 <span class="nx">ilShowUIButton</span><span class="p">.</span><span class="nx">addTouchEventListener</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">sender</span><span class="p">,</span> <span class="nx">type</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="nx">type</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
@@ -293,10 +292,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="laya02_5_sample_video.html" class="btn btn-neutral float-right" title="激励视频" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="laya02_5_sample_video.html" class="btn btn-neutral float-right" title="Reward video Ad" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="laya02_3_sample_banner.html" class="btn btn-neutral" title="横幅广告" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="laya02_3_sample_banner.html" class="btn btn-neutral" title="Banner Ad" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

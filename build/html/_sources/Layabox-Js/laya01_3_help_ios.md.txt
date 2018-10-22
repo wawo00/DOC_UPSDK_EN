@@ -1,56 +1,63 @@
-## IOS 接入帮助
-### 一、下载SDK包
-首先从 [UPSDKDownLoad](http://doc.upltv.com/en/master/chapters/chapter09.html "SDKDownLoad") 下载UPSDK Layabox JavaScriptPlugin包，解压后的目录包含如下三个文件：
-- `UPSDK.framework` 这是UPSDK的主包，请务必添加到当前工程中
-- `UPSDK.bundle` UPSDK主包需要访问的外部文件资源，请务必添加到当前工程中
-- `UpltvLayaboxJsBridge` 此目录包含一些*.js源码文件，用于桥接当前Layabox JavaScript工程与UPSDK广告接口调用
+
+## IOS 
+
+### 1 Download SDK package
+First from [UPSDK Download](http://doc.upltv.com/en/master/chapters/chapter09.html "SDKDownLoad") download Layabox UPSDK JsPlugin package，The uncompressed directory contains the following three files：
+- `UPSDK.framework` This is the UPSDK master package, so be sure to add it to your current project
+- `UPSDK.bundle` Be sure to add the external file resources  because that the UPSDK master package needs to access to the current project
+- `UpltvLayaboxJsBridge` This directory contains *. CPP source files for bridging the current Layabox JS project and UPSDK interface calls
 </br>
 
-### 二、LayaboxIDE工程配置
 
-1)、将`UpltvLayaboxJsBridge`拷贝到Layabox工程的src文件夹下，只留.js文件.
 
-2)、在Layabox工程的bin文件夹下的index.html中加入`UPLTV.js`,`UPLTVIos.js`的script引用.
+### 2 Poject setting of LayaboxIDE
 
-如下图所示
+1) Copy `UpltvLayaboxJsBridge` to the `src` folder of the Layabox project, leaving only the `.js` file
+
+2) Add the reference to `UPLTV.js`, `UPLTVIos.js` in index.html which in the bin folder of the Layabox project.
+
+
+As following:
 
 ![](http://docc.upltv.com/uploads/201809/5b98bcb7c6c2b_5b98bcb7.png)
 
 </br>
 
-### 三、XCode工程配置
+### 3 Project Setting of XCode
 
-#### 1、接入UPSDK主包与源文件
-请将UPSDK.framework、UPSDK.bundle以及UpltvLayaboxJsBridge文件夹同时添加到你的Xcode工程目录下.
+#### 1.Add the UPSDK main package and source 
 
-移除UpltvLayaboxJsBridge文件夹包含的*.js脚本文件，只留Object-C++源码，如下图如示：
+Add UPSDK. Framework, UPSDK. Bundle, and UpltvLayaboxJsBridge folders to your Xcode project directory at the same time.
+
+Remove *.js files in  UpltvLayaboxJsBridge folder ,leave Object-C++ source，as following：
 
 ![](http://docc.upltv.com/uploads/201809/5b98bf749a9ba_5b98bf74.png)
 
 
-#### 2、加入第三方依赖库
-UPSDK运行时会依赖第三方广告联盟，所以需要手动将这些联盟的依赖库文件导入到你的项目中.为了保证你能正确添加第三方依赖包，请从这里[下载UPSDK联盟包](http://doc.upltv.com/en/master/chapters/chapter09.html "SDK第三方包下载") .
+#### 2 Add third-party dependency libraries
 
-UPSDK当前依赖第三方广告联盟如下：
+UPSDK will rely on third-party advertising unions when it runs, so you'll need to manually import the alliance's dependent library files into your project. To ensure that you can properly add third-party dependency packages, please click here[Download UPSDK union package](http://doc.upltv.com/en/master/chapters/chapter09.html ) .
 
-![添加所有第三方SDK包](http://docc.upltv.com/uploads/201709/59afafb9143e9_59afafb9.png "添加所有第三方SDK包")
+UPSDK currently relies on the following third-party advertising union：
 
-> 每个联盟对应一个文件夹，且命名都以广告联盟的名字为前缀，以版本号为后缀，因此很好识别.文件夹中除了包括广告联盟的依赖库或源码文件外，还有可能包括配套的资源文件，因此添加广告联盟时依赖库与对应的配套的资源要一同添加.
+![Add all third party SDK packages](http://docc.upltv.com/uploads/201709/59afafb9143e9_59afafb9.png)
 
-虽然并不要求将全部的第三方联盟广告添加到当前项目中，但为了扩大收益，我们仍然建议在你的项目中尽量多地添加以上的联盟广告的依赖库及其配套的资源包.在实际操作中，如有疑问请联系我们的技术支持人员.
+> Each alliance corresponds to a folder, and the name is prefixed with the name of the advertising coalition and suffixed with the version number, so it is easy to identify. The folder may contain supporting resource files in addition to the other dependent library or source file, so the dependent library should be added in conjunction with the corresponding supporting resource.
 
-当你完成第三方联盟广告添加后，在XCode工程中检查下`Linked Frameworks Libraries`是否正确引入了相应的库文件，避免不必要的失误.
+Although it is not required to add all third party affiliate ads to the current project, we still recommend that you add as many of the above affiliate AD dependency libraries and their accompanying resource packages as possible in your project in order to increase revenue. In practice, please contact our technical support staff if you have any questions.
 
-假设在当前项目中接入Applovin、Unity、Vungle、Tapjoy四家广告，需要先将这四家广告的库文件(依次是AppLovinSDK.framework,UnityAds.framework,VungleSDK.framework,Tapjoy.framework四个静态库)添加到工程里，成功添加后的效果图如下：
+When you finish after add third party alliance advertising, check in the XCode project ` Linked Frameworks Libraries ` is properly introduced corresponding library files, avoid unnecessary mistakes.
+
+for example in the current project access Applovin, Unity, Vungle, tapjoy like the four ads, need to put the four advertising library file (in turn isAppLovinSDK.framework,UnityAds.framework,VungleSDK.framework,Tapjoy.framework  like four static library framework) is added to the project, after successful add rendering is as follows：
 ![](http://docc.upltv.com/uploads/201804/5acc6644c33a5_5acc6644.png)
 
-在以上假设中，由于Tapjoy广告需要访问它一些外部资源文件，因此需要将它配套的资源文件也添加到项目中，可在TARGETS → Build Phases → Copy Bundle Resources查看，正确添加后的效果如下：
+In the above hypothesis, because the Tapjoy AD needs to access some of its external resource files, it needs to add its supporting resource files to the project, which can be viewed from TARGETS -- General -- Copy Bundle Resources：
 <br>
 ![](http://docc.upltv.com/uploads/201804/5acc70803fec8_5acc7080.png)
 
 
-#### 3、加入系统依赖库
-在TARGETS → Build Phases → Linked Frameworks Libraries中添加依赖库
+#### 3 Add system dependencies
+Add dependency libraries form TARGETS → General → Linked Frameworks Libraries
 - `QuartzCore.framework`
 - `MediaPlayer.framework`
 - `libsqlite3.tbd`
@@ -81,13 +88,16 @@ UPSDK当前依赖第三方广告联盟如下：
 - `GameController.framework`
 <br>
 
-#### 4、工程配置
-###### 1)、添加分类编译符
+### 4 Project configuration
+#### 1 Add the classification compiler
 
-- 在`TARGETS` → `Build Setting` → `Linking` → `Other Linker Flags` 中加入 `-ObjC` 如下图所示
+- Add  `-ObjC` on `TARGETS` → `Build Setting` → `Linking` → `Other Linker Flags` such as:
+
 ![](http://docc.upltv.com/uploads/201804/5ae28e70be73c_5ae28e70.png)
 
-###### 2)、在info.plist中加入以下节点，以兼容http模式
+
+
+#### 2 Add the following nodes to the info.plist to be compatible with HTTP mode
 
 ```objective-c
  <key>NSAppTransportSecurity </key>
@@ -97,7 +107,8 @@ UPSDK当前依赖第三方广告联盟如下：
  </dict>
 ```
 
-###### 3)、在info.plist中加入以下节点，用来获取权限（如使用AdColony联盟必须加，未使用AdColony联盟可以不添加）
+#### 3 Add the following nodes to the info.plist to obtain permissions (if you use AdColony union, you must add; if you do not use AdColony union, you may not add it)
+
 ```objective-c
  <key>NSCalendarsUsageDescription </key>
  <string>Some ad content may create a calendar event. </string>
@@ -105,20 +116,22 @@ UPSDK当前依赖第三方广告联盟如下：
  <string>Some ad content may access camera to take picture. </string>
  <key>NSPhotoLibraryUsageDescription </key>
  <string>Some ad content may require access to the photo library. </string>
+
 ```
 
-注：根据不同语言和不同使用场景，使用者可以适当调整获取权限的描述文字.
+tips：Depending on the language and usage scenario, the user can adjust the description of the access permission appropriately.
 <br>
 
-###### 4)、Bitcode
-支持Bitcode，请使用者根据需求选择是否使用Bitcode（Domob不支持Bitcode）
+#### 4 Bitcode
+Support Bitcode mode, please select whether to use Bitcode according to the requirement(Domob does not support Bitcode mode).
 
-#### 5 查看版本号
-在*UPSDKVersion.h*文件中，可以直接查看当前SDK的版本号.
+
+### 5 Version
+You can check the version of the UPSDK in *UPSDKVersion.h*.
 
 ```objective-c
-//sdk版本号
+//version
 ###define AvidlyAdsSDKVERSION  @"3005"
 ```
-> AvidlyAdsSDKVERSION，3005表示当前的版本号数字编号.
+> version is 3005
 

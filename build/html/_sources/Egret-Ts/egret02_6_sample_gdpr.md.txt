@@ -1,40 +1,38 @@
 ## GDPR
-`GDPR《一般数据保护法案》`是欧盟出台的数据保护方案，如果您的产品会面向欧盟用户，我们提供如下方案确保`UPSDK`遵守`GDPR`规范.
+`GDPR "The General Data Protection Regulation" is a data protection program issued by the European Union.` 
+If your product is intended for EU users, we offer the following solutions to ensure that `UPSDK` complies with the GDPR' rules.
 
-`UPSDK`在`3.0.03`版本支持欧盟`GDPR`规范，发行区域包含欧盟或涵盖欧盟用户的开发者必须处理此逻辑.
+### GDPR recommend the use case
+#### Plan 1
+It is recommended to customize the authorization popover interface of GDPR according to the picture style of your game to ensure the best product experience.
+With this scheme, you only need to synchronize the authorization results to the UPSDK and then initialize the UPSDK.
 
-### GDPR 推荐用例
-#### 方案一
-推荐根据自己游戏的画面风格自定义GDPR的授权弹框界面，保证产品体验最佳.
-采用此方案时，仅需要将授权结果同步给UPSDK后再初始化UPSDK.
-
-示例代码：
+Sample：
 ```javascript
 yourOwnGDPRCallback(result) {
-        // 如果result : "true" 表示用户接受授权，false拒绝授权
-        // 请参考以下代码完成UPSDK的授权同步与初始化
+        // result : true means that the user accepts authorization, and false rejects authorization
+        // Please refer to the following code to complete authorization synchronization and initialization of UPSDK
         if (result=="true") {
             upltv.updateAccessPrivacyInfoStatus(1);
         } else {
             upltv.updateAccessPrivacyInfoStatus(2);
         }
-        // 调用updateAccessPrivacyInfoStatus()之后再初始化UPSDK
-        // 假定发行地区是海外，且不需要回调
+         // Please call updateAccessPrivacyInfoStatus () before initializing UPSDK
         upltv.initSDK(0)
    }
 
    europeanUnionUserCallBack(result) {
         console.log("=====> ts europeanUnionUserCallBack result: " + result);
-        // result: "true" 表示欧盟地区用户，否则非欧盟地区用户
+        // true represents users in the EU, otherwise users are not in the EU
         if (result=="true") {
-            // 欧盟地区用户，调用自定义授权询问方法
-            // callYourOwnGDPRDialog()，是我们假定的方法
-            // yourOwnGDPRCallback，是我们假定的授权回调方法
-            // 请根据实际代码替换
+            //  is EU user, calls custom authorization inquiry method
+            // callYourOwnGDPRDialog()，That's our hypothetical method
+            // yourOwnGDPRCallback，it's our hypothetical authorization callback method
+            // Please replace according to the actual code
             callYourOwnGDPRDialog(yourOwnGDPRCallback);
         } else {
-            // 非欧盟地区用户，直接初始化SDK
-            // 假定发行地区是海外，且不需要回调
+            // if the user is Non-eu users, directly initialize the SDK
+            // Assume the issuing area is overseas, and the parameter passes 0
             upltv.initSDK(0);
         }
     }
@@ -44,15 +42,14 @@ yourOwnGDPRCallback(result) {
 checkGDPR() {
         upltv.getAccessPrivacyInfoStatus(function(permission:number){
             console.log("=====> ts getAccessPrivacyInfoStatus status: %d", permission)
-            // 如果没有询问过授权
+            // If you have not asked for authorization
             if (permission==0)
             {
-                // 先定位用户是否是欧盟地区
+                // Determine if the user belongs to the EU
                 upltv.isEuropeanUnionUser(function(isEuropean:boolean){
 
                 });
             } else {
-                // 假定发行地区是海外，且不需要回调
                 upltv.initSDK(0);
             }
         }); 
@@ -60,10 +57,10 @@ checkGDPR() {
 ```
 
 
-#### 方案二
-如果采用UPSDK提供的标准授权处理机制，请参考以下代码修改UPSDK的初始化流程.
+#### Plan 2
+If you use the standard authorization mechanism provided by UPSDK, refer to the following code to modify the UPSDK initialization process.
 
-示例代码：
+Sample：
 ```javascript
 notifyAccessPrivacyInfoStatusCallBack(value) {
         console.log("=====> ts notifyAccessPrivacyInfoStatusCallBack callback: %d ",  value);
@@ -72,15 +69,14 @@ notifyAccessPrivacyInfoStatusCallBack(value) {
 
     europeanUnionUserCallBack(result) {
         console.log("=====> ts europeanUnionUserCallBack result: " + result)
-        // result: "true" 表示欧盟地区用户，否则非欧盟地区用户
         if (result=="true"){
-            // 弹出系统弹窗询问
+            // Pop up system popup to ask authorization
             upltv.notifyAccessPrivacyInfoStatus(function(permission:number){
 
             });
         } else {
-            // 非欧盟地区用户，直接初始化SDK
-            // 假定发行地区是海外，且不需要回调
+            // Non-eu users, directly initialize the SDK
+            // Assume the issuing area is overseas
             upltv.initSDK(0);
         }
     }
@@ -91,12 +87,10 @@ notifyAccessPrivacyInfoStatusCallBack(value) {
             console.log("=====> ts getAccessPrivacyInfoStatus status: %d ", e);
             if (permission==0)
             {
-                // 先定位用户是否是欧盟地区
                 upltv.isEuropeanUnionUser(function(isEuropean:boolean){
 
                 });
             } else {
-                // 假定发行地区是海外，且不需要回调
                 upltv.initSDK(0);
             }
         });
@@ -104,38 +98,37 @@ notifyAccessPrivacyInfoStatusCallBack(value) {
     }
 ```
 
-### GDPR API介绍
+### GDPR API
 
 #### 1.notifyAccessPrivacyInfoStatus
-弹出授权窗口，向用户说明重要数据收集的情况并询问用户是否同意授权，如果用户拒绝授权将放弃相关数据的收集.请在初始化UPSDK之前调用.
+The authorization window pops up to explain to the user that we will collect data and ask the user whether to approve the authorization. If the user refuses to authorize, the collection of related data will be abandoned. Please call before initializing the UPSDK.
+
 ```javascript
-// 弹出授权窗口，向用户说明重要数据收集的情况并询问用户是否同意授权
-// 如果用户拒绝授权将放弃相关数据的收集
-// 请在初始化UPSDK之前调用
+
+// please call this method before initializing UPSDK
 // @param callback  permission： 0 Unkown，1 Accepted，2 Defined
 // Version 3003 and above support  upltvoc method
     static notifyAccessPrivacyInfoStatus(callback:(permission:number)=>void)
 ```
 #### 2.updateAccessPrivacyInfoStatus
-外部进行GDPR授权时，调用此方法将用户授权结果同步到UPSDK，UPSDK将不再进行授权弹窗管理.请在初始化UPSDK之前调用.
+When externally asking GDPR authorization, this method is called to inform the UPSDK of the user authorization result, and UPSDK will no longer perform authorization popup management. Please call before initializing the UPSDK.
+
 ```javascript
-// 外部进行GDPR授权时，将用户授权结果同步到UPSDK时，调用此方法
-// 请在初始UPSDK之前调用
 // @param permission： 0 Unkown，1 Accepted，2 Defined
 // Version 3003 and above support  upltvoc method
     static updateAccessPrivacyInfoStatus (permission:number)
 ```
 #### 3.getAccessPrivacyInfoStatus
-获取用户授权结果，可以在初始化UPSDK之前调用.
+Obtain the user authorization result, which can be called before initializing the UPSDK.
 ```javascript
-//获取当前GDPR授权状态，返回 0 Unkown，1 Accepted，2 Defined
-// 可在初始UPSDK之前调用
-// Version 3003 and above support  upltvoc method
+// 0 means Unkown，1 means Accepted，2 means Defined
+// 
+// Version 3003 and above support this method 
     static getAccessPrivacyInfoStatus(callback:(permission:number)=>void)
 ```
 #### 4.isEuropeanUnionUser
-判断用户是否属于欧盟地区，异步返回结果.
-可以在初始化UPSDK之前调用.
+Determine whether the user belongs to the EU region,which can be called before initializing the UPSDK.
+
 ```javascript
 static isEuropeanUnionUser(callback:(param:boolean)=>void)
 ```

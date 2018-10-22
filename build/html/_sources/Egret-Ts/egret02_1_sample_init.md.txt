@@ -1,19 +1,17 @@
-## SDK初始化
+## Initial SDK
 
-仅以Xcode工程作示例讲解，若你使用的是其它工程请参考Xcode工程操作，若有不便敬请谅解.
-
-在UPSDK所有API接口中，初始化API最早被调用，即只有初始化UPSDK之后，才能正常使用UPSDK所支持的广告功能.
+Only used Xcode engineering  as an example for explanation. If you are using other projects, please refer to Xcode engineering operation. 
+The UPLTV SDK is very simple to initialize.
 
 ```typescript
 /*
- 初始化广告sdk
- 请务必优先完成sdk初始化，然后才能正常使用SDK的其它API接口
- 参数zone：产品发行的区域，0海外,1中国大陆,2自动根据ip定位
- 可选参数callback：SDK初始化完成后的回调接口, 回调接口包含一个布尔参数 callback(boolean)，true表示成功，否则失败
+* Please be sure to complete the SDK initialization before using the other API interfaces of the SDK
+* @param zone product distribution area, 0 overseas, 1 mainland China, 2 automatically according to IP positioning
+* @param callback return turn means initial upsdk successful
 */
 static initSDK(zone: number, callback?:(res:boolean)=>void)
 ```
-示例代码：
+Sample:
 ```typescript
 let initButton = new eui.Button();
 initButton.label = "initButton";

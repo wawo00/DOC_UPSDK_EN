@@ -19,7 +19,7 @@ Regarding to Android Studio or Gradle built project, UPSDK suggests it should be
 
 ### II.Import UPSDK main package
 #### 1.Add files of UPSDK
-According to the above introduction, find the file named `UPAdsSdk_Js_x.x.xx_dex..aar` in the file directory you downloaded and add it to the `libs` directory of the project (Note: If there is no this directory, try to  create it and in the same directory as src.
+According to the above introduction, find the file named `UPAdsSdk_Js_x.x.xx_dex.aar` in the file directory you downloaded and add it to the `libs` directory of the project (Note: If there is no this directory, try to  create it and in the same directory as src.
 After adding, it looks like this:
 
 ![as-2-1](http://docc.upltv.com/uploads/201805/5af3e2cdeb793_5af3e2cd.png "as-2-1")

@@ -18,7 +18,7 @@ yourOwnGDPRCallback : function(result) {
         upltv.updateAccessPrivacyInfoStatus(upltv.GDPRPermissionEnum.UPAccessPrivacyInfoStatusDefined);
     }
      // First should call updateAccessPrivacyInfoStatus (),and then  initialization UPSDK
-    // Assume the issuing area is overseas, and the parameter passes 0
+     // Assume the issuing area is overseas, and the parameter passes 0
     upltv.intSdk(0);
 }
 
@@ -32,7 +32,7 @@ europeanUnionUserCallBack : function(result) {
         // Please replace according to the actual code
         callYourOwnGDPRDialog(yourOwnGDPRCallback);
     } else {
-       //  if the user is Non-eu users, directly initialize the SDK
+        // if the user is Non-eu users, directly initialize the SDK
         // Assume the issuing area is overseas, and the parameter passes 0
         upltv.intSdk(0);
     }

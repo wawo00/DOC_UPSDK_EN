@@ -184,7 +184,7 @@ With this scheme, you only need to synchronize the authorization results to the 
         <span class="nx">upltv</span><span class="p">.</span><span class="nx">updateAccessPrivacyInfoStatus</span><span class="p">(</span><span class="nx">upltv</span><span class="p">.</span><span class="nx">GDPRPermissionEnum</span><span class="p">.</span><span class="nx">UPAccessPrivacyInfoStatusDefined</span><span class="p">);</span>
     <span class="p">}</span>
      <span class="c1">// First should call updateAccessPrivacyInfoStatus (),and then  initialization UPSDK</span>
-    <span class="c1">// Assume the issuing area is overseas, and the parameter passes 0</span>
+     <span class="c1">// Assume the issuing area is overseas, and the parameter passes 0</span>
     <span class="nx">upltv</span><span class="p">.</span><span class="nx">intSdk</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
 <span class="p">}</span>
 
@@ -198,7 +198,7 @@ With this scheme, you only need to synchronize the authorization results to the 
         <span class="c1">// Please replace according to the actual code</span>
         <span class="nx">callYourOwnGDPRDialog</span><span class="p">(</span><span class="nx">yourOwnGDPRCallback</span><span class="p">);</span>
     <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-       <span class="c1">//  if the user is Non-eu users, directly initialize the SDK</span>
+        <span class="c1">// if the user is Non-eu users, directly initialize the SDK</span>
         <span class="c1">// Assume the issuing area is overseas, and the parameter passes 0</span>
         <span class="nx">upltv</span><span class="p">.</span><span class="nx">intSdk</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
     <span class="p">}</span>

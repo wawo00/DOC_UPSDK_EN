@@ -1,15 +1,16 @@
-## 插屏广告
-### 1. 插屏广告加载回调
-插屏广告需要根据广告位来设置加载回调，此API用于监听插屏广告的加载结果.此接口一旦完成回调，内部会自动释放，再次监听时需要重新设置回调接口.
+## Interstitial API
+### 1. Set the interstitial load callback 
+Load results (success or failure) to listen for the current interstitial ad .This interface is automatically released once a callback is made, and the callback interface needs to be reset when listening again.
 ```javascript
-// 获取插屏加载结果
-// 回调参数：加载结果（成功或失败，只有一个有值）
+// Obtain result of loading
+//@param loadsuccess  Motivate the callback when the video is //loaded loadsuccess(cpadid, msg)
+//@param failCall    Motivate the callback when the video is //loaded failed，locadfail(cpadid, msg)
     static getInterstitialAdLoadResult(cpPlaceId:string,
                                        success:(cpPlaceId:string,message:string)=>void,
                                        failure:(cpPlaceId:string,message:string)=>void)
 ```
 
-示例代码：
+Sample：
 ```javascript
 upltv.getInterstitialAdLoadResult("ilLoadCall",function(cpid:string,msg:string){
 //success
@@ -18,37 +19,37 @@ upltv.getInterstitialAdLoadResult("ilLoadCall",function(cpid:string,msg:string){
 });
 ```
 
-### 2. 插屏广告展示回调
-设置插屏广告展示时的回调接口，用于监听插屏广告的在某次展示时诸如点击，关闭等回调事件.插件展示回调接口的引用会被内部保存，不会释放，因此不用多次设置.
+### 2.Callback of Interstitial Ad
+Set up the callback interface for the display of interstitial ad which is used to listen to the callback of showing .The  interstitial ad shows that references to the callback interface are stored  and not released.
+
 ```javascript
-//展示回调
+//Callback of showing
     static interstitialAdDidShow(callback:(cpPlaceId:string)=>void)
-//点击回调
+//Callback of clicking
     static interstitialAdDidClick(callback:(cpPlaceId:string)=>void)
-//关闭回调
+//Callback of Closing
     static interstitialAdDidClose(callback:(cpPlaceId:string)=>void)
 ```
 
-### 3. 判断插屏广告加载状态
-根据广告位，判断某个插屏广告是否准备就绪，并同步返回bool结果，true 表示广告准备就绪可以展示，false表示广告还在请求中无法展示.
+### 3. Judge if the interstitial ad is ready
+Judge if the interstitial ad is ready accroding placementid, and  return Boolean results synchronously, true means that the AD is ready to be displayed, and false means that the AD is not show and still in the request.
+
 ```javascript
-// 根据广告位，判断某个插屏广告是否准备就绪
-// true 表示广告准备就绪可以展示，false表示广告还在请求中无法展示
-// 参数cpPlaceId：广告位
-// 参数callback：回调接口，如callback(true) 或 callback(false)
+// @param cpPlaceId placementid
+// @param cpPlaceId callback,callback ,such as callback(true) or callback(false)
     static isInterstitialAdReady(cpPlaceId:string, callback:(ready:boolean)=>void)
 ```
 
-### 4. 展示插屏广告
-根据广告位，展示相应的插屏广告.
+### 4. Show interstitial AD
+show a interstitial ad according to the ad placement ID.
 ```javascript
-// 根据广告位，展示某个插屏广告
+// @param cpPlaceId placementid
     static showInterstitialAd(cpPlaceId:string)
 ```
 
-### 5. 插屏广告调试模式
-为了方便开发者查看广告的使用和加载状态，我们提供了插屏广告的调试页面，可以通过以下方法打开此界面观察插屏广告的配置参数与加载状态.
+### 5. Debug view of Interstital Ad 
+In order to help developers to view the use and loading status of ad, we provide a debug page for the ad of the screen, which can be opened to observe the configuration parameters and loading status of the ad.
 ```javascript
-// 打开插屏的debug界面
+// Open debug view
     static showInterstitialAdDebugUI()
 ```

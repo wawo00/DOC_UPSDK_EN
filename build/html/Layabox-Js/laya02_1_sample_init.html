@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>SDK初始化 &mdash; UPInteractive Document  documentation</title>
+  <title>Initial SDK &mdash; UPInteractive Document  documentation</title>
   
 
   
@@ -29,8 +29,8 @@
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="A/B Test接口调用" href="laya02_2_sample_abtest.html" />
-    <link rel="prev" title="JavaScript" href="laya02_sample_catalog.html" /> 
+    <link rel="next" title="A/B Testing" href="laya02_2_sample_abtest.html" />
+    <link rel="prev" title="JavaScriptPlugin Sample" href="laya02_sample_catalog.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -87,16 +87,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../chapters/chapter05.html">UPSDK Cocos2d-X Lua</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapters/chapter06.html">UPSDK Cocos2d-X JavaScript</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../chapters/chapter07.html">UPSDK Layabox JavaScript</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="laya01_help_catalog.html">JavaScript</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="laya02_sample_catalog.html">JavaScript</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">SDK初始化</a></li>
-<li class="toctree-l3"><a class="reference internal" href="laya02_2_sample_abtest.html">A/B Test接口调用</a></li>
-<li class="toctree-l3"><a class="reference internal" href="laya02_3_sample_banner.html">横幅广告</a></li>
-<li class="toctree-l3"><a class="reference internal" href="laya02_3_sample_banner.html">横幅广告</a></li>
-<li class="toctree-l3"><a class="reference internal" href="laya02_4_sample_inter.html">插屏广告</a></li>
-<li class="toctree-l3"><a class="reference internal" href="laya02_5_sample_video.html">激励视频</a></li>
+<li class="toctree-l2"><a class="reference internal" href="laya01_help_catalog.html">JavaScriptPlugin</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="laya02_sample_catalog.html">JavaScriptPlugin Sample</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Initial SDK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="laya02_2_sample_abtest.html">A/B Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="laya02_3_sample_banner.html">Banner Ad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="laya02_3_sample_banner.html">Banner Ad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="laya02_4_sample_inter.html">Interstitial API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="laya02_5_sample_video.html">Reward video Ad</a></li>
 <li class="toctree-l3"><a class="reference internal" href="laya02_6_sample_gdpr.html">GDPR</a></li>
-<li class="toctree-l3"><a class="reference internal" href="laya02_7_sample_demo.html">Demo 下载</a></li>
+<li class="toctree-l3"><a class="reference internal" href="laya02_7_sample_demo.html">Download Demo</a></li>
 </ul>
 </li>
 </ul>
@@ -152,9 +152,9 @@
         
           <li><a href="../chapters/chapter07.html">UPSDK Layabox JavaScript</a> &raquo;</li>
         
-          <li><a href="laya02_sample_catalog.html">JavaScript</a> &raquo;</li>
+          <li><a href="laya02_sample_catalog.html">JavaScriptPlugin Sample</a> &raquo;</li>
         
-      <li>SDK初始化</li>
+      <li>Initial SDK</li>
     
     
 
@@ -166,22 +166,20 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="sdk">
-<span id="sdk"></span><h1>SDK初始化<a class="headerlink" href="#sdk" title="Permalink to this headline">¶</a></h1>
-<p>仅以Xcode工程作示例讲解，若你使用的是其它工程请参考Xcode工程操作，若有不便敬请谅解.</p>
-<p>在UPSDK所有API接口中，初始化API最早被调用，即只有初始化UPSDK之后，才能正常使用UPSDK所支持的广告功能.</p>
-<div class="section" id="upsdk">
-<span id="upsdk"></span><h2>初始化UPSDK<a class="headerlink" href="#upsdk" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="initial-sdk">
+<span id="initial-sdk"></span><h1>Initial SDK<a class="headerlink" href="#initial-sdk" title="Permalink to this headline">¶</a></h1>
+<p>Only used Xcode engineering  as an example for explanation. If you are using other projects, please refer to Xcode engineering operation. Sorry for any inconvenience.</p>
+<p>The UPLTV SDK is very simple to initialize.</p>
+<div class="section" id="initial-upsdk">
+<span id="initial-upsdk"></span><h2>Initial UPSDK<a class="headerlink" href="#initial-upsdk" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
-<span class="cm"> 初始化广告sdk</span>
-<span class="cm"> 请务必优先完成sdk初始化，然后才能正常使用SDK的其它API接口</span>
-<span class="cm"> 参数zone：产品发行的区域，0:海外，1:中国大陆，2:自动根据ip定位</span>
-<span class="cm"> 可选参数callback：SDK初始化完成后的回调接口, 回调接口包含一个布尔参数 callback(boolean)，true表示成功，否则失败</span>
+<span class="cm">* Please be sure to complete the SDK initialization before using the other API interfaces of the SDK</span>
+<span class="cm">* @param zone product distribution area, 0 overseas, 1 mainland China, 2 automatically according to IP positioning</span>
 <span class="cm">*/</span>
 <span class="nx">intSdk</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">zone</span><span class="p">,</span> <span class="nx">callback</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>示例代码：</p>
+<p>Sample：</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">initSdkButton</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">createButton</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="s2">&quot;initSdk&quot;</span><span class="p">);</span>
 <span class="nx">initSdkButton</span><span class="p">.</span><span class="nx">addTouchEventListener</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">sender</span><span class="p">,</span> <span class="nx">type</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="nx">type</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
@@ -190,11 +188,13 @@
 <span class="p">},</span> <span class="k">this</span><span class="p">);</span>
 </pre></div>
 </div>
+</div>
 <div class="section" id="setcustomerid">
-<span id="setcustomerid"></span><h3>setCustomerId()<a class="headerlink" href="#setcustomerid" title="Permalink to this headline">¶</a></h3>
-<p>仅Android支持，对于非GP的包，可以传androidid，避免用户新增统计错误.</p>
+<span id="setcustomerid"></span><h2>setCustomerId()<a class="headerlink" href="#setcustomerid" title="Permalink to this headline">¶</a></h2>
+<p>Only for Android and games that released in China,you must set androidid to ensure the correct statistics.
+.</p>
 <div class="highlight-asp notranslate"><div class="highlight"><pre><span></span>
-// 请在初始化SDK之前调用
+// Please call this method before intializating
 // Version 3004(subversion 5) and above support this method
 // @param androidid
 
@@ -202,18 +202,17 @@ upltv.setCustomerId(androidid)
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="upsdk">
-<span id="id1"></span><h2>UPSDK前后台控制<a class="headerlink" href="#upsdk" title="Permalink to this headline">¶</a></h2>
-<p>对于Android平台，我们强烈要求在当前游戏的前台后切换时，调用UPSDK以下两个接口，以便UPSDK内部做出正确的响应，避免不必要的出错.</p>
-<div class="section" id="api">
-<span id="api"></span><h3>游戏恢复到前台时调用API<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="add-onapplicationfocus">
+<span id="add-onapplicationfocus"></span><h2>Add onApplicationFocus()<a class="headerlink" href="#add-onapplicationfocus" title="Permalink to this headline">¶</a></h2>
+<p>For the Android platform, we strongly recommend calling the following two interfaces of UPSDK when switching between the front and back of the game, so that UPSDK can respond correctly.</p>
+<div class="section" id="call-the-method-when-the-game-in-the-foreground">
+<span id="call-the-method-when-the-game-in-the-foreground"></span><h3>Call the method when the game in  the foreground<a class="headerlink" href="#call-the-method-when-the-game-in-the-foreground" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">UPAdsSdk</span><span class="o">.</span><span class="na">onApplicationResume</span><span class="o">();</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="api">
-<span id="id2"></span><h3>游戏恢复到后台时调用API<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="call-the-method-when-the-game-is-in-the-background">
+<span id="call-the-method-when-the-game-is-in-the-background"></span><h3>Call the method when the game is in the background<a class="headerlink" href="#call-the-method-when-the-game-is-in-the-background" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">UPAdsSdk</span><span class="o">.</span><span class="na">onApplicationPause</span><span class="o">();</span>
 </pre></div>
 </div>
@@ -229,10 +228,10 @@ upltv.setCustomerId(androidid)
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="laya02_2_sample_abtest.html" class="btn btn-neutral float-right" title="A/B Test接口调用" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="laya02_2_sample_abtest.html" class="btn btn-neutral float-right" title="A/B Testing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="laya02_sample_catalog.html" class="btn btn-neutral" title="JavaScript" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="laya02_sample_catalog.html" class="btn btn-neutral" title="JavaScriptPlugin Sample" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

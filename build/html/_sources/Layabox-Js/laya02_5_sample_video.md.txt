@@ -1,39 +1,36 @@
-## 激励视频
+## Reward video Ad
 
-### 1. 激励视频加载回调
-  该API用于监听当前激励视频的加载结果，此接口一旦回调，内部会自动释放，再次监听时需要重新设定回调接口.
+### 1. Load callback of Reward video
+This API is used to listen for the loading results of the current excited video. Once this interface is called back, the internal will be automatically released, and the callback interface needs to be reset when listening again.
+
 ```javascript
-// 设置激励视屏加载回调接口
-// 用于监听当前激励视屏的加载结果（成功或失败）
-// 此接口一旦回调，内部会自动释放，再次监听时需要重新设定回调接口
+//@param loadsuccess  Motivate the callback when the video is //loaded loadsuccess(cpadid, msg)
+//@param failCall    Motivate the callback when the video is //loaded failed，locadfail(cpadid, msg)
 setRewardVideoLoadCallback : function(loadsuccess, locadfail)
 ```
 
-示例代码：
+Sample：
 ```javascript
 var rdLoadCallButton = this.createButton(x, y, "rdLoadCall");
 rdLoadCallButton.addTouchEventListener(function(sender, type) {
     if (type == 2) {
         upltv.setRewardVideoLoadCallback(function(cpid, msg) {
-            console.log("===> js RewardVideo LoadCallback Success at: %s", cpid);
+            cc.log("===> js RewardVideo LoadCallback Success at: %s", cpid);
         }, function(cpid, msg) {
-            console.log("===> js RewardVideo LoadCallback Fail at: %s", cpid);
+            cc.log("===> js RewardVideo LoadCallback Fail at: %s", cpid);
         });
     }
 }, this);
 ```
 
-### 2. 激励视频展示回调
-  设置激励视屏展示回调接口，用于监听激励视屏广告的在某次展示时(如点击，关闭，奖励发放等)事件回调.激励视频展示回调接口的引用会被内部保存，不会释放，因此只须设置一次.
+#### 2. Show callback of Reward video Ad
+    Set up the callback interface of video show to listen to the callback of the event (click, close, reward, etc.) of the video advertisement. Reward video shows that the reference to the callback interface is stored internally and not released, so you only need to set it once.
 ```javascript
-// 设置激励视屏展示回调接口，用于监听激励视屏广告的在某次展示时诸如点击，关闭，奖励发放等事件回调
-// 展示接口的引用会被内部保存，不会释放
-// 回调接口功能顺序：展示回调，点击回调，关闭回调，激励发放成功回调，激励发放失败回调
-// 回调接口参数：事件类型，广告位，showCall(type, cpadid)
+
 setRewardVideoShowCallback : function(showCall)
 ```
 
-示例代码：
+Sample：
 ```javascript
 var rdShowCallButton = this.createButton(x, y, "rdShowCall");
 rdShowCallButton.addTouchEventListener(function(sender, type) {
@@ -58,34 +55,31 @@ rdShowCallButton.addTouchEventListener(function(sender, type) {
 }, this);
 ```
 
-### 3. 判断激励视频加载状态
-判断激励视屏是否加载成功，并同步返回boolean结果，true表示广告准备就绪可以展示，false表示广告还在请求中无法展示.
+#### 3. Judge if the Reward Video ad is ready
+Synchronously return Boolean results, true indicates that the AD is ready to be displayed, and false indicates that the AD is not show and still  in the request
 ```javascript
-// 判断激励视屏是否准备好
-// 同步返回boolean结果，true 表示广告准备就绪可以展示，false表示广告还在请求中无法展示
-// 通常在showRewardVideo(cpPlaceId)前，调用此方法
 isRewardReady : function()
 ```
 
-示例代码：
+Sample：
 ```javascript
 var readyRdUIButton = this.createButton(x, y, "rdReady");
 readyRdUIButton.addTouchEventListener(function(sender, type) {
     if (type == 2) {
         var r = upltv.isRewardReady();
-        console.log("===> js isRewardReady r: %s", r.toString());
+        cc.log("===> js isRewardReady r: %s", r.toString());
     }
 }, this);
 ```
 
-### 4. 展示激励视频
-在激励视频展示的时候，需要上传一个cpPlaceId，这是激励视频的广告位，用于业务打点，以便于区分收益来源.
+#### 4. Show Reward Video Ad 
+When show the Reward Video ad, you need to upload a cpPlaceId, which is the placementid , used for business management, in order to distinguish the source of revenue.
 ```javascript
-// 参数cpPlaceId：激励视屏展示时的广告位，用于业务打点，便于区分收益来源
+// @param cpPlaceId placementid
 showRewardVideo : function(cpPlaceId)
 ```
 
-示例代码：
+Sample：
 ```javascript
 var showRdUIButton = this.createButton(x, y, "rdShow");
 showRdUIButton.addTouchEventListener(function(sender, type) {
@@ -98,14 +92,13 @@ showRdUIButton.addTouchEventListener(function(sender, type) {
 }, this);
 ```
 
-### 5. 激励视频调试模式
-为了方便开发者查看广告的使用和加载状态，我们提供了激励视频的调试页面，可以通过以下方法打开此界面观察激励视频的配置参数与加载状态.
+#### 5. Debug view of Reward Video Ad
+In order to help developers to view the use and loading status of ad, we provide a debug page for the ad of the screen, which can be opened to observe the configuration parameters and loading status of the ad.
 ```javascript
-// 打开激励视屏的debug界面
 showRewardDebugUI : function()
 ```
 
-示例代码：
+Sample：
 ```javascript
 var showRdUIButton = this.createButton(x, y, "rdDebugUI");
 showRdUIButton.addTouchEventListener(function(sender, type) {

@@ -1,14 +1,16 @@
-## 激励视频
+## Reward video Ad
 
-### 1. 激励视频加载回调
-  该API用于监听当前激励视频的加载结果，此接口一旦回调，内部会自动释放，再次监听时需要重新设定回调接口.
+### 1. Load callback of Reward video
+This API is used to listen for the loading results of the current excited video. Once this interface is called back, the internal will be automatically released, and the callback interface needs to be reset when listening again.
+
 ```javascript
-// 获取激励视屏加载结果
-// 回调参数：加载结果（成功或失败，只有一个有值）
+// Obtain result of loading
+//@param loadsuccess  Motivate the callback when the video is //loaded loadsuccess(cpadid, msg)
+//@param failCall    Motivate the callback when the video is //loaded failed，locadfail(cpadid, msg)
     static getRewardAdLoadResult(success:(cpPlaceId:string,message:string)=>void,failure:(cpPlaceId:string,message:string)=>void)
 ```
 
-示例代码：
+Sample: 
 ```javascript
 upltv.getRewardAdLoadResult(function(cpid:string,msg:string){
 //success
@@ -17,41 +19,48 @@ upltv.getRewardAdLoadResult(function(cpid:string,msg:string){
 });
 ```
 
-### 2. 激励视频展示回调
-  设置激励视屏展示回调接口，用于监听激励视屏广告的在某次展示时(如点击，关闭，奖励发放等)事件回调.激励视频展示回调接口的引用会被内部保存，不会释放，因此只须设置一次.
+### 2. Show callback of Reward video Ad
+     Set up the callback interface of video show to listen to the callback of the event (click, close, reward, etc.) of the video advertisement. Reward video shows that the reference to the callback interface is stored internally and not released, so you only need to set it once.
 ```javascript
-// 展示回调
-// 回调参数：广告位
+// Callback of showing
+// @param cpPlaceId placementid
     static rewardAdDidOpen(callback:(cpPlaceId:string)=>void)
-//点击回调
+
+// Callback of clicking
+// @param cpPlaceId placementid
     static rewardAdDidClick(callback:(cpPlaceId:string)=>void)
-//关闭回调
+
+// Callback of closing
+// @param cpPlaceId placementid
     static rewardAdDidClose(callback:(cpPlaceId:string)=>void)
-//激励发放成功回调
+
+// Callback of sending reward successfully
+// @param cpPlaceId placementid
     static rewardAdDidGiven(callback:(cpPlaceId:string)=>void)
-//激励发放失败回调
+
+// Callback of failing to send reward 
+// @param cpPlaceId placementid
     static rewardAdDidAbandon(callback:(cpPlaceId:string)=>void)
 ```
 
-### 3. 判断激励视频加载状态
-判断激励视屏是否加载成功，并同步返回boolean结果，true表示广告准备就绪可以展示，false表示广告还在请求中无法展示.
+#### 3. Judge if the Reward Video ad is ready
+Synchronously return Boolean results, true means that the AD is ready to be displayed, and false indicates that the AD is not show and still  in the request
 ```javascript
-// 回调参数：true 表示广告准备就绪可以展示，false表示广告还在请求中无法展示
-// 通常在showRewardVideo(cpPlaceId)前，调用此方法
+// Usually call this method before showRewardVideo(cpPlaceId)
     static isRewardAdReady(callback:(ready:boolean)=>void)
 ```
 
-### 4. 展示激励视频
-在激励视频展示的时候，需要上传一个cpPlaceId，这是激励视频的广告位，用于业务打点，以便于区分收益来源.
+#### 4. Show Reward Video Ad 
+When show the Reward Video ad, you need to upload a cpPlaceId, which is the placementid , used for business management, in order to distinguish the source of revenue.
+
 ```javascript
-// 展示激励视屏
-// 参数cpPlaceId：激励视屏展示时的广告位，用于业务打点，便于区分收益来源
+// @param cpPlaceId placementid
     static showRewardAd(cpPlaceId:string)
 ```
 
-### 5. 激励视频调试模式
-为了方便开发者查看广告的使用和加载状态，我们提供了激励视频的调试页面，可以通过以下方法打开此界面观察激励视频的配置参数与加载状态.
+#### 5. Debug view of Reward Video Ad
+In order to help developers to view the use and loading status of ad, we provide a debug page for the ad of the screen, which can be opened to observe the configuration parameters and loading status of the ad.
+
 ```javascript
-// 打开激励视屏的debug界面
-    static showRewardAdDebugUI()
+showRewardDebugUI : function()
 ```
