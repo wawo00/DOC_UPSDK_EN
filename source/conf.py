@@ -145,6 +145,23 @@ latex_elements = {
     # Additional stuff for the LaTeX preamble.
     #
     # 'preamble': '',
+    'preamble': r'''
+        \hypersetup{unicode=true}
+        \usepackage{CJKutf8}
+        \DeclareUnicodeCharacter{00A0}{\nobreakspace}
+        \DeclareUnicodeCharacter{2203}{\ensuremath{\exists}}
+        \DeclareUnicodeCharacter{2200}{\ensuremath{\forall}}
+        \DeclareUnicodeCharacter{2286}{\ensuremath{\subseteq}}
+        \DeclareUnicodeCharacter{00A0}{~}
+        \DeclareUnicodeCharacter{2713}{x}
+        \DeclareUnicodeCharacter{27FA}{\ensuremath{\Longleftrightarrow}}
+        \DeclareUnicodeCharacter{221A}{\ensuremath{\sqrt{}}}
+        \DeclareUnicodeCharacter{221B}{\ensuremath{\sqrt[3]{}}}
+        \DeclareUnicodeCharacter{2295}{\ensuremath{\oplus}}
+        \DeclareUnicodeCharacter{2297}{\ensuremath{\otimes}}
+        \begin{CJK}{UTF8}{gbsn}
+        \AtEndDocument{\end{CJK}}
+        ''',
 
     # Latex figure (float) alignment
     #
@@ -154,10 +171,10 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
-# latex_documents = [
-#     (master_doc, 'UPInteractiveDocument.tex', 'UPInteractive Document Documentation',
-#      'upltv', 'manual'),
-# ]
+latex_documents = [
+    (master_doc, 'UPInteractiveDocument.tex', 'UPInteractive Document Documentation',
+     'upltv', 'manual'),
+]
 
 
 # -- Options for manual page output ------------------------------------------
@@ -175,11 +192,11 @@ man_pages = [
 # Grouping the document tree into Texinfo files. List of tuples
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
-# exinfo_documents = [
-#    (master_doc, 'UPInteractiveDocument', 'UPInteractive Document Documentation',
-#     author, 'UPInteractiveDocument', 'One line description of project.',
-#     'Miscellaneous'),
-#
+exinfo_documents = [
+   (master_doc, 'UPInteractiveDocument', 'UPInteractive Document Documentation',
+    author, 'UPInteractiveDocument', 'One line description of project.',
+    'Miscellaneous'),
+]
 
 
 # -- Options for Epub output -------------------------------------------------
