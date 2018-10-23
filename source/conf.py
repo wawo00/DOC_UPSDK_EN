@@ -170,10 +170,10 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
-latex_documents = [
-    (master_doc, 'UPInteractiveDocument.tex', 'UPInteractive Document Documentation',
-     'upltv', 'manual'),
-]
+# latex_documents = [
+#     (master_doc, 'UPInteractiveDocument.tex', 'UPInteractive Document Documentation',
+#      'upltv', 'manual'),
+# ]
 
 
 # -- Options for manual page output ------------------------------------------
@@ -191,11 +191,11 @@ man_pages = [
 # Grouping the document tree into Texinfo files. List of tuples
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
-texinfo_documents = [
-    (master_doc, 'UPInteractiveDocument', 'UPInteractive Document Documentation',
-     author, 'UPInteractiveDocument', 'One line description of project.',
-     'Miscellaneous'),
-]
+# exinfo_documents = [
+#    (master_doc, 'UPInteractiveDocument', 'UPInteractive Document Documentation',
+#     author, 'UPInteractiveDocument', 'One line description of project.',
+#     'Miscellaneous'),
+#
 
 
 # -- Options for Epub output -------------------------------------------------
