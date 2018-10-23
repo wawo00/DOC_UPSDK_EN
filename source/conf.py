@@ -83,9 +83,10 @@ pygments_style = None
 # a list of builtin themes.
 #
 html_theme = 'sphinx_rtd_theme'
+
 def setup(app):
- app.add_stylesheet("css/custom.css" )
- app.add_javascript('js/custom.js')
+    app.add_stylesheet('css/custom.css')
+    app.add_javascript('js/custom.js')
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -145,21 +146,22 @@ latex_elements = {
     #
     # 'preamble': '',
     'preamble': r'''
-    \hypersetup{unicode=true}
-    \usepackage{CJKutf8}
-    \DeclareUnicodeCharacter{00A0}{\nobreakspace}
-    \DeclareUnicodeCharacter{2203}{\ensuremath{\exists}}
-    \DeclareUnicodeCharacter{2200}{\ensuremath{\forall}}
-    \DeclareUnicodeCharacter{2286}{\ensuremath{\subseteq}}
-    \DeclareUnicodeCharacter{2713}{x}
-    \DeclareUnicodeCharacter{27FA}{\ensuremath{\Longleftrightarrow}}
-    \DeclareUnicodeCharacter{221A}{\ensuremath{\sqrt{}}}
-    \DeclareUnicodeCharacter{221B}{\ensuremath{\sqrt[3]{}}}
-    \DeclareUnicodeCharacter{2295}{\ensuremath{\oplus}}
-    \DeclareUnicodeCharacter{2297}{\ensuremath{\otimes}}
-    \begin{CJK}{UTF8}{gbsn}
-    \AtEndDocument{\end{CJK}}
-    ''',
+        \hypersetup{unicode=true}
+        \usepackage{CJKutf8}
+        \DeclareUnicodeCharacter{00A0}{\nobreakspace}
+        \DeclareUnicodeCharacter{2203}{\ensuremath{\exists}}
+        \DeclareUnicodeCharacter{2200}{\ensuremath{\forall}}
+        \DeclareUnicodeCharacter{2286}{\ensuremath{\subseteq}}
+        \DeclareUnicodeCharacter{00A0}{~}
+        \DeclareUnicodeCharacter{2713}{x}
+        \DeclareUnicodeCharacter{27FA}{\ensuremath{\Longleftrightarrow}}
+        \DeclareUnicodeCharacter{221A}{\ensuremath{\sqrt{}}}
+        \DeclareUnicodeCharacter{221B}{\ensuremath{\sqrt[3]{}}}
+        \DeclareUnicodeCharacter{2295}{\ensuremath{\oplus}}
+        \DeclareUnicodeCharacter{2297}{\ensuremath{\otimes}}
+        \begin{CJK}{UTF8}{gbsn}
+        \AtEndDocument{\end{CJK}}
+        ''',
 
     # Latex figure (float) alignment
     #
@@ -190,10 +192,10 @@ man_pages = [
 # Grouping the document tree into Texinfo files. List of tuples
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
-texinfo_documents = [
-    (master_doc, 'UPInteractiveDocument', 'UPInteractive Document Documentation',
-     author, 'UPInteractiveDocument', 'One line description of project.',
-     'Miscellaneous'),
+exinfo_documents = [
+   (master_doc, 'UPInteractiveDocument', 'UPInteractive Document Documentation',
+    author, 'UPInteractiveDocument', 'One line description of project.',
+    'Miscellaneous'),
 ]
 
 
