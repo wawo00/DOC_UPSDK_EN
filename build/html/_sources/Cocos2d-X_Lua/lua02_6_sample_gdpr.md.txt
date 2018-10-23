@@ -1,0 +1,182 @@
+## GDPR 
+
+`GDPR "The General Data Protection Regulation" is a data protection program issued by the European Union. `
+If your product is intended for EU users, we offer the following solutions to ensure that `UPSDK` complies with the `GDPR' rules.
+
+`UPSDK` supports the EU `GDPR` rules in the `3.0.03` version, and developers who will distribute in EU region must handle this logic.
+
+### GDPR Samples
+#### Customizing implementation
+
+Customized dialog of GDPR according to the style of your game to ensure the best product experience.
+When adopting this scheme, it is only necessary to inform the UPSDK of the authorization result before initializing the UPSDK.
+
+
+Sample：
+```csharp
+local function yourOwnGDPRCallback(result)
+
+    -- result : "true" means that  user accepts authorization，false means that user denies it.
+
+    if result=="true" then
+        upltv:updateAccessPrivacyInfoStatus(upltv.GDPRPermissionEnum.UPAccessPrivacyInfoStatusAccepted)
+    else
+        upltv:updateAccessPrivacyInfoStatus(upltv.GDPRPermissionEnum.UPAccessPrivacyInfoStatusDefined)
+    end
+
+    -- please call updateAccessPrivacyInfoStatus() before initializing UPSDK
+
+    upltv:initSDK(0)
+end
+
+local function europeanUnionUserCallBack(result)
+    print("=====> lua mEuropeanUnionUserCallBack result: " .. result)
+    -- result: "true" means users in the EU region
+
+    if result=="true" then
+
+        -- callYourOwnGDPRDialog()，is your method
+        -- yourOwnGDPRCallback，is your callback to get result.
+        -- Fake code
+        callYourOwnGDPRDialog(yourOwnGDPRCallback)
+    else
+        upltv:initSDK(0)
+    end
+end
+
+-- GDPR
+local function checkGDPR()
+    local e = upltv:getAccessPrivacyInfoStatus()
+    print("=====> lua getAccessPrivacyInfoStatus status: " .. e)
+
+    -- If you have not asked for authorization
+    if e==upltv.GDPRPermissionEnum.UPAccessPrivacyInfoStatusUnkown then
+
+        -- Whether the user is in the EU 
+        upltv:isEuropeanUnionUser(europeanUnionUserCallBack)
+    else
+        upltv:initSDK(0)
+    end
+end
+``` 
+
+#### Quick implementation
+If you use the standard authorization process provided by UPSDK, please refer to the following code .
+
+Sample：
+
+```csharp
+local function notifyAccessPrivacyInfoStatusCallBack(value)
+    print("=====> lua notifyAccessPrivacyInfoStatus callback: " .. value)
+    upltv:initSDK(0)
+ end
+
+local function europeanUnionUserCallBack(result)
+    print("=====> lua mEuropeanUnionUserCallBack result: " .. result)
+    -- result: "true" means user in EU
+    if result=="true" then
+
+        -- pop up Dialog to ask authorizing
+        upltv:notifyAccessPrivacyInfoStatus(notifyAccessPrivacyInfoStatusCallBack)
+    else
+        -- if user is not in the EU,just initializing upsdk
+        upltv:initSDK(0)
+    end
+end
+
+-- GDPR
+local function checkGDPR()
+    local e = upltv:getAccessPrivacyInfoStatus()
+    print("=====> lua getAccessPrivacyInfoStatus status: " .. e)
+    -- If you have not asked for authorization
+    if (e==upltv.GDPRPermissionEnum.UPAccessPrivacyInfoStatusUnkown) then
+        -- Whether the user is in the EU 
+        upltv:isEuropeanUnionUser(europeanUnionUserCallBack)
+    else
+        -- 假定发行地区是海外，且不需要回调
+        upltv:initSDK(0)
+    end
+end
+```
+### GDPR API
+
+#### 1.notifyAccessPrivacyInfoStatus
+The authorization window pops up to explain to the user that we will collect data and ask the user whether to approve the authorization. If the user refuses to authorize, the collection of related data will be abandoned. Please call before initializing the UPSDK.
+
+```csharp
+function upltv:notifyAccessPrivacyInfoStatus(callback)
+```
+Sample：
+
+```csharp
+local mNotifyAccessPrivacyInfoStatusCallBack=function(value)
+    print("=====> lua notifyAccessPrivacyInfoStatus callback: " .. value)
+    if upltv.GDPRPermissionEnum.UPAccessPrivacyInfoStatusAccepted==value then
+          --agree
+
+    else
+          --disagree
+          
+    end
+end  
+
+upltv:notifyAccessPrivacyInfoStatus(mNotifyAccessPrivacyInfoStatusCallBack)
+```
+
+
+#### 2.updateAccessPrivacyInfoStatus
+When externally asking GDPR authorization, this method is called to inform the UPSDK of the user authorization result, and UPSDK will no longer perform authorization popup management. Please call before initializing the UPSDK.
+
+```csharp
+function upltv:updateAccessPrivacyInfoStatus(gdprPermissionEnumValue))
+```
+
+
+Sample：
+
+```csharp
+{
+
+    --If the user defined, call the following method to notice  UPSDK
+    upltv:updateAccessPrivacyInfoStatus(upltv.GDPRPermissionEnum.UPAccessPrivacyInfoStatusDefined);
+  
+    -- If the user accepted, call the following method to notice  UPSDK
+    upltv:updateAccessPrivacyInfoStatus(upltv.GDPRPermissionEnum.UPAccessPrivacyInfoStatusAccepted);
+}
+```
+
+
+#### 3.getAccessPrivacyInfoStatus
+Obtain the user authorization result, which can be called before initializing the UPSDK.
+
+
+```groovy
+function upltv:getAccessPrivacyInfoStatus()
+```
+
+Sample：
+```csharp
+local e = upltv:getAccessPrivacyInfoStatus()
+```
+
+#### 4.isEuropeanUnionUser
+Determine whether the user belongs to the EU region,which can be called before initializing the UPSDK 
+
+```csharp
+function upltv:isEuropeanUnionUser(callback)
+```
+Sample：
+```csharp
+local function europeanUnionUserCallBack(result)
+    print("=====> lua mEuropeanUnionUserCallBack result: " .. result)
+    -- result: true means users in EU, apply to GDPR
+    if result=="true" then
+     -- TODO
+    else
+     -- TODO
+    end
+end
+
+upltv:isEuropeanUnionUser(europeanUnionUserCallBack)
+```
+

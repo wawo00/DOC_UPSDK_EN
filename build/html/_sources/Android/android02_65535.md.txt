@@ -1,0 +1,51 @@
+## Solving 65535-Limitation
+If you mediated too much SDK in framework procedure, it may cause the following condition:
+
+Conversion to Dalvik format failed: Unable to execute dex: method ID not in [0, 0xffff]: 65536
+
+We provide you the following methods to solve this limitation.
+
+### I. Release Proguard
+
+If you have not released proguard in your app, we suggest you to release it. It will effectively help you to exclude some unused class methods. Regarding to Ads SDK Proguard configuration, please refer to `proguard-project.txt` in the downloaded files. If releasing proguard still can not help from exceeding the limitation, please refer to the following methods.
+
+### II. MultiDex Methods
+
+MultiDex methods is designed by Google, aims to break the 65535-Limitation. If you are using Android Studio to develop, it will be much easier. Please follow the steps hereunder to configurate.
+
+Firstly, add the following configuration into build.gradle project:
+
+    android {
+        defaultConfig {
+            multiDexEnabled true
+        }
+    }
+    dependencies {  
+        compile 'com.google.android:multidex:1.0.1'
+    } 
+
+If your project contains`Application` , then let it inherit `android.support.multidex.MultiDexApplication` will be okay.
+
+If your `Application` has inherited others and you do not want to change, you could use `attachBaseContext()` methods of`Application` to solve the limitation.
+
+    public class MyApplication extends FooApplication {  
+        @Override  
+        protected void attachBaseContext(Context base) {  
+            super.attachBaseContext(base);  
+            MultiDex.install(this);  
+        }  
+    }  
+
+
+
+### III. Using Dex Dynamic-Loading Methods
+
+If you are using Eclipse, integrating MiltiDex method will be complex, so we provide you another method: Dex Dynamic-Loading.
+
+In the downloaded SDK zip package, you can see that the `assets` folder, and then copy the `assets` directory to the project. 
+
+**【Attention】 During the copy period, please do not modify files or rename any folders.**
+
+**【Attention】Ad Networks like `admob`,`batmobi` and `inmobi` currently do not support this kind of loading.**
+
+

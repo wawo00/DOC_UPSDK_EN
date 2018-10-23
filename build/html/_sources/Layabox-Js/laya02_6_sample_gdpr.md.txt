@@ -1,0 +1,169 @@
+
+## GDPR
+`GDPR "The General Data Protection Regulation" is a data protection program issued by the European Union.` If your product is intended for EU users, we offer the following solutions to ensure that `UPSDK` complies with the GDPR' rules.
+
+### GDPR recommend the use case
+#### Plan 1
+It is recommended to customize the authorization popover interface of GDPR according to the picture style of your game to ensure the best product experience.
+With this scheme, you only need to synchronize the authorization results to the UPSDK and then initialize the UPSDK.
+
+Sample：
+```javascript
+yourOwnGDPRCallback : function(result) {
+    // result : true means that the user accepts authorization, and false rejects authorization
+    // Please refer to the following code to complete authorization synchronization and initialization of UPSDK
+    if (result=="true") {
+        upltv.updateAccessPrivacyInfoStatus(upltv.GDPRPermissionEnum.UPAccessPrivacyInfoStatusAccepted);
+    } else {
+        upltv.updateAccessPrivacyInfoStatus(upltv.GDPRPermissionEnum.UPAccessPrivacyInfoStatusDefined);
+    }
+     // Please call updateAccessPrivacyInfoStatus () before initializing UPSDK
+    upltv.intSdk(0);
+}
+
+europeanUnionUserCallBack : function(result) {
+    cc.log("=====> js europeanUnionUserCallBack result: " + result);
+    // true represents users in the EU, otherwise non-eu users
+    if (result=="true") {
+        //  is EU user, calls custom authorization inquiry method
+        // callYourOwnGDPRDialog()，That's our hypothetical method
+        // yourOwnGDPRCallback，it's our hypothetical authorization callback method
+        // Please replace according to the actual code
+        callYourOwnGDPRDialog(yourOwnGDPRCallback);
+    } else {
+        // if the user is Non-eu users, directly initialize the SDK
+        // Assume the issuing area is overseas, and the parameter passes 0
+        upltv.intSdk(0);
+    }
+}
+// GDPR
+checkGDPR : function() {
+    var e = upltv.getAccessPrivacyInfoStatus();d
+    cc.log("=====> js getAccessPrivacyInfoStatus status: %d", e)
+    // If you have not asked for authorization
+    if (e==upltv.GDPRPermissionEnum.UPAccessPrivacyInfoStatusUnkown)
+    {
+         // Determine if the user belongs to the EU
+        upltv.isEuropeanUnionUser(europeanUnionUserCallBack);
+    } else {
+        // Assume the issuing area is overseas, and the parameter passes 0
+        upltv.intSdk(0);
+    }
+}
+``` 
+
+#### Plan 2
+
+If you use the standard authorization mechanism provided by UPSDK, refer to the following code to modify the UPSDK initialization process.
+
+Sample：
+
+
+```javascript
+notifyAccessPrivacyInfoStatusCallBack : function(value) {
+    cc.log("=====> js notifyAccessPrivacyInfoStatusCallBack callback: %d ",  value);
+    upltv.intSdk(0);
+}
+
+europeanUnionUserCallBack : function(result) {
+    cc.log("=====> js europeanUnionUserCallBack result: " + result)
+    if (result=="true"){
+        // Pop up system popup to ask authorization
+        upltv.notifyAccessPrivacyInfoStatus(notifyAccessPrivacyInfoStatusCallBack);
+    } else {
+        // Non-eu users, directly initialize the SDK
+        // Assume the issuing area is overseas
+       upltv.intSdk(0);
+    }
+}
+
+// GDPR
+checkGDPR : function() {
+    var e = upltv.getAccessPrivacyInfoStatus();
+    cc.log("=====> js getAccessPrivacyInfoStatus status: %d ", e);
+    if (e==upltv.GDPRPermissionEnum.UPAccessPrivacyInfoStatusUnkown)
+    {
+        upltv.isEuropeanUnionUser(europeanUnionUserCallBack);
+    } else {
+        upltv.intSdk(0);
+    }
+}
+```
+### GDPR API
+
+#### 1.notifyAccessPrivacyInfoStatus
+The authorization window pops up to explain to the user that we will collect data and ask the user whether to approve the authorization. If the user refuses to authorize, the collection of related data will be abandoned. Please call before initializing the UPSDK.
+
+
+```javascript
+ notifyAccessPrivacyInfoStatus : function(callback)
+```
+Sample：
+
+```javascript
+ notifyAccessPrivacyInfoStatusCallBack : function(value) {
+    if (upltv.GDPRPermissionEnum.UPAccessPrivacyInfoStatusAccepted==value)
+    {
+        //agree     
+
+    } else {
+        //disagree
+          
+    }
+}
+upltv.notifyAccessPrivacyInfoStatus(notifyAccessPrivacyInfoStatusCallBack);
+```
+
+
+#### 2.updateAccessPrivacyInfoStatus
+When externally asking GDPR authorization, this method is called to inform the UPSDK of the user authorization result, and UPSDK will no longer perform authorization popup management. Please call before initializing the UPSDK.
+
+```javascript
+updateAccessPrivacyInfoStatus : function(gdprPermissionEnumValue)
+```
+
+Sample：
+
+```javascript
+{
+
+    //disagree to collect data
+    upltv.updateAccessPrivacyInfoStatus(upltv.GDPRPermissionEnum.UPAccessPrivacyInfoStatusDefined);
+
+    //agree to collect data
+    upltv.updateAccessPrivacyInfoStatus(upltv.GDPRPermissionEnum.UPAccessPrivacyInfoStatusAccepted);
+}
+```
+
+
+#### 3.getAccessPrivacyInfoStatus
+Obtain the user authorization result, which can be called before initializing the UPSDK.
+
+```javascript
+ getAccessPrivacyInfoStatus : function()
+```
+
+Sample：
+```javascript
+var e = upltv.getAccessPrivacyInfoStatus();
+```
+
+#### 4.isEuropeanUnionUser
+Determine whether the user belongs to the EU region,which can be called before initializing the UPSDK.
+
+```javascript
+isEuropeanUnionUser : function(callback)
+```
+Sample：
+```javascript
+function europeanUnionUserCallBack(result)
+    if (result=="true") {
+        //TODO
+    } else {
+        //TODO
+    }
+}
+
+upltv.isEuropeanUnionUser(europeanUnionUserCallBack);
+```
+

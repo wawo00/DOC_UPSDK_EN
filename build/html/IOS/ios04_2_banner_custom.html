@@ -1,0 +1,331 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Customizing Banner Ad &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Interstitial Ad" href="ios05_inter.html" />
+    <link rel="prev" title="Quick Banner Ad" href="ios04_1_banner_quick.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter00.html">About UPSDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter01.html">UPSDK Android</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../chapters/chapter02.html">UPSDK IOS</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ios01_xcode.html">Xcode Access Document</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ios02_cocoapods.html">CocoaPods Access Document</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ios03_init.html">SDK Initial</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ios04_banner_catalog.html">Banner Ad</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ios04_1_banner_quick.html">Quick  Banner Ad</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Customizing Banner Ad</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ios05_inter.html">Interstitial Ad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ios06_video.html">Rewarded Video Ad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ios07_gdpr.html">GDPR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ios08_demo.html">Demo</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter03.html">UPSDK UnityPlugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter04.html">UPSDK Cocos2d-X Cpp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter05.html">UPSDK Cocos2d-X Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter06.html">UPSDK Cocos2d-X JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter07.html">UPSDK Layabox JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter08.html">UPSDK Egret TypeScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter09.html">UPSDK Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter10.html">GDPR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter11.html">FAQ</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../chapters/chapter02.html">UPSDK IOS</a> &raquo;</li>
+        
+          <li><a href="ios04_banner_catalog.html">Banner Ad</a> &raquo;</li>
+        
+      <li>Customizing Banner Ad</li>
+    
+    
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="customizing-banner-ad">
+<span id="customizing-banner-ad"></span><h1>Customizing Banner Ad<a class="headerlink" href="#customizing-banner-ad" title="Permalink to this headline">¶</a></h1>
+<p>UPSDK offers two banner advertisements, one based on the long bar of the <em>UPBannerStripWrapper</em> class and the other based on a rectangle of <em>UPBannerRectangleWrapper</em>. When using, please instantiate the Wrapper class of the ad according to the actual situation.</p>
+<div class="section" id="import-h-file-of-banner">
+<span id="import-h-file-of-banner"></span><h2>Import .h file of banner<a class="headerlink" href="#import-h-file-of-banner" title="Permalink to this headline">¶</a></h2>
+<p>There are two header files of banner : UPBannerStripWrapper.h and UPBannerRectangleWrapper.h. The header file is introduced as follows:</p>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#import    &lt;UPSDK/UPSDK.h&gt;</span>
+</pre></div>
+</div>
+<p><br></p>
+</div>
+<div class="section" id="instantiate-a-wrapper-object">
+<span id="instantiate-a-wrapper-object"></span><h2>Instantiate a Wrapper object<a class="headerlink" href="#instantiate-a-wrapper-object" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div>You can set parameter <code class="docutils literal notranslate"><span class="pre">Placement</span> <span class="pre">ID</span></code> to any significative name you want. If you not sure about should discussed with our <strong>support engineer</strong>. You should use different <code class="docutils literal notranslate"><span class="pre">Placement</span> <span class="pre">ID</span></code> for different ads placement. We provide revenue from each  <code class="docutils literal notranslate"><span class="pre">Placement</span> <span class="pre">ID</span></code> in the feature.
+Eg: You may use “Pause” or “Menu” when initial our SDK in the pause scene of your game.</div></blockquote>
+</div>
+<div class="section" id="construction-method">
+<span id="construction-method"></span><h2>Construction method：<a class="headerlink" href="#construction-method" title="Permalink to this headline">¶</a></h2>
+<p>The banner object constructed by this method can freely control the display position of the banner view.</p>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* 1. avidPlacement：NSString，placemntid, Required</span>
+<span class="cm">* 2. vc:UIViewController，Used to control Banner click ,Required</span>
+<span class="cm">*/</span>
+<span class="p">-</span> <span class="p">(</span><span class="kt">instancetype</span><span class="p">)</span><span class="nf">initWithPlacement:</span><span class="p">(</span><span class="bp">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">avidPlacement</span> <span class="nf">controller:</span><span class="p">(</span><span class="bp">UIViewController</span><span class="o">*</span><span class="p">)</span><span class="nv">vc</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Sample:</p>
+<p>In a ViewController.m, initialize a rectangular Banner object and set the callback proxy.</p>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">viewDidLoad</span> <span class="p">{</span>
+    <span class="c1">// …</span>
+    <span class="c1">// Initialize wrapper</span>
+    <span class="n">_bottomRectBanner</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UPBannerRectangleWrapper</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithPlacement</span><span class="p">:</span><span class="s">@&quot;banner_rect_bottom” controller:self];</span>
+    <span class="c1">// set callback</span>
+    <span class="n">_bottomRectBanner</span><span class="p">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="nb">self</span><span class="p">;</span>
+    <span class="c1">// Initialize a UIView for displaying banner ads, size unknown</span>
+    <span class="n">_bannerRectView</span> <span class="o">=</span> <span class="p">[[</span><span class="bp">UIView</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithFrame</span><span class="p">:</span><span class="n">CGRectMake</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)];</span>
+    <span class="p">[</span><span class="nb">self</span><span class="p">.</span><span class="n">view</span> <span class="nl">addSubview</span><span class="p">:</span><span class="n">_bannerRectView</span><span class="p">];</span>
+    <span class="c1">// Get the UIView object of the ad and load it</span>
+    <span class="bp">UIView</span> <span class="o">*</span><span class="n">view</span> <span class="o">=</span> <span class="p">[</span><span class="n">_bottomRectBanner</span> <span class="n">getView</span><span class="p">];</span>
+    <span class="p">[</span><span class="n">_bannerRectView</span> <span class="nl">addSubview</span><span class="p">:</span><span class="n">view</span><span class="p">];</span>
+    <span class="c1">// …</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><br></p>
+</div>
+<div class="section" id="callback-of-banner-ad">
+<span id="callback-of-banner-ad"></span><h2>Callback of Banner Ad<a class="headerlink" href="#callback-of-banner-ad" title="Permalink to this headline">¶</a></h2>
+<p>UPBannerWrapperProtocol is the callback of Banner, which mainly contains two following  interface .</p>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">bannerAdClick:</span><span class="p">(</span><span class="kt">id</span><span class="p">)</span><span class="nv">wrapper</span><span class="p">;</span>
+
+<span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">bannerAdDidShow:</span><span class="p">(</span><span class="kt">id</span><span class="p">)</span><span class="nv">wrapper</span> <span class="nf">size:</span><span class="p">(</span><span class="bp">CGSize</span><span class="p">)</span><span class="nv">size</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Description：</p>
+<ol class="simple">
+<li>-(void)bannerAdClick:(id)wrapper
+Used to monitor whether the banner is clicked. When the banner is clicked by the user, the wrapper will send a message to the interface.</li>
+<li>-(void)bannerAdDidShow:(id)wrapper size:(CGSize)size;
+When the banner can be displayed, the wrapper will send a message to this interface. The size of the parameter is the actual size of the currently displayed banner. The layout of the banner is usually adjusted through this interface.</li>
+</ol>
+<p>Sample：</p>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm"> *  </span>
+<span class="cm"> *</span>
+<span class="cm"> *  @param wrapper ad onject</span>
+<span class="cm"> */</span>
+<span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">bannerAdDidShow:</span><span class="p">(</span><span class="kt">id</span><span class="p">)</span><span class="nv">wrapper</span> <span class="nf">size:</span><span class="p">(</span><span class="bp">CGSize</span><span class="p">)</span><span class="nv">size</span><span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">_bottomRectBanner</span> <span class="o">==</span> <span class="n">wrapper</span><span class="p">){</span>
+        <span class="bp">CGRect</span> <span class="n">frame</span> <span class="o">=</span> <span class="n">_bannerRectView</span><span class="p">.</span><span class="n">frame</span><span class="p">;</span>
+        <span class="n">frame</span><span class="p">.</span><span class="n">size</span> <span class="o">=</span> <span class="n">size</span><span class="p">;</span>
+        <span class="c1">// Let _bannerRectView be central in the parent class</span>
+        <span class="n">frame</span><span class="p">.</span><span class="n">origin</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="nb">self</span><span class="p">.</span><span class="n">view</span><span class="p">.</span><span class="n">frame</span><span class="p">.</span><span class="n">size</span><span class="p">.</span><span class="n">width</span> <span class="o">-</span> <span class="n">frame</span><span class="p">.</span><span class="n">size</span><span class="p">.</span><span class="n">width</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span>
+        <span class="n">frame</span><span class="p">.</span><span class="n">origin</span><span class="p">.</span><span class="n">y</span> <span class="o">=</span> <span class="nb">self</span><span class="p">.</span><span class="n">view</span><span class="p">.</span><span class="n">frame</span><span class="p">.</span><span class="n">size</span><span class="p">.</span><span class="n">height</span> <span class="o">-</span> <span class="n">frame</span><span class="p">.</span><span class="n">size</span><span class="p">.</span><span class="n">height</span><span class="p">;</span>
+        <span class="n">_bannerRectView</span><span class="p">.</span><span class="n">frame</span> <span class="o">=</span> <span class="n">frame</span><span class="p">;</span>
+        <span class="c1">// show _bannerRectView</span>
+        <span class="n">_bannerRectView</span><span class="p">.</span><span class="n">hidden</span> <span class="o">=</span> <span class="nb">NO</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+
+<span class="cm">/**</span>
+<span class="cm"> *  Click ad</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @param wrapper wrapper object</span>
+<span class="cm"> */</span>
+<span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">bannerAdClick:</span><span class="p">(</span><span class="kt">id</span><span class="p">)</span><span class="nv">wrapper</span><span class="p">{</span>
+    <span class="c1">// TODO</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><br></p>
+</div>
+<div class="section" id="recycle-memory">
+<span id="recycle-memory"></span><h2>Recycle memory：<a class="headerlink" href="#recycle-memory" title="Permalink to this headline">¶</a></h2>
+<p>Please set banner to nil for recyele when the ViewController where the banner view is located is destroyed (such as, removed in the interface, popped from nav, memory is recycled)</p>
+<p><br></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ios05_inter.html" class="btn btn-neutral float-right" title="Interstitial Ad" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ios04_1_banner_quick.html" class="btn btn-neutral" title="Quick Banner Ad" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, upltv
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

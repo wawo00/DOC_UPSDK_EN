@@ -1,0 +1,46 @@
+## Initial SDK
+
+Only used Xcode engineering  as an example for explanation. If you are using other projects, please refer to Xcode engineering operation. 
+The UPLTV SDK is very simple to initialize.
+
+### Initial UPSDK
+```javascript
+/*
+* Please be sure to complete the SDK initialization before using the other API interfaces of the SDK
+* @param zone product distribution area, 0 overseas, 1 mainland China, 2 automatically according to IP positioning
+*/
+intSdk : function(zone, callback)
+```
+
+Sample：
+```javascript
+var initSdkButton = this.createButton(x, y, "initSdk");
+initSdkButton.addTouchEventListener(function(sender, type) {
+    if (type == 2) {
+        upltv.intSdk(0);
+    }
+}, this);
+```
+###  setCustomerId()
+Only for Android and games that released in China,you must set androidid to ensure the correct statistics.
+.
+```asp
+
+// Please call this method before intializating
+// Version 3004(subversion 5) and above support this method
+// @param androidid
+
+upltv.setCustomerId(androidid)
+```
+
+###  Add onApplicationFocus()
+For the Android platform, we strongly recommend calling the following two interfaces of UPSDK when switching between the front and back of the game, so that UPSDK can respond correctly.
+
+#### Call the method when the game in  the foreground
+```java
+UPAdsSdk.onApplicationResume();
+```
+#### Call the method when the game is in the background
+```java
+UPAdsSdk.onApplicationPause();
+```

@@ -1,0 +1,319 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Unity Plugin Banner Ad &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="GDPR" href="unity05_6_sample_gdpr.html" />
+    <link rel="prev" title="Unity Plugin Ad Show" href="unity05_4_sample_adshow.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter00.html">About UPSDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter01.html">UPSDK Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter02.html">UPSDK IOS</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../chapters/chapter03.html">UPSDK UnityPlugin</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="unity01_guide.html">UnityPlugin Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unity02_unityplugin.html">How to add plugin in Unity project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unity03_integrate_catalog.html">UnityPlugin Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unity04_api_catalog.html">UnityPlugin API Introduction</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="unity05_sample_catalog.html">UnityPlugin API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="unity05_1_sample_init.html">Unity Plugin initialization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="unity05_2_sample_abtest.html">Unity Plugin A/B Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="unity05_3_sample_adload.html">Unity Plugin Ad load</a></li>
+<li class="toctree-l3"><a class="reference internal" href="unity05_4_sample_adshow.html">Unity Plugin Ad Show</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Unity Plugin Banner Ad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="unity05_6_sample_gdpr.html">GDPR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="unity05_7_sample_demo.html">Dwonload Unity Plugin Demo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="unity06_multidex_catalog.html">UnityPlugin Android MultiDex</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter04.html">UPSDK Cocos2d-X Cpp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter05.html">UPSDK Cocos2d-X Lua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter06.html">UPSDK Cocos2d-X JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter07.html">UPSDK Layabox JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter08.html">UPSDK Egret TypeScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter09.html">UPSDK Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter10.html">GDPR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter11.html">FAQ</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../chapters/chapter03.html">UPSDK UnityPlugin</a> &raquo;</li>
+        
+          <li><a href="unity05_sample_catalog.html">UnityPlugin API</a> &raquo;</li>
+        
+      <li>Unity Plugin Banner Ad</li>
+    
+    
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="unity-plugin-banner-ad">
+<span id="unity-plugin-banner-ad"></span><h1>Unity Plugin Banner Ad<a class="headerlink" href="#unity-plugin-banner-ad" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="show-banner-ad">
+<span id="show-banner-ad"></span><h2>1.Show Banner Ad<a class="headerlink" href="#show-banner-ad" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<span class="cm">* Show banner ads in top of screen</span>
+<span class="cm">* cpPlaceId is Ad placement identifier, make sure it correctly</span>
+<span class="cm">*/</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">showBannerAdAtTop</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpPlaceId</span><span class="p">);</span>
+
+<span class="cm">/*</span>
+<span class="cm">* Show banner ads in bottom of screen</span>
+<span class="cm">*/</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">showBannerAdAtBottom</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpPlaceId</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="sample">
+<span id="sample"></span><h2>Sample：<a class="headerlink" href="#sample" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">// Show a banner ads named &#39;banner_aaa&#39; in top of screen</span>
+<span class="k">public</span> <span class="k">void</span> <span class="nf">onBtnBanner_Top_Click</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">// Add support to iphonex （32 just for testing）</span>
+    <span class="n">UPSDK</span><span class="p">.</span><span class="n">setTopBannerForIphonex</span><span class="p">(</span><span class="m">32</span><span class="p">);</span>
+    <span class="c1">// Add support to huaweiP20</span>
+    <span class="n">UPSDK</span><span class="p">.</span><span class="n">setTopBannerForHuaWeiP20</span><span class="p">(</span><span class="m">75</span><span class="p">);</span>
+    <span class="c1">// show banner</span>
+    <span class="n">UPSDK</span><span class="p">.</span><span class="n">showBannerAdAtTop</span><span class="p">(</span><span class="s">&quot;banner_aaa&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// Show a banner ads named &#39;banner_aaa&#39; in bottom of screen</span>
+<span class="k">public</span> <span class="k">void</span> <span class="nf">onBtnBanner_Bottom_Click</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">UPSDK</span><span class="p">.</span><span class="n">showBannerAdAtBottom</span><span class="p">(</span><span class="s">&quot;banner_bbb&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<blockquote>
+<div>Banner ads do not need to determine the status, call it at the appropriate time, the SDK will automatically load, and automatically show the ad after the successful loading .
+Although the Banner ad is automatically load and displayed, this method should be called as early as possible to get enough time to load ads.</div></blockquote>
+</div>
+<div class="section" id="hide-banner-ad">
+<span id="hide-banner-ad"></span><h2>2.Hide Banner Ad<a class="headerlink" href="#hide-banner-ad" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">// Hiding current top banner ads</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">hideBannerAdAtTop</span><span class="p">();</span>
+
+<span class="c1">// Hiding current bottom banner ads</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">hideBannerAdAtBottom</span><span class="p">();</span>
+</pre></div>
+</div>
+<blockquote>
+<div>Banner can be displayed again by showBannerAdAtTop() or showBannerAdAtBottom() without reloading.</div></blockquote>
+</div>
+<div class="section" id="remove-banner-ad">
+<span id="remove-banner-ad"></span><h2>3.Remove Banner Ad<a class="headerlink" href="#remove-banner-ad" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">// Remove the Banner ad based on the palcementid and reload the ad when re-displaying.</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">removeBannerAdAt</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpPlaceId</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="sample">
+<span id="id1"></span><h2>Sample:<a class="headerlink" href="#sample" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">//  Remove banner ad named &#39;banner_aaa&#39;</span>
+<span class="k">public</span> <span class="k">void</span> <span class="nf">onBtnBanner_TopRemove_Click</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">UPSDK</span><span class="p">.</span><span class="n">removeBannerAdAt</span><span class="p">(</span><span class="s">&quot;banner_aaa&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="adjust-the-position-of-top-banner">
+<span id="adjust-the-position-of-top-banner"></span><h2>4.Adjust the position of top banner<a class="headerlink" href="#adjust-the-position-of-top-banner" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">// only for iphonex</span>
+<span class="k">void</span> <span class="nf">setTopBannerForIphonex</span><span class="p">(</span><span class="kt">int</span> <span class="n">padding</span><span class="p">);</span>
+<span class="c1">// only for huaweiP20</span>
+<span class="k">void</span> <span class="nf">setTopBannerForHuaWeiP20</span><span class="p">(</span><span class="kt">int</span> <span class="n">padding</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Sample:</p>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">// Top Banne moves down 32 pixels</span>
+<span class="n">UPSDK</span><span class="p">.</span><span class="n">setTopBannerForIphonex</span> <span class="p">(</span><span class="m">32</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="unity05_6_sample_gdpr.html" class="btn btn-neutral float-right" title="GDPR" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="unity05_4_sample_adshow.html" class="btn btn-neutral" title="Unity Plugin Ad Show" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, upltv
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
