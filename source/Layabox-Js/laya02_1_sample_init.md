@@ -1,7 +1,6 @@
 ## Initial SDK
 
-Only used Xcode engineering  as an example for explanation. If you are using other projects, please refer to Xcode engineering operation. Sorry for any inconvenience.
-
+Only used Xcode engineering  as an example for explanation. If you are using other projects, please refer to Xcode engineering operation. 
 The UPLTV SDK is very simple to initialize.
 
 ### Initial UPSDK

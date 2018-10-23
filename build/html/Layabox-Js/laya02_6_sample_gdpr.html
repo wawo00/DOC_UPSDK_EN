@@ -80,6 +80,7 @@
             
             
               <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter00.html">About UPSDK</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapters/chapter01.html">UPSDK Android</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapters/chapter02.html">UPSDK IOS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapters/chapter03.html">UPSDK UnityPlugin</a></li>
@@ -177,15 +178,14 @@
 With this scheme, you only need to synchronize the authorization results to the UPSDK and then initialize the UPSDK.</p>
 <p>Sample：</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">yourOwnGDPRCallback</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
-     <span class="c1">// result : true means that the user accepts authorization, and false rejects authorization</span>
+    <span class="c1">// result : true means that the user accepts authorization, and false rejects authorization</span>
     <span class="c1">// Please refer to the following code to complete authorization synchronization and initialization of UPSDK</span>
     <span class="k">if</span> <span class="p">(</span><span class="nx">result</span><span class="o">==</span><span class="s2">&quot;true&quot;</span><span class="p">)</span> <span class="p">{</span>
         <span class="nx">upltv</span><span class="p">.</span><span class="nx">updateAccessPrivacyInfoStatus</span><span class="p">(</span><span class="nx">upltv</span><span class="p">.</span><span class="nx">GDPRPermissionEnum</span><span class="p">.</span><span class="nx">UPAccessPrivacyInfoStatusAccepted</span><span class="p">);</span>
     <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
         <span class="nx">upltv</span><span class="p">.</span><span class="nx">updateAccessPrivacyInfoStatus</span><span class="p">(</span><span class="nx">upltv</span><span class="p">.</span><span class="nx">GDPRPermissionEnum</span><span class="p">.</span><span class="nx">UPAccessPrivacyInfoStatusDefined</span><span class="p">);</span>
     <span class="p">}</span>
-     <span class="c1">// First should call updateAccessPrivacyInfoStatus (),and then  initialization UPSDK</span>
-     <span class="c1">// Assume the issuing area is overseas, and the parameter passes 0</span>
+     <span class="c1">// Please call updateAccessPrivacyInfoStatus () before initializing UPSDK</span>
     <span class="nx">upltv</span><span class="p">.</span><span class="nx">intSdk</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
 <span class="p">}</span>
 

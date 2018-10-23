@@ -10,15 +10,14 @@ With this scheme, you only need to synchronize the authorization results to the 
 Sample：
 ```javascript
 yourOwnGDPRCallback : function(result) {
-     // result : true means that the user accepts authorization, and false rejects authorization
+    // result : true means that the user accepts authorization, and false rejects authorization
     // Please refer to the following code to complete authorization synchronization and initialization of UPSDK
     if (result=="true") {
         upltv.updateAccessPrivacyInfoStatus(upltv.GDPRPermissionEnum.UPAccessPrivacyInfoStatusAccepted);
     } else {
         upltv.updateAccessPrivacyInfoStatus(upltv.GDPRPermissionEnum.UPAccessPrivacyInfoStatusDefined);
     }
-     // First should call updateAccessPrivacyInfoStatus (),and then  initialization UPSDK
-     // Assume the issuing area is overseas, and the parameter passes 0
+     // Please call updateAccessPrivacyInfoStatus () before initializing UPSDK
     upltv.intSdk(0);
 }
 
