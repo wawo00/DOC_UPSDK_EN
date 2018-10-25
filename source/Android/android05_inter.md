@@ -84,5 +84,5 @@ In order to make you understand the working and loading status for video ads eas
 
 You can play ads by clicking the item if the ads successfully loaded.
 
-![as_debug_inter_view1](http://docc.upltv.com/uploads/201810/5bcd4065a93a4_5bcd4065.png "as_debug_inter_view1")
-![as_debug_inter_view2](http://docc.upltv.com/uploads/201810/5bcd408d13bcb_5bcd408d.png "as_debug_inter_view2")
+<img src="http://docc.upltv.com/uploads/201810/5bcd4065a93a4_5bcd4065.png">
+<img src="http://docc.upltv.com/uploads/201810/5bcd408d13bcb_5bcd408d.png">
