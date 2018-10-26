@@ -3,7 +3,7 @@
 ### I. Android Studio AndroidManfiest.xml confliction declarations
 
 #### 1. com.google.android.gms.version confliction or deletion error
-In **Android Studio** version, in order to avoid this kind of confliction, from 2.0.21 Studio Version, Avidly ADSDK has romoved the following declarations in AndroidManfiest.xml:
+In **Android Studio** version, in order to avoid this kind of confliction, from 2.0.21 Studio Version, UPSDK has romoved the following declarations in AndroidManfiest.xml:
 ```asp
 <!-- admob -->
 <meta-data
@@ -19,7 +19,7 @@ However, in **Android Elipse** version, you need to add the following declaratio
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version"/>
 ```
-Specially, please check whether if the xml format files in *res/values* content have *google_play_services_version* definition. Generally, Avidly ADSDK defined this kind in *version_ad.xml* files. If there is no definition for it, please copy *version_ad.xml* to *res/values* content.
+Specially, please check whether if the xml format files in *res/values* content have *google_play_services_version* definition. Generally, UPSDK defined this kind in *version_ad.xml* files. If there is no definition for it, please copy *version_ad.xml* to *res/values* content.
 
 *version_ad.xml* content：
 ```asp
@@ -32,7 +32,7 @@ Specially, please check whether if the xml format files in *res/values* content 
 ```
 
 #### 2. activity confliction or deletion error
-In Android Studio versions, Avidly ADSDK from 2.0.21 Studio Version,  has removed the Activity declarations which relied on Admob and Facebook Ads in AndroidManfiest.xml:
+In Android Studio versions, UPSDK from 2.0.21 Studio Version,  has removed the Activity declarations which relied on Admob and Facebook Ads in AndroidManfiest.xml:
 ```asp
 <!-- admob -->
 
@@ -73,14 +73,14 @@ Thus, please avoid the flowing conditions:
 
 Admob Ads need gms play service support. Thus regarding to the projects which want to support Admob Ads, must add relevant gms dependencies and configurations.
 
-Avidly ADSDK for supporting Admob, should rely on the following gms player service library:
+UPSDK for supporting Admob, should rely on the following gms player service library:
 - play-services-ads-x.x.x
 - play-services-ads-lite-x.x.x
 - play-services-base-x.x.x
 - play-services-basement-x.x.x
 - play-services-tasks-x.x.x
 
-> Current built-in gms version of Avidly ADSDK is play-services-ads:11.0.4，If the version is different from the main project gms version, please keep the higher gms version. To prevent unnecessary errors, no matter which version you keep, please make sure those five dependencies mentioned above should be at the same version. Or it will cause some class repeated-quoted conflictions.
+> Current built-in gms version of UPSDK is play-services-ads:11.0.4，If the version is different from the main project gms version, please keep the higher gms version. To prevent unnecessary errors, no matter which version you keep, please make sure those five dependencies mentioned above should be at the same version. Or it will cause some class repeated-quoted conflictions.
 
 
 ### III. xxx.so missing probelms

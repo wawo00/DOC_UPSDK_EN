@@ -1,5 +1,5 @@
 =============================
-UnityPlugin API 
+UnityPlugin Sample
 =============================
 
 Introduce api of UPSDK and Sample.

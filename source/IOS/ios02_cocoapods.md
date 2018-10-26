@@ -40,7 +40,7 @@ Done.
 
 ### Project configuration 
   
-1 Add nodes in `info.plist` file, to allow http protocol
+#### 1 Add nodes in `info.plist` file, to allow http protocol
 
 ```objective-c
  <key>NSAppTransportSecurity </key>
@@ -50,7 +50,7 @@ Done.
  </dict>
 ```
 
-#### 3 Add nodes info.plist, to require permissions
+#### 2 Add nodes info.plist, to require permissions
 ```objective-c
  <key>NSCalendarsUsageDescription </key>
  <string>Some ad content may create a calendar event. </string>
@@ -64,7 +64,7 @@ Done.
 Note: you can change description into your target language if needed.
 <br>
 
-#### 4 Bitcode
+#### 3 Bitcode
 We support Bitcode, please choose use Bitcode if needed.
 Note: YouLan and Domob SDK do not support Bitcode.
 <br>
