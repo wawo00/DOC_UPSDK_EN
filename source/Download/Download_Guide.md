@@ -54,4 +54,4 @@
 
 [gms v11.8.0](http://cnimg.dataverse.cn/upsdk/gms11.8.0.zip "gms_v11.8.0")
 
-[gms v15.0.1](http://cnimg.dataverse.cn/upsdk/gms15.0.1.zip "gms_v15.0.1")
+[gms v16.0.0](http://cnimg.dataverse.cn/upsdk/gms16.0.0.zip "gms_v16.0.0")

@@ -24,10 +24,10 @@ Please go to http://upltv.com to sign up. Or you can contact any of our Business
 How to download UPSDK
 --------
 
-If you have not downloaded or updated UPSDK to its latest version, please go to `UPSDK Download Page <http://docs.upltv.com/docs/show/50>`_ to download the most well-matched version.
+If you have not downloaded or updated UPSDK to its latest version, please go to `UPSDK Download Page <https://doc.upltv.com/en/master/chapters/chapter09.html>`_ to download the most well-matched version.
 > We have designed different versions according to the different framework/engineering structure of Eclipse and AndroidStudio. Please download the most well-matched version refer to your actual development tool. 
 
-If you are a Unity programme, We ***Strongly*** recommend you "Unity Plugin" for using. It will help you integrate with ADSDK in an easier way. Please go to `Unity Plugin Download Page <http://docs.upltv.com/docs/show/111>`_ for more information.
+If you are a Unity programme, We ***Strongly*** recommend you "Unity Plugin" for using. It will help you integrate with ADSDK in an easier way. Please go to `Unity Plugin Download Page <https://doc.upltv.com/en/master/Download/Download_Guide.html#unity-sdk>`_ for more information.
 
 
 --------

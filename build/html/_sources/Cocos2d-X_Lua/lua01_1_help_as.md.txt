@@ -91,10 +91,10 @@ defaultConfig {
 #### 1.Add Google Ads SDK
 
 ###### 1.**Sample code**
-In the `build.gradle` , download the gms play-service15.0.1 package from Google's remote repository via the compile command.Like this:
+In the `build.gradle` , download the gms play-service16.0.0 package from Google's remote repository via the compile command.Like this:
     
     dependencies {
-        compile 'com.google.android.gms:play-services-ads:15.0.1'
+        compile 'com.google.android.gms:play-services-ads:16.0.0'
     }
 
 > In particular, if your project already has a different version of google play service, use the higher version.

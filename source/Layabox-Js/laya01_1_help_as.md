@@ -6,7 +6,7 @@ Regarding to Android Studio or Gradle built project, UPSDK suggests it should be
 
 
 ![](http://docc.upltv.com/uploads/201809/5b98ed83ade86_5b98ed83.png)
-
+yyy
 > The UPSDK JsPlugin main package is named`UPAdsSdk_LayaJs_x.x.xx_dex.aar`.
 
 - `Android Studio`
@@ -83,10 +83,10 @@ defaultConfig {
 
 #### 1.Add Google Ads SDK
 
-In the `build.gradle` , download the gms play-service15.0.1 package from Google's remote repository via the compile command.Like this:
+In the `build.gradle` , download the gms play-service16.0.0 package from Google's remote repository via the compile command.Like this:
     
     dependencies {
-        compile 'com.google.android.gms:play-services-ads:15.0.1'
+        compile 'com.google.android.gms:play-services-ads:16.0.0'
     }
 
 > In particular, if your project already has a different version of google play service, use the higher version.
