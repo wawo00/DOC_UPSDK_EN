@@ -1,5 +1,5 @@
 ## Android SDK
-### Overseas
+### Global
 
 [Eclipe SDK v3.0.06 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_foreign_3.0.06_eclipse.zip "Eclipe SDK v3.0.06 ")
 
@@ -9,7 +9,7 @@
 
 [Eclipe SDK v3.0.06 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_domestic_3.0.06_eclipse.zip "Eclipe SDK v3.0.06 ")
 
-[Android Studio SDK v3.0.06](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_domestic_3.0.06_AndroidStudio.zip "Android Studio SDK v3.0.06 ")
+[Android Studio SDK v3.0.06](http://cnimg.dataverseGlobal.cn/upsdk/UPSDK_Android_domestic_3.0.06_AndroidStudio.zip "Android Studio SDK v3.0.06 ")
 
 ## iOS SDK
 
@@ -19,7 +19,7 @@
 
 ## Unity SDK
 
-### Overseas
+### Global
 
 [Android 3.0.06](http://cnimg.dataverse.cn/upsdk/export_3006_android_foreign.unitypackage "SDK v3.0.06")
 
@@ -34,7 +34,7 @@
 
 ## Cocos2D-X
 
-#### Android Overseas
+#### Android Global
 [Cocos-JS SDK v3.0.06 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_foreign_3.0.06_CocosJS.zip "Cocos-JS SDK v3.0.06 ")
 
 [Cocos-C++ SDK v3.0.06 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_foreign_3.0.06_CocosC++.zip "Cocos-C++ SDK v3.0.06 ")
@@ -57,7 +57,7 @@
 
 ## Layabox
 
-#### Android Overseas
+#### Android Global
 [Layabox JavaScript v3.0.06](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_foreign_3006_Layabox_JS.zip "Layabox-JavaScript SDK v3.0.06")
 
 #### Android China Mainland
