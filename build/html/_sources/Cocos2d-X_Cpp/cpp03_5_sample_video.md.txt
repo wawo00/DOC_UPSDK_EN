@@ -125,10 +125,10 @@ void HelloWorld::touchEvent(cocos2d::Ref *pSender, cocos2d::ui::Widget::TouchEve
 }
 ```
 #### 4. Show Reward Video Ad 
-When show the Reward Video ad, you need to upload a cpPlaceId, which is the placementid , used for business management, in order to distinguish the source of revenue.
+When show the Reward Video ad, you need to upload a cpPlaceId, which is the ad unit , used for business management, in order to distinguish the source of revenue.
 ```cpp
 /**
-* @param cpPlaceId placementid
+* @param cpPlaceId ad unit
 */
 static void showRewardVideo(const char* cpPlaceId);
 

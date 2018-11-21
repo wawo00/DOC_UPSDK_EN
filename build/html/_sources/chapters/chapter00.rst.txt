@@ -6,7 +6,7 @@ About UPSDK
 UPSDK Introduce
 --------
 
-UPSDK (UPLTV ADSDK) is a mediation product developed by UPLTV. You can visit its webiste http://upltv.com
+UPSDK (UPLTV ADSDK) is a mediation product developed by UPLTV. You can visit its webiste https://upltv.com
 
 UPSDK strive to help publishers maximize the total app monetization revenue and optimize users' life-time-value(LTV). By optimizing with big data and AI adjust technique, UPSDK helps publishers increase the monetization revenue stably without sacrificing retention.
 
@@ -16,7 +16,7 @@ UPSDK strive to help publishers maximize the total app monetization revenue and 
 Get Started
 --------
 
-Please go to http://upltv.com to sign up. Or you can contact any of our Business Representative colleagues for further supports.
+Please go to https://upltv.com to sign up. Or you can contact any of our Business Representative colleagues for further supports.
 
 
 

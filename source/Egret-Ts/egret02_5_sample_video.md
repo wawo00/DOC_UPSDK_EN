@@ -23,23 +23,23 @@ upltv.getRewardAdLoadResult(function(cpid:string,msg:string){
      Set up the callback interface of video show to listen to the callback of the event (click, close, reward, etc.) of the video advertisement. Reward video shows that the reference to the callback interface is stored internally and not released, so you only need to set it once.
 ```javascript
 // Callback of showing
-// @param cpPlaceId placementid
+// @param cpPlaceId ad unit
     static rewardAdDidOpen(callback:(cpPlaceId:string)=>void)
 
 // Callback of clicking
-// @param cpPlaceId placementid
+// @param cpPlaceId ad unit
     static rewardAdDidClick(callback:(cpPlaceId:string)=>void)
 
 // Callback of closing
-// @param cpPlaceId placementid
+// @param cpPlaceId ad unit
     static rewardAdDidClose(callback:(cpPlaceId:string)=>void)
 
 // Callback of sending reward successfully
-// @param cpPlaceId placementid
+// @param cpPlaceId ad unit
     static rewardAdDidGiven(callback:(cpPlaceId:string)=>void)
 
 // Callback of failing to send reward 
-// @param cpPlaceId placementid
+// @param cpPlaceId ad unit
     static rewardAdDidAbandon(callback:(cpPlaceId:string)=>void)
 ```
 
@@ -51,10 +51,10 @@ Synchronously return Boolean results, true means that the AD is ready to be disp
 ```
 
 #### 4. Show Reward Video Ad 
-When show the Reward Video ad, you need to upload a cpPlaceId, which is the placementid , used for business management, in order to distinguish the source of revenue.
+When show the Reward Video ad, you need to upload a cpPlaceId, which is the ad unit , used for business management, in order to distinguish the source of revenue.
 
 ```javascript
-// @param cpPlaceId placementid
+// @param cpPlaceId ad unit
     static showRewardAd(cpPlaceId:string)
 ```
 

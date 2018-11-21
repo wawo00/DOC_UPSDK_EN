@@ -2,16 +2,16 @@
 ### Ad Object Initialization 
 Two banner layouts are supported, "Full Banner" and "Square". Please choose the right style for your product.
 
-> You can set the parameter `Placement ID` to any significative name you want. If you're not sure, please discuss with our **support engineer**. You should use a different `Placement ID` for different ads placement. We provide revenue from each  `Placement ID` in the feature.
+> You can set the parameter `ad unit` to any significative name you want. If you're not sure, please discuss with our **support engineer**. You should use a different `ad unit` for different ads placement. We provide revenue from each  `ad unit` in the feature.
 > Eg: You may use "Pause" or "Menu" when initializing our SDK in the pause scene of your game.
 
 For "Full Banner", use the following code to initialize ads object.
 
-    mBannerAd = new UPBannerAd(this, "Your Placement ID");
+    mBannerAd = new UPBannerAd(this, "Your ad unit");
 
 For "Square", use the following code to initialize.
 
-    mRectangleAd = new UPRectangleAd(this, "Your Placement ID");
+    mRectangleAd = new UPRectangleAd(this, "Your ad unit");
 
 ### Show Banner Ads
 Imagine we are trying to show a "Full Banner" ad. First, you should add the parent view of ads in your layout file, like this.

@@ -9,7 +9,7 @@ Banner ad needs to set up the show of banner ad, click and remove the callback i
 ```cpp
 
 /**
-* @param cpPlaceId  placementID
+* @param cpPlaceId  ad unit
 * @param callback
 */
 setBannerShowCallback : function(cpPlaceId, bannerCall)
@@ -40,7 +40,7 @@ bnCallButton.addTouchEventListener(function(sender, type) {
 ```
 
 ### 2.  Show top banner ads
-Show the banner at the top of the screen according to the placementID.
+Show the banner at the top of the screen according to the ad unit.
 
 ```cpp
 /**
@@ -89,9 +89,9 @@ bnHideButton.addTouchEventListener(function(sender, type) {
 ```
 
 ### 4. Show bottom banner ads
-Show the banner at the bottom of the screen according to the placementID.
+Show the banner at the bottom of the screen according to the ad unit.
 ```javascript
-// @param cpPlaceId placementid
+// @param cpPlaceId ad unit
 showBannerAdAtBottom : function(cpPlaceId)
 ```
 
@@ -122,9 +122,9 @@ bnHideButton.addTouchEventListener(function(sender, type) {
 ```
 
 ### 6.Remove banner ads
-Remove a banner ad accroding to placementid
+Remove a banner ad accroding to ad unit
 ```javascript
-// @param cpPlaceId placementid
+// @param cpPlaceId ad unit
 removeBannerAdAt : function(cpPlaceId)
 ```
 

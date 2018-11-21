@@ -3,10 +3,10 @@
 ### Ads Object Initial 
 
 Use the following code to initialize Interstitial Ads
-> You can set the parameter `Placement ID` to any significative name you want. If you're not sure, please discuss with our **support engineer**. You should use a different `Placement ID` for different ads placement. We provide revenue from each  `Placement ID` in the feature.
+> You can set the parameter `ad unit` to any significative name you want. If you're not sure, please discuss with our **support engineer**. You should use a different `ad unit` for different ads placement. We provide revenue from each  `ad unit` in the feature.
 > Eg: You may use "Pause" or "Menu" when initializing our SDK in the pause scene of your game.
 
-    mInterstitialAd = new UPInterstitialAd(this, "Placement ID");
+    mInterstitialAd = new UPInterstitialAd(this, "ad unit");
     
 ### Load Callback
 You can use interface `load` to check process of loading. This is optional. You can ignore it if there are no special requirements.

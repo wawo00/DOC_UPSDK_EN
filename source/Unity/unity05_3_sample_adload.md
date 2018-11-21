@@ -12,7 +12,7 @@
 * @param fail t   callback of failed loading
 * 
 * Types of callback parameters: Action <string,string>
-* The first one is cpPlaceId, placementId of ads, could be empty or null: The second parameter is described info, could be empty or null
+* The first one is cpPlaceId, ad unit of ads, could be empty or null: The second parameter is described info, could be empty or null
 * supported from 2028
 */static void setIntersitialLoadCallback(string cpPlaceId, Action <string,string> success, Action <string, string> fail)
 ```
@@ -23,7 +23,7 @@ Sample:
 
 //Call this method to set the success and failure callback  for the "inter_aaa" .
 public void onBtn_ClickForIntsLoadCallback() {
-    // "inter_aaa" is placementId
+    // "inter_aaa" is ad unit
     UPSDK.setIntersitialLoadCallback ("inter_aaa", 
         new System.Action <string, string>(actionForIntsLoadSuccess),
         new System.Action <string, string>(actionForIntsLoadFail) 
@@ -52,7 +52,7 @@ private void actionForIntsLoadSuccess(string placeId, string msg)
  * @param fail     callback of failed loading
  * 
  * Types of callback parameters: Action <string,string>
- * The first one is cpPlaceId, placementid of ads, could be empty or 
+ * The first one is cpPlaceId, ad unit of ads, could be empty or 
 null; The second parameter is the decribed info, could be empty or null
  * supported from 2028
  */
@@ -72,14 +72,14 @@ public void onBtn_ClickForRewardLoadCallback() {
 }
 
 //Call this method after RewardVideo Ad loading unsuccessfully
-//parameters：placeId is not required or a specific placementid，msg means the reason of failture
+//parameters：placeId is not required or a specific ad unit，msg means the reason of failture
 private void actionForRewardLoadFail(string placeId, string msg)
 {
     Debug.Log ("===> actionForRewardLoadFail Callback at: " + placeId + ", fail reason: " + msg);
 }
 
 //Call this method after RewardVideo Ad loading successfully
-//parameters：placeId is not required or a specific placementid，msg is alwayes  empty
+//parameters：placeId is not required or a specific ad unit，msg is alwayes  empty
 private void actionForRewardLoadSuccess(string placeId, string msg)
 {
     Debug.Log ("===> actionForRewardLoadSuccess Callback at: " + placeId);

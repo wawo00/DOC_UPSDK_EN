@@ -6,7 +6,7 @@ Banner ad needs to set up the show of banner ad, click and remove the callback i
 
 ```cpp
 /**
-* @param cpPlaceId banner placementID
+* @param cpPlaceId banner ad unit
 * @param callback
 */
 static void setBannerShowCallback(const char* cpPlaceId, UpltvSdkStringCallback_1 callback);
@@ -36,7 +36,7 @@ void HelloWorld::touchEvent(cocos2d::Ref *pSender, cocos2d::ui::Widget::TouchEve
 {
     if (type == cocos2d::ui::Widget::TouchEventType::ENDED) {
         log("===> cpp button touch tag :%d",tag);
-        const char* bannertopkey = "BannerAd"; //Define the banner placementID
+        const char* bannertopkey = "BannerAd"; //Define the banner ad unit
         switch (tag)
         {
             case 1001:
@@ -49,7 +49,7 @@ void HelloWorld::touchEvent(cocos2d::Ref *pSender, cocos2d::ui::Widget::TouchEve
 }
 ```
 ### 2. Show top banner ads
-Show the banner at the top of the screen according to the placementID.
+Show the banner at the top of the screen according to the ad unit.
 
 ```cpp
 /**
@@ -63,7 +63,7 @@ void HelloWorld::touchEvent(cocos2d::Ref *pSender, cocos2d::ui::Widget::TouchEve
 {
     if (type == cocos2d::ui::Widget::TouchEventType::ENDED) {
         log("===> cpp button touch tag :%d",tag);
-        const char* bannertopkey = "BannerAd"; //Define the banner placementID
+        const char* bannertopkey = "BannerAd"; //Define the banner ad unit
         switch (tag)
         {
             case 1001:
@@ -96,7 +96,7 @@ void HelloWorld::touchEvent(cocos2d::Ref *pSender, cocos2d::ui::Widget::TouchEve
 {
     if (type == cocos2d::ui::Widget::TouchEventType::ENDED) {
         log("===> cpp button touch tag :%d",tag);
-        const char* bannertopkey = "BannerAd"; //Define the banner placementID
+        const char* bannertopkey = "BannerAd"; //Define the banner ad unit
         switch (tag)
         {
             case 1001:
@@ -109,7 +109,7 @@ void HelloWorld::touchEvent(cocos2d::Ref *pSender, cocos2d::ui::Widget::TouchEve
 }
 ```
 ### 4. Show bottom banner ads
-Show the banner at the bottom of the screen according to the placementID.
+Show the banner at the bottom of the screen according to the ad unit.
 ```cpp
 /**
 * @param cpPlaceId
@@ -122,7 +122,7 @@ void HelloWorld::touchEvent(cocos2d::Ref *pSender, cocos2d::ui::Widget::TouchEve
 {
     if (type == cocos2d::ui::Widget::TouchEventType::ENDED) {
         log("===> cpp button touch tag :%d",tag);
-        const char* bannerbottomkey = "BannerAd"; //Define the banner placementID
+        const char* bannerbottomkey = "BannerAd"; //Define the banner ad unit
         switch (tag)
         {
             case 1001:
@@ -145,7 +145,7 @@ void HelloWorld::touchEvent(cocos2d::Ref *pSender, cocos2d::ui::Widget::TouchEve
 {
     if (type == cocos2d::ui::Widget::TouchEventType::ENDED) {
         log("===> cpp button touch tag :%d",tag);
-        const char* bannerbottomkey = "BannerAd"; //Define the banner placementID
+        const char* bannerbottomkey = "BannerAd"; //Define the banner ad unit
         switch (tag)
         {
             case 1001:
@@ -160,7 +160,7 @@ void HelloWorld::touchEvent(cocos2d::Ref *pSender, cocos2d::ui::Widget::TouchEve
 ### 6. Remove banner ads
 ```cpp
 /**
-* @param cpPlaceId banner placementID
+* @param cpPlaceId banner ad unit
 */
 static void removeBannerAdAt(const char*cpPlaceId);
 ```
@@ -170,7 +170,7 @@ void HelloWorld::touchEvent(cocos2d::Ref *pSender, cocos2d::ui::Widget::TouchEve
 {
     if (type == cocos2d::ui::Widget::TouchEventType::ENDED) {
         log("===> cpp button touch tag :%d",tag);
-        const char* bannerbottomkey = "BannerAd"; //Define the banner placementID
+        const char* bannerbottomkey = "BannerAd"; //Define the banner ad unit
         switch (tag)
         {
             case 1001:

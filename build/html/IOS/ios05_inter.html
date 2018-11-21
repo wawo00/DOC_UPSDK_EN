@@ -173,13 +173,13 @@
 <div class="section" id="methods-of-implementation-class">
 <span id="methods-of-implementation-class"></span><h2>Methods of implementation class<a class="headerlink" href="#methods-of-implementation-class" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div>You can set parameter <code class="docutils literal notranslate"><span class="pre">Placement</span> <span class="pre">ID</span></code> to any significative name you want. If you not sure about should discussed with our <strong>support engineer</strong>. You should use different <code class="docutils literal notranslate"><span class="pre">Placement</span> <span class="pre">ID</span></code> for different ads placement. We provide revenue from each  <code class="docutils literal notranslate"><span class="pre">Placement</span> <span class="pre">ID</span></code> in the feature.
+<div>You can set parameter <code class="docutils literal notranslate"><span class="pre">ad</span> <span class="pre">unit</span></code> to any significative name you want. If you not sure about should discussed with our <strong>support engineer</strong>. You should use different <code class="docutils literal notranslate"><span class="pre">ad</span> <span class="pre">unit</span></code> for different ads placement. We provide revenue from each  <code class="docutils literal notranslate"><span class="pre">ad</span> <span class="pre">unit</span></code> in the feature.
 Eg: You may use “Pause” or “Menu” when initial our SDK in the pause scene of your game.</div></blockquote>
 <div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="k">@interface</span> <span class="nc">UpIntersitialWrapper</span> : <span class="bp">NSObject</span>
 
 <span class="cm">/**</span>
 <span class="cm">* Initial method </span>
-<span class="cm">* @ param avidPlacement：Placement ID</span>
+<span class="cm">* @ param avidPlacement：ad unit</span>
 <span class="cm">**/</span>
 <span class="p">-</span> <span class="p">(</span><span class="kt">instancetype</span><span class="p">)</span><span class="nf">initAvidPlacement:</span><span class="p">(</span><span class="bp">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">avidPlacement</span><span class="p">;</span>
 
@@ -246,7 +246,7 @@ Eg: You may use “Pause” or “Menu” when initial our SDK in the pause scen
 </div>
 <p>In <code class="docutils literal notranslate"><span class="pre">STInterstitialViewController.m</span></code>, you need a few lines of code to finish Interstitial ad loading and impression.</p>
 <p>First, define a object of <code class="docutils literal notranslate"><span class="pre">UpIntersitialWrapper</span></code>: <code class="docutils literal notranslate"><span class="pre">_intersitialWrapper</span></code>. We can use this object to control Interstitial ad loading and impression.</p>
-<p>In most of case, you should use different object of  <code class="docutils literal notranslate"><span class="pre">UpIntersitialWrapper</span></code> for different Interstitial ad placement.</p>
+<p>In most of case, you should use different object of  <code class="docutils literal notranslate"><span class="pre">UpIntersitialWrapper</span></code> for different Interstitial ad unit.</p>
 <p>Code:</p>
 <div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="k">@interface</span> <span class="nc">STInterstitialViewController</span> <span class="p">()</span> <span class="o">&lt;</span><span class="n">UpIntersitialDelegate</span><span class="o">&gt;</span>
 <span class="p">{</span>
@@ -273,7 +273,7 @@ Eg: You may use “Pause” or “Menu” when initial our SDK in the pause scen
 <span class="p">}</span>
 
 <span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">intersitialClick</span> <span class="p">{</span>
-    <span class="c1">// Let&#39;s use &quot;inter_bbb&quot;  as placement id of _intersitialWrapper</span>
+    <span class="c1">// Let&#39;s use &quot;inter_bbb&quot;  as ad unit of _intersitialWrapper</span>
     <span class="n">_intersitialWrapper</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UpIntersitialWrapper</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initAvidPlacement</span><span class="p">:</span><span class="s">@&quot;inter_bbb&quot;</span><span class="p">];</span>
     <span class="c1">// setup callback delegate </span>
     <span class="p">[</span><span class="n">_intersitialWrapper</span> <span class="nl">setDelegate</span><span class="p">:</span><span class="nb">self</span><span class="p">];</span>
@@ -298,7 +298,7 @@ Eg: You may use “Pause” or “Menu” when initial our SDK in the pause scen
 </div>
 <ol class="simple">
 <li>Initial object
-As following example, “inter_bbb” is a real exist ad placement. Wrong placement id will caused a failure on ads loading.</li>
+As following example, “inter_bbb” is a real exist ad unit. Wrong ad unit will caused a failure on ads loading.</li>
 </ol>
 <div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="n">_intersitialWrapper</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UpIntersitialWrapper</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initAvidPlacement</span><span class="p">:</span><span class="s">@&quot;inter_bbb&quot;</span><span class="p">];</span>
 </pre></div>
@@ -335,7 +335,7 @@ Use following code to display Ad</li>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, upltv.
+        &copy; Copyright 2018, upltv
 
     </p>
   </div>
@@ -354,21 +354,15 @@ Use following code to display Ad</li>
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'',
-            LANGUAGE:'en',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 
   
 

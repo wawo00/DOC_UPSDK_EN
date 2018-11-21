@@ -219,7 +219,7 @@
 <span class="cm">        * returned result could be Json character string, posiblity could be null</span>
 <span class="cm">        * Before invoking this API, pl;ease invoke initAbtConfigJson() to finish the initialization for abtest configuration</span>
 <span class="cm">        */</span>
-        <span class="k">public</span> <span class="k">static</span> <span class="kt">string</span> <span class="nf">getAbtConfig</span><span class="p">(</span><span class="kt">string</span> <span class="n">placementId</span><span class="p">);</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="kt">string</span> <span class="nf">getAbtConfig</span><span class="p">(</span><span class="kt">string</span> <span class="n">ad</span> <span class="n">unit</span><span class="p">);</span>
         
         <span class="cm">/*</span>
 <span class="cm">         * Check if interstitial ad ready or not</span>
@@ -239,13 +239,13 @@
         
         <span class="cm">/*</span>
 <span class="cm">        * Show interstitial ad</span>
-<span class="cm">        * cpPlaceId is Ad placement identifier, make sure it correctly</span>
+<span class="cm">        * cpPlaceId is Ad ad unitentifier, make sure it correctly</span>
 <span class="cm">        */</span>
         <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">showInterstitialAd</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpPlaceId</span><span class="p">);</span>
         
         <span class="cm">/*</span>
 <span class="cm">        * Show banner ads in top of screen</span>
-<span class="cm">        * cpPlaceId is Ad placement identifier, make sure it correctly</span>
+<span class="cm">        * cpPlaceId is Ad ad unitentifier, make sure it correctly</span>
 <span class="cm">        */</span>
         <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">showBannerAdAtTop</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpPlaceId</span><span class="p">);</span>
         
@@ -256,14 +256,14 @@
         
         <span class="cm">/*</span>
 <span class="cm">         * Hiding current top banner ad</span>
-<span class="cm">         * No need to distinguish placements of ad</span>
+<span class="cm">         * No need to distinguish units of ad</span>
 <span class="cm">         * While next show is coming, you need to call showBannerAdAtTop()</span>
 <span class="cm">         */</span>
         <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">hideBannerAdAtTop</span><span class="p">();</span>
         
         <span class="cm">/*</span>
 <span class="cm">         * Hiding current bottom banner ad</span>
-<span class="cm">         * No need to distinguish placements of ad</span>
+<span class="cm">         * No need to distinguish units of ad</span>
 <span class="cm">         * While next show is coming, you need to call showBannerAdAtBottom()</span>
 <span class="cm">         * Start to support from 2037</span>
 <span class="cm">         */</span>
@@ -291,7 +291,7 @@
 <span class="cm">         * @param fail     callback of failed loading</span>
 <span class="cm">         * </span>
 <span class="cm">         * Types of callback parameters: Action &lt;string,string&gt;</span>
-<span class="cm">         * The first one is cpPlaceId, placementid of ads, could be empty or null; The second parameter is the decribed info, could be empty or null</span>
+<span class="cm">         * The first one is cpPlaceId, ad unit of ads, could be empty or null; The second parameter is the decribed info, could be empty or null</span>
 <span class="cm">         * supported from 2028</span>
 <span class="cm">         */</span>
         <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">setRewardVideoLoadCallback</span><span class="p">(</span><span class="n">Action</span> <span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">success</span><span class="p">,</span> <span class="n">Action</span> <span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">fail</span><span class="p">);</span>
@@ -303,7 +303,7 @@
 <span class="cm">         * @param fail t   callback of failed loading</span>
 <span class="cm">         * </span>
 <span class="cm">         * Types of callback parameters: Action &lt;string,string&gt;</span>
-<span class="cm">         * The first one is cpPlaceId, placementId of ads, could be empty or null: The second parameter is described info, could be empty or null</span>
+<span class="cm">         * The first one is cpPlaceId, ad unit of ads, could be empty or null: The second parameter is described info, could be empty or null</span>
 <span class="cm">         * supported from 2028</span>
 <span class="cm">         */</span>
         <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">setIntersitialLoadCallback</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpPlaceId</span><span class="p">,</span> <span class="n">Action</span> <span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">success</span><span class="p">,</span> <span class="n">Action</span> <span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">fail</span><span class="p">)</span>
@@ -407,7 +407,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, upltv.
+        &copy; Copyright 2018, upltv
 
     </p>
   </div>
@@ -426,21 +426,15 @@
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'',
-            LANGUAGE:'en',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 
   
 

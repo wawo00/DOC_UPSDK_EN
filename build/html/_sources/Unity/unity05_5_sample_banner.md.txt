@@ -7,7 +7,7 @@
 ```csharp
 /*
 * Show banner ads in top of screen
-* cpPlaceId is Ad placement identifier, make sure it correctly
+* cpPlaceId is Ad ad unitentifier, make sure it correctly
 */
 public static void showBannerAdAtTop(string cpPlaceId);
 

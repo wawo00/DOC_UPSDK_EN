@@ -16,38 +16,38 @@ Regarding to this situation, UPSDK will package the following objects further:
    public void initGameBannerWithActivity(Activity gameActivity);
 
    /**
-   * Depending on the placement of ads, display the banner on the top of current activity
+   * Depending on the unit of ads, display the banner on the top of current activity
    * Please adopt this method after actvity onresume, to avoid BadTokenException: Unable to add window -- token null is not valid;
-   * @param cpPlaceId banner ad placement is normally used for marking business types of some ads
+   * @param cpPlaceId banner ad unit is normally used for marking business types of some ads
    */
     public void showTopBannerAtADPlaceId(String cpPlaceId);
 
    /**
-   * Depending on the placement of ads, placing the banner in the bottom of current activity
+   * Depending on the unit of ads, placing the banner in the bottom of current activity
    * Please adopt this method after onresume to avoid BadTokenException: Unable to add window -- token null is not valid;
-   * @param cpPlaceId banner ad placement is normally used for marking business types of some ads
+   * @param cpPlaceId banner ad unit is normally used for marking business types of some ads
    */
    public void showBottomBannerAtADPlaceId(String cpPlaceId);
 
    /**
-   * Depending on the placement of ads, adding callback agent for banner
-   * @param cpPlaceId banner ad placement, is normally used for marking business types of some ads
+   * Depending on the unit of ads, adding callback agent for banner
+   * @param cpPlaceId banner ad unit, is normally used for marking business types of some ads
    * @param callback banner callback
    */
    public void addBannerCallbackAtADPlaceId(String cpPlaceId, UPBannerAdListener callback);
 
    /**
-   * Depending on the placement of ads, remove the banner ad without deleting relevant callback
-   * If the ad placement does not exist, it will not lead any actual operation for the misson   
+   * Depending on the unit of ads, remove the banner ad without deleting relevant callback
+   * If the ad unit does not exist, it will not lead any actual operation for the misson   
    * Once the banner ad has been removed, it will load again while next show is coming.
    * If the current banner ad is hidden only, please call hideTopBanner() or hideBottomBanner()
-   * @param cpPlaceId banner ad placement, is normally used for marking business types of some ads
+   * @param cpPlaceId banner ad unit, is normally used for marking business types of some ads
    */
    public void removeGameBannerAtADPlaceId(String cpPlaceId);
 
    /**
    * Hiding current top banner ad
-   * No need to distinguish placements of banner
+   * No need to distinguish unitsof banner
    * While next show is coming, you need to call showBottomBannerAtADPlaceId()
    * Start to support from 2037
    */
@@ -55,7 +55,7 @@ Regarding to this situation, UPSDK will package the following objects further:
 
    /**
    * Hiding current bottom banner ad
-   * No need to distinguish placements of banner
+   * No need to distinguish unitsof banner
    * While next show is coming, you need to call showTopBannerAtADPlaceId()
    * Start to support from 2037
    */

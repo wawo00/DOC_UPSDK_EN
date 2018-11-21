@@ -4,7 +4,7 @@
 Load results (success or failure) to listen for the current interstitial ad .This interface is automatically released once a callback is made, and the callback interface needs to be reset when listening again.
 
 ```javascript
-// @param cpPlaceId   placement ID
+// @param cpPlaceId   ad unit
 // @param loadSuccess Motivate the callback when the video is //loaded successfully，successCall(cpadid, msg)
 // @param loadFail    Motivate the callback when the video is //loaded failed， loadFail(cpid, message)
 //Once this interface is called back, the internal will be //automatically released, and the callback interface needs to //be reset when listening again.
@@ -18,10 +18,10 @@ ilLoadCallUIButton.addTouchEventListener(function(sender, type) {
     if (type == 2) {
         upltv.setInterstitialLoadCallback(cpPlaceId,
             function(cpid, msg) {
-                cc.log("===> js il load callback success: %s at placementid:%s", msg, cpid);
+                cc.log("===> js il load callback success: %s at ad unit:%s", msg, cpid);
             },
             function(cpid, msg) {
-                cc.log("===> js il load callback fail: %s at placementid:%s", msg, cpid);
+                cc.log("===> js il load callback fail: %s at ad unit:%s", msg, cpid);
             });
     }
 }, this);
@@ -33,7 +33,7 @@ Set up the callback interface for the display of interstitial ad which is used t
 
 ```javascript
 /**
-* @param cpPlaceId placementid
+* @param cpPlaceId ad unit
 * @param showCall  callback
 */
 setInterstitialShowCallback : function(cpPlaceId, showCall)
@@ -62,7 +62,7 @@ ilShowCallUIButton.addTouchEventListener(function(sender, type) {
 ```
 
 ### 3. Judge if the interstitial ad is ready
-Judge if the interstitial ad is ready accroding placementid, and  return Boolean results synchronously, true means that the AD is ready to be displayed, and false means that the AD is not show and still in the request.
+Judge if the interstitial ad is ready accroding ad unit, and  return Boolean results synchronously, true means that the AD is ready to be displayed, and false means that the AD is not show and still in the request.
 ```javascript
 // @param cpPlaceId  cpPlaceId
 isInterstitialReady : function(cpPlaceId)
@@ -74,16 +74,16 @@ var ilReadyAsynUIButton = this.createButton(x, y, "ilReadyAsyn");
 ilReadyAsynUIButton.addTouchEventListener(function(sender, type) {
     if (type == 2) {
         upltv.isInterstitialReadyAsyn(cpPlaceId, function(r) {
-            cc.log("===> js il ad isreadyasyn: %s at placementid:%s", r, cpPlaceId);
+            cc.log("===> js il ad isreadyasyn: %s at ad unit:%s", r, cpPlaceId);
         });
     }
 }, this);
 ```
 
 ### 4. Show interstitial AD
-show a interstitial ad according to the ad placement ID.
+show a interstitial ad according to the ad ad unit.
 ```javascript
-// @param cpPlaceId placementid
+// @param cpPlaceId ad unit
 showInterstitialAd : function(cpPlaceId)
 ```
 

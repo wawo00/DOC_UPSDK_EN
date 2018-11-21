@@ -185,38 +185,38 @@ Regarding to this situation, UPSDK will package the following objects further:
    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">initGameBannerWithActivity</span><span class="o">(</span><span class="n">Activity</span> <span class="n">gameActivity</span><span class="o">);</span>
 
    <span class="cm">/**</span>
-<span class="cm">   * Depending on the placement of ads, display the banner on the top of current activity</span>
+<span class="cm">   * Depending on the unit of ads, display the banner on the top of current activity</span>
 <span class="cm">   * Please adopt this method after actvity onresume, to avoid BadTokenException: Unable to add window -- token null is not valid;</span>
-<span class="cm">   * @param cpPlaceId banner ad placement is normally used for marking business types of some ads</span>
+<span class="cm">   * @param cpPlaceId banner ad unit is normally used for marking business types of some ads</span>
 <span class="cm">   */</span>
     <span class="kd">public</span> <span class="kt">void</span> <span class="nf">showTopBannerAtADPlaceId</span><span class="o">(</span><span class="n">String</span> <span class="n">cpPlaceId</span><span class="o">);</span>
 
    <span class="cm">/**</span>
-<span class="cm">   * Depending on the placement of ads, placing the banner in the bottom of current activity</span>
+<span class="cm">   * Depending on the unit of ads, placing the banner in the bottom of current activity</span>
 <span class="cm">   * Please adopt this method after onresume to avoid BadTokenException: Unable to add window -- token null is not valid;</span>
-<span class="cm">   * @param cpPlaceId banner ad placement is normally used for marking business types of some ads</span>
+<span class="cm">   * @param cpPlaceId banner ad unit is normally used for marking business types of some ads</span>
 <span class="cm">   */</span>
    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">showBottomBannerAtADPlaceId</span><span class="o">(</span><span class="n">String</span> <span class="n">cpPlaceId</span><span class="o">);</span>
 
    <span class="cm">/**</span>
-<span class="cm">   * Depending on the placement of ads, adding callback agent for banner</span>
-<span class="cm">   * @param cpPlaceId banner ad placement, is normally used for marking business types of some ads</span>
+<span class="cm">   * Depending on the unit of ads, adding callback agent for banner</span>
+<span class="cm">   * @param cpPlaceId banner ad unit, is normally used for marking business types of some ads</span>
 <span class="cm">   * @param callback banner callback</span>
 <span class="cm">   */</span>
    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">addBannerCallbackAtADPlaceId</span><span class="o">(</span><span class="n">String</span> <span class="n">cpPlaceId</span><span class="o">,</span> <span class="n">UPBannerAdListener</span> <span class="n">callback</span><span class="o">);</span>
 
    <span class="cm">/**</span>
-<span class="cm">   * Depending on the placement of ads, remove the banner ad without deleting relevant callback</span>
-<span class="cm">   * If the ad placement does not exist, it will not lead any actual operation for the misson   </span>
+<span class="cm">   * Depending on the unit of ads, remove the banner ad without deleting relevant callback</span>
+<span class="cm">   * If the ad unit does not exist, it will not lead any actual operation for the misson   </span>
 <span class="cm">   * Once the banner ad has been removed, it will load again while next show is coming.</span>
 <span class="cm">   * If the current banner ad is hidden only, please call hideTopBanner() or hideBottomBanner()</span>
-<span class="cm">   * @param cpPlaceId banner ad placement, is normally used for marking business types of some ads</span>
+<span class="cm">   * @param cpPlaceId banner ad unit, is normally used for marking business types of some ads</span>
 <span class="cm">   */</span>
    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">removeGameBannerAtADPlaceId</span><span class="o">(</span><span class="n">String</span> <span class="n">cpPlaceId</span><span class="o">);</span>
 
    <span class="cm">/**</span>
 <span class="cm">   * Hiding current top banner ad</span>
-<span class="cm">   * No need to distinguish placements of banner</span>
+<span class="cm">   * No need to distinguish unitsof banner</span>
 <span class="cm">   * While next show is coming, you need to call showBottomBannerAtADPlaceId()</span>
 <span class="cm">   * Start to support from 2037</span>
 <span class="cm">   */</span>
@@ -224,7 +224,7 @@ Regarding to this situation, UPSDK will package the following objects further:
 
    <span class="cm">/**</span>
 <span class="cm">   * Hiding current bottom banner ad</span>
-<span class="cm">   * No need to distinguish placements of banner</span>
+<span class="cm">   * No need to distinguish unitsof banner</span>
 <span class="cm">   * While next show is coming, you need to call showTopBannerAtADPlaceId()</span>
 <span class="cm">   * Start to support from 2037</span>
 <span class="cm">   */</span>
@@ -285,7 +285,7 @@ Regarding to this situation, UPSDK will package the following objects further:
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, upltv.
+        &copy; Copyright 2018, upltv
 
     </p>
   </div>
@@ -304,21 +304,15 @@ Regarding to this situation, UPSDK will package the following objects further:
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'',
-            LANGUAGE:'en',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 
   
 

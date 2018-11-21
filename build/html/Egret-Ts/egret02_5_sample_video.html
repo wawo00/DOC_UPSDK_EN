@@ -192,23 +192,23 @@
 </pre></div>
 </div>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// Callback of showing</span>
-<span class="c1">// @param cpPlaceId placementid</span>
+<span class="c1">// @param cpPlaceId ad unit</span>
     <span class="kr">static</span> <span class="nx">rewardAdDidOpen</span><span class="p">(</span><span class="nx">callback</span><span class="o">:</span><span class="p">(</span><span class="nx">cpPlaceId</span><span class="o">:</span><span class="nx">string</span><span class="p">)=&gt;</span><span class="k">void</span><span class="p">)</span>
 
 <span class="c1">// Callback of clicking</span>
-<span class="c1">// @param cpPlaceId placementid</span>
+<span class="c1">// @param cpPlaceId ad unit</span>
     <span class="kr">static</span> <span class="nx">rewardAdDidClick</span><span class="p">(</span><span class="nx">callback</span><span class="o">:</span><span class="p">(</span><span class="nx">cpPlaceId</span><span class="o">:</span><span class="nx">string</span><span class="p">)=&gt;</span><span class="k">void</span><span class="p">)</span>
 
 <span class="c1">// Callback of closing</span>
-<span class="c1">// @param cpPlaceId placementid</span>
+<span class="c1">// @param cpPlaceId ad unit</span>
     <span class="kr">static</span> <span class="nx">rewardAdDidClose</span><span class="p">(</span><span class="nx">callback</span><span class="o">:</span><span class="p">(</span><span class="nx">cpPlaceId</span><span class="o">:</span><span class="nx">string</span><span class="p">)=&gt;</span><span class="k">void</span><span class="p">)</span>
 
 <span class="c1">// Callback of sending reward successfully</span>
-<span class="c1">// @param cpPlaceId placementid</span>
+<span class="c1">// @param cpPlaceId ad unit</span>
     <span class="kr">static</span> <span class="nx">rewardAdDidGiven</span><span class="p">(</span><span class="nx">callback</span><span class="o">:</span><span class="p">(</span><span class="nx">cpPlaceId</span><span class="o">:</span><span class="nx">string</span><span class="p">)=&gt;</span><span class="k">void</span><span class="p">)</span>
 
 <span class="c1">// Callback of failing to send reward </span>
-<span class="c1">// @param cpPlaceId placementid</span>
+<span class="c1">// @param cpPlaceId ad unit</span>
     <span class="kr">static</span> <span class="nx">rewardAdDidAbandon</span><span class="p">(</span><span class="nx">callback</span><span class="o">:</span><span class="p">(</span><span class="nx">cpPlaceId</span><span class="o">:</span><span class="nx">string</span><span class="p">)=&gt;</span><span class="k">void</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -222,8 +222,8 @@
 </div>
 <div class="section" id="show-reward-video-ad">
 <span id="show-reward-video-ad"></span><h3>4. Show Reward Video Ad<a class="headerlink" href="#show-reward-video-ad" title="Permalink to this headline">¶</a></h3>
-<p>When show the Reward Video ad, you need to upload a cpPlaceId, which is the placementid , used for business management, in order to distinguish the source of revenue.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// @param cpPlaceId placementid</span>
+<p>When show the Reward Video ad, you need to upload a cpPlaceId, which is the ad unit , used for business management, in order to distinguish the source of revenue.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// @param cpPlaceId ad unit</span>
     <span class="kr">static</span> <span class="nx">showRewardAd</span><span class="p">(</span><span class="nx">cpPlaceId</span><span class="o">:</span><span class="nx">string</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -258,7 +258,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, upltv.
+        &copy; Copyright 2018, upltv
 
     </p>
   </div>
@@ -277,21 +277,15 @@
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'',
-            LANGUAGE:'en',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 
   
 
