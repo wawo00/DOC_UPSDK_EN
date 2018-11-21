@@ -49,11 +49,11 @@
 [Cocos-Lua SDK v3.0.06 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_domestic_3.0.06_CocosLua.zip "Cocos-Lua SDK v3.0.06 ")
 
 #### iOS
-[Cocos-JS SDK v3.0.05 ](http://cnimg.dataverse.cn/upsdk/UPSDK_iOS_3.0.05_CocosJS.zip "Cocos-JS SDK v3.0.05 ")
+[Cocos-JS SDK v3.0.06 ](http://cnimg.dataverse.cn/upsdk/UPSDK_iOS_3.0.06_CocosJS.zip "Cocos-JS SDK v3.0.06 ")
 
-[Cocos-C++ SDK v3.0.05 ](http://cnimg.dataverse.cn/upsdk/UPSDK_iOS_3.0.05_CocosC++.zip "Cocos-C++ SDK v3.0.05 ")
+[Cocos-C++ SDK v3.0.06 ](http://cnimg.dataverse.cn/upsdk/UPSDK_iOS_3.0.06_CocosC++.zip "Cocos-C++ SDK v3.0.06 ")
 
-[Cocos-Lua SDK v3.0.05 ](http://cnimg.dataverse.cn/upsdk/UPSDK_iOS_3.0.05_CocosLua.zip "Cocos-Lua SDK v3.0.05 ")
+[Cocos-Lua SDK v3.0.06 ](http://cnimg.dataverse.cn/upsdk/UPSDK_iOS_3.0.06_CocosLua.zip "Cocos-Lua SDK v3.0.06 ")
 
 ## Layabox
 
