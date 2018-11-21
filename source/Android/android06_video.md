@@ -10,15 +10,15 @@ Initialize Rewarded Video like this:
 
 When you want show Rewarded Video ads, call `isReady` to check if the video was ready. You can determine your "play" button display status with the return value of `isReady`.
 Then, you should call `show` method to display video ads.
-Please use the correct value of parameter `Placement ID` for different ads placement.
+Please use the correct value of parameter `ad unit` for different ads placement.
 
 **Don't forget to call `isReady` before `show` to make sure there is a video available.**
 
-> You can set the parameter `Placement ID` to any significative name you want. If you're not sure, please discuss with our **support engineer**. You should use a different `Placement ID` for different ads placement. We provide revenue from each  `Placement ID` in the feature.
+> You can set the parameter `ad unit` to any significative name you want. If you're not sure, please discuss with our **support engineer**. You should use a different `ad unit` for different ads placement. We provide revenue from each  `ad unit` in the feature.
 > Eg: You may use "Pause" or "Menu" when initializing our SDK in the pause scene of your game.
 
     if (mVideoAd != null && mVideoAd.isReady()) {
-        mVideoAd.show("Ad Placement");
+        mVideoAd.show("ad unit");
     }
 
 ### Callback

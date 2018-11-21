@@ -173,9 +173,9 @@
 <span id="callback-of-banner"></span><h2>1. Callback of banner<a class="headerlink" href="#callback-of-banner" title="Permalink to this headline">¶</a></h2>
 <p>Banner ad needs to set up the show of banner ad, click and remove the callback interface of events. The callback interface is saved internally by the plug-in, so you don’t need to set it up multiple times, only calling 用upltv:removeBannerAdAt(cpPlaceId) will be deleted.</p>
 <div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="c1">-- Set the display callback interface for a banner AD bit, and the callback interface will be saved and only removed by calling upltv:removeBannerAdAt(cpPlaceId)</span>
-<span class="c1">-- cpPlaceId：banner placementID</span>
+<span class="c1">-- cpPlaceId：banner ad unit</span>
 <span class="c1">-- showCall：Show ads, click to jump or remove callbacks</span>
-<span class="c1">-- callback parameter：event type，placementID，such as showCall(type, cpPlaceId)</span>
+<span class="c1">-- callback parameter：event type，ad unit，such as showCall(type, cpPlaceId)</span>
  <span class="n">upltv</span><span class="p">:</span><span class="n">setBannerShowCallback</span><span class="p">(</span><span class="n">cpPlaceId</span><span class="p">,</span> <span class="n">showCall</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -203,7 +203,7 @@
 </div>
 <div class="section" id="show-top-banner-ads">
 <span id="show-top-banner-ads"></span><h2>2. Show top banner ads<a class="headerlink" href="#show-top-banner-ads" title="Permalink to this headline">¶</a></h2>
-<p>Show the banner at the top of the screen according to the placementID.</p>
+<p>Show the banner at the top of the screen according to the ad unit.</p>
 <div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="c1">-- According to  &#39;cpPlaceId&#39; show banner ads at the top of the current screen</span>
 <span class="n">upltv</span><span class="p">:</span><span class="n">showBannerAdAtTop</span><span class="p">(</span><span class="n">cpPlaceId</span><span class="p">)</span>
 </pre></div>
@@ -255,7 +255,7 @@ upltv:setTopBannerPadingForIphonex(padding)
 </div>
 <div class="section" id="show-bottom-banner-ads">
 <span id="show-bottom-banner-ads"></span><h2>4. Show bottom banner ads<a class="headerlink" href="#show-bottom-banner-ads" title="Permalink to this headline">¶</a></h2>
-<p>Show the banner at the bottom of the screen according to the placementID.</p>
+<p>Show the banner at the bottom of the screen according to the ad unit.</p>
 <div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="n">upltv</span><span class="p">:</span><span class="n">showBannerAdAtBottom</span><span class="p">(</span><span class="n">cpPlaceId</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -286,7 +286,7 @@ upltv:setTopBannerPadingForIphonex(padding)
 </div>
 <div class="section" id="remove-banner-ads">
 <span id="remove-banner-ads"></span><h2>6. Remove banner ads<a class="headerlink" href="#remove-banner-ads" title="Permalink to this headline">¶</a></h2>
-<p>UPSDK supports removing Banner ads from an ad placement ID.</p>
+<p>UPSDK supports removing Banner ads from an ad ad unit.</p>
 <div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="n">upltv</span><span class="p">:</span><span class="n">removeBannerAdAt</span><span class="p">(</span><span class="n">cpPlaceId</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -323,7 +323,7 @@ upltv:setTopBannerPadingForIphonex(padding)
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, upltv.
+        &copy; Copyright 2018, upltv
 
     </p>
   </div>
@@ -342,21 +342,15 @@ upltv:setTopBannerPadingForIphonex(padding)
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'',
-            LANGUAGE:'en',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 
   
 

@@ -171,7 +171,7 @@
 <div class="section" id="set-the-interstitial-load-callback">
 <span id="set-the-interstitial-load-callback"></span><h2>1. Set the interstitial load callback<a class="headerlink" href="#set-the-interstitial-load-callback" title="Permalink to this headline">¶</a></h2>
 <p>Load results (success or failure) to listen for the current interstitial ad .This interface is automatically released once a callback is made, and the callback interface needs to be reset when listening again.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// @param cpPlaceId   placement ID</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// @param cpPlaceId   ad unit</span>
 <span class="c1">// @param loadSuccess Motivate the callback when the video is //loaded successfully，successCall(cpadid, msg)</span>
 <span class="c1">// @param loadFail    Motivate the callback when the video is //loaded failed， loadFail(cpid, message)</span>
 <span class="c1">//Once this interface is called back, the internal will be //automatically released, and the callback interface needs to //be reset when listening again.</span>
@@ -184,10 +184,10 @@
     <span class="k">if</span> <span class="p">(</span><span class="nx">type</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
         <span class="nx">upltv</span><span class="p">.</span><span class="nx">setInterstitialLoadCallback</span><span class="p">(</span><span class="nx">cpPlaceId</span><span class="p">,</span>
             <span class="kd">function</span><span class="p">(</span><span class="nx">cpid</span><span class="p">,</span> <span class="nx">msg</span><span class="p">)</span> <span class="p">{</span>
-                <span class="nx">cc</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;===&gt; js il load callback success: %s at placementid:%s&quot;</span><span class="p">,</span> <span class="nx">msg</span><span class="p">,</span> <span class="nx">cpid</span><span class="p">);</span>
+                <span class="nx">cc</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;===&gt; js il load callback success: %s at ad unit:%s&quot;</span><span class="p">,</span> <span class="nx">msg</span><span class="p">,</span> <span class="nx">cpid</span><span class="p">);</span>
             <span class="p">},</span>
             <span class="kd">function</span><span class="p">(</span><span class="nx">cpid</span><span class="p">,</span> <span class="nx">msg</span><span class="p">)</span> <span class="p">{</span>
-                <span class="nx">cc</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;===&gt; js il load callback fail: %s at placementid:%s&quot;</span><span class="p">,</span> <span class="nx">msg</span><span class="p">,</span> <span class="nx">cpid</span><span class="p">);</span>
+                <span class="nx">cc</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;===&gt; js il load callback fail: %s at ad unit:%s&quot;</span><span class="p">,</span> <span class="nx">msg</span><span class="p">,</span> <span class="nx">cpid</span><span class="p">);</span>
             <span class="p">});</span>
     <span class="p">}</span>
 <span class="p">},</span> <span class="k">this</span><span class="p">);</span>
@@ -198,7 +198,7 @@
 <span id="set-show-callback-of-interstitial-ad"></span><h2>2. Set show callback of Interstitial Ad<a class="headerlink" href="#set-show-callback-of-interstitial-ad" title="Permalink to this headline">¶</a></h2>
 <p>Set up the callback interface for the display of interstitial ad which is used to listen to the callback of showing .The  interstitial ad shows that references to the callback interface are stored  and not released.</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
-<span class="cm">* @param cpPlaceId placementid</span>
+<span class="cm">* @param cpPlaceId ad unit</span>
 <span class="cm">* @param showCall  callback</span>
 <span class="cm">*/</span>
 <span class="nx">setInterstitialShowCallback</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">cpPlaceId</span><span class="p">,</span> <span class="nx">showCall</span><span class="p">)</span>
@@ -229,7 +229,7 @@
 </div>
 <div class="section" id="judge-if-the-interstitial-ad-is-ready">
 <span id="judge-if-the-interstitial-ad-is-ready"></span><h2>3. Judge if the interstitial ad is ready<a class="headerlink" href="#judge-if-the-interstitial-ad-is-ready" title="Permalink to this headline">¶</a></h2>
-<p>Judge if the interstitial ad is ready accroding placementid, and  return Boolean results synchronously, true means that the AD is ready to be displayed, and false means that the AD is not show and still in the request.</p>
+<p>Judge if the interstitial ad is ready accroding ad unit, and  return Boolean results synchronously, true means that the AD is ready to be displayed, and false means that the AD is not show and still in the request.</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// @param cpPlaceId  cpPlaceId</span>
 <span class="nx">isInterstitialReady</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">cpPlaceId</span><span class="p">)</span>
 </pre></div>
@@ -239,7 +239,7 @@
 <span class="nx">ilReadyAsynUIButton</span><span class="p">.</span><span class="nx">addTouchEventListener</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">sender</span><span class="p">,</span> <span class="nx">type</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="nx">type</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
         <span class="nx">upltv</span><span class="p">.</span><span class="nx">isInterstitialReadyAsyn</span><span class="p">(</span><span class="nx">cpPlaceId</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">r</span><span class="p">)</span> <span class="p">{</span>
-            <span class="nx">cc</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;===&gt; js il ad isreadyasyn: %s at placementid:%s&quot;</span><span class="p">,</span> <span class="nx">r</span><span class="p">,</span> <span class="nx">cpPlaceId</span><span class="p">);</span>
+            <span class="nx">cc</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;===&gt; js il ad isreadyasyn: %s at ad unit:%s&quot;</span><span class="p">,</span> <span class="nx">r</span><span class="p">,</span> <span class="nx">cpPlaceId</span><span class="p">);</span>
         <span class="p">});</span>
     <span class="p">}</span>
 <span class="p">},</span> <span class="k">this</span><span class="p">);</span>
@@ -248,8 +248,8 @@
 </div>
 <div class="section" id="show-interstitial-ad">
 <span id="show-interstitial-ad"></span><h2>4. Show interstitial AD<a class="headerlink" href="#show-interstitial-ad" title="Permalink to this headline">¶</a></h2>
-<p>show a interstitial ad according to the ad placement ID.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// @param cpPlaceId placementid</span>
+<p>show a interstitial ad according to the ad ad unit.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// @param cpPlaceId ad unit</span>
 <span class="nx">showInterstitialAd</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">cpPlaceId</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -304,7 +304,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, upltv.
+        &copy; Copyright 2018, upltv
 
     </p>
   </div>
@@ -323,21 +323,15 @@
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'',
-            LANGUAGE:'en',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 
   
 

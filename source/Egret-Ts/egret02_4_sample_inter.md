@@ -32,18 +32,18 @@ Set up the callback interface for the display of interstitial ad which is used t
 ```
 
 ### 3. Judge if the interstitial ad is ready
-Judge if the interstitial ad is ready accroding placementid, and  return Boolean results synchronously, true means that the AD is ready to be displayed, and false means that the AD is not show and still in the request.
+Judge if the interstitial ad is ready accroding ad unit, and  return Boolean results synchronously, true means that the AD is ready to be displayed, and false means that the AD is not show and still in the request.
 
 ```javascript
-// @param cpPlaceId placementid
+// @param cpPlaceId ad unit
 // @param cpPlaceId callback,callback ,such as callback(true) or callback(false)
     static isInterstitialAdReady(cpPlaceId:string, callback:(ready:boolean)=>void)
 ```
 
 ### 4. Show interstitial AD
-show a interstitial ad according to the ad placement ID.
+show a interstitial ad according to the ad ad unit.
 ```javascript
-// @param cpPlaceId placementid
+// @param cpPlaceId ad unit
     static showInterstitialAd(cpPlaceId:string)
 ```
 

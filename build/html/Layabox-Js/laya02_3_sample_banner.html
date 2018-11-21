@@ -174,7 +174,7 @@
 <span id="callback-of-banner"></span><h2>1.Callback of Banner<a class="headerlink" href="#callback-of-banner" title="Permalink to this headline">¶</a></h2>
 <p>Banner ad needs to set up the show of banner ad, click and remove the callback interface of events. The callback interface is saved internally by the plug-in, so you don’t need to set it up multiple times, only calling upltv:removeBannerAdAt(cpPlaceId) will be deleted.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
-<span class="cm">* @param cpPlaceId  placementID</span>
+<span class="cm">* @param cpPlaceId  ad unit</span>
 <span class="cm">* @param callback</span>
 <span class="cm">*/</span>
 <span class="nl">setBannerShowCallback</span> <span class="p">:</span> <span class="n">function</span><span class="p">(</span><span class="n">cpPlaceId</span><span class="p">,</span> <span class="n">bannerCall</span><span class="p">)</span>
@@ -206,7 +206,7 @@
 </div>
 <div class="section" id="show-top-banner-ads">
 <span id="show-top-banner-ads"></span><h2>2.Show top banner ads<a class="headerlink" href="#show-top-banner-ads" title="Permalink to this headline">¶</a></h2>
-<p>Show the banner at the top of the screen according to the placementID.</p>
+<p>Show the banner at the top of the screen according to the ad unit.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
 <span class="cm">* @param cpPlaceId palcementid</span>
 <span class="cm">*/</span>
@@ -250,8 +250,8 @@
 </div>
 <div class="section" id="show-bottom-banner-ads">
 <span id="show-bottom-banner-ads"></span><h2>4. Show bottom banner ads<a class="headerlink" href="#show-bottom-banner-ads" title="Permalink to this headline">¶</a></h2>
-<p>Show the banner at the bottom of the screen according to the placementID.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// @param cpPlaceId placementid</span>
+<p>Show the banner at the bottom of the screen according to the ad unit.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// @param cpPlaceId ad unit</span>
 <span class="nx">showBannerAdAtBottom</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">cpPlaceId</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -282,8 +282,8 @@
 </div>
 <div class="section" id="remove-banner-ads">
 <span id="remove-banner-ads"></span><h2>6.Remove banner ads<a class="headerlink" href="#remove-banner-ads" title="Permalink to this headline">¶</a></h2>
-<p>Remove a banner ad accroding to placementid</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// @param cpPlaceId placementid</span>
+<p>Remove a banner ad accroding to ad unit</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// @param cpPlaceId ad unit</span>
 <span class="nx">removeBannerAdAt</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">cpPlaceId</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -320,7 +320,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, upltv.
+        &copy; Copyright 2018, upltv
 
     </p>
   </div>
@@ -339,21 +339,15 @@
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'',
-            LANGUAGE:'en',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 
   
 

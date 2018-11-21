@@ -173,7 +173,7 @@
 <span id="set-the-interstitial-load-callback"></span><h2>1. Set the interstitial load callback<a class="headerlink" href="#set-the-interstitial-load-callback" title="Permalink to this headline">¶</a></h2>
 <p>Load results (success or failure) to listen for the current interstitial ad .This interface is automatically released once a callback is made, and the callback interface needs to be reset when listening again.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
-<span class="cm">* @param cpPlaceId   placement ID</span>
+<span class="cm">* @param cpPlaceId   ad unit</span>
 <span class="cm">* @param loadSuccess Motivate the callback when the video is loaded successfully，successCall(cpadid, msg)</span>
 <span class="cm">* @param loadFail     Motivate the callback when the video is loaded failed， loadFail(cpid, message)</span>
 <span class="cm">*/</span>
@@ -193,7 +193,7 @@
 <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span><span class="o">::</span><span class="n">ENDED</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">log</span><span class="p">(</span><span class="s">&quot;===&gt; cpp button touch tag :%d&quot;</span><span class="p">,</span><span class="n">tag</span><span class="p">);</span>
-        <span class="n">string</span> <span class="n">ilkey</span> <span class="o">=</span> <span class="s">&quot;Interstitial_LevelPass&quot;</span><span class="p">;</span><span class="c1">//define a interstitial ad‘s placementID</span>
+        <span class="n">string</span> <span class="n">ilkey</span> <span class="o">=</span> <span class="s">&quot;Interstitial_LevelPass&quot;</span><span class="p">;</span><span class="c1">//define a interstitial ad‘s ad unit</span>
         <span class="k">switch</span> <span class="p">(</span><span class="n">tag</span><span class="p">)</span>
         <span class="p">{</span>
             <span class="k">case</span> <span class="mi">1001</span><span class="o">:</span>
@@ -211,7 +211,7 @@
 <span id="set-show-callback-of-interstitial-ad"></span><h2>2. Set show callback of Interstitial Ad<a class="headerlink" href="#set-show-callback-of-interstitial-ad" title="Permalink to this headline">¶</a></h2>
 <p>Set up the callback interface for the display of interstitial ad which is used to listen to the callback of showing .The  interstitial ad shows that references to the callback interface are stored  and not released.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
-<span class="cm">* @param cpPlaceId placementid</span>
+<span class="cm">* @param cpPlaceId ad unit</span>
 <span class="cm">* @param callback  callback</span>
 <span class="cm">*/</span>
 <span class="k">static</span> <span class="kt">void</span> <span class="nf">setInterstitialShowCallback</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">cpPlaceId</span><span class="p">,</span> <span class="n">UpltvSdkStringCallback_1</span> <span class="n">callback</span><span class="p">);</span>
@@ -241,7 +241,7 @@
 <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span><span class="o">::</span><span class="n">ENDED</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">log</span><span class="p">(</span><span class="s">&quot;===&gt; cpp button touch tag :%d&quot;</span><span class="p">,</span><span class="n">tag</span><span class="p">);</span>
-        <span class="n">string</span> <span class="n">ilkey</span> <span class="o">=</span> <span class="s">&quot;Interstitial_LevelPass&quot;</span><span class="p">;</span><span class="c1">//define a interstitial ad‘s placementID</span>
+        <span class="n">string</span> <span class="n">ilkey</span> <span class="o">=</span> <span class="s">&quot;Interstitial_LevelPass&quot;</span><span class="p">;</span><span class="c1">//define a interstitial ad‘s ad unit</span>
         <span class="k">switch</span> <span class="p">(</span><span class="n">tag</span><span class="p">)</span>
         <span class="p">{</span>
             <span class="k">case</span> <span class="mi">1001</span><span class="o">:</span>
@@ -257,7 +257,7 @@
 </div>
 <div class="section" id="judge-if-the-interstitial-ad-is-ready">
 <span id="judge-if-the-interstitial-ad-is-ready"></span><h2>3. Judge if the interstitial ad is ready<a class="headerlink" href="#judge-if-the-interstitial-ad-is-ready" title="Permalink to this headline">¶</a></h2>
-<p>Judge if the interstitial ad is ready accroding placementid, and  return Boolean results synchronously, true means that the AD is ready to be displayed, and false means that the AD is not show and still in the request.</p>
+<p>Judge if the interstitial ad is ready accroding ad unit, and  return Boolean results synchronously, true means that the AD is ready to be displayed, and false means that the AD is not show and still in the request.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span> <span class="cm">/**</span>
 <span class="cm">* @param cpPlaceId</span>
 <span class="cm">* @return bool</span>
@@ -274,7 +274,7 @@
 <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span><span class="o">::</span><span class="n">ENDED</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">log</span><span class="p">(</span><span class="s">&quot;===&gt; cpp button touch tag :%d&quot;</span><span class="p">,</span><span class="n">tag</span><span class="p">);</span>
-        <span class="n">string</span> <span class="n">ilkey</span> <span class="o">=</span> <span class="s">&quot;Interstitial_LevelPass&quot;</span><span class="p">;</span><span class="c1">//define a interstitial ad‘s placementID</span>
+        <span class="n">string</span> <span class="n">ilkey</span> <span class="o">=</span> <span class="s">&quot;Interstitial_LevelPass&quot;</span><span class="p">;</span><span class="c1">//define a interstitial ad‘s ad unit</span>
         <span class="k">switch</span> <span class="p">(</span><span class="n">tag</span><span class="p">)</span>
         <span class="p">{</span>
             <span class="k">case</span> <span class="mi">1001</span><span class="o">:</span>
@@ -290,7 +290,7 @@
 </div>
 <div class="section" id="show-interstitial-ad">
 <span id="show-interstitial-ad"></span><h2>4. Show interstitial AD<a class="headerlink" href="#show-interstitial-ad" title="Permalink to this headline">¶</a></h2>
-<p>show a interstitial ad according to the ad placement ID.</p>
+<p>show a interstitial ad according to the ad ad unit.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
 <span class="cm">* @param cpPlaceId</span>
 <span class="cm">*/</span>
@@ -302,7 +302,7 @@
 <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span><span class="o">::</span><span class="n">ENDED</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">log</span><span class="p">(</span><span class="s">&quot;===&gt; cpp button touch tag :%d&quot;</span><span class="p">,</span><span class="n">tag</span><span class="p">);</span>
-        <span class="n">string</span> <span class="n">ilkey</span> <span class="o">=</span> <span class="s">&quot;Interstitial_LevelPass&quot;</span><span class="p">;</span><span class="c1">//define a interstitial ad‘s placementID</span>
+        <span class="n">string</span> <span class="n">ilkey</span> <span class="o">=</span> <span class="s">&quot;Interstitial_LevelPass&quot;</span><span class="p">;</span><span class="c1">//define a interstitial ad‘s ad unit</span>
         <span class="k">switch</span> <span class="p">(</span><span class="n">tag</span><span class="p">)</span>
         <span class="p">{</span>
             <span class="k">case</span> <span class="mi">1001</span><span class="o">:</span>
@@ -329,7 +329,7 @@
 <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span><span class="o">::</span><span class="n">ENDED</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">log</span><span class="p">(</span><span class="s">&quot;===&gt; cpp button touch tag :%d&quot;</span><span class="p">,</span><span class="n">tag</span><span class="p">);</span>
-        <span class="n">string</span> <span class="n">ilkey</span> <span class="o">=</span> <span class="s">&quot;Interstitial_LevelPass&quot;</span><span class="p">;</span><span class="c1">//define a interstitial ad‘s placementID</span>
+        <span class="n">string</span> <span class="n">ilkey</span> <span class="o">=</span> <span class="s">&quot;Interstitial_LevelPass&quot;</span><span class="p">;</span><span class="c1">//define a interstitial ad‘s ad unit</span>
         <span class="k">switch</span> <span class="p">(</span><span class="n">tag</span><span class="p">)</span>
         <span class="p">{</span>
             <span class="k">case</span> <span class="mi">1001</span><span class="o">:</span>
@@ -365,7 +365,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, upltv.
+        &copy; Copyright 2018, upltv
 
     </p>
   </div>
@@ -384,21 +384,15 @@
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'',
-            LANGUAGE:'en',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 
   
 

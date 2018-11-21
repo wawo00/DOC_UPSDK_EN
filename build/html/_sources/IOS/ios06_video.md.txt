@@ -32,7 +32,7 @@ But their interfaces and methods are looks very similar.
     /**
      * Show video
      * @param viewController, used for redireaction, must be correctly set
-     * @param adid, Ad Placement ID, used for tracking and analysis, you can customize it yourself 
+     * @param adid, Ad ad unit, used for tracking and analysis, you can customize it yourself 
      **/
     
     - (BOOL)show:(UIViewController *)viewController placeId:(NSString*)adId;

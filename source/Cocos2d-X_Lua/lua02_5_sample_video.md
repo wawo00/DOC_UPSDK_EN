@@ -79,7 +79,7 @@ btnloadvideo:addTouchEventListener(function(sender, eventType)
 end)
 ```
 #### 4. Show Reward Video Ad 
-When show the Reward Video ad, you need to upload a cpPlaceId, which is the placementid , used for business management, in order to distinguish the source of revenue.
+When show the Reward Video ad, you need to upload a cpPlaceId, which is the ad unit , used for business management, in order to distinguish the source of revenue.
 ```lua
 upltv:showRewardVideo(cpPlaceId)
 ```

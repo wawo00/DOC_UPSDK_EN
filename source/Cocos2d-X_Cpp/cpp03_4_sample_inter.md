@@ -4,7 +4,7 @@
 Load results (success or failure) to listen for the current interstitial ad .This interface is automatically released once a callback is made, and the callback interface needs to be reset when listening again.
 ```cpp
 /**
-* @param cpPlaceId   placement ID
+* @param cpPlaceId   ad unit
 * @param loadSuccess Motivate the callback when the video is loaded successfully，successCall(cpadid, msg)
 * @param loadFail     Motivate the callback when the video is loaded failed， loadFail(cpid, message)
 */
@@ -24,7 +24,7 @@ void HelloWorld::touchEvent(cocos2d::Ref *pSender, cocos2d::ui::Widget::TouchEve
 {
     if (type == cocos2d::ui::Widget::TouchEventType::ENDED) {
         log("===> cpp button touch tag :%d",tag);
-        string ilkey = "Interstitial_LevelPass";//define a interstitial ad‘s placementID
+        string ilkey = "Interstitial_LevelPass";//define a interstitial ad‘s ad unit
         switch (tag)
         {
             case 1001:
@@ -41,7 +41,7 @@ void HelloWorld::touchEvent(cocos2d::Ref *pSender, cocos2d::ui::Widget::TouchEve
 Set up the callback interface for the display of interstitial ad which is used to listen to the callback of showing .The  interstitial ad shows that references to the callback interface are stored  and not released.
 ```cpp
 /**
-* @param cpPlaceId placementid
+* @param cpPlaceId ad unit
 * @param callback  callback
 */
 static void setInterstitialShowCallback(const char* cpPlaceId, UpltvSdkStringCallback_1 callback);
@@ -71,7 +71,7 @@ void HelloWorld::touchEvent(cocos2d::Ref *pSender, cocos2d::ui::Widget::TouchEve
 {
     if (type == cocos2d::ui::Widget::TouchEventType::ENDED) {
         log("===> cpp button touch tag :%d",tag);
-        string ilkey = "Interstitial_LevelPass";//define a interstitial ad‘s placementID
+        string ilkey = "Interstitial_LevelPass";//define a interstitial ad‘s ad unit
         switch (tag)
         {
             case 1001:
@@ -84,7 +84,7 @@ void HelloWorld::touchEvent(cocos2d::Ref *pSender, cocos2d::ui::Widget::TouchEve
 }
 ```
 ### 3. Judge if the interstitial ad is ready
-Judge if the interstitial ad is ready accroding placementid, and  return Boolean results synchronously, true means that the AD is ready to be displayed, and false means that the AD is not show and still in the request.
+Judge if the interstitial ad is ready accroding ad unit, and  return Boolean results synchronously, true means that the AD is ready to be displayed, and false means that the AD is not show and still in the request.
 ```cpp
  /**
 * @param cpPlaceId
@@ -102,7 +102,7 @@ void HelloWorld::touchEvent(cocos2d::Ref *pSender, cocos2d::ui::Widget::TouchEve
 {
     if (type == cocos2d::ui::Widget::TouchEventType::ENDED) {
         log("===> cpp button touch tag :%d",tag);
-        string ilkey = "Interstitial_LevelPass";//define a interstitial ad‘s placementID
+        string ilkey = "Interstitial_LevelPass";//define a interstitial ad‘s ad unit
         switch (tag)
         {
             case 1001:
@@ -115,7 +115,7 @@ void HelloWorld::touchEvent(cocos2d::Ref *pSender, cocos2d::ui::Widget::TouchEve
 }
 ```
 ### 4. Show interstitial AD
-show a interstitial ad according to the ad placement ID.
+show a interstitial ad according to the ad ad unit.
 ```cpp
 /**
 * @param cpPlaceId
@@ -128,7 +128,7 @@ void HelloWorld::touchEvent(cocos2d::Ref *pSender, cocos2d::ui::Widget::TouchEve
 {
     if (type == cocos2d::ui::Widget::TouchEventType::ENDED) {
         log("===> cpp button touch tag :%d",tag);
-        string ilkey = "Interstitial_LevelPass";//define a interstitial ad‘s placementID
+        string ilkey = "Interstitial_LevelPass";//define a interstitial ad‘s ad unit
         switch (tag)
         {
             case 1001:
@@ -153,7 +153,7 @@ void HelloWorld::touchEvent(cocos2d::Ref *pSender, cocos2d::ui::Widget::TouchEve
 {
     if (type == cocos2d::ui::Widget::TouchEventType::ENDED) {
         log("===> cpp button touch tag :%d",tag);
-        string ilkey = "Interstitial_LevelPass";//define a interstitial ad‘s placementID
+        string ilkey = "Interstitial_LevelPass";//define a interstitial ad‘s ad unit
         switch (tag)
         {
             case 1001:

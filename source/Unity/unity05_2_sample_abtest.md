@@ -25,7 +25,7 @@ public void onBtnInitABConfig_Click()
 	* returned result could be Json character string, posiblity could be null
 	* Before invoking this API, pl;ease invoke initAbtConfigJson() to finish the initialization for abtest configuration
 	*/
-public static string getAbtConfig(string placementId)；
+public static string getAbtConfig(string ad unit)；
 
 ```
 
@@ -34,7 +34,7 @@ Sample：
 ```csharp
 public void onBtnGetABConfig_Click()
 {   
-	//parameter is placementId
+	//parameter is ad unit
     string r = UPSDK.getAbtConfig ("hello");
     Debug.Log ("==> onBtnGetABConfig_Click:" + r);
 }

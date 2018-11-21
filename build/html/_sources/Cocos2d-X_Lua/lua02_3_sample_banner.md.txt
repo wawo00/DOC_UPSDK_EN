@@ -6,9 +6,9 @@ Banner ad needs to set up the show of banner ad, click and remove the callback i
 
 ```lua
 -- Set the display callback interface for a banner AD bit, and the callback interface will be saved and only removed by calling upltv:removeBannerAdAt(cpPlaceId)
--- cpPlaceId：banner placementID
+-- cpPlaceId：banner ad unit
 -- showCall：Show ads, click to jump or remove callbacks
--- callback parameter：event type，placementID，such as showCall(type, cpPlaceId)
+-- callback parameter：event type，ad unit，such as showCall(type, cpPlaceId)
  upltv:setBannerShowCallback(cpPlaceId, showCall)
 ```
 For example：
@@ -34,7 +34,7 @@ end)
 ```
 
 ### 2. Show top banner ads
-Show the banner at the top of the screen according to the placementID.
+Show the banner at the top of the screen according to the ad unit.
 ```lua
 -- According to  'cpPlaceId' show banner ads at the top of the current screen
 upltv:showBannerAdAtTop(cpPlaceId)
@@ -86,7 +86,7 @@ btnhideallbanner:addTouchEventListener(function(sender,eventType)
 end)
 ```
 ### 4. Show bottom banner ads
-Show the banner at the bottom of the screen according to the placementID.
+Show the banner at the bottom of the screen according to the ad unit.
 ```lua
 upltv:showBannerAdAtBottom(cpPlaceId)
 ```
@@ -114,7 +114,7 @@ btnhideallbanner:addTouchEventListener(function(sender, eventType)
 end)
 ```
 ### 6. Remove banner ads
-UPSDK supports removing Banner ads from an ad placement ID.
+UPSDK supports removing Banner ads from an ad ad unit.
 ```lua
 upltv:removeBannerAdAt(cpPlaceId)
 ```

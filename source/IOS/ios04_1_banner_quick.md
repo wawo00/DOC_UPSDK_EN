@@ -2,14 +2,14 @@
 
 If you only need to build a banner ad ads at the top or bottom of the view, we recommend using this method to achieve the goal faster and more easier.
 
-> You can set parameter `Placement ID` to any significative name you want. If you not sure about should discussed with our **support engineer**. You should use different `Placement ID` for different ads placement. We provide revenue from each  `Placement ID` in the feature.
+> You can set parameter `ad unit` to any significative name you want. If you not sure about should discussed with our **support engineer**. You should use different `ad unit` for different ads placement. We provide revenue from each  `ad unit` in the feature.
 > Eg: You may use "Pause" or "Menu" when initial our SDK in the pause scene of your game.
 
 #### Sample
 ```objective-c
 /*
 * Initial method 
-* 1. avidPlacement：Placement ID，Type is NSString,not be empty
+* 1. avidPlacement：ad unit，Type is NSString,not be empty
 * 2. vc：Type is UIViewController,not be empty
 * 3. showLocation：location of banner（Top or Bottom）
 */

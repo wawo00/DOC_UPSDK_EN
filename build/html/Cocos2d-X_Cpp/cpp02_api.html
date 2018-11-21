@@ -273,7 +273,7 @@
 <span class="cm">/**</span>
 <span class="cm">* After completing A/B Testing initialization, the results are obtained through this method</span>
 <span class="cm">* To ensure that the results are correctly obtained, the call time is recommended to delay initAbtConfigJson() by more than 2 seconds</span>
-<span class="cm">* @param cpPlaceId  string type， ad placement ID</span>
+<span class="cm">* @param cpPlaceId  string type， ad ad unit</span>
 <span class="cm">* @return const char*</span>
 <span class="cm">*/</span>
 <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="nf">getAbtConfig</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">cpPlaceId</span><span class="p">);</span>
@@ -347,9 +347,9 @@
 <span class="k">static</span> <span class="kt">void</span> <span class="nf">setInterstitialLoadCallback</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">cpPlaceId</span><span class="p">,</span> <span class="n">UpltvSdkStringCallback_2</span> <span class="n">loadSuccess</span><span class="p">,</span> <span class="n">UpltvSdkStringCallback_2</span> <span class="n">loadFail</span><span class="p">);</span>
 
 <span class="cm">/**</span>
-<span class="cm">* Depending on the ad placementID decide on a interstitial ad is ready</span>
+<span class="cm">* Depending on the ad ad unit decide on a interstitial ad is ready</span>
 <span class="cm">* r is the AD load result, true means the AD is ready to be displayed, and false means the AD is not show and still  in the request</span>
-<span class="cm">* @param cpPlaceId ad placementID，must be specified correctly and cannot be empty</span>
+<span class="cm">* @param cpPlaceId ad ad unit，must be specified correctly and cannot be empty</span>
 <span class="cm">* @param callback</span>
 <span class="cm">*/</span>
 <span class="k">static</span> <span class="kt">void</span> <span class="nf">isInterstitialReadyAsyn</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">cpPlaceId</span><span class="p">,</span> <span class="n">UpltvSdkBoolStringCallback</span> <span class="n">callback</span><span class="p">);</span>
@@ -364,7 +364,7 @@
 <span class="k">static</span> <span class="kt">bool</span> <span class="nf">isInterstitialReady</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">cpPlaceId</span><span class="p">);</span>
 
 <span class="cm">/**</span>
-<span class="cm"> * show a interstitial ad according to the ad placement ID</span>
+<span class="cm"> * show a interstitial ad according to the ad ad unit</span>
 <span class="cm"> * @param cpPlaceId</span>
 <span class="cm"> */</span>
 <span class="k">static</span> <span class="kt">void</span> <span class="nf">showInterstitialAd</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">cpPlaceId</span><span class="p">);</span>
@@ -374,7 +374,7 @@
 <div class="section" id="banner">
 <span id="banner"></span><h3>3.5 banner：<a class="headerlink" href="#banner" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
-<span class="cm">* Set the show callback interface for a banner AD placement ID, and the callback interface will be saved and only removed by calling upltv:removeBannerAdAt(cpPlaceId)</span>
+<span class="cm">* Set the show callback interface for a banner AD ad unit, and the callback interface will be saved and only removed by calling upltv:removeBannerAdAt(cpPlaceId)</span>
 <span class="cm">* @param cpPlaceId</span>
 <span class="cm">* @param callback</span>
 <span class="cm">*/</span>
@@ -403,7 +403,7 @@
 <span class="k">static</span> <span class="kt">void</span> <span class="nf">hideBannerAdAtBottom</span><span class="p">();</span>
 
 <span class="cm">/**</span>
-<span class="cm">* Remove banner ads for a ad placementID</span>
+<span class="cm">* Remove banner ads for a ad ad unit</span>
 <span class="cm">* @param cpPlaceId</span>
 <span class="cm">*/</span>
 <span class="k">static</span> <span class="kt">void</span> <span class="nf">removeBannerAdAt</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span><span class="n">cpPlaceId</span><span class="p">);</span>
@@ -518,7 +518,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, upltv.
+        &copy; Copyright 2018, upltv
 
     </p>
   </div>
@@ -537,21 +537,15 @@
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'',
-            LANGUAGE:'en',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 
   
 

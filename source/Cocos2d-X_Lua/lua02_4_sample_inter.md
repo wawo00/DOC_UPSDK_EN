@@ -2,9 +2,9 @@
 ### 1. Set the interstitial load callback 
 Load results (success or failure) to listen for the current interstitial ad .This interface is automatically released once a callback is made, and the callback interface needs to be reset when listening again.
 ```lua
--- Determine if a Interstitial ad is ready based on the placementid
+-- Determine if a Interstitial ad is ready based on the ad unit
 -- Asynchronously returns a bool result, true means the ad is ready to be displayed,false means the ad is still in the request
--- cpPlaceId：placementid
+-- cpPlaceId：ad unit
 -- callback：callback(true)  or callback(false)
 upltv:isInterstitialReadyAsyn(cpPlaceId, callback)
 ```
@@ -29,7 +29,7 @@ Set up the callback interface for the display of interstitial ad which is used t
 -- Set the callback interface when Interstitial ad show, which is used to monitor the event callback of the interstitial advertisement such as click, close, etc. during showing.
 -- The plugin shows that the reference to the callback interface will be saved internally and will not be released.
 -- Callback event type: show, click, close
--- @param cpPlaceid placementid，showCall showCall(type, cpPlaceId)
+-- @param cpPlaceid ad unit，showCall showCall(type, cpPlaceId)
 upltv:setInterstitialShowCallback(cpPlaceId, showCall)
 ```
 Sample：
@@ -53,7 +53,7 @@ btnInterstitialShowCall:addTouchEventListener(function(sender, eventType)
 end)
 ```
 ### 3. Judge if the interstitial ad is ready
-Judge if the interstitial ad is ready accroding placementid, and  return Boolean results synchronously, true means that the AD is ready to be displayed, and false means that the AD is not show and still in the request.
+Judge if the interstitial ad is ready accroding ad unit, and  return Boolean results synchronously, true means that the AD is ready to be displayed, and false means that the AD is not show and still in the request.
 ```lua
 upltv:isInterstitialReady(cpPlaceId)
 ```
@@ -73,7 +73,7 @@ btnInterstitialShow:addTouchEventListener(function(sender, eventType)
 end)
 ```
 ### 4. Show interstitial AD
-show a interstitial ad according to the ad placement ID.
+show a interstitial ad according to the ad ad unit.
 ```lua
 upltv:showInterstitialAd(cpPlaceId)
 ```

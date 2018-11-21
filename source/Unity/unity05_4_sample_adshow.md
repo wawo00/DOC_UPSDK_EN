@@ -6,7 +6,7 @@
 ```csharp
 public static void showIntersitialAd(string cpPlaceId);
 ```
-> parameters：ccpPlaceId is Ad placementid, make sure it correctly
+> parameters：ccpPlaceId is Ad ad unit, make sure it correctly
 
 > This method will query whether the corresponding ad exists according to the cpPlaceId, and if exists, further determines whether ad is ready. Intersitial Ad will only be displayed if both are true. In other words, showIntersitialAd() will call the isInterstitialReady() 
 
@@ -16,7 +16,7 @@ In general, the showIntersitialAd() method can be called directly to display the
     public static bool isInterstitialReady(string cpPlaceId)
 
 #### Sample
-“**inter_bbb**” and “**inter_ccc**” are two placementid of Interstitial ad.
+“**inter_bbb**” and “**inter_ccc**” are two ad unit of Interstitial ad.
 
 ```csharp
 public void onBtnIntertitialClick() 

@@ -15,10 +15,10 @@ Banner ad needs to set up the show of banner ad, click and remove the callback i
 ```
 
 ### 2.Show top banner ads
-Show the banner at the top of the screen according to the placementID.
+Show the banner at the top of the screen according to the ad unit.
 
 ```javascript
-// @param cpPlaceId placementid
+// @param cpPlaceId ad unit
     static showBannerAdAtTop(cpPlaceId:string)
 ```
 
@@ -35,13 +35,13 @@ static setTopBannerPading(padding)
 
 ### 3.Hide top banner ads
 ```javascript
-// @param cpPlaceId placementid
+// @param cpPlaceId ad unit
     static hideBannerAdAtTop()
 ```
 
 ### 4. Show bottom banner ads
 ```javascript
-// @param cpPlaceId placementid
+// @param cpPlaceId ad unit
     static showBannerAdAtBottom(cpPlaceId:string)
 ```
 
@@ -53,6 +53,6 @@ static setTopBannerPading(padding)
 
 ### 6.Remove banner ads
 ```javascript
-// @param cpPlaceId placementid
+// @param cpPlaceId ad unit
     static removeBannerAdAt(cpPlaceId:string)
 ```

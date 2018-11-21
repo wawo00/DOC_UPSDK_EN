@@ -109,7 +109,7 @@ static void initAbtConfigJson(const char* gameAccountId, bool completeTask, int 
 /**
 * After completing A/B Testing initialization, the results are obtained through this method
 * To ensure that the results are correctly obtained, the call time is recommended to delay initAbtConfigJson() by more than 2 seconds
-* @param cpPlaceId  string type， ad placement ID
+* @param cpPlaceId  string type， ad ad unit
 * @return const char*
 */
 static const char* getAbtConfig(const char* cpPlaceId);
@@ -180,9 +180,9 @@ static void setInterstitialShowCallback(const char* cpPlaceId, UpltvSdkStringCal
 static void setInterstitialLoadCallback(const char* cpPlaceId, UpltvSdkStringCallback_2 loadSuccess, UpltvSdkStringCallback_2 loadFail);
 
 /**
-* Depending on the ad placementID decide on a interstitial ad is ready
+* Depending on the ad ad unit decide on a interstitial ad is ready
 * r is the AD load result, true means the AD is ready to be displayed, and false means the AD is not show and still  in the request
-* @param cpPlaceId ad placementID，must be specified correctly and cannot be empty
+* @param cpPlaceId ad ad unit，must be specified correctly and cannot be empty
 * @param callback
 */
 static void isInterstitialReadyAsyn(const char* cpPlaceId, UpltvSdkBoolStringCallback callback);
@@ -197,7 +197,7 @@ static void isInterstitialReadyAsyn(const char* cpPlaceId, UpltvSdkBoolStringCal
 static bool isInterstitialReady(const char* cpPlaceId);
 
 /**
- * show a interstitial ad according to the ad placement ID
+ * show a interstitial ad according to the ad ad unit
  * @param cpPlaceId
  */
 static void showInterstitialAd(const char* cpPlaceId);
@@ -206,7 +206,7 @@ static void showInterstitialAd(const char* cpPlaceId);
 #### 3.5 banner：
 ```cpp
 /**
-* Set the show callback interface for a banner AD placement ID, and the callback interface will be saved and only removed by calling upltv:removeBannerAdAt(cpPlaceId)
+* Set the show callback interface for a banner AD ad unit, and the callback interface will be saved and only removed by calling upltv:removeBannerAdAt(cpPlaceId)
 * @param cpPlaceId
 * @param callback
 */
@@ -235,7 +235,7 @@ static void hideBannerAdAtTop();
 static void hideBannerAdAtBottom();
 
 /**
-* Remove banner ads for a ad placementID
+* Remove banner ads for a ad ad unit
 * @param cpPlaceId
 */
 static void removeBannerAdAt(const char*cpPlaceId);

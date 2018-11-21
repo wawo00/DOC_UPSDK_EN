@@ -53,7 +53,7 @@ using Polymer.PolyADSDK ;
 		* returned result could be Json character string, posiblity could be null
 		* Before invoking this API, pl;ease invoke initAbtConfigJson() to finish the initialization for abtest configuration
 		*/
-		public static string getAbtConfig(string placementId);
+		public static string getAbtConfig(string ad unit);
 		
 		/*
 		 * Check if interstitial ad ready or not
@@ -73,13 +73,13 @@ using Polymer.PolyADSDK ;
 		
 		/*
 		* Show interstitial ad
-		* cpPlaceId is Ad placement identifier, make sure it correctly
+		* cpPlaceId is Ad ad unitentifier, make sure it correctly
 		*/
 		public static void showInterstitialAd(string cpPlaceId);
 		
 		/*
 		* Show banner ads in top of screen
-		* cpPlaceId is Ad placement identifier, make sure it correctly
+		* cpPlaceId is Ad ad unitentifier, make sure it correctly
 		*/
 		public static void showBannerAdAtTop(string cpPlaceId);
 		
@@ -90,14 +90,14 @@ using Polymer.PolyADSDK ;
 		
 		/*
 		 * Hiding current top banner ad
-		 * No need to distinguish placements of ad
+		 * No need to distinguish units of ad
 		 * While next show is coming, you need to call showBannerAdAtTop()
 		 */
 		public static void hideBannerAdAtTop();
 		
 		/*
 		 * Hiding current bottom banner ad
-		 * No need to distinguish placements of ad
+		 * No need to distinguish units of ad
 		 * While next show is coming, you need to call showBannerAdAtBottom()
 		 * Start to support from 2037
 		 */
@@ -125,7 +125,7 @@ using Polymer.PolyADSDK ;
 		 * @param fail     callback of failed loading
 		 * 
 		 * Types of callback parameters: Action <string,string>
-		 * The first one is cpPlaceId, placementid of ads, could be empty or null; The second parameter is the decribed info, could be empty or null
+		 * The first one is cpPlaceId, ad unit of ads, could be empty or null; The second parameter is the decribed info, could be empty or null
 		 * supported from 2028
 		 */
 		public static void setRewardVideoLoadCallback(Action <string,string> success, Action <string, string> fail);
@@ -137,7 +137,7 @@ using Polymer.PolyADSDK ;
 		 * @param fail t   callback of failed loading
 		 * 
 		 * Types of callback parameters: Action <string,string>
-		 * The first one is cpPlaceId, placementId of ads, could be empty or null: The second parameter is described info, could be empty or null
+		 * The first one is cpPlaceId, ad unit of ads, could be empty or null: The second parameter is described info, could be empty or null
 		 * supported from 2028
 		 */
 		public static void setIntersitialLoadCallback(string cpPlaceId, Action <string,string> success, Action <string, string> fail)

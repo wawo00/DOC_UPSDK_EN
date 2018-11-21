@@ -8,7 +8,7 @@ Related methods and delegate interfaces was defined in file `UPIntersitialWrappe
 ```
 ### Methods of implementation class
 
-> You can set parameter `Placement ID` to any significative name you want. If you not sure about should discussed with our **support engineer**. You should use different `Placement ID` for different ads placement. We provide revenue from each  `Placement ID` in the feature.
+> You can set parameter `ad unit` to any significative name you want. If you not sure about should discussed with our **support engineer**. You should use different `ad unit` for different ads placement. We provide revenue from each  `ad unit` in the feature.
 > Eg: You may use "Pause" or "Menu" when initial our SDK in the pause scene of your game.
 
 ```objective-c
@@ -16,7 +16,7 @@ Related methods and delegate interfaces was defined in file `UPIntersitialWrappe
 
 /**
 * Initial method 
-* @ param avidPlacement：Placement ID
+* @ param avidPlacement：ad unit
 **/
 - (instancetype)initAvidPlacement:(NSString *)avidPlacement;
 
@@ -85,7 +85,7 @@ In `STInterstitialViewController.m`, you need a few lines of code to finish Inte
 
 First, define a object of `UpIntersitialWrapper`: `_intersitialWrapper`. We can use this object to control Interstitial ad loading and impression.
 
-In most of case, you should use different object of  `UpIntersitialWrapper` for different Interstitial ad placement.
+In most of case, you should use different object of  `UpIntersitialWrapper` for different Interstitial ad unit.
 
 Code:
 
@@ -118,7 +118,7 @@ Add following code:
 }
 
 - (void)intersitialClick {
-    // Let's use "inter_bbb"  as placement id of _intersitialWrapper
+    // Let's use "inter_bbb"  as ad unit of _intersitialWrapper
     _intersitialWrapper = [[UpIntersitialWrapper alloc] initAvidPlacement:@"inter_bbb"];
     // setup callback delegate 
     [_intersitialWrapper setDelegate:self];
@@ -140,7 +140,7 @@ There are only 3 steps to show and control a interstitial ad by following code.
  UpIntersitialWrapper *_intersitialWrapper;
 ```
 2. Initial object 
-As following example, "inter_bbb" is a real exist ad placement. Wrong placement id will caused a failure on ads loading.
+As following example, "inter_bbb" is a real exist ad unit. Wrong ad unit will caused a failure on ads loading.
 ```objective-c
 _intersitialWrapper = [[UpIntersitialWrapper alloc] initAvidPlacement:@"inter_bbb"];
 ```

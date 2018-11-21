@@ -1,7 +1,7 @@
 
 ### Q: What should I do if there is no advertisement displayed correctly after embedding the SDK?
 
-If you've set up an "placementid," please make sure you 've sent the correct placementid code to the technicist.
+If you've set up an "ad unit," please make sure you 've sent the correct ad unit code to the technicist.
 
 <br />
 
