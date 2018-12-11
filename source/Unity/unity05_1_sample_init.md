@@ -8,7 +8,32 @@
 * Previous versions prior to 3003 still call the constants via the PolyADSDK class.
  */
 public static string initPolyAdSDK(int zone)
+
 ```
+#### setCustomerId()
+
+If you don't publish games or apps in Google Play,you should call the method named `PolyADSDK.setCustomerIdForAndroid(AndroidId)`before `UPAdsSdk.initPolyAdSDK()`.
+
+##### Sample:
+
+```java
+
+  PolyADSDK.setCustomerIdForAndroid(GetAndroidID());
+
+  private String GetAndroidID()
+    {
+        AndroidJavaClass up = new AndroidJavaClass ("com.unity3d.player.UnityPlayer");
+        AndroidJavaObject currentActivity = up.GetStatic<AndroidJavaObject> ("currentActivity");
+        AndroidJavaObject contentResolver = currentActivity.Call<AndroidJavaObject> ("getContentResolver");  
+        AndroidJavaClass secure = new AndroidJavaClass ("android.provider.Settings$Secure");
+        string android_id = secure.CallStatic<string> ("getString", contentResolver, "android_id");
+        return android_id;
+    }
+
+```
+
+
+
 #### Sample
 In the demo code, the onButton_init_Click() method is called by clicking the initialization button on the UI. Even if the initialization button is clicked multiple times, ** repeatedly calls UPSDK.initPolyAdSDK()**, but the SDK will only be initialized once**.
 ```csharp

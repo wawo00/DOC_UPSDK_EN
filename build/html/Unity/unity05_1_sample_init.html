@@ -182,8 +182,28 @@
 <span class="k">public</span> <span class="k">static</span> <span class="kt">string</span> <span class="nf">initPolyAdSDK</span><span class="p">(</span><span class="kt">int</span> <span class="n">zone</span><span class="p">)</span>
 </pre></div>
 </div>
+<div class="section" id="setcustomerid">
+<span id="setcustomerid"></span><h2>setCustomerId()<a class="headerlink" href="#setcustomerid" title="Permalink to this headline">¶</a></h2>
+<p>If you don’t publish games or apps in Google Play,you should call the method named <code class="docutils literal notranslate"><span class="pre">PolyADSDK.setCustomerIdForAndroid(AndroidId)</span></code>before <code class="docutils literal notranslate"><span class="pre">UPAdsSdk.initPolyAdSDK()</span></code>.</p>
 <div class="section" id="sample">
-<span id="sample"></span><h2>Sample<a class="headerlink" href="#sample" title="Permalink to this headline">¶</a></h2>
+<span id="sample"></span><h3>Sample:<a class="headerlink" href="#sample" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span>  <span class="n">PolyADSDK</span><span class="o">.</span><span class="na">setCustomerIdForAndroid</span><span class="o">(</span><span class="n">GetAndroidID</span><span class="o">());</span>
+
+  <span class="kd">private</span> <span class="n">String</span> <span class="nf">GetAndroidID</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="n">AndroidJavaClass</span> <span class="n">up</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AndroidJavaClass</span> <span class="o">(</span><span class="s">&quot;com.unity3d.player.UnityPlayer&quot;</span><span class="o">);</span>
+        <span class="n">AndroidJavaObject</span> <span class="n">currentActivity</span> <span class="o">=</span> <span class="n">up</span><span class="o">.</span><span class="na">GetStatic</span><span class="o">&lt;</span><span class="n">AndroidJavaObject</span><span class="o">&gt;</span> <span class="o">(</span><span class="s">&quot;currentActivity&quot;</span><span class="o">);</span>
+        <span class="n">AndroidJavaObject</span> <span class="n">contentResolver</span> <span class="o">=</span> <span class="n">currentActivity</span><span class="o">.</span><span class="na">Call</span><span class="o">&lt;</span><span class="n">AndroidJavaObject</span><span class="o">&gt;</span> <span class="o">(</span><span class="s">&quot;getContentResolver&quot;</span><span class="o">);</span>  
+        <span class="n">AndroidJavaClass</span> <span class="n">secure</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AndroidJavaClass</span> <span class="o">(</span><span class="s">&quot;android.provider.Settings$Secure&quot;</span><span class="o">);</span>
+        <span class="n">string</span> <span class="n">android_id</span> <span class="o">=</span> <span class="n">secure</span><span class="o">.</span><span class="na">CallStatic</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="o">(</span><span class="s">&quot;getString&quot;</span><span class="o">,</span> <span class="n">contentResolver</span><span class="o">,</span> <span class="s">&quot;android_id&quot;</span><span class="o">);</span>
+        <span class="k">return</span> <span class="n">android_id</span><span class="o">;</span>
+    <span class="o">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="sample">
+<span id="id1"></span><h2>Sample<a class="headerlink" href="#sample" title="Permalink to this headline">¶</a></h2>
 <p>In the demo code, the onButton_init_Click() method is called by clicking the initialization button on the UI. Even if the initialization button is clicked multiple times, ** repeatedly calls UPSDK.initPolyAdSDK()<strong>, but the SDK will only be initialized once</strong>.</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">void</span> <span class="nf">onButton_init_Click</span><span class="p">()</span>
 <span class="p">{</span>
@@ -320,7 +340,7 @@ The code for the sample project illustrates the role of each interface and the m
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, upltv.
+        &copy; Copyright 2018, upltv
 
     </p>
   </div>
@@ -339,21 +359,15 @@ The code for the sample project illustrates the role of each interface and the m
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'',
-            LANGUAGE:'en',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 
   
 
