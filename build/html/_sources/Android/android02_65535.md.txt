@@ -24,7 +24,21 @@ Firstly, add the following configuration into build.gradle project:
         compile 'com.google.android:multidex:1.0.1'
     } 
 
-If your project contains`Application` , then let it inherit `android.support.multidex.MultiDexApplication` will be okay.
+
+If your project contains`Application` , then let it inherit `android.support.multidex.MultiDexApplication` will be okay,and do not forget to set ` android:name="android.support.multidex.MultiDexApplication` in `Manifest.xml`.As the following code:
+
+
+     <application
+        android:theme="@style/UnityThemeSelector"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:name="android.support.multidex.MultiDexApplication" 
+        >
+     </application> 
+
+
+
+
 
 If your `Application` has inherited others and you do not want to change, you could use `attachBaseContext()` methods of`Application` to solve the limitation.
 

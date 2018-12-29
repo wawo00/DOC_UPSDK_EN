@@ -184,7 +184,16 @@
 <span class="p">}</span> 
 </pre></div>
 </div>
-<p>If your project contains<code class="docutils literal notranslate"><span class="pre">Application</span></code> , then let it inherit <code class="docutils literal notranslate"><span class="pre">android.support.multidex.MultiDexApplication</span></code> will be okay.</p>
+<p>If your project contains<code class="docutils literal notranslate"><span class="pre">Application</span></code> , then let it inherit <code class="docutils literal notranslate"><span class="pre">android.support.multidex.MultiDexApplication</span></code> will be okay,and do not forget to set <code class="docutils literal notranslate"><span class="pre">android:name=&quot;android.support.multidex.MultiDexApplication</span></code> in <code class="docutils literal notranslate"><span class="pre">Manifest.xml</span></code>.As the following code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="o">&lt;</span><span class="n">application</span>
+    <span class="n">android</span><span class="p">:</span><span class="n">theme</span><span class="o">=</span><span class="s2">&quot;@style/UnityThemeSelector&quot;</span>
+    <span class="n">android</span><span class="p">:</span><span class="n">icon</span><span class="o">=</span><span class="s2">&quot;@drawable/app_icon&quot;</span>
+    <span class="n">android</span><span class="p">:</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;@string/app_name&quot;</span>
+    <span class="n">android</span><span class="p">:</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;android.support.multidex.MultiDexApplication&quot;</span> 
+    <span class="o">&gt;</span>
+ <span class="o">&lt;/</span><span class="n">application</span><span class="o">&gt;</span> 
+</pre></div>
+</div>
 <p>If your <code class="docutils literal notranslate"><span class="pre">Application</span></code> has inherited others and you do not want to change, you could use <code class="docutils literal notranslate"><span class="pre">attachBaseContext()</span></code> methods of<code class="docutils literal notranslate"><span class="pre">Application</span></code> to solve the limitation.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">public</span> <span class="k">class</span> <span class="nc">MyApplication</span> <span class="n">extends</span> <span class="n">FooApplication</span> <span class="p">{</span>  
     <span class="nd">@Override</span>  
