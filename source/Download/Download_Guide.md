@@ -32,6 +32,12 @@
 
 [Android & iOS 3.0.06.4](http://cnimg.dataverse.cn/upsdk/export_3006_both_domestic.unitypackage "SDK v3.0.06")
 
+#### Upsdk&Firebase
+**If you have integrated Firebase  in your project, for avoiding conflictions,you should use the 'Upsdk&Firebase-unityPlugin'**
+
+[Android & Firebase 3.0.06.4](http://cnimg.dataverse.cn/upsdk/export_3006_android_firebase.unitypackage "SDK v3.0.06")
+
+
 ## Cocos2D-X
 
 #### Android Global
@@ -64,7 +70,7 @@
 [Layabox JavaScript v3.0.06.4](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_domestic_3006_Layabox_JS.zip "Layabox-JavaScript SDK v3.0.06")
 
 #### iOS
-[Layabox JavaScript v3.0.06.4](http://cnimg.dataverse.cn/upsdk/UPSDK_Layabox_JS_3006.zip "Layabox-JavaScript SDK v3.0.06")
+[Layabox JavaScript v3.0.06.4](http://cnimg.dataverse.cn/upsdk/UPSDK_Layabox_iOS_JS_3006.zip "Layabox-JavaScript SDK v3.0.06")
 
 ## Egret
 
