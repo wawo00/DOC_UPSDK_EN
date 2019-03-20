@@ -1,15 +1,15 @@
 ## Android SDK
 ### Global
 
-[Eclipe SDK v3.0.06.7 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_foreign_3.0.06.7_eclipse.zip "Eclipe SDK v3.0.06 ")
+[Eclipe SDK v3.0.06.8 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_foreign_3.0.06.8_eclipse.zip "Eclipe SDK v3.0.06 ")
 
-[Android Studio SDK v3.0.06.7](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_foreign_3.0.06.7_AndroidStudio.zip "Android Studio SDK v3.0.06 ")
+[Android Studio SDK v3.0.06.8](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_foreign_3.0.06.8_AndroidStudio.zip "Android Studio SDK v3.0.06 ")
 
 ### China Mainland
 
-[Eclipe SDK v3.0.06.7 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_domestic_3.0.06.7_eclipse.zip "Eclipe SDK v3.0.06 ")
+[Eclipe SDK v3.0.06.8](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_domestic_3.0.06.8_eclipse.zip "Eclipe SDK v3.0.06 ")
 
-[Android Studio SDK v3.0.06.7](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_domestic_3.0.06.7_AndroidStudio.zip "Android Studio SDK v3.0.06 ")
+[Android Studio SDK v3.0.06.8](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_domestic_3.0.06.8_AndroidStudio.zip "Android Studio SDK v3.0.06 ")
 
 ## iOS SDK
 
@@ -21,40 +21,41 @@
 
 ### Global
 
-[Android 3.0.06.7](http://cnimg.dataverse.cn/upsdk/export_3006_7_android_foreign.unitypackage "SDK v3.0.06")
+[Android v3.0.06.8](http://cnimg.dataverse.cn/upsdk/export_3006_8_android_foreign.unitypackage "SDK v3.0.06")
 
-[Android & iOS v3.0.06.7](http://cnimg.dataverse.cn/upsdk/export_3006_7_both_foreign.unitypackage "SDK v3.0.06")
+[Android & iOS v3.0.06.](http://cnimg.dataverse.cn/upsdk/export_3006_8_both_foreign.unitypackage "SDK v3.0.06")
 
 
 ### China Mainland
 
-[Android v3.0.06.7](http://cnimg.dataverse.cn/upsdk/export_3006_7_android_domestic.unitypackage "SDK v3.0.06")
+[Android v3.0.06.8](http://cnimg.dataverse.cn/upsdk/export_3006_8_android_domestic.unitypackage "SDK v3.0.06")
 
-[Android & iOS v3.0.06.7](http://cnimg.dataverse.cn/upsdk/export_3006_7_both_domestic.unitypackage "SDK v3.0.06")
+[Android & iOS v3.0.06.8](http://cnimg.dataverse.cn/upsdk/export_3006_8_both_domestic.unitypackage "SDK v3.0.06")
+
 
 #### Upsdk&Firebase
 **If you have integrated Firebase  in your project, for avoiding conflictions,you should use the 'Upsdk&Firebase-unityPlugin'**
 
-[Android & Firebase v3.0.06.7](http://cnimg.dataverse.cn/upsdk/export_3006_android_firebase.unitypackage "SDK v3.0.06")
+[Android & Firebase v3.0.06.8](http://cnimg.dataverse.cn/upsdk/export_3006_android_firebase.unitypackage "SDK v3.0.06")
 
 
 ## Cocos2D-X
 
 #### Android Global
-[Cocos-JS SDK v3.0.06.7 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_foreign_3.0.06.7_CocosJS.zip "Cocos-JS SDK v3.0.06 ")
+[Cocos-JS SDK v3.0.06.8 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_foreign_3.0.06.8_CocosJS.zip "Cocos-JS SDK v3.0.06 ")
 
-[Cocos-C++ SDK v3.0.06.7 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_foreign_3.0.06.7_CocosC++.zip "Cocos-C++ SDK v3.0.06 ")
+[Cocos-C++ SDK v3.0.06.8 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_foreign_3.0.06.8_CocosC++.zip "Cocos-C++ SDK v3.0.06 ")
 
-[Cocos-Lua SDK v3.0.06.7 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_foreign_3.0.06.7_CocosLua.zip "Cocos-Lua SDK v3.0.06 ")
+[Cocos-Lua SDK v3.0.06.8 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_foreign_3.0.06.8_CocosLua.zip "Cocos-Lua SDK v3.0.06 ")
 
 
 #### Android China Mainland
 
-[Cocos-JS SDK v3.0.06.7 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_domestic_3.0.06.7_CocosJS.zip "Cocos-JS SDK v3.0.06 ")
+[Cocos-JS SDK v3.0.06.8 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_domestic_3.0.06.8_CocosJS.zip "Cocos-JS SDK v3.0.06 ")
 
-[Cocos-C++ SDK v3.0.06.7 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_domestic_3.0.06.7_CocosC++.zip "Cocos-C++ SDK v3.0.06 ")
+[Cocos-C++ SDK v3.0.06.8 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_domestic_3.0.06.8_CocosC++.zip "Cocos-C++ SDK v3.0.06 ")
 
-[Cocos-Lua SDK v3.0.06.7 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_domestic_3.0.06.7_CocosLua.zip "Cocos-Lua SDK v3.0.06 ")
+[Cocos-Lua SDK v3.0.06.8 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_domestic_3.0.06.8_CocosLua.zip "Cocos-Lua SDK v3.0.06 ")
 
 #### iOS
 [Cocos-JS SDK v3.0.06.7 ](http://cnimg.dataverse.cn/upsdk/UPSDK_iOS_3.0.06.7_CocosJS.zip "Cocos-JS SDK v3.0.06 ")
@@ -97,4 +98,4 @@
 
 
 ## Current Version
-**3.0.06.7**
+**3.0.06.8**
