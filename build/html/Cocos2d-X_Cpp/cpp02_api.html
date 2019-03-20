@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -31,21 +39,16 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="CppPlugin Sample" href="cpp03_sample_catalog.html" />
     <link rel="prev" title="IOS" href="cpp01_3_help_ios.html" /> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -157,13 +160,13 @@
            <div itemprop="articleBody">
             
   <div class="section" id="upsdk-cocos2d-x-cpp-api">
-<span id="upsdk-cocos2d-x-cpp-api"></span><h1>UPSDK cocos2d-X Cpp API<a class="headerlink" href="#upsdk-cocos2d-x-cpp-api" title="Permalink to this headline">¶</a></h1>
+<h1>UPSDK cocos2d-X Cpp API<a class="headerlink" href="#upsdk-cocos2d-x-cpp-api" title="Permalink to this headline">¶</a></h1>
 <p>Under the entire <strong>UpltvCppBridge</strong> directory, there is a * upltvbridge.h * file, which mainly defines some external access apis and callback functions.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;UpltvBridge.h&quot;</span><span class="cp"></span>
 </pre></div>
 </div>
 <div class="section" id="the-callback-function-definition">
-<span id="the-callback-function-definition"></span><h2>1. The callback function definition：<a class="headerlink" href="#the-callback-function-definition" title="Permalink to this headline">¶</a></h2>
+<h2>1. The callback function definition：<a class="headerlink" href="#the-callback-function-definition" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">*</span><span class="n">UpltvSdkBoolCallback</span><span class="p">)(</span><span class="kt">bool</span> <span class="n">r</span><span class="p">);</span>
 <span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">*</span><span class="n">UpltvSdkStringBoolCallback</span><span class="p">)(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">cpadid</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">r</span><span class="p">);</span>
 <span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">*</span><span class="n">UpltvSdkStringCallback_1</span><span class="p">)(</span><span class="n">UpltvAdEventEnum</span><span class="o">::</span><span class="n">AdEventType</span> <span class="n">type</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">cpadid</span><span class="p">);</span>
@@ -173,9 +176,9 @@
 </div>
 </div>
 <div class="section" id="enumerated-type">
-<span id="enumerated-type"></span><h2>2. Enumerated type<a class="headerlink" href="#enumerated-type" title="Permalink to this headline">¶</a></h2>
+<h2>2. Enumerated type<a class="headerlink" href="#enumerated-type" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="ad-callback-event">
-<span id="ad-callback-event"></span><h3>2.1 AD callback event<a class="headerlink" href="#ad-callback-event" title="Permalink to this headline">¶</a></h3>
+<h3>2.1 AD callback event<a class="headerlink" href="#ad-callback-event" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">UpltvAdEventEnum</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
@@ -210,7 +213,7 @@
 </div>
 </div>
 <div class="section" id="authorized-status-of-gdpr">
-<span id="authorized-status-of-gdpr"></span><h3>2.2 Authorized status of GDPR<a class="headerlink" href="#authorized-status-of-gdpr" title="Permalink to this headline">¶</a></h3>
+<h3>2.2 Authorized status of GDPR<a class="headerlink" href="#authorized-status-of-gdpr" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">UpltvGDPRPermissionEnum</span> <span class="p">{</span>
 
 <span class="k">public</span><span class="o">:</span>
@@ -227,9 +230,9 @@
 </div>
 </div>
 <div class="section" id="introduction-to-api">
-<span id="introduction-to-api"></span><h2>3. Introduction to API<a class="headerlink" href="#introduction-to-api" title="Permalink to this headline">¶</a></h2>
+<h2>3. Introduction to API<a class="headerlink" href="#introduction-to-api" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="initialize-the-sdk">
-<span id="initialize-the-sdk"></span><h3>3.1 Initialize the SDK ：<a class="headerlink" href="#initialize-the-sdk" title="Permalink to this headline">¶</a></h3>
+<h3>3.1 Initialize the SDK ：<a class="headerlink" href="#initialize-the-sdk" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
 <span class="cm">* Initialize the UPSDK</span>
 <span class="cm">* Be sure to complete the SDK initialization first before using the SDK&#39;s other API interfaces</span>
@@ -256,7 +259,7 @@
 </div>
 </div>
 <div class="section" id="a-b-test-initialization-and-got-data">
-<span id="a-b-test-initialization-and-got-data"></span><h3>3.2 A/B Test initialization and got data<a class="headerlink" href="#a-b-test-initialization-and-got-data" title="Permalink to this headline">¶</a></h3>
+<h3>3.2 A/B Test initialization and got data<a class="headerlink" href="#a-b-test-initialization-and-got-data" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
 <span class="cm">* Call this method to complete A/B Test initialization after initializing the SDK when performing A/B tests</span>
 <span class="cm">* @param gameAccountId          const char*type，user&#39;s account id in the game (required)</span>
@@ -281,7 +284,7 @@
 </div>
 </div>
 <div class="section" id="reward-video-ad">
-<span id="reward-video-ad"></span><h3>3.3 Reward video Ad：<a class="headerlink" href="#reward-video-ad" title="Permalink to this headline">¶</a></h3>
+<h3>3.3 Reward video Ad：<a class="headerlink" href="#reward-video-ad" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
 <span class="cm">* Open the debug interface for reward video</span>
 <span class="cm">*/</span>
@@ -321,7 +324,7 @@
 </div>
 </div>
 <div class="section" id="interstitial-ad">
-<span id="interstitial-ad"></span><h3>3.4 Interstitial Ad：<a class="headerlink" href="#interstitial-ad" title="Permalink to this headline">¶</a></h3>
+<h3>3.4 Interstitial Ad：<a class="headerlink" href="#interstitial-ad" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
 <span class="cm">* Open the debug interface for interstitial ad</span>
 <span class="cm">*/</span>
@@ -372,7 +375,7 @@
 </div>
 </div>
 <div class="section" id="banner">
-<span id="banner"></span><h3>3.5 banner：<a class="headerlink" href="#banner" title="Permalink to this headline">¶</a></h3>
+<h3>3.5 banner：<a class="headerlink" href="#banner" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
 <span class="cm">* Set the show callback interface for a banner AD ad unit, and the callback interface will be saved and only removed by calling upltv:removeBannerAdAt(cpPlaceId)</span>
 <span class="cm">* @param cpPlaceId</span>
@@ -419,7 +422,7 @@
 </div>
 </div>
 <div class="section" id="special-methods">
-<span id="special-methods"></span><h3>3.6 Special methods:<a class="headerlink" href="#special-methods" title="Permalink to this headline">¶</a></h3>
+<h3>3.6 Special methods:<a class="headerlink" href="#special-methods" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
 <span class="cm">* Meet the requirements: don&#39;t want to initialize the automatic loading ads, and require the game to choose the appropriate time to load ads</span>
 <span class="cm">* Run condition: when the SDK disables AD auto-loading by default, and upltv backend turns it off</span>
@@ -435,7 +438,7 @@
 </div>
 </div>
 <div class="section" id="gdpr">
-<span id="gdpr"></span><h3>4. GDPR :<a class="headerlink" href="#gdpr" title="Permalink to this headline">¶</a></h3>
+<h3>4. GDPR :<a class="headerlink" href="#gdpr" title="Permalink to this headline">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">GDPR</span> <span class="pre">&quot;The</span> <span class="pre">General</span> <span class="pre">Data</span> <span class="pre">Protection</span> <span class="pre">Regulation&quot;</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">data</span> <span class="pre">protection</span> <span class="pre">program</span> <span class="pre">issued</span> <span class="pre">by</span> <span class="pre">the</span> <span class="pre">European</span> <span class="pre">Union.</span></code> If your product is intended for EU users, we offer the following solutions to ensure that <code class="docutils literal notranslate"><span class="pre">UPSDK</span></code> complies with the GDPR rules.<a class="reference external" href="http://docs.upltv.com/docs/show/199">the solution</a>.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
 <span class="cm">  * This method is called when an external GDPR authorization is performed to synchronize user authorization results to the UPSDK</span>
@@ -471,7 +474,7 @@
 </div>
 </div>
 <div class="section" id="special-interface-for-android-platform">
-<span id="special-interface-for-android-platform"></span><h3>5. Special interface for Android platform：<a class="headerlink" href="#special-interface-for-android-platform" title="Permalink to this headline">¶</a></h3>
+<h3>5. Special interface for Android platform：<a class="headerlink" href="#special-interface-for-android-platform" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
 <span class="cm">* Only for the android platform</span>
 <span class="cm">* An exit ad for upltv on the android platform</span>
@@ -509,7 +512,7 @@
         <a href="cpp03_sample_catalog.html" class="btn btn-neutral float-right" title="CppPlugin Sample" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="cpp01_3_help_ios.html" class="btn btn-neutral" title="IOS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="cpp01_3_help_ios.html" class="btn btn-neutral float-left" title="IOS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -535,27 +538,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/js/custom.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

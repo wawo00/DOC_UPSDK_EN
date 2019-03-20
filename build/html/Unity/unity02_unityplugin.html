@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -31,21 +39,16 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="UnityPlugin Access" href="unity03_integrate_catalog.html" />
     <link rel="prev" title="UnityPlugin Guide" href="unity01_guide.html" /> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -160,33 +163,33 @@
            <div itemprop="articleBody">
             
   <div class="section" id="how-to-add-plugin-in-unity-project">
-<span id="how-to-add-plugin-in-unity-project"></span><h1>How to add plugin in Unity project<a class="headerlink" href="#how-to-add-plugin-in-unity-project" title="Permalink to this headline">¶</a></h1>
+<h1>How to add plugin in Unity project<a class="headerlink" href="#how-to-add-plugin-in-unity-project" title="Permalink to this headline">¶</a></h1>
 <p>The downloaded UPSDK Unity Plugin, is a kind of *.unitypackage file. This document will give typical examples in two different platforms, please refer them as followed:</p>
 <blockquote>
 <div>Egineer who is familiar with this procedure, please skpi this section.</div></blockquote>
 <div class="section" id="updating-the-plugin">
-<span id="updating-the-plugin"></span><h2>1. Updating the plugin<a class="headerlink" href="#updating-the-plugin" title="Permalink to this headline">¶</a></h2>
+<h2>1. Updating the plugin<a class="headerlink" href="#updating-the-plugin" title="Permalink to this headline">¶</a></h2>
 <p>If you have integrated UPSDK Unity Plugin before, to make sure the correctness of plugin library after updating, we suggest that please completely delete UPSDK Unity Plugin before the updating.</p>
 <p>In your Unity project, please check whether <code class="docutils literal notranslate"><span class="pre">Assets/PolyADSDK/Plugins/</span></code> and <code class="docutils literal notranslate"><span class="pre">Assets/StreamingAssets/UPSDK_android/</span></code> exist. Generally, when you delete <code class="docutils literal notranslate"><span class="pre">PolyADSDK</span></code> and <code class="docutils literal notranslate"><span class="pre">UPSDK_android</span></code> folder(including its subcatalog), the whole import plugin will be completely deleted.</p>
 <p>If you have edit the name of <code class="docutils literal notranslate"><span class="pre">PolyADSDK</span></code> catalog or the location of its subcatalog, please find out its corrected location and delete it. Specially, if you added some files after updating <code class="docutils literal notranslate"><span class="pre">PolyADSDK</span></code> and those files need to be retained, please be careful in case deleting them.</p>
 <p>Please continue <strong>NEXT STEP</strong>.</p>
 </div>
 <div class="section" id="in-your-project-select-assets-right-click-and-select-import-package-custom-package">
-<span id="in-your-project-select-assets-right-click-and-select-import-package-custom-package"></span><h2>2. In your project, select Assets, right click and select: Import Package -&gt; Custom Package<a class="headerlink" href="#in-your-project-select-assets-right-click-and-select-import-package-custom-package" title="Permalink to this headline">¶</a></h2>
-<p><img alt="import" src="http://docc.upltv.com/uploads/201705/592e66a727d89_592e66a7.png" /></p>
+<h2>2. In your project, select Assets, right click and select: Import Package -&gt; Custom Package<a class="headerlink" href="#in-your-project-select-assets-right-click-and-select-import-package-custom-package" title="Permalink to this headline">¶</a></h2>
+<p><img alt="import" src="http://docc.upltv.com/uploads/201705/592e66a727d89_592e66a7.png" />import</p>
 </div>
 <div class="section" id="choose-your-downloaded-plugin-package-such-as-export-unitypackage-then-please-click-open-button-unity-will-automatically-load-the-plugin-package">
-<span id="choose-your-downloaded-plugin-package-such-as-export-unitypackage-then-please-click-open-button-unity-will-automatically-load-the-plugin-package"></span><h2>3. Choose your downloaded plugin package: such as  export.unitypackage. Then please click “open” button, Unity will automatically load the plugin package.<a class="headerlink" href="#choose-your-downloaded-plugin-package-such-as-export-unitypackage-then-please-click-open-button-unity-will-automatically-load-the-plugin-package" title="Permalink to this headline">¶</a></h2>
-<p><img alt="open file" src="http://docc.upltv.com/uploads/201705/592e684f54573_592e684f.png" /></p>
+<h2>3. Choose your downloaded plugin package: such as  export.unitypackage. Then please click “open” button, Unity will automatically load the plugin package.<a class="headerlink" href="#choose-your-downloaded-plugin-package-such-as-export-unitypackage-then-please-click-open-button-unity-will-automatically-load-the-plugin-package" title="Permalink to this headline">¶</a></h2>
+<p><img alt="open file" src="http://docc.upltv.com/uploads/201705/592e684f54573_592e684f.png" />open file</p>
 </div>
 <div class="section" id="when-untiy-finishes-loading-the-plugin-package-you-will-see-a-pop-up-window-that-shows-you-which-plugin-resources-to-import-like-the-picture-below">
-<span id="when-untiy-finishes-loading-the-plugin-package-you-will-see-a-pop-up-window-that-shows-you-which-plugin-resources-to-import-like-the-picture-below"></span><h2>4.When Untiy finishes loading the plugin package, you will see a pop-up window that shows you which plugin resources to import, like the picture below:<a class="headerlink" href="#when-untiy-finishes-loading-the-plugin-package-you-will-see-a-pop-up-window-that-shows-you-which-plugin-resources-to-import-like-the-picture-below" title="Permalink to this headline">¶</a></h2>
-<p><img alt="import plugin" src="http://docc.upltv.com/uploads/201705/592e69ba77ebf_592e69ba.png" /></p>
+<h2>4.When Untiy finishes loading the plugin package, you will see a pop-up window that shows you which plugin resources to import, like the picture below:<a class="headerlink" href="#when-untiy-finishes-loading-the-plugin-package-you-will-see-a-pop-up-window-that-shows-you-which-plugin-resources-to-import-like-the-picture-below" title="Permalink to this headline">¶</a></h2>
+<p><img alt="import plugin" src="http://docc.upltv.com/uploads/201705/592e69ba77ebf_592e69ba.png" />import plugin</p>
 <p>Generally select “All” button, then click “Import” to import. If your project only supports Android, you should ignore “<strong>IOS</strong>” button; if your project only supports iOS, please ignore “<strong>Android</strong>” button.</p>
 </div>
 <div class="section" id="after-importing-plugin-for-upsdk-successfully-you-could-see-a-folder-named-polyadsdk-in-your-project-among-the-examples-all-resources-for-plugin-will-be-imported-completely-as-we-considered-about-the-supports-for-both-android-and-ios">
-<span id="after-importing-plugin-for-upsdk-successfully-you-could-see-a-folder-named-polyadsdk-in-your-project-among-the-examples-all-resources-for-plugin-will-be-imported-completely-as-we-considered-about-the-supports-for-both-android-and-ios"></span><h2>5. After importing plugin for UPSDK successfully, you could see a folder named **PolyADSDK******in your project. Among the examples, all resources for plugin will be imported completely as we considered about the supports for both Android and iOS.<a class="headerlink" href="#after-importing-plugin-for-upsdk-successfully-you-could-see-a-folder-named-polyadsdk-in-your-project-among-the-examples-all-resources-for-plugin-will-be-imported-completely-as-we-considered-about-the-supports-for-both-android-and-ios" title="Permalink to this headline">¶</a></h2>
-<p><img alt="load ok" src="http://docc.upltv.com/uploads/201705/592e6b65dd56e_592e6b65.png" /></p>
+<h2>5. After importing plugin for UPSDK successfully, you could see a folder named <strong>PolyADSDK</strong>****in your project. Among the examples, all resources for plugin will be imported completely as we considered about the supports for both Android and iOS.<a class="headerlink" href="#after-importing-plugin-for-upsdk-successfully-you-could-see-a-folder-named-polyadsdk-in-your-project-among-the-examples-all-resources-for-plugin-will-be-imported-completely-as-we-considered-about-the-supports-for-both-android-and-ios" title="Permalink to this headline">¶</a></h2>
+<p><img alt="load ok" src="http://docc.upltv.com/uploads/201705/592e6b65dd56e_592e6b65.png" />load ok</p>
 </div>
 </div>
 
@@ -201,7 +204,7 @@
         <a href="unity03_integrate_catalog.html" class="btn btn-neutral float-right" title="UnityPlugin Access" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="unity01_guide.html" class="btn btn-neutral" title="UnityPlugin Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="unity01_guide.html" class="btn btn-neutral float-left" title="UnityPlugin Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -227,27 +230,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/js/custom.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

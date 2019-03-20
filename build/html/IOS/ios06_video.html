@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -31,21 +39,16 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="GDPR" href="ios07_gdpr.html" />
     <link rel="prev" title="Interstitial Ad" href="ios05_inter.html" /> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -162,7 +165,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="rewarded-video-ad">
-<span id="rewarded-video-ad"></span><h1>Rewarded Video Ad<a class="headerlink" href="#rewarded-video-ad" title="Permalink to this headline">¶</a></h1>
+<h1>Rewarded Video Ad<a class="headerlink" href="#rewarded-video-ad" title="Permalink to this headline">¶</a></h1>
 <p>All Rewarded video interfaces and protocol were defined in file <code class="docutils literal notranslate"><span class="pre">UPRewardWrapper.h</span></code></p>
 <p>Add header file <code class="docutils literal notranslate"><span class="pre">UPRewardWrapper.h</span></code> in your XCode project:</p>
 <div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#import    &lt;UPSDK/UPSDK.h&gt;</span>
@@ -237,7 +240,7 @@ But their interfaces and methods are looks very similar.</p>
 </pre></div>
 </div>
 <div class="section" id="code-example">
-<span id="code-example"></span><h2>Code example<a class="headerlink" href="#code-example" title="Permalink to this headline">¶</a></h2>
+<h2>Code example<a class="headerlink" href="#code-example" title="Permalink to this headline">¶</a></h2>
 <p>Define a class <code class="docutils literal notranslate"><span class="pre">STRewardViewController</span></code> to test rewarded video</p>
 <blockquote>
 <div>Only for XCode project</div></blockquote>
@@ -325,7 +328,7 @@ If you see a tips “Reward not ready”, that means video ads was not ready to 
 <p><font color=#DC143C>Attention：you can send reward to players when you receive<code class="docutils literal notranslate"><span class="pre">UPRewardVideoAdDidRewardUserWithReward:</span></code>，</font></p>
 </div>
 <div class="section" id="callback-of-loading">
-<span id="callback-of-loading"></span><h2>Callback of loading<a class="headerlink" href="#callback-of-loading" title="Permalink to this headline">¶</a></h2>
+<h2>Callback of loading<a class="headerlink" href="#callback-of-loading" title="Permalink to this headline">¶</a></h2>
 <p>Please use <code class="docutils literal notranslate"><span class="pre">[[UPRewardWrapper</span> <span class="pre">shareInstance]</span> <span class="pre">isReady]</span></code> to know Whether ads  loaded successfully.</p>
 <p>But if you need ad load callback, we provide the following ways.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">//</span> <span class="n">Declare</span> <span class="n">the</span> <span class="n">UPRewardLoadDelegate</span> <span class="n">protocol</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">corresponding</span> <span class="k">class</span> <span class="nc">and</span> <span class="n">call</span> <span class="n">the</span> <span class="n">method</span>
@@ -356,7 +359,7 @@ If you see a tips “Reward not ready”, that means video ads was not ready to 
         <a href="ios07_gdpr.html" class="btn btn-neutral float-right" title="GDPR" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="ios05_inter.html" class="btn btn-neutral" title="Interstitial Ad" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="ios05_inter.html" class="btn btn-neutral float-left" title="Interstitial Ad" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -382,27 +385,16 @@ If you see a tips “Reward not ready”, that means video ads was not ready to 
   
 
 
-  
-
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/js/custom.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

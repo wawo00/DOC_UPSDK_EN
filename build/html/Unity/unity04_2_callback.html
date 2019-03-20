@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -31,21 +39,16 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="UnityPlugin Sample" href="unity05_sample_catalog.html" />
     <link rel="prev" title="API description" href="unity04_1_api.html" /> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -166,11 +169,11 @@
            <div itemprop="articleBody">
             
   <div class="section" id="polyadsdk-callback-interfaces">
-<span id="polyadsdk-callback-interfaces"></span><h1>PolyADSDK Callback interfaces<a class="headerlink" href="#polyadsdk-callback-interfaces" title="Permalink to this headline">¶</a></h1>
+<h1>PolyADSDK Callback interfaces<a class="headerlink" href="#polyadsdk-callback-interfaces" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="callback-interfaces-for-rewardvideo">
-<span id="callback-interfaces-for-rewardvideo"></span><h2>1. Callback interfaces for RewardVideo：<a class="headerlink" href="#callback-interfaces-for-rewardvideo" title="Permalink to this headline">¶</a></h2>
+<h2>1. Callback interfaces for RewardVideo：<a class="headerlink" href="#callback-interfaces-for-rewardvideo" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="api-reference">
-<span id="api-reference"></span><h3>API reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h3>
+<h3>API reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="n">Action</span> <span class="p">&lt;</span><span class="kt">bool</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPSDKInitFinishedCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
 
 <span class="cm">/*</span>
@@ -203,30 +206,30 @@
 </div>
 </div>
 <div class="section" id="sequence-of-callback-interface">
-<span id="sequence-of-callback-interface"></span><h2>Sequence  of Callback interface<a class="headerlink" href="#sequence-of-callback-interface" title="Permalink to this headline">¶</a></h2>
+<h2>Sequence  of Callback interface<a class="headerlink" href="#sequence-of-callback-interface" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="uprewarddidopencallback">
-<span id="uprewarddidopencallback"></span><h3>1. UPRewardDidOpenCallback<a class="headerlink" href="#uprewarddidopencallback" title="Permalink to this headline">¶</a></h3>
+<h3>1. UPRewardDidOpenCallback<a class="headerlink" href="#uprewarddidopencallback" title="Permalink to this headline">¶</a></h3>
 <p>As long as the display of the RewardVideo is successful.</p>
 </div>
 <div class="section" id="uprewarddidclickcallback">
-<span id="uprewarddidclickcallback"></span><h3>2. UPRewardDidClickCallback<a class="headerlink" href="#uprewarddidclickcallback" title="Permalink to this headline">¶</a></h3>
+<h3>2. UPRewardDidClickCallback<a class="headerlink" href="#uprewarddidclickcallback" title="Permalink to this headline">¶</a></h3>
 <p>Called only when  user clicks  RewardVideo.</p>
 </div>
 <div class="section" id="uprewarddidgivencallback-uprewarddidabandoncallback">
-<span id="uprewarddidgivencallback-uprewarddidabandoncallback"></span><h3>3. UPRewardDidGivenCallback/UPRewardDidAbandonCallback<a class="headerlink" href="#uprewarddidgivencallback-uprewarddidabandoncallback" title="Permalink to this headline">¶</a></h3>
+<h3>3. UPRewardDidGivenCallback/UPRewardDidAbandonCallback<a class="headerlink" href="#uprewarddidgivencallback-uprewarddidabandoncallback" title="Permalink to this headline">¶</a></h3>
 <p>As long as the display is successful,there will generate rewards or not issue events based on the results. The UPRewardDidGivenCallback is called when the bonus is issued, UPRewardDidAbandonCallback  is called when the bonus is not issued, and only one of the two is invoked.</p>
 </div>
 <div class="section" id="uprewarddidclosecallback">
-<span id="uprewarddidclosecallback"></span><h3>4. UPRewardDidCloseCallback<a class="headerlink" href="#uprewarddidclosecallback" title="Permalink to this headline">¶</a></h3>
+<h3>4. UPRewardDidCloseCallback<a class="headerlink" href="#uprewarddidclosecallback" title="Permalink to this headline">¶</a></h3>
 <p>The UPRewardDidCloseCallback is always called back when the RewardVidero  closed, and it is the callback that was last executed.</p>
 <blockquote>
 <div>To sum up：RewardDidOpen-&gt;RewardDidClick(if have)-&gt;RewardDidGiven(or RewardDidAbandon)-&gt;RewardDidClose.</div></blockquote>
 </div>
 </div>
 <div class="section" id="callback-for-interstitial">
-<span id="callback-for-interstitial"></span><h2>2. Callback for Interstitial:<a class="headerlink" href="#callback-for-interstitial" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="api-reference">
-<span id="id1"></span><h3>API reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h3>
+<h2>2. Callback for Interstitial:<a class="headerlink" href="#callback-for-interstitial" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>API reference<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
 <span class="cm">* Interstitial Ad </span>
 <span class="cm">* trigger on ad display </span>
@@ -246,25 +249,25 @@
 </div>
 </div>
 </div>
-<div class="section" id="sequence-of-callback-interface">
-<span id="id2"></span><h2>Sequence  of Callback interface<a class="headerlink" href="#sequence-of-callback-interface" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id2">
+<h2>Sequence  of Callback interface<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="upinterstitialdidshowcallback">
-<span id="upinterstitialdidshowcallback"></span><h3>1. UPInterstitialDidShowCallback<a class="headerlink" href="#upinterstitialdidshowcallback" title="Permalink to this headline">¶</a></h3>
+<h3>1. UPInterstitialDidShowCallback<a class="headerlink" href="#upinterstitialdidshowcallback" title="Permalink to this headline">¶</a></h3>
 <p>As long as the display of the Interstitial ad is successful.</p>
 </div>
 <div class="section" id="upinterstitialdidclickcallback">
-<span id="upinterstitialdidclickcallback"></span><h3>2. UPInterstitialDidClickCallback<a class="headerlink" href="#upinterstitialdidclickcallback" title="Permalink to this headline">¶</a></h3>
+<h3>2. UPInterstitialDidClickCallback<a class="headerlink" href="#upinterstitialdidclickcallback" title="Permalink to this headline">¶</a></h3>
 <p>Called only when  user clicks ad.</p>
 </div>
 <div class="section" id="upinterstitialdidclosecallback">
-<span id="upinterstitialdidclosecallback"></span><h3>3. UPInterstitialDidCloseCallback<a class="headerlink" href="#upinterstitialdidclosecallback" title="Permalink to this headline">¶</a></h3>
+<h3>3. UPInterstitialDidCloseCallback<a class="headerlink" href="#upinterstitialdidclosecallback" title="Permalink to this headline">¶</a></h3>
 <p>The UPInterstitialDidCloseCallback is called back when the Interstitial ad  closed, and it is the callback that was last executed.</p>
 <blockquote>
 <div>To sum up：InterstitialDidShow-&gt;InterstitialDidClick(if have)-&gt;InterstitialDidClose.</div></blockquote>
 </div>
 </div>
 <div class="section" id="callback-for-banner">
-<span id="callback-for-banner"></span><h2>3. Callback for Banner:<a class="headerlink" href="#callback-for-banner" title="Permalink to this headline">¶</a></h2>
+<h2>3. Callback for Banner:<a class="headerlink" href="#callback-for-banner" title="Permalink to this headline">¶</a></h2>
 <p>UPBannerDidShowCallback is only called when the banner is displayed at first time, UPBannerDidClickCallback is called each time when banner is clicked. UPBannerDidRemoveCallback is called when the banner ad is removed.</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
 <span class="cm">* Banner Ad</span>
@@ -297,7 +300,7 @@
         <a href="unity05_sample_catalog.html" class="btn btn-neutral float-right" title="UnityPlugin Sample" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="unity04_1_api.html" class="btn btn-neutral" title="API description" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="unity04_1_api.html" class="btn btn-neutral float-left" title="API description" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -323,27 +326,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/js/custom.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

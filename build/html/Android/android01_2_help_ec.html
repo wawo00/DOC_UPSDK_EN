@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -31,21 +39,16 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="FAQ" href="android01_3_help_faq.html" />
     <link rel="prev" title="Android Studio" href="android01_1_help_as.html" /> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -169,61 +172,61 @@
            <div itemprop="articleBody">
             
   <div class="section" id="eclipse">
-<span id="eclipse"></span><h1>Eclipse<a class="headerlink" href="#eclipse" title="Permalink to this headline">¶</a></h1>
+<h1>Eclipse<a class="headerlink" href="#eclipse" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="i-structure-of-upsdk-directory">
-<span id="i-structure-of-upsdk-directory"></span><h2>I. Structure of UPSDK Directory<a class="headerlink" href="#i-structure-of-upsdk-directory" title="Permalink to this headline">¶</a></h2>
+<h2>I. Structure of UPSDK Directory<a class="headerlink" href="#i-structure-of-upsdk-directory" title="Permalink to this headline">¶</a></h2>
 <p>If you are using Eclipse or Ant to build Android project, it will be more complex than using Android Studio to build. The structure of UPSDK Eclipse version is like following when after unarchive:</p>
-<p><img alt="" src="http://docc.upltv.com/uploads/201808/5b8756d508084_5b8756d5.png" /></p>
+<p><img alt="http://docc.upltv.com/uploads/201808/5b8756d508084_5b8756d5.png" src="http://docc.upltv.com/uploads/201808/5b8756d508084_5b8756d5.png" /></p>
 <p>Main package of UPSDK Eclipse is located in <code class="docutils literal notranslate"><span class="pre">upsdk_ads</span></code> folder, please refer to the screenshot, <code class="docutils literal notranslate"><span class="pre">upsdk_ads</span></code> is the main package of Eclipse project, it must be added into your porject.</p>
 </div>
 <div class="section" id="ii-duplicate-main-package-of-upsdk-eclipse-into-your-project">
-<span id="ii-duplicate-main-package-of-upsdk-eclipse-into-your-project"></span><h2>II. Duplicate main package of UPSDK Eclipse into your project<a class="headerlink" href="#ii-duplicate-main-package-of-upsdk-eclipse-into-your-project" title="Permalink to this headline">¶</a></h2>
+<h2>II. Duplicate main package of UPSDK Eclipse into your project<a class="headerlink" href="#ii-duplicate-main-package-of-upsdk-eclipse-into-your-project" title="Permalink to this headline">¶</a></h2>
 <p>In the directory of <code class="docutils literal notranslate"><span class="pre">upsdk_ads</span></code>, there are <code class="docutils literal notranslate"><span class="pre">libs</span></code> and <code class="docutils literal notranslate"><span class="pre">res</span></code>, and other folders. Please duplicate all content to
 these folder into equivalent folders of your Eclipse project.</p>
 <blockquote>
 <div>Regarding to the files are not *.so, when you find repeated names of files after duplication, please carefully operate: <strong>Only operate to cover the repeated names of files which are the original files of UpAdsSdk.</strong> If the conflicts of duplication of names is not as above, please refer to your experience to handle(for example, files under res/values/ directories can be re-named). Of course, you could turn to our technical team for resolution and supports.</div></blockquote>
 </div>
 <div class="section" id="iii-add-other-dependencies">
-<span id="iii-add-other-dependencies"></span><h2>III. Add other dependencies<a class="headerlink" href="#iii-add-other-dependencies" title="Permalink to this headline">¶</a></h2>
+<h2>III. Add other dependencies<a class="headerlink" href="#iii-add-other-dependencies" title="Permalink to this headline">¶</a></h2>
 <p>The SDKs of some affiliate networks need to depend on some public third-party libraries, so you may need to include them in your project manually. These library files are existing as  <code class="docutils literal notranslate"><span class="pre">xxx_ads</span></code>folders among the folders you downloaded.
 The relationships between UPSDK and other networks are loose and coupled. If you do not want to import some affiliate networks, you do not need to import those files.</p>
 <p><code class="docutils literal notranslate"><span class="pre">batmobi_ads</span></code> as the sample, if your project needs filled with Mobvista ads, please duplicate related files under the directories of <code class="docutils literal notranslate"><span class="pre">batmobi_ads/libs/</span></code> and <code class="docutils literal notranslate"><span class="pre">batmobi_ads/res/</span></code> into the directories of <code class="docutils literal notranslate"><span class="pre">libs</span></code> and <code class="docutils literal notranslate"><span class="pre">res</span></code> in your project,plus,add content of <code class="docutils literal notranslate"><span class="pre">AndroidManifest_Inmobi</span></code>  into  <code class="docutils literal notranslate"><span class="pre">manifest.xml</span></code> which in your project.</p>
 <p><strong>Please make sure to follow the suggestions below to import 3rd-party libraries which UPSDK needs to depend on in your project. Or the system may crash due to lacking of some neccessary supports.</strong></p>
 <div class="section" id="iv-add-android-support-library">
-<span id="iv-add-android-support-library"></span><h3>IV. Add Android Support library<a class="headerlink" href="#iv-add-android-support-library" title="Permalink to this headline">¶</a></h3>
+<h3>IV. Add Android Support library<a class="headerlink" href="#iv-add-android-support-library" title="Permalink to this headline">¶</a></h3>
 <p>The display of the ad requires the support of the <code class="docutils literal notranslate"><span class="pre">support</span></code> library, so please bring it into your project. We have the corresponding <code class="docutils literal notranslate"><span class="pre">xxx.jar</span></code> file for you in the <code class="docutils literal notranslate"><span class="pre">android_support_library/libs</span></code> folder. You just need to added those files into the <code class="docutils literal notranslate"><span class="pre">libs</span></code> directory.</p>
 <p><strong>Android Support library is a forced dependency，please include it into your project ,or the game might crash !</strong></p>
 </div>
 <div class="section" id="v-add-google-ads-sdk">
-<span id="v-add-google-ads-sdk"></span><h3>V. Add Google Ads SDK<a class="headerlink" href="#v-add-google-ads-sdk" title="Permalink to this headline">¶</a></h3>
+<h3>V. Add Google Ads SDK<a class="headerlink" href="#v-add-google-ads-sdk" title="Permalink to this headline">¶</a></h3>
 <p>If your project will be published globally, we suggest you to inlude Google Ads supports. We have provided related <code class="docutils literal notranslate"><span class="pre">play-services-xxx.jar</span></code> files in the directory of <code class="docutils literal notranslate"><span class="pre">admob_xxx/libs</span></code>.</p>
 <p>At the same time, please check whether your AndroidManifest.xml includes the definitions below:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;!-- admob --&gt;
-&lt;meta-data  
-    android:name=&quot;com.google.android.gms.version&quot;
-    android:value=&quot;@integer/google_play_services_version&quot;/&gt;
+&lt;meta-data	
+	android:name=&quot;com.google.android.gms.version&quot;
+	android:value=&quot;@integer/google_play_services_version&quot;/&gt;
 
 &lt;activity
-    android:name=&quot;com.google.android.gms.ads.AdActivity&quot;
-    android:configChanges=&quot;keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize&quot;
-    android:multiprocess=&quot;true&quot;
-    android:theme=&quot;@android:style/Theme.Translucent&quot;/&gt;
+	android:name=&quot;com.google.android.gms.ads.AdActivity&quot;
+	android:configChanges=&quot;keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize&quot;
+	android:multiprocess=&quot;true&quot;
+	android:theme=&quot;@android:style/Theme.Translucent&quot;/&gt;
 &lt;!-- admob --&gt;
 </pre></div>
 </div>
 </div>
 </div>
 <div class="section" id="vi-modify-androidmanifest-xml-file">
-<span id="vi-modify-androidmanifest-xml-file"></span><h2>VI. Modify AndroidManifest.xml file<a class="headerlink" href="#vi-modify-androidmanifest-xml-file" title="Permalink to this headline">¶</a></h2>
+<h2>VI. Modify AndroidManifest.xml file<a class="headerlink" href="#vi-modify-androidmanifest-xml-file" title="Permalink to this headline">¶</a></h2>
 <p>Please duplicate the content of <code class="docutils literal notranslate"><span class="pre">AndroidManifest.xml</span></code> file into the related location in your project.</p>
 </div>
 <div class="section" id="vii-modify-proguard-setting">
-<span id="vii-modify-proguard-setting"></span><h2>VII. Modify Proguard setting<a class="headerlink" href="#vii-modify-proguard-setting" title="Permalink to this headline">¶</a></h2>
+<h2>VII. Modify Proguard setting<a class="headerlink" href="#vii-modify-proguard-setting" title="Permalink to this headline">¶</a></h2>
 <p>If your project used <code class="docutils literal notranslate"><span class="pre">proguard</span></code>.
 You have to copy contents from <code class="docutils literal notranslate"><span class="pre">proguard-project.txt</span></code> to right location of your project.</p>
 </div>
 <div class="section" id="viii-demo-project">
-<span id="viii-demo-project"></span><h2>VIII. Demo Project<a class="headerlink" href="#viii-demo-project" title="Permalink to this headline">¶</a></h2>
+<h2>VIII. Demo Project<a class="headerlink" href="#viii-demo-project" title="Permalink to this headline">¶</a></h2>
 <p>To help you integrate ads SDK easier and faster, here we provide you a simple<a class="reference external" href="https://github.com/AvidlyGit/AdSdkDemo-Eclipse">Demo Project</a>.</p>
 </div>
 </div>
@@ -239,7 +242,7 @@ You have to copy contents from <code class="docutils literal notranslate"><span 
         <a href="android01_3_help_faq.html" class="btn btn-neutral float-right" title="FAQ" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="android01_1_help_as.html" class="btn btn-neutral" title="Android Studio" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="android01_1_help_as.html" class="btn btn-neutral float-left" title="Android Studio" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -265,27 +268,16 @@ You have to copy contents from <code class="docutils literal notranslate"><span 
   
 
 
-  
-
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/js/custom.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

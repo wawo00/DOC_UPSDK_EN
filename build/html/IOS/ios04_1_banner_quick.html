@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -31,21 +39,16 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Customizing Banner Ad" href="ios04_2_banner_custom.html" />
     <link rel="prev" title="Banner Ad" href="ios04_banner_catalog.html" /> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -168,13 +171,13 @@
            <div itemprop="articleBody">
             
   <div class="section" id="quick-banner-ad">
-<span id="quick-banner-ad"></span><h1>Quick  Banner Ad<a class="headerlink" href="#quick-banner-ad" title="Permalink to this headline">¶</a></h1>
+<h1>Quick  Banner Ad<a class="headerlink" href="#quick-banner-ad" title="Permalink to this headline">¶</a></h1>
 <p>If you only need to build a banner ad ads at the top or bottom of the view, we recommend using this method to achieve the goal faster and more easier.</p>
 <blockquote>
 <div>You can set parameter <code class="docutils literal notranslate"><span class="pre">ad</span> <span class="pre">unit</span></code> to any significative name you want. If you not sure about should discussed with our <strong>support engineer</strong>. You should use different <code class="docutils literal notranslate"><span class="pre">ad</span> <span class="pre">unit</span></code> for different ads placement. We provide revenue from each  <code class="docutils literal notranslate"><span class="pre">ad</span> <span class="pre">unit</span></code> in the feature.
 Eg: You may use “Pause” or “Menu” when initial our SDK in the pause scene of your game.</div></blockquote>
 <div class="section" id="sample">
-<span id="sample"></span><h2>Sample<a class="headerlink" href="#sample" title="Permalink to this headline">¶</a></h2>
+<h2>Sample<a class="headerlink" href="#sample" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
 <span class="cm">* Initial method </span>
 <span class="cm">* 1. avidPlacement：ad unit，Type is NSString,not be empty</span>
@@ -198,23 +201,21 @@ Eg: You may use “Pause” or “Menu” when initial our SDK in the pause scen
 <p>Sample:</p>
 <p>In ViewController.m，we can initialize a Banner ads and set callback of loading .</p>
 <div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">viewDidLoad</span> <span class="p">{</span>
-    <span class="c1">// …</span>
-    <span class="c1">// initialize wrapper</span>
+	<span class="c1">// …</span>
+	<span class="c1">// initialize wrapper</span>
     <span class="n">_topStripBanner</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UPBannerStripWrapper</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithPlacement</span><span class="p">:</span><span class="s">@&quot;banner_strip” controller:self showLocation:UPStripShowLocationTypeTop];</span>
-    <span class="c1">// set delegate of callback</span>
+	<span class="c1">// set delegate of callback</span>
     <span class="n">_topStripBanner</span><span class="p">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="nb">self</span><span class="p">;</span>
-    <span class="c1">// …</span>
+	<span class="c1">// …</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 <p>the banner will display automaticallyat the top of the viewController，do not need to call other codes.</p>
-<p><br></p>
-</div>
+<br></div>
 <div class="section" id="recycle-memory">
-<span id="recycle-memory"></span><h2>Recycle memory：<a class="headerlink" href="#recycle-memory" title="Permalink to this headline">¶</a></h2>
+<h2>Recycle memory：<a class="headerlink" href="#recycle-memory" title="Permalink to this headline">¶</a></h2>
 <p>Please set banner to nil for recyele when the ViewController where the banner view is located is destroyed (such as, removed in the interface, popped from nav, memory is recycled)</p>
-<p><br></p>
-</div>
+<br></div>
 </div>
 
 
@@ -228,7 +229,7 @@ Eg: You may use “Pause” or “Menu” when initial our SDK in the pause scen
         <a href="ios04_2_banner_custom.html" class="btn btn-neutral float-right" title="Customizing Banner Ad" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="ios04_banner_catalog.html" class="btn btn-neutral" title="Banner Ad" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="ios04_banner_catalog.html" class="btn btn-neutral float-left" title="Banner Ad" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -254,27 +255,16 @@ Eg: You may use “Pause” or “Menu” when initial our SDK in the pause scen
   
 
 
-  
-
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/js/custom.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

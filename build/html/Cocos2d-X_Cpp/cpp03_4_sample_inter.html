@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -31,21 +39,16 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Reward video Ad" href="cpp03_5_sample_video.html" />
     <link rel="prev" title="Banner Ad" href="cpp03_3_sample_banner.html" /> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -168,9 +171,9 @@
            <div itemprop="articleBody">
             
   <div class="section" id="interstitial-api">
-<span id="interstitial-api"></span><h1>Interstitial API<a class="headerlink" href="#interstitial-api" title="Permalink to this headline">¶</a></h1>
+<h1>Interstitial API<a class="headerlink" href="#interstitial-api" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="set-the-interstitial-load-callback">
-<span id="set-the-interstitial-load-callback"></span><h2>1. Set the interstitial load callback<a class="headerlink" href="#set-the-interstitial-load-callback" title="Permalink to this headline">¶</a></h2>
+<h2>1. Set the interstitial load callback<a class="headerlink" href="#set-the-interstitial-load-callback" title="Permalink to this headline">¶</a></h2>
 <p>Load results (success or failure) to listen for the current interstitial ad .This interface is automatically released once a callback is made, and the callback interface needs to be reset when listening again.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
 <span class="cm">* @param cpPlaceId   ad unit</span>
@@ -208,7 +211,7 @@
 </div>
 </div>
 <div class="section" id="set-show-callback-of-interstitial-ad">
-<span id="set-show-callback-of-interstitial-ad"></span><h2>2. Set show callback of Interstitial Ad<a class="headerlink" href="#set-show-callback-of-interstitial-ad" title="Permalink to this headline">¶</a></h2>
+<h2>2. Set show callback of Interstitial Ad<a class="headerlink" href="#set-show-callback-of-interstitial-ad" title="Permalink to this headline">¶</a></h2>
 <p>Set up the callback interface for the display of interstitial ad which is used to listen to the callback of showing .The  interstitial ad shows that references to the callback interface are stored  and not released.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
 <span class="cm">* @param cpPlaceId ad unit</span>
@@ -256,7 +259,7 @@
 </div>
 </div>
 <div class="section" id="judge-if-the-interstitial-ad-is-ready">
-<span id="judge-if-the-interstitial-ad-is-ready"></span><h2>3. Judge if the interstitial ad is ready<a class="headerlink" href="#judge-if-the-interstitial-ad-is-ready" title="Permalink to this headline">¶</a></h2>
+<h2>3. Judge if the interstitial ad is ready<a class="headerlink" href="#judge-if-the-interstitial-ad-is-ready" title="Permalink to this headline">¶</a></h2>
 <p>Judge if the interstitial ad is ready accroding ad unit, and  return Boolean results synchronously, true means that the AD is ready to be displayed, and false means that the AD is not show and still in the request.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span> <span class="cm">/**</span>
 <span class="cm">* @param cpPlaceId</span>
@@ -289,7 +292,7 @@
 </div>
 </div>
 <div class="section" id="show-interstitial-ad">
-<span id="show-interstitial-ad"></span><h2>4. Show interstitial AD<a class="headerlink" href="#show-interstitial-ad" title="Permalink to this headline">¶</a></h2>
+<h2>4. Show interstitial AD<a class="headerlink" href="#show-interstitial-ad" title="Permalink to this headline">¶</a></h2>
 <p>show a interstitial ad according to the ad ad unit.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
 <span class="cm">* @param cpPlaceId</span>
@@ -319,7 +322,7 @@
 </div>
 </div>
 <div class="section" id="debug-view-of-interstital-ad">
-<span id="debug-view-of-interstital-ad"></span><h2>5. Debug view of Interstital Ad<a class="headerlink" href="#debug-view-of-interstital-ad" title="Permalink to this headline">¶</a></h2>
+<h2>5. Debug view of Interstital Ad<a class="headerlink" href="#debug-view-of-interstital-ad" title="Permalink to this headline">¶</a></h2>
 <p>In order to help developers to view the use and loading status of ad, we provide a debug page for the ad of the screen, which can be opened to observe the configuration parameters and loading status of the ad.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">void</span> <span class="nf">showInterstitialDebugUI</span><span class="p">();</span>
 </pre></div>
@@ -356,7 +359,7 @@
         <a href="cpp03_5_sample_video.html" class="btn btn-neutral float-right" title="Reward video Ad" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="cpp03_3_sample_banner.html" class="btn btn-neutral" title="Banner Ad" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="cpp03_3_sample_banner.html" class="btn btn-neutral float-left" title="Banner Ad" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -382,27 +385,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/js/custom.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

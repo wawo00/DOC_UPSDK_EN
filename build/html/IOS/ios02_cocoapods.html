@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -31,21 +39,16 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="SDK Initial" href="ios03_init.html" />
     <link rel="prev" title="Xcode Access Document" href="ios01_xcode.html" /> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -162,7 +165,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="cocoapods-access-document">
-<span id="cocoapods-access-document"></span><h1>CocoaPods Access Document<a class="headerlink" href="#cocoapods-access-document" title="Permalink to this headline">¶</a></h1>
+<h1>CocoaPods Access Document<a class="headerlink" href="#cocoapods-access-document" title="Permalink to this headline">¶</a></h1>
 <p>If you use CocoaPods to manage dependances of your iOS project, please import our SDK by following steps:</p>
 <p>Add Avidly Repo to CocoaPods:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pod</span> <span class="n">repo</span> <span class="n">add</span> <span class="n">Avidly</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">guojunliu</span><span class="o">/</span><span class="n">AvidlyAdsSDK</span><span class="o">-</span><span class="n">SpecsRepo</span><span class="o">.</span><span class="n">git</span>
@@ -190,19 +193,19 @@ Switch into your project directory and run command <code class="docutils literal
 </div>
 <p>Done.</p>
 <div class="section" id="project-configuration">
-<span id="project-configuration"></span><h2>Project configuration<a class="headerlink" href="#project-configuration" title="Permalink to this headline">¶</a></h2>
+<h2>Project configuration<a class="headerlink" href="#project-configuration" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="add-nodes-in-info-plist-file-to-allow-http-protocol">
-<span id="add-nodes-in-info-plist-file-to-allow-http-protocol"></span><h3>1 Add nodes in <code class="docutils literal notranslate"><span class="pre">info.plist</span></code> file, to allow http protocol<a class="headerlink" href="#add-nodes-in-info-plist-file-to-allow-http-protocol" title="Permalink to this headline">¶</a></h3>
+<h3>1 Add nodes in <code class="docutils literal notranslate"><span class="pre">info.plist</span></code> file, to allow http protocol<a class="headerlink" href="#add-nodes-in-info-plist-file-to-allow-http-protocol" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span> <span class="o">&lt;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">NSAppTransportSecurity</span> <span class="o">&lt;/</span><span class="n">key</span><span class="o">&gt;</span>
  <span class="o">&lt;</span><span class="n">dict</span><span class="o">&gt;</span>
-     <span class="o">&lt;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">NSAllowsArbitraryLoads</span> <span class="o">&lt;/</span><span class="n">key</span><span class="o">&gt;</span>
-     <span class="o">&lt;</span><span class="nb">true</span><span class="o">/&gt;</span>
+	 <span class="o">&lt;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">NSAllowsArbitraryLoads</span> <span class="o">&lt;/</span><span class="n">key</span><span class="o">&gt;</span>
+	 <span class="o">&lt;</span><span class="nb">true</span><span class="o">/&gt;</span>
  <span class="o">&lt;/</span><span class="n">dict</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="add-nodes-info-plist-to-require-permissions">
-<span id="add-nodes-info-plist-to-require-permissions"></span><h3>2 Add nodes info.plist, to require permissions<a class="headerlink" href="#add-nodes-info-plist-to-require-permissions" title="Permalink to this headline">¶</a></h3>
+<h3>2 Add nodes info.plist, to require permissions<a class="headerlink" href="#add-nodes-info-plist-to-require-permissions" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span> <span class="o">&lt;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">NSCalendarsUsageDescription</span> <span class="o">&lt;/</span><span class="n">key</span><span class="o">&gt;</span>
  <span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span><span class="n">Some</span> <span class="n">ad</span> <span class="n">content</span> <span class="n">may</span> <span class="n">create</span> <span class="n">a</span> <span class="n">calendar</span> <span class="n">event</span><span class="p">.</span> <span class="o">&lt;/</span><span class="n">string</span><span class="o">&gt;</span>
  <span class="o">&lt;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">NSCameraUsageDescription</span> <span class="o">&lt;/</span><span class="n">key</span><span class="o">&gt;</span>
@@ -215,14 +218,14 @@ Switch into your project directory and run command <code class="docutils literal
 <br></p>
 </div>
 <div class="section" id="bitcode">
-<span id="bitcode"></span><h3>3 Bitcode<a class="headerlink" href="#bitcode" title="Permalink to this headline">¶</a></h3>
+<h3>3 Bitcode<a class="headerlink" href="#bitcode" title="Permalink to this headline">¶</a></h3>
 <p>We support Bitcode, please choose use Bitcode if needed.
 Note: YouLan and Domob SDK do not support Bitcode.
 <br></p>
 </div>
 </div>
 <div class="section" id="version">
-<span id="version"></span><h2>Version<a class="headerlink" href="#version" title="Permalink to this headline">¶</a></h2>
+<h2>Version<a class="headerlink" href="#version" title="Permalink to this headline">¶</a></h2>
 <p>You can find SDK version in file <em>UPSDKVersion.h</em></p>
 <div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="c1">//sdk version</span>
 <span class="cp">#define UPSDKVERSION  @&quot;3003&quot;</span>
@@ -244,7 +247,7 @@ Note: YouLan and Domob SDK do not support Bitcode.
         <a href="ios03_init.html" class="btn btn-neutral float-right" title="SDK Initial" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="ios01_xcode.html" class="btn btn-neutral" title="Xcode Access Document" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="ios01_xcode.html" class="btn btn-neutral float-left" title="Xcode Access Document" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -270,27 +273,16 @@ Note: YouLan and Domob SDK do not support Bitcode.
   
 
 
-  
-
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/js/custom.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

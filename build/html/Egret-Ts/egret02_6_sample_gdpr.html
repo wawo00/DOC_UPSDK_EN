@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -31,21 +39,16 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Demo download" href="egret02_7_sample_demo.html" />
     <link rel="prev" title="Reward video Ad" href="egret02_5_sample_video.html" /> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -167,13 +170,13 @@
            <div itemprop="articleBody">
             
   <div class="section" id="gdpr">
-<span id="gdpr"></span><h1>GDPR<a class="headerlink" href="#gdpr" title="Permalink to this headline">¶</a></h1>
+<h1>GDPR<a class="headerlink" href="#gdpr" title="Permalink to this headline">¶</a></h1>
 <p><code class="docutils literal notranslate"><span class="pre">GDPR</span> <span class="pre">&quot;The</span> <span class="pre">General</span> <span class="pre">Data</span> <span class="pre">Protection</span> <span class="pre">Regulation&quot;</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">data</span> <span class="pre">protection</span> <span class="pre">program</span> <span class="pre">issued</span> <span class="pre">by</span> <span class="pre">the</span> <span class="pre">European</span> <span class="pre">Union.</span></code>
 If your product is intended for EU users, we offer the following solutions to ensure that <code class="docutils literal notranslate"><span class="pre">UPSDK</span></code> complies with the GDPR’ rules.</p>
 <div class="section" id="gdpr-recommend-the-use-case">
-<span id="gdpr-recommend-the-use-case"></span><h2>GDPR recommend the use case<a class="headerlink" href="#gdpr-recommend-the-use-case" title="Permalink to this headline">¶</a></h2>
+<h2>GDPR recommend the use case<a class="headerlink" href="#gdpr-recommend-the-use-case" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="plan-1">
-<span id="plan-1"></span><h3>Plan 1<a class="headerlink" href="#plan-1" title="Permalink to this headline">¶</a></h3>
+<h3>Plan 1<a class="headerlink" href="#plan-1" title="Permalink to this headline">¶</a></h3>
 <p>It is recommended to customize the authorization popover interface of GDPR according to the picture style of your game to ensure the best product experience.
 With this scheme, you only need to synchronize the authorization results to the UPSDK and then initialize the UPSDK.</p>
 <p>Sample：</p>
@@ -226,7 +229,7 @@ With this scheme, you only need to synchronize the authorization results to the 
 </div>
 </div>
 <div class="section" id="plan-2">
-<span id="plan-2"></span><h3>Plan 2<a class="headerlink" href="#plan-2" title="Permalink to this headline">¶</a></h3>
+<h3>Plan 2<a class="headerlink" href="#plan-2" title="Permalink to this headline">¶</a></h3>
 <p>If you use the standard authorization mechanism provided by UPSDK, refer to the following code to modify the UPSDK initialization process.</p>
 <p>Sample：</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">notifyAccessPrivacyInfoStatusCallBack</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
@@ -268,9 +271,9 @@ With this scheme, you only need to synchronize the authorization results to the 
 </div>
 </div>
 <div class="section" id="gdpr-api">
-<span id="gdpr-api"></span><h2>GDPR API<a class="headerlink" href="#gdpr-api" title="Permalink to this headline">¶</a></h2>
+<h2>GDPR API<a class="headerlink" href="#gdpr-api" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="notifyaccessprivacyinfostatus">
-<span id="notifyaccessprivacyinfostatus"></span><h3>1.notifyAccessPrivacyInfoStatus<a class="headerlink" href="#notifyaccessprivacyinfostatus" title="Permalink to this headline">¶</a></h3>
+<h3>1.notifyAccessPrivacyInfoStatus<a class="headerlink" href="#notifyaccessprivacyinfostatus" title="Permalink to this headline">¶</a></h3>
 <p>The authorization window pops up to explain to the user that we will collect data and ask the user whether to approve the authorization. If the user refuses to authorize, the collection of related data will be abandoned. Please call before initializing the UPSDK.</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// please call this method before initializing UPSDK</span>
 <span class="c1">// @param callback  permission： 0 Unkown，1 Accepted，2 Defined</span>
@@ -280,7 +283,7 @@ With this scheme, you only need to synchronize the authorization results to the 
 </div>
 </div>
 <div class="section" id="updateaccessprivacyinfostatus">
-<span id="updateaccessprivacyinfostatus"></span><h3>2.updateAccessPrivacyInfoStatus<a class="headerlink" href="#updateaccessprivacyinfostatus" title="Permalink to this headline">¶</a></h3>
+<h3>2.updateAccessPrivacyInfoStatus<a class="headerlink" href="#updateaccessprivacyinfostatus" title="Permalink to this headline">¶</a></h3>
 <p>When externally asking GDPR authorization, this method is called to inform the UPSDK of the user authorization result, and UPSDK will no longer perform authorization popup management. Please call before initializing the UPSDK.</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// @param permission： 0 Unkown，1 Accepted，2 Defined</span>
 <span class="c1">// Version 3003 and above support  upltvoc method</span>
@@ -289,7 +292,7 @@ With this scheme, you only need to synchronize the authorization results to the 
 </div>
 </div>
 <div class="section" id="getaccessprivacyinfostatus">
-<span id="getaccessprivacyinfostatus"></span><h3>3.getAccessPrivacyInfoStatus<a class="headerlink" href="#getaccessprivacyinfostatus" title="Permalink to this headline">¶</a></h3>
+<h3>3.getAccessPrivacyInfoStatus<a class="headerlink" href="#getaccessprivacyinfostatus" title="Permalink to this headline">¶</a></h3>
 <p>Obtain the user authorization result, which can be called before initializing the UPSDK.</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// 0 means Unkown，1 means Accepted，2 means Defined</span>
 <span class="c1">// </span>
@@ -299,7 +302,7 @@ With this scheme, you only need to synchronize the authorization results to the 
 </div>
 </div>
 <div class="section" id="iseuropeanunionuser">
-<span id="iseuropeanunionuser"></span><h3>4.isEuropeanUnionUser<a class="headerlink" href="#iseuropeanunionuser" title="Permalink to this headline">¶</a></h3>
+<h3>4.isEuropeanUnionUser<a class="headerlink" href="#iseuropeanunionuser" title="Permalink to this headline">¶</a></h3>
 <p>Determine whether the user belongs to the EU region,which can be called before initializing the UPSDK.</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">static</span> <span class="nx">isEuropeanUnionUser</span><span class="p">(</span><span class="nx">callback</span><span class="o">:</span><span class="p">(</span><span class="nx">param</span><span class="o">:</span><span class="kr">boolean</span><span class="p">)=&gt;</span><span class="k">void</span><span class="p">)</span>
 </pre></div>
@@ -319,7 +322,7 @@ With this scheme, you only need to synchronize the authorization results to the 
         <a href="egret02_7_sample_demo.html" class="btn btn-neutral float-right" title="Demo download" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="egret02_5_sample_video.html" class="btn btn-neutral" title="Reward video Ad" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="egret02_5_sample_video.html" class="btn btn-neutral float-left" title="Reward video Ad" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -345,27 +348,16 @@ With this scheme, you only need to synchronize the authorization results to the 
   
 
 
-  
-
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/js/custom.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

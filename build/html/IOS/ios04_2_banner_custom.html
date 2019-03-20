@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -31,21 +39,16 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Interstitial Ad" href="ios05_inter.html" />
     <link rel="prev" title="Quick Banner Ad" href="ios04_1_banner_quick.html" /> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -168,24 +171,23 @@
            <div itemprop="articleBody">
             
   <div class="section" id="customizing-banner-ad">
-<span id="customizing-banner-ad"></span><h1>Customizing Banner Ad<a class="headerlink" href="#customizing-banner-ad" title="Permalink to this headline">¶</a></h1>
+<h1>Customizing Banner Ad<a class="headerlink" href="#customizing-banner-ad" title="Permalink to this headline">¶</a></h1>
 <p>UPSDK offers two banner advertisements, one based on the long bar of the <em>UPBannerStripWrapper</em> class and the other based on a rectangle of <em>UPBannerRectangleWrapper</em>. When using, please instantiate the Wrapper class of the ad according to the actual situation.</p>
 <div class="section" id="import-h-file-of-banner">
-<span id="import-h-file-of-banner"></span><h2>Import .h file of banner<a class="headerlink" href="#import-h-file-of-banner" title="Permalink to this headline">¶</a></h2>
+<h2>Import .h file of banner<a class="headerlink" href="#import-h-file-of-banner" title="Permalink to this headline">¶</a></h2>
 <p>There are two header files of banner : UPBannerStripWrapper.h and UPBannerRectangleWrapper.h. The header file is introduced as follows:</p>
 <div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#import    &lt;UPSDK/UPSDK.h&gt;</span>
 </pre></div>
 </div>
-<p><br></p>
-</div>
+<br></div>
 <div class="section" id="instantiate-a-wrapper-object">
-<span id="instantiate-a-wrapper-object"></span><h2>Instantiate a Wrapper object<a class="headerlink" href="#instantiate-a-wrapper-object" title="Permalink to this headline">¶</a></h2>
+<h2>Instantiate a Wrapper object<a class="headerlink" href="#instantiate-a-wrapper-object" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div>You can set parameter <code class="docutils literal notranslate"><span class="pre">ad</span> <span class="pre">unit</span></code> to any significative name you want. If you not sure about should discussed with our <strong>support engineer</strong>. You should use different <code class="docutils literal notranslate"><span class="pre">ad</span> <span class="pre">unit</span></code> for different ads placement. We provide revenue from each  <code class="docutils literal notranslate"><span class="pre">ad</span> <span class="pre">unit</span></code> in the feature.
 Eg: You may use “Pause” or “Menu” when initial our SDK in the pause scene of your game.</div></blockquote>
 </div>
 <div class="section" id="construction-method">
-<span id="construction-method"></span><h2>Construction method：<a class="headerlink" href="#construction-method" title="Permalink to this headline">¶</a></h2>
+<h2>Construction method：<a class="headerlink" href="#construction-method" title="Permalink to this headline">¶</a></h2>
 <p>The banner object constructed by this method can freely control the display position of the banner view.</p>
 <div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
 <span class="cm">* 1. avidPlacement：NSString，placemntid, Required</span>
@@ -197,25 +199,24 @@ Eg: You may use “Pause” or “Menu” when initial our SDK in the pause scen
 <p>Sample:</p>
 <p>In a ViewController.m, initialize a rectangular Banner object and set the callback proxy.</p>
 <div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">viewDidLoad</span> <span class="p">{</span>
-    <span class="c1">// …</span>
-    <span class="c1">// Initialize wrapper</span>
+	<span class="c1">// …</span>
+	<span class="c1">// Initialize wrapper</span>
     <span class="n">_bottomRectBanner</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UPBannerRectangleWrapper</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithPlacement</span><span class="p">:</span><span class="s">@&quot;banner_rect_bottom” controller:self];</span>
-    <span class="c1">// set callback</span>
+	<span class="c1">// set callback</span>
     <span class="n">_bottomRectBanner</span><span class="p">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="nb">self</span><span class="p">;</span>
-    <span class="c1">// Initialize a UIView for displaying banner ads, size unknown</span>
+	<span class="c1">// Initialize a UIView for displaying banner ads, size unknown</span>
     <span class="n">_bannerRectView</span> <span class="o">=</span> <span class="p">[[</span><span class="bp">UIView</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithFrame</span><span class="p">:</span><span class="n">CGRectMake</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)];</span>
     <span class="p">[</span><span class="nb">self</span><span class="p">.</span><span class="n">view</span> <span class="nl">addSubview</span><span class="p">:</span><span class="n">_bannerRectView</span><span class="p">];</span>
     <span class="c1">// Get the UIView object of the ad and load it</span>
     <span class="bp">UIView</span> <span class="o">*</span><span class="n">view</span> <span class="o">=</span> <span class="p">[</span><span class="n">_bottomRectBanner</span> <span class="n">getView</span><span class="p">];</span>
     <span class="p">[</span><span class="n">_bannerRectView</span> <span class="nl">addSubview</span><span class="p">:</span><span class="n">view</span><span class="p">];</span>
-    <span class="c1">// …</span>
+	<span class="c1">// …</span>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p><br></p>
-</div>
+<br></div>
 <div class="section" id="callback-of-banner-ad">
-<span id="callback-of-banner-ad"></span><h2>Callback of Banner Ad<a class="headerlink" href="#callback-of-banner-ad" title="Permalink to this headline">¶</a></h2>
+<h2>Callback of Banner Ad<a class="headerlink" href="#callback-of-banner-ad" title="Permalink to this headline">¶</a></h2>
 <p>UPBannerWrapperProtocol is the callback of Banner, which mainly contains two following  interface .</p>
 <div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">bannerAdClick:</span><span class="p">(</span><span class="kt">id</span><span class="p">)</span><span class="nv">wrapper</span><span class="p">;</span>
 
@@ -259,13 +260,11 @@ When the banner can be displayed, the wrapper will send a message to this interf
 <span class="p">}</span>
 </pre></div>
 </div>
-<p><br></p>
-</div>
+<br></div>
 <div class="section" id="recycle-memory">
-<span id="recycle-memory"></span><h2>Recycle memory：<a class="headerlink" href="#recycle-memory" title="Permalink to this headline">¶</a></h2>
+<h2>Recycle memory：<a class="headerlink" href="#recycle-memory" title="Permalink to this headline">¶</a></h2>
 <p>Please set banner to nil for recyele when the ViewController where the banner view is located is destroyed (such as, removed in the interface, popped from nav, memory is recycled)</p>
-<p><br></p>
-</div>
+<br></div>
 </div>
 
 
@@ -279,7 +278,7 @@ When the banner can be displayed, the wrapper will send a message to this interf
         <a href="ios05_inter.html" class="btn btn-neutral float-right" title="Interstitial Ad" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="ios04_1_banner_quick.html" class="btn btn-neutral" title="Quick Banner Ad" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="ios04_1_banner_quick.html" class="btn btn-neutral float-left" title="Quick Banner Ad" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -305,27 +304,16 @@ When the banner can be displayed, the wrapper will send a message to this interf
   
 
 
-  
-
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/js/custom.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

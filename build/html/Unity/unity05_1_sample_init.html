@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -31,21 +39,16 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Unity Plugin A/B Test" href="unity05_2_sample_abtest.html" />
     <link rel="prev" title="UnityPlugin Sample" href="unity05_sample_catalog.html" /> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -171,7 +174,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="unity-plugin-initialization">
-<span id="unity-plugin-initialization"></span><h1>Unity Plugin initialization<a class="headerlink" href="#unity-plugin-initialization" title="Permalink to this headline">¶</a></h1>
+<h1>Unity Plugin initialization<a class="headerlink" href="#unity-plugin-initialization" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
 <span class="cm"> * Initialize UPSDK</span>
 <span class="cm"> * Upsdk will only be initialized once even if it is called multiple times.</span>
@@ -183,10 +186,10 @@
 </pre></div>
 </div>
 <div class="section" id="setcustomerid">
-<span id="setcustomerid"></span><h2>setCustomerId()<a class="headerlink" href="#setcustomerid" title="Permalink to this headline">¶</a></h2>
+<h2>setCustomerId()<a class="headerlink" href="#setcustomerid" title="Permalink to this headline">¶</a></h2>
 <p>If you don’t publish games or apps in Google Play,you should call the method named <code class="docutils literal notranslate"><span class="pre">PolyADSDK.setCustomerIdForAndroid(AndroidId)</span></code>before <code class="docutils literal notranslate"><span class="pre">UPAdsSdk.initPolyAdSDK()</span></code>.</p>
 <div class="section" id="sample">
-<span id="sample"></span><h3>Sample:<a class="headerlink" href="#sample" title="Permalink to this headline">¶</a></h3>
+<h3>Sample:<a class="headerlink" href="#sample" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span>  <span class="n">PolyADSDK</span><span class="o">.</span><span class="na">setCustomerIdForAndroid</span><span class="o">(</span><span class="n">GetAndroidID</span><span class="o">());</span>
 
   <span class="kd">private</span> <span class="n">String</span> <span class="nf">GetAndroidID</span><span class="o">()</span>
@@ -202,8 +205,8 @@
 </div>
 </div>
 </div>
-<div class="section" id="sample">
-<span id="id1"></span><h2>Sample<a class="headerlink" href="#sample" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h2>Sample<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>In the demo code, the onButton_init_Click() method is called by clicking the initialization button on the UI. Even if the initialization button is clicked multiple times, ** repeatedly calls UPSDK.initPolyAdSDK()<strong>, but the SDK will only be initialized once</strong>.</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">void</span> <span class="nf">onButton_init_Click</span><span class="p">()</span>
 <span class="p">{</span>
@@ -331,7 +334,7 @@ The code for the sample project illustrates the role of each interface and the m
         <a href="unity05_2_sample_abtest.html" class="btn btn-neutral float-right" title="Unity Plugin A/B Test" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="unity05_sample_catalog.html" class="btn btn-neutral" title="UnityPlugin Sample" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="unity05_sample_catalog.html" class="btn btn-neutral float-left" title="UnityPlugin Sample" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -357,27 +360,16 @@ The code for the sample project illustrates the role of each interface and the m
   
 
 
-  
-
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/js/custom.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

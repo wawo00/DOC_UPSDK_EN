@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -31,21 +39,16 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Rewarded Video Ad" href="ios06_video.html" />
     <link rel="prev" title="Customizing Banner Ad" href="ios04_2_banner_custom.html" /> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -162,16 +165,16 @@
            <div itemprop="articleBody">
             
   <div class="section" id="interstitial-ad">
-<span id="interstitial-ad"></span><h1>Interstitial Ad<a class="headerlink" href="#interstitial-ad" title="Permalink to this headline">¶</a></h1>
+<h1>Interstitial Ad<a class="headerlink" href="#interstitial-ad" title="Permalink to this headline">¶</a></h1>
 <p>Related methods and delegate interfaces was defined in file <code class="docutils literal notranslate"><span class="pre">UPIntersitialWrapper.h</span></code></p>
 <div class="section" id="reference-header-file">
-<span id="reference-header-file"></span><h2>Reference header file<a class="headerlink" href="#reference-header-file" title="Permalink to this headline">¶</a></h2>
+<h2>Reference header file<a class="headerlink" href="#reference-header-file" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#import   &lt;UPSDK/UPSDK.h&gt;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="methods-of-implementation-class">
-<span id="methods-of-implementation-class"></span><h2>Methods of implementation class<a class="headerlink" href="#methods-of-implementation-class" title="Permalink to this headline">¶</a></h2>
+<h2>Methods of implementation class<a class="headerlink" href="#methods-of-implementation-class" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div>You can set parameter <code class="docutils literal notranslate"><span class="pre">ad</span> <span class="pre">unit</span></code> to any significative name you want. If you not sure about should discussed with our <strong>support engineer</strong>. You should use different <code class="docutils literal notranslate"><span class="pre">ad</span> <span class="pre">unit</span></code> for different ads placement. We provide revenue from each  <code class="docutils literal notranslate"><span class="pre">ad</span> <span class="pre">unit</span></code> in the feature.
 Eg: You may use “Pause” or “Menu” when initial our SDK in the pause scene of your game.</div></blockquote>
@@ -210,7 +213,7 @@ Eg: You may use “Pause” or “Menu” when initial our SDK in the pause scen
 </div>
 </div>
 <div class="section" id="upintersitialdelegate-callback-protocol">
-<span id="upintersitialdelegate-callback-protocol"></span><h2>UpIntersitialDelegate Callback protocol<a class="headerlink" href="#upintersitialdelegate-callback-protocol" title="Permalink to this headline">¶</a></h2>
+<h2>UpIntersitialDelegate Callback protocol<a class="headerlink" href="#upintersitialdelegate-callback-protocol" title="Permalink to this headline">¶</a></h2>
 <p>It’s not necessary to implement callback protocol of Interstitial Ad. You can implement it by your situation.</p>
 <div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="k">@protocol</span> <span class="nc">UpIntersitialDelegate</span> <span class="o">&lt;</span><span class="bp">NSObject</span><span class="o">&gt;</span>
 
@@ -237,7 +240,7 @@ Eg: You may use “Pause” or “Menu” when initial our SDK in the pause scen
 </div>
 </div>
 <div class="section" id="demo-code-xcode">
-<span id="demo-code-xcode"></span><h2>Demo code - Xcode<a class="headerlink" href="#demo-code-xcode" title="Permalink to this headline">¶</a></h2>
+<h2>Demo code - Xcode<a class="headerlink" href="#demo-code-xcode" title="Permalink to this headline">¶</a></h2>
 <p>In demo project of XCode, declare <code class="docutils literal notranslate"><span class="pre">STInterstitialViewController</span></code> class, to display Interstitial Ads. Define class <code class="docutils literal notranslate"><span class="pre">STInterstitialViewController.h</span></code> first. The code here is pretty simple.</p>
 <div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="k">@interface</span> <span class="nc">STInterstitialViewController</span> : <span class="bp">UIViewController</span>
 
@@ -326,7 +329,7 @@ Use following code to display Ad</li>
         <a href="ios06_video.html" class="btn btn-neutral float-right" title="Rewarded Video Ad" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="ios04_2_banner_custom.html" class="btn btn-neutral" title="Customizing Banner Ad" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="ios04_2_banner_custom.html" class="btn btn-neutral float-left" title="Customizing Banner Ad" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -352,27 +355,16 @@ Use following code to display Ad</li>
   
 
 
-  
-
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/js/custom.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

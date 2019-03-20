@@ -1,81 +1,83 @@
 ## Android SDK
 ### Global
 
-[Eclipe SDK v3.0.06.6 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_foreign_3.0.06_eclipse.zip "Eclipe SDK v3.0.06 ")
+[Eclipe SDK v3.0.06.7 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_foreign_3.0.06.7_eclipse.zip "Eclipe SDK v3.0.06 ")
 
-[Android Studio SDK v3.0.06.6](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_foreign_3.0.06_AndroidStudio.zip "Android Studio SDK v3.0.06 ")
+[Android Studio SDK v3.0.06.7](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_foreign_3.0.06.7_AndroidStudio.zip "Android Studio SDK v3.0.06 ")
 
 ### China Mainland
 
-[Eclipe SDK v3.0.06.6 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_domestic_3.0.06_eclipse.zip "Eclipe SDK v3.0.06 ")
+[Eclipe SDK v3.0.06.7 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_domestic_3.0.06.7_eclipse.zip "Eclipe SDK v3.0.06 ")
 
-[Android Studio SDK v3.0.06.6](http://cnimg.dataverseGlobal.cn/upsdk/UPSDK_Android_domestic_3.0.06_AndroidStudio.zip "Android Studio SDK v3.0.06 ")
+[Android Studio SDK v3.0.06.7](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_domestic_3.0.06.7_AndroidStudio.zip "Android Studio SDK v3.0.06 ")
 
 ## iOS SDK
 
-[SDK v3.0.06.6](http://cnimg.dataverse.cn/upsdk/UPSDK_iOS_3.0.06.zip "SDK v3.0.06")
+[SDK v3.0.06.7](http://cnimg.dataverse.cn/upsdk/UPSDK_iOS_3.0.06.7.zip "SDK v3.0.06")
 
-[Other required SDK v3.0.06.6](http://cnimg.dataverse.cn/upsdk/Framework_tp_v3.0.06.zip "Other required SDK v3.0.06")
+[Other required SDK v3.0.06.7](http://cnimg.dataverse.cn/upsdk/Framework_tp_v3.0.06.7.zip "Other required SDK v3.0.06")
 
 ## Unity SDK
 
 ### Global
 
-[Android 3.0.06.4](http://cnimg.dataverse.cn/upsdk/export_3006_android_foreign.unitypackage "SDK v3.0.06")
+[Android 3.0.06.7](http://cnimg.dataverse.cn/upsdk/export_3006_7_android_foreign.unitypackage "SDK v3.0.06")
 
-[Android & iOS v3.0.06.6](http://cnimg.dataverse.cn/upsdk/export_3006_both_foreign.unitypackage "SDK v3.0.06")
+[Android & iOS v3.0.06.7](http://cnimg.dataverse.cn/upsdk/export_3006_7_both_foreign.unitypackage "SDK v3.0.06")
 
 
 ### China Mainland
 
-[Android v3.0.06.6](http://cnimg.dataverse.cn/upsdk/export_3006_android_domestic.unitypackage "SDK v3.0.06")
+[Android v3.0.06.7](http://cnimg.dataverse.cn/upsdk/export_3006_7_android_domestic.unitypackage "SDK v3.0.06")
 
-[Android & iOS v3.0.06.6](http://cnimg.dataverse.cn/upsdk/export_3006_both_domestic.unitypackage "SDK v3.0.06")
+[Android & iOS v3.0.06.7](http://cnimg.dataverse.cn/upsdk/export_3006_7_both_domestic.unitypackage "SDK v3.0.06")
 
 #### Upsdk&Firebase
 **If you have integrated Firebase  in your project, for avoiding conflictions,you should use the 'Upsdk&Firebase-unityPlugin'**
 
-[Android & Firebase v3.0.06.6](http://cnimg.dataverse.cn/upsdk/export_3006_android_firebase.unitypackage "SDK v3.0.06")
+[Android & Firebase v3.0.06.7](http://cnimg.dataverse.cn/upsdk/export_3006_android_firebase.unitypackage "SDK v3.0.06")
 
 
 ## Cocos2D-X
 
 #### Android Global
-[Cocos-JS SDK v3.0.06.6 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_foreign_3.0.06_CocosJS.zip "Cocos-JS SDK v3.0.06 ")
+[Cocos-JS SDK v3.0.06.7 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_foreign_3.0.06.7_CocosJS.zip "Cocos-JS SDK v3.0.06 ")
 
-[Cocos-C++ SDK v3.0.06.6 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_foreign_3.0.06_CocosC++.zip "Cocos-C++ SDK v3.0.06 ")
+[Cocos-C++ SDK v3.0.06.7 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_foreign_3.0.06.7_CocosC++.zip "Cocos-C++ SDK v3.0.06 ")
 
-[Cocos-Lua SDK v3.0.06.6 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_foreign_3.0.06_CocosLua.zip "Cocos-Lua SDK v3.0.06 ")
+[Cocos-Lua SDK v3.0.06.7 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_foreign_3.0.06.7_CocosLua.zip "Cocos-Lua SDK v3.0.06 ")
+
 
 #### Android China Mainland
-[Cocos-JS SDK v3.0.06.6 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_domestic_3.0.06_CocosJS.zip "Cocos-JS SDK v3.0.06 ")
 
-[Cocos-C++ SDK v3.0.06.6 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_domestic_3.0.06_CocosC++.zip "Cocos-C++ SDK v3.0.06 ")
+[Cocos-JS SDK v3.0.06.7 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_domestic_3.0.06.7_CocosJS.zip "Cocos-JS SDK v3.0.06 ")
 
-[Cocos-Lua SDK v3.0.06.6 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_domestic_3.0.06_CocosLua.zip "Cocos-Lua SDK v3.0.06 ")
+[Cocos-C++ SDK v3.0.06.7 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_domestic_3.0.06.7_CocosC++.zip "Cocos-C++ SDK v3.0.06 ")
+
+[Cocos-Lua SDK v3.0.06.7 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_domestic_3.0.06.7_CocosLua.zip "Cocos-Lua SDK v3.0.06 ")
 
 #### iOS
-[Cocos-JS SDK v3.0.06.6 ](http://cnimg.dataverse.cn/upsdk/UPSDK_iOS_3.0.06_CocosJS.zip "Cocos-JS SDK v3.0.06 ")
+[Cocos-JS SDK v3.0.06.7 ](http://cnimg.dataverse.cn/upsdk/UPSDK_iOS_3.0.06.7_CocosJS.zip "Cocos-JS SDK v3.0.06 ")
 
-[Cocos-C++ SDK v3.0.06.6 ](http://cnimg.dataverse.cn/upsdk/UPSDK_iOS_3.0.06_CocosC++.zip "Cocos-C++ SDK v3.0.06 ")
+[Cocos-C++ SDK v3.0.06.7 ](http://cnimg.dataverse.cn/upsdk/UPSDK_iOS_3.0.06.7_CocosC++.zip "Cocos-C++ SDK v3.0.06 ")
 
-[Cocos-Lua SDK v3.0.06.6 ](http://cnimg.dataverse.cn/upsdk/UPSDK_iOS_3.0.06_CocosLua.zip "Cocos-Lua SDK v3.0.06 ")
+[Cocos-Lua SDK v3.0.06.7 ](http://cnimg.dataverse.cn/upsdk/UPSDK_iOS_3.0.06.7_CocosLua.zip "Cocos-Lua SDK v3.0.06 ")
 
 ## Layabox
 
 #### Android Global
-[Layabox JavaScript v3.0.06.6](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_foreign_3006_Layabox_JS.zip "Layabox-JavaScript SDK v3.0.06")
+[Layabox JavaScript v3.0.06.7](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_foreign_3006_7_Layabox_JS.zip "Layabox-JavaScript SDK v3.0.06")
 
 #### Android China Mainland
-[Layabox JavaScript v3.0.06.6](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_domestic_3006_Layabox_JS.zip "Layabox-JavaScript SDK v3.0.06")
+[Layabox JavaScript v3.0.06.7](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_domestic_3006_7_Layabox_JS.zip "Layabox-JavaScript SDK v3.0.06")
 
 #### iOS
-[Layabox JavaScript v3.0.06.6](http://cnimg.dataverse.cn/upsdk/UPSDK_Layabox_iOS_JS_3006.zip "Layabox-JavaScript SDK v3.0.06")
+[Layabox JavaScript v3.0.06.7](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_domestic_3006_7_Layabox_JS.zip "Layabox-JavaScript SDK v3.0.06")
 
 ## Egret
 
 #### iOS
-[Egret TypeScript v3.0.06.6](http://cnimg.dataverse.cn/upsdk/UPSDK_iOS_EGret_TS_3006.zip "Egret TypeScript v3.0.06")
+[Egret TypeScript v3.0.06.7](http://cnimg.dataverse.cn/upsdk/UPSDK_iOS_EGret_TS_3006_7.zip "Egret TypeScript v3.0.06")
 
 ## Google-Play-Services Download
 [gms v9.0.0](http://cnimg.dataverse.cn/avidlysdk/gms9.0.0.zip "gms_v9.0.0")
@@ -90,6 +92,9 @@
 
 [gms v16.0.0](http://cnimg.dataverse.cn/upsdk/gms16.0.0.zip "gms_v16.0.0")
 
+[gms v16.5.0](http://cnimg.dataverse.cn/upsdk/gms16.5.0.zip "gms_v16.5.0")
+
+
 
 ## Current Version
-**3.0.06.6**
+**3.0.06.7**

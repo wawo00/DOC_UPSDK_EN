@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -31,21 +39,16 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Eclipse" href="android01_2_help_ec.html" />
     <link rel="prev" title="Quick Start" href="android01_help_catalog.html" /> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -169,31 +172,31 @@
            <div itemprop="articleBody">
             
   <div class="section" id="android-studio">
-<span id="android-studio"></span><h1>Android Studio<a class="headerlink" href="#android-studio" title="Permalink to this headline">¶</a></h1>
+<h1>Android Studio<a class="headerlink" href="#android-studio" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="i-structure-of-upsdk-directory">
-<span id="i-structure-of-upsdk-directory"></span><h2>I. Structure of UPSDK Directory<a class="headerlink" href="#i-structure-of-upsdk-directory" title="Permalink to this headline">¶</a></h2>
+<h2>I. Structure of UPSDK Directory<a class="headerlink" href="#i-structure-of-upsdk-directory" title="Permalink to this headline">¶</a></h2>
 <p>Regarding to Android Studio or Gradle built project, UPSDK suggests it should be import by other main project in <code class="docutils literal notranslate"><span class="pre">*.aar</span></code> format. You will see the structure of directory for UPSDK Studio when you unzip it:</p>
-<p><img alt="as_91" src="http://docc.upltv.com/uploads/201808/5b7fdca87b9ae_5b7fdca8.png" /></p>
+<p><img alt="as_91" src="http://docc.upltv.com/uploads/201808/5b7fdca87b9ae_5b7fdca8.png" />as_91</p>
 <div class="section" id="main-package-of-upsdk">
-<span id="main-package-of-upsdk"></span><h3>1. Main Package of UPSDK<a class="headerlink" href="#main-package-of-upsdk" title="Permalink to this headline">¶</a></h3>
+<h3>1. Main Package of UPSDK<a class="headerlink" href="#main-package-of-upsdk" title="Permalink to this headline">¶</a></h3>
 <p>Please refer to the screenshot above, the file named <code class="docutils literal notranslate"><span class="pre">UPAdsSdk_x.x.xx.aar</span></code> is the main package of UPSDK, you have to add it into your main project.</p>
 </div>
 <div class="section" id="networks-dependencies-of-upsdk">
-<span id="networks-dependencies-of-upsdk"></span><h3>2. Networks Dependencies of UPSDK<a class="headerlink" href="#networks-dependencies-of-upsdk" title="Permalink to this headline">¶</a></h3>
+<h3>2. Networks Dependencies of UPSDK<a class="headerlink" href="#networks-dependencies-of-upsdk" title="Permalink to this headline">¶</a></h3>
 <p>The relationships between UPSDK and other networks are loose and coupled. You could remove some ads dependencies from the main project to reduce the size of application.</p>
 <p>The dependencies of networks except Admob and Facebook, they are existing in xxxx_ads.aar format.</p>
 </div>
 <div class="section" id="ads-dependencies-of-admob-and-facebook">
-<span id="ads-dependencies-of-admob-and-facebook"></span><h3>3. Ads Dependencies of Admob and Facebook<a class="headerlink" href="#ads-dependencies-of-admob-and-facebook" title="Permalink to this headline">¶</a></h3>
+<h3>3. Ads Dependencies of Admob and Facebook<a class="headerlink" href="#ads-dependencies-of-admob-and-facebook" title="Permalink to this headline">¶</a></h3>
 <p>Among UPSDK local files, it provides aar dependencies for Admob and Facebook in case of the situation of bad internet or other unexpected problems happened. Even so, we still suggest you to update the dependencies online from gradle of Admob and Facebook long-distance warehouse.
 &gt; Regarding to the specification of how to integrate with Admob and Facebook, it will be particularly introduced later in this section.</p>
 </div>
 </div>
 <div class="section" id="ii-using-gradle-of-android-studio-to-import-the-main-package-of-upsdk">
-<span id="ii-using-gradle-of-android-studio-to-import-the-main-package-of-upsdk"></span><h2>II. Using Gradle of Android Studio to import the main package of UPSDK<a class="headerlink" href="#ii-using-gradle-of-android-studio-to-import-the-main-package-of-upsdk" title="Permalink to this headline">¶</a></h2>
+<h2>II. Using Gradle of Android Studio to import the main package of UPSDK<a class="headerlink" href="#ii-using-gradle-of-android-studio-to-import-the-main-package-of-upsdk" title="Permalink to this headline">¶</a></h2>
 <p>Please refer to the introduction above, add the downloaded files which named  <code class="docutils literal notranslate"><span class="pre">UPAdsSdk_x.x.xx.aar</span></code> into <code class="docutils literal notranslate"><span class="pre">libs</span></code> directory in your project.
 After they are added, the effects of Studio project acts like the following screenshot:</p>
-<p><img alt="as_02" src="http://docc.upltv.com/uploads/201808/5b7fddd4a0a05_5b7fddd4.png" /></p>
+<p><img alt="as_02" src="http://docc.upltv.com/uploads/201808/5b7fddd4a0a05_5b7fddd4.png" />as_02</p>
 <blockquote>
 <div><code class="docutils literal notranslate"><span class="pre">UPAdsSdk_3.0.03.aar</span></code> is specified only for example</div></blockquote>
 <p>To make sure aar package which in libs directory could be import correctly by the project, please check the following configuration parameter in <code class="docutils literal notranslate"><span class="pre">build.gradle</span></code> files/folder under <code class="docutils literal notranslate"><span class="pre">app</span></code> directory:</p>
@@ -221,20 +224,20 @@ Since we always choose the best affiliate networks over the world, you can impor
 Also, you still can remove some of them by your own reason , like too much library will make your game size getting big.</p>
 </div>
 <div class="section" id="iii-add-dependencies-of-affiliate-networks">
-<span id="iii-add-dependencies-of-affiliate-networks"></span><h2>III. Add dependencies of affiliate networks<a class="headerlink" href="#iii-add-dependencies-of-affiliate-networks" title="Permalink to this headline">¶</a></h2>
+<h2>III. Add dependencies of affiliate networks<a class="headerlink" href="#iii-add-dependencies-of-affiliate-networks" title="Permalink to this headline">¶</a></h2>
 <p>The SDKs of some affiliate networks need to depend on some public third-party libraries. The project which is built by Android Studio could import the dependent third-party library by the following mothods.</p>
 <p><strong>In principle, we suggest you to import dependent third-party library all in your project. But in some cases, you can choose to add some libraries of affiliate networks to reduce the size of your project. But no matter how to make sure the libraries of affiliate networks you added must completely meet the external conditions of current ads on shown. Or, it will leads crashes because it’s lack of some neccessary supports.</strong></p>
 <p>If you want to remove the supports from some affiliate networks, but you do not know how to operate. Please give priority to contact our support team to acheive your goal.</p>
 <div class="section" id="add-aar-of-affiliate-networks">
-<span id="add-aar-of-affiliate-networks"></span><h3>1. Add *.aar of affiliate networks<a class="headerlink" href="#add-aar-of-affiliate-networks" title="Permalink to this headline">¶</a></h3>
+<h3>1. Add *.aar of affiliate networks<a class="headerlink" href="#add-aar-of-affiliate-networks" title="Permalink to this headline">¶</a></h3>
 <p>Among the downloaded target files, files named  <code class="docutils literal notranslate"><span class="pre">xxx_ads.aar</span></code> are the dependent files for the affiliate networks in use. Please refer to <strong>Import UPSDK aar files</strong> to add them in your project.</p>
 </div>
 <div class="section" id="add-other-external-dependencies">
-<span id="add-other-external-dependencies"></span><h3>2. Add other external dependencies<a class="headerlink" href="#add-other-external-dependencies" title="Permalink to this headline">¶</a></h3>
+<h3>2. Add other external dependencies<a class="headerlink" href="#add-other-external-dependencies" title="Permalink to this headline">¶</a></h3>
 <p>Because of requiring some extra Android Api supports by some affiliate networks, so you have to add external dependencies as followed.</p>
 </div>
 <div class="section" id="configure-jcenter-code-repository">
-<span id="configure-jcenter-code-repository"></span><h3>1. Configure jcenter code repository<a class="headerlink" href="#configure-jcenter-code-repository" title="Permalink to this headline">¶</a></h3>
+<h3>1. Configure jcenter code repository<a class="headerlink" href="#configure-jcenter-code-repository" title="Permalink to this headline">¶</a></h3>
 <p>Find <code class="docutils literal notranslate"><span class="pre">build.gradle</span></code> file in your main project. Add <code class="docutils literal notranslate"><span class="pre">jcenter</span></code>  in <code class="docutils literal notranslate"><span class="pre">repositories</span></code> section of the file.</p>
 <div class="highlight-groovy notranslate"><div class="highlight"><pre><span></span><span class="n">buildscript</span> <span class="o">{</span>
     <span class="n">repositories</span> <span class="o">{</span>
@@ -264,7 +267,7 @@ Also, you still can remove some of them by your own reason , like too much libra
 </div>
 </div>
 <div class="section" id="add-android-support-library">
-<span id="add-android-support-library"></span><h3>2.  Add Android Support library<a class="headerlink" href="#add-android-support-library" title="Permalink to this headline">¶</a></h3>
+<h3>2.  Add Android Support library<a class="headerlink" href="#add-android-support-library" title="Permalink to this headline">¶</a></h3>
 <p>Every affiliate needs <code class="docutils literal notranslate"><span class="pre">android.support.xxx</span></code>, so please import it to your project. If you are using Android Studio in your project, you can modify <code class="docutils literal notranslate"><span class="pre">build.gradle</span></code> file to add</p>
 <div class="highlight-groovy notranslate"><div class="highlight"><pre><span></span><span class="n">dependencies</span> <span class="o">{</span>
     <span class="n">compile</span> <span class="s1">&#39;com.android.support:recyclerview-v7:26.1.0&#39;</span>
@@ -280,7 +283,7 @@ Also, you still can remove some of them by your own reason , like too much libra
 </div>
 </div>
 <div class="section" id="add-google-ads-sdk">
-<span id="add-google-ads-sdk"></span><h3>3. Add Google Ads SDK<a class="headerlink" href="#add-google-ads-sdk" title="Permalink to this headline">¶</a></h3>
+<h3>3. Add Google Ads SDK<a class="headerlink" href="#add-google-ads-sdk" title="Permalink to this headline">¶</a></h3>
 <p>If you want to add Admob ads in your project, you need to add Google Ads support in your project. You can follow the following steps to add dependencies:</p>
 <div class="highlight-groovy notranslate"><div class="highlight"><pre><span></span>    <span class="n">dependencies</span> <span class="o">{</span>
         <span class="n">compile</span> <span class="s1">&#39;com.google.android.gms:play-services-ads:16.0.0&#39;</span>
@@ -292,7 +295,7 @@ Also, you still can remove some of them by your own reason , like too much libra
 Specially, if the version of gms play-service in your project is different from UPSDK dependencies, please use the higher version.</div></blockquote>
 </div>
 <div class="section" id="add-facebook-ads-sdk">
-<span id="add-facebook-ads-sdk"></span><h3>4. Add Facebook Ads SDK<a class="headerlink" href="#add-facebook-ads-sdk" title="Permalink to this headline">¶</a></h3>
+<h3>4. Add Facebook Ads SDK<a class="headerlink" href="#add-facebook-ads-sdk" title="Permalink to this headline">¶</a></h3>
 <p>If you want to add Facebook interstitial ads in your project, you need to add Facebook Ads support in your project. You can follow the following steps to add dependencies:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dependencies</span> <span class="p">{</span>
     <span class="nb">compile</span> <span class="s1">&#39;com.facebook.android:audience-network-sdk:4.99.1&#39;</span>
@@ -302,12 +305,12 @@ Specially, if the version of gms play-service in your project is different from 
 </div>
 </div>
 <div class="section" id="iv-modify-proguard-setting">
-<span id="iv-modify-proguard-setting"></span><h2>IV. Modify Proguard setting<a class="headerlink" href="#iv-modify-proguard-setting" title="Permalink to this headline">¶</a></h2>
+<h2>IV. Modify Proguard setting<a class="headerlink" href="#iv-modify-proguard-setting" title="Permalink to this headline">¶</a></h2>
 <p>If your project used <code class="docutils literal notranslate"><span class="pre">proguard</span></code>.
 You have to copy contents from <code class="docutils literal notranslate"><span class="pre">proguard-project.txt</span></code> to right location of your project.</p>
 </div>
 <div class="section" id="v-demo-project">
-<span id="v-demo-project"></span><h2>V. Demo Project<a class="headerlink" href="#v-demo-project" title="Permalink to this headline">¶</a></h2>
+<h2>V. Demo Project<a class="headerlink" href="#v-demo-project" title="Permalink to this headline">¶</a></h2>
 <p>To help you integrate ads SDK easier and faster, here we provide you a simple <a class="reference external" href="https://github.com/UPGit/AdSdkDemo-Studio">Demo Project</a>.</p>
 </div>
 </div>
@@ -323,7 +326,7 @@ You have to copy contents from <code class="docutils literal notranslate"><span 
         <a href="android01_2_help_ec.html" class="btn btn-neutral float-right" title="Eclipse" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="android01_help_catalog.html" class="btn btn-neutral" title="Quick Start" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="android01_help_catalog.html" class="btn btn-neutral float-left" title="Quick Start" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -349,27 +352,16 @@ You have to copy contents from <code class="docutils literal notranslate"><span 
   
 
 
-  
-
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/js/custom.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

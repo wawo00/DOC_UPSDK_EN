@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -31,21 +39,16 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="CocoaPods Access Document" href="ios02_cocoapods.html" />
     <link rel="prev" title="UPSDK IOS" href="../chapters/chapter02.html" /> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -162,9 +165,9 @@
            <div itemprop="articleBody">
             
   <div class="section" id="xcode-access-document">
-<span id="xcode-access-document"></span><h1>Xcode Access Document<a class="headerlink" href="#xcode-access-document" title="Permalink to this headline">¶</a></h1>
+<h1>Xcode Access Document<a class="headerlink" href="#xcode-access-document" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="download-sdk">
-<span id="download-sdk"></span><h2>Download SDK<a class="headerlink" href="#download-sdk" title="Permalink to this headline">¶</a></h2>
+<h2>Download SDK<a class="headerlink" href="#download-sdk" title="Permalink to this headline">¶</a></h2>
 <p>Download latest SDK from <a class="reference external" href="http://doc.upltv.com/en/master/chapters/chapter09.html">here</a> and unzip. You will got 2 files：</p>
 <ul class="simple">
 <li>UPSDK.framework</li>
@@ -175,80 +178,74 @@
 </br></p>
 </div>
 <div class="section" id="add-sdk-to-your-xcode-project">
-<span id="add-sdk-to-your-xcode-project"></span><h2>Add SDK to your Xcode project<a class="headerlink" href="#add-sdk-to-your-xcode-project" title="Permalink to this headline">¶</a></h2>
+<h2>Add SDK to your Xcode project<a class="headerlink" href="#add-sdk-to-your-xcode-project" title="Permalink to this headline">¶</a></h2>
 <p>Add <code class="docutils literal notranslate"><span class="pre">UPSDK.framework</span></code> and <code class="docutils literal notranslate"><span class="pre">UPSDK.bundle</span></code> to you Xcode project , as sample <code class="docutils literal notranslate"><span class="pre">FrameWork</span></code>:
-<img alt="IOS_01" src="http://docc.upltv.com/uploads/201808/5b88d60fe148e_5b88d60f.png" /></p>
+<img alt="IOS_01" src="http://docc.upltv.com/uploads/201808/5b88d60fe148e_5b88d60f.png" />IOS_01</p>
 </div>
 <div class="section" id="add-3rd-part-library-required">
-<span id="add-3rd-part-library-required"></span><h2>Add 3rd part library required<a class="headerlink" href="#add-3rd-part-library-required" title="Permalink to this headline">¶</a></h2>
+<h2>Add 3rd part library required<a class="headerlink" href="#add-3rd-part-library-required" title="Permalink to this headline">¶</a></h2>
 <p>We need 3rd part library to display ads. Please import these libraries to your project.
 **Please downlaod 3rd library from <a class="reference external" href="http://doc.upltv.com/en/master/chapters/chapter09.html">here</a> **.</p>
-<p><img alt="ios_02" src="http://docc.upltv.com/uploads/201808/5b88d65b062ae_5b88d65b.png" />
+<p><img alt="ios_02" src="http://docc.upltv.com/uploads/201808/5b88d65b062ae_5b88d65b.png" />ios_02
 <br></p>
 <ul class="simple">
-<li><strong>3rd party library is optional, please add it according to our suggestion. If you have any problems, please contact us.</strong>
-</br></li>
+<li><strong>3rd party library is optional, please add it according to our suggestion. If you have any problems, please contact us.</strong></li>
 </ul>
-</div>
-<div class="section" id="add-system-reference-library">
-<span id="add-system-reference-library"></span><h2>Add system reference library<a class="headerlink" href="#add-system-reference-library" title="Permalink to this headline">¶</a></h2>
-<p>Add depends library in: TARGETS → General → Linked Frameworks Libraries</p>
-<ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">QuartzCore.framework</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">MediaPlayer.framework</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">libsqlite3.tbd</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">libz.tbd</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">CoreMedia.framework</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">CoreGraphics.framework</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">CFNetwork.framework</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">WebKit.framework</span> <span class="pre">(Optional)</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">WatchConnectivity.framework</span> <span class="pre">(Optional)</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">SystemConfiguration.framework</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">StoreKit.framework</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">Social.framework</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">MessageUI.framework</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">JavaScriptCore.framework</span> <span class="pre">(Optional)</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">EventKit.framework</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">CoreTelephony.framework</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">AVFoundation.framework</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">AudioToolbox.framework</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">AdSupport.framework</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">GLKit.framework</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">CoreMotion.framework</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">libxml2.tbd</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">libc++.tbd</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">SafariServices.framework</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">CoreLocation.framework</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">EventKitUI.framework</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">MobileCoreServices.framework</span></code></li>
-</ul>
-<p><strong>Attention:If you use cocos to build project,please add following library:</strong></p>
+</br>
+### Add system reference library 
+Add depends library in: TARGETS → General → Linked Frameworks Libraries
+- `QuartzCore.framework`
+- `MediaPlayer.framework`
+- `libsqlite3.tbd`
+- `libz.tbd`
+- `CoreMedia.framework`
+- `CoreGraphics.framework`
+- `CFNetwork.framework`
+- `WebKit.framework (Optional)`
+- `WatchConnectivity.framework (Optional)`
+- `SystemConfiguration.framework`
+- `StoreKit.framework`
+- `Social.framework`
+- `MessageUI.framework`
+- `JavaScriptCore.framework (Optional)`
+- `EventKit.framework`
+- `CoreTelephony.framework`
+- `AVFoundation.framework`
+- `AudioToolbox.framework`
+- `AdSupport.framework`
+- `GLKit.framework`
+- `CoreMotion.framework`
+- `libxml2.tbd`
+- `libc++.tbd`
+- `SafariServices.framework`
+- `CoreLocation.framework`
+- `EventKitUI.framework`
+- `MobileCoreServices.framework`<p><strong>Attention:If you use cocos to build project,please add following library:</strong></p>
 <ul class="simple">
 <li><code class="docutils literal notranslate"><span class="pre">GameController.framework</span></code></li>
 </ul>
-<p><br></p>
-</div>
+<br></div>
 <div class="section" id="project-configuration">
-<span id="project-configuration"></span><h2>Project configuration<a class="headerlink" href="#project-configuration" title="Permalink to this headline">¶</a></h2>
+<h2>Project configuration<a class="headerlink" href="#project-configuration" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="add-linker-flags">
-<span id="add-linker-flags"></span><h3>1 Add linker flags<a class="headerlink" href="#add-linker-flags" title="Permalink to this headline">¶</a></h3>
+<h3>1 Add linker flags<a class="headerlink" href="#add-linker-flags" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Add <code class="docutils literal notranslate"><span class="pre">-ObjC</span></code> and <code class="docutils literal notranslate"><span class="pre">-fobjc-arc</span></code> through <code class="docutils literal notranslate"><span class="pre">TARGETS</span></code> → <code class="docutils literal notranslate"><span class="pre">Build</span> <span class="pre">Setting</span></code> → <code class="docutils literal notranslate"><span class="pre">Linking</span></code> → <code class="docutils literal notranslate"><span class="pre">Other</span> <span class="pre">Linker</span> <span class="pre">Flags</span></code>  as following image:
-<img alt="ios_03" src="http://docc.upltv.com/uploads/201808/5b88d8fb6b6a9_5b88d8fb.png" /></li>
+<img alt="ios_03" src="http://docc.upltv.com/uploads/201808/5b88d8fb6b6a9_5b88d8fb.png" />ios_03</li>
 </ul>
 </div>
 <div class="section" id="add-nodes-in-info-plist-to-allow-http-protocol">
-<span id="add-nodes-in-info-plist-to-allow-http-protocol"></span><h3>2 Add nodes in info.plist to allow http protocol<a class="headerlink" href="#add-nodes-in-info-plist-to-allow-http-protocol" title="Permalink to this headline">¶</a></h3>
+<h3>2 Add nodes in info.plist to allow http protocol<a class="headerlink" href="#add-nodes-in-info-plist-to-allow-http-protocol" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span> <span class="o">&lt;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">NSAppTransportSecurity</span> <span class="o">&lt;/</span><span class="n">key</span><span class="o">&gt;</span>
  <span class="o">&lt;</span><span class="n">dict</span><span class="o">&gt;</span>
-     <span class="o">&lt;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">NSAllowsArbitraryLoads</span> <span class="o">&lt;/</span><span class="n">key</span><span class="o">&gt;</span>
-     <span class="o">&lt;</span><span class="nb">true</span><span class="o">/&gt;</span>
+	 <span class="o">&lt;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">NSAllowsArbitraryLoads</span> <span class="o">&lt;/</span><span class="n">key</span><span class="o">&gt;</span>
+	 <span class="o">&lt;</span><span class="nb">true</span><span class="o">/&gt;</span>
  <span class="o">&lt;/</span><span class="n">dict</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="add-nodes-info-plist-to-require-permissions">
-<span id="add-nodes-info-plist-to-require-permissions"></span><h3>3 Add nodes info.plist, to require permissions<a class="headerlink" href="#add-nodes-info-plist-to-require-permissions" title="Permalink to this headline">¶</a></h3>
+<h3>3 Add nodes info.plist, to require permissions<a class="headerlink" href="#add-nodes-info-plist-to-require-permissions" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span> <span class="o">&lt;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">NSCalendarsUsageDescription</span> <span class="o">&lt;/</span><span class="n">key</span><span class="o">&gt;</span>
  <span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span><span class="n">Some</span> <span class="n">ad</span> <span class="n">content</span> <span class="n">may</span> <span class="n">create</span> <span class="n">a</span> <span class="n">calendar</span> <span class="n">event</span><span class="p">.</span> <span class="o">&lt;/</span><span class="n">string</span><span class="o">&gt;</span>
  <span class="o">&lt;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">NSCameraUsageDescription</span> <span class="o">&lt;/</span><span class="n">key</span><span class="o">&gt;</span>
@@ -261,18 +258,18 @@
 <br></p>
 </div>
 <div class="section" id="bitcode">
-<span id="bitcode"></span><h3>4 Bitcode<a class="headerlink" href="#bitcode" title="Permalink to this headline">¶</a></h3>
+<h3>4 Bitcode<a class="headerlink" href="#bitcode" title="Permalink to this headline">¶</a></h3>
 <p>We support Bitcode, please choose use Bitcode if needed.
 Note: Youlan and Domob SDK do not support Bitcode.
 <br></p>
 <p>5.Configuration of Cocos engine
 If you build project with cocos,please make sure  <code class="docutils literal notranslate"><span class="pre">Version</span></code> filed has been filled,as following:</p>
-<p><img alt="cocos项目Version字段配置" src="http://docc.upltv.com/uploads/201709/59afb01ec7612_59afb01e.png" />
+<p><img alt="cocos项目Version字段配置" src="http://docc.upltv.com/uploads/201709/59afb01ec7612_59afb01e.png" />cocos项目Version字段配置
 <br></p>
 </div>
 </div>
 <div class="section" id="version">
-<span id="version"></span><h2>Version<a class="headerlink" href="#version" title="Permalink to this headline">¶</a></h2>
+<h2>Version<a class="headerlink" href="#version" title="Permalink to this headline">¶</a></h2>
 <p>You can find SDK version in file <em>UPSDKVersion.h</em></p>
 <div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="c1">//sdk version</span>
 <span class="cp">#define UPSDKVERSION  @&quot;3003&quot;</span>
@@ -294,7 +291,7 @@ If you build project with cocos,please make sure  <code class="docutils literal 
         <a href="ios02_cocoapods.html" class="btn btn-neutral float-right" title="CocoaPods Access Document" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../chapters/chapter02.html" class="btn btn-neutral" title="UPSDK IOS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../chapters/chapter02.html" class="btn btn-neutral float-left" title="UPSDK IOS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -320,27 +317,16 @@ If you build project with cocos,please make sure  <code class="docutils literal 
   
 
 
-  
-
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/js/custom.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

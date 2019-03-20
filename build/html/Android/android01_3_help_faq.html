@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -31,21 +39,16 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Solving 65535-Limitation" href="android02_65535.html" />
     <link rel="prev" title="Eclipse" href="android01_2_help_ec.html" /> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -169,11 +172,11 @@
            <div itemprop="articleBody">
             
   <div class="section" id="faq">
-<span id="faq"></span><h1>FAQ<a class="headerlink" href="#faq" title="Permalink to this headline">¶</a></h1>
+<h1>FAQ<a class="headerlink" href="#faq" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="i-android-studio-androidmanfiest-xml-confliction-declarations">
-<span id="i-android-studio-androidmanfiest-xml-confliction-declarations"></span><h2>I. Android Studio AndroidManfiest.xml confliction declarations<a class="headerlink" href="#i-android-studio-androidmanfiest-xml-confliction-declarations" title="Permalink to this headline">¶</a></h2>
+<h2>I. Android Studio AndroidManfiest.xml confliction declarations<a class="headerlink" href="#i-android-studio-androidmanfiest-xml-confliction-declarations" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="com-google-android-gms-version-confliction-or-deletion-error">
-<span id="com-google-android-gms-version-confliction-or-deletion-error"></span><h3>1. com.google.android.gms.version confliction or deletion error<a class="headerlink" href="#com-google-android-gms-version-confliction-or-deletion-error" title="Permalink to this headline">¶</a></h3>
+<h3>1. com.google.android.gms.version confliction or deletion error<a class="headerlink" href="#com-google-android-gms-version-confliction-or-deletion-error" title="Permalink to this headline">¶</a></h3>
 <p>In <strong>Android Studio</strong> version, in order to avoid this kind of confliction, from 2.0.21 Studio Version, UPSDK has romoved the following declarations in AndroidManfiest.xml:</p>
 <div class="highlight-asp notranslate"><div class="highlight"><pre><span></span>&lt;!-- admob --&gt;
 &lt;meta-data
@@ -193,15 +196,15 @@
 <p><em>version_ad.xml</em> content：</p>
 <div class="highlight-asp notranslate"><div class="highlight"><pre><span></span>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;resources&gt;
-    // defined the value of gms version, the kind of integer
-    // if the current version is not 9080000, please change to the correct version.
+	// defined the value of gms version, the kind of integer
+	// if the current version is not 9080000, please change to the correct version.
     &lt;integer name=&quot;google_play_services_version&quot;&gt;11020000&lt;/integer&gt;
 &lt;/resources&gt;
 </pre></div>
 </div>
 </div>
 <div class="section" id="activity-confliction-or-deletion-error">
-<span id="activity-confliction-or-deletion-error"></span><h3>2. activity confliction or deletion error<a class="headerlink" href="#activity-confliction-or-deletion-error" title="Permalink to this headline">¶</a></h3>
+<h3>2. activity confliction or deletion error<a class="headerlink" href="#activity-confliction-or-deletion-error" title="Permalink to this headline">¶</a></h3>
 <p>In Android Studio versions, UPSDK from 2.0.21 Studio Version,  has removed the Activity declarations which relied on Admob and Facebook Ads in AndroidManfiest.xml:</p>
 <div class="highlight-asp notranslate"><div class="highlight"><pre><span></span>&lt;!-- admob --&gt;
 
@@ -225,9 +228,9 @@ android:multiprocess=&quot;true&quot;/&gt;
 </div>
 </div>
 <div class="section" id="ii-admob-gms-confliction">
-<span id="ii-admob-gms-confliction"></span><h2>II. Admob gms Confliction<a class="headerlink" href="#ii-admob-gms-confliction" title="Permalink to this headline">¶</a></h2>
+<h2>II. Admob gms Confliction<a class="headerlink" href="#ii-admob-gms-confliction" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="due-to-facebook-ads-rely-on-admob-ad-confliction-happens">
-<span id="due-to-facebook-ads-rely-on-admob-ad-confliction-happens"></span><h3>1. Due to Facebook Ads rely on Admob Ad, confliction happens.<a class="headerlink" href="#due-to-facebook-ads-rely-on-admob-ad-confliction-happens" title="Permalink to this headline">¶</a></h3>
+<h3>1. Due to Facebook Ads rely on Admob Ad, confliction happens.<a class="headerlink" href="#due-to-facebook-ads-rely-on-admob-ad-confliction-happens" title="Permalink to this headline">¶</a></h3>
 <p>When Facebook Ads compile to update audience-network-sdk online, they will not only download audience-network-sdk relevant aar files, but also download the following google gms repository files.</p>
 <ul class="simple">
 <li>play-services-ads-8.4.0</li>
@@ -242,7 +245,7 @@ android:multiprocess=&quot;true&quot;/&gt;
 </ol>
 </div>
 <div class="section" id="other-conflictions">
-<span id="other-conflictions"></span><h3>2.Other Conflictions<a class="headerlink" href="#other-conflictions" title="Permalink to this headline">¶</a></h3>
+<h3>2.Other Conflictions<a class="headerlink" href="#other-conflictions" title="Permalink to this headline">¶</a></h3>
 <p>Admob Ads need gms play service support. Thus regarding to the projects which want to support Admob Ads, must add relevant gms dependencies and configurations.</p>
 <p>UPSDK for supporting Admob, should rely on the following gms player service library:</p>
 <ul class="simple">
@@ -257,7 +260,7 @@ android:multiprocess=&quot;true&quot;/&gt;
 </div>
 </div>
 <div class="section" id="iii-xxx-so-missing-probelms">
-<span id="iii-xxx-so-missing-probelms"></span><h2>III. xxx.so missing probelms<a class="headerlink" href="#iii-xxx-so-missing-probelms" title="Permalink to this headline">¶</a></h2>
+<h2>III. xxx.so missing probelms<a class="headerlink" href="#iii-xxx-so-missing-probelms" title="Permalink to this headline">¶</a></h2>
 <p>AvidlyAdsSDK_x.x.x.aar and adcolony_ads.aar supply the following three kinds of cpu-typed .so files:</p>
 <ul class="simple">
 <li>armeabi</li>
@@ -309,7 +312,7 @@ android:multiprocess=&quot;true&quot;/&gt;
         <a href="android02_65535.html" class="btn btn-neutral float-right" title="Solving 65535-Limitation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="android01_2_help_ec.html" class="btn btn-neutral" title="Eclipse" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="android01_2_help_ec.html" class="btn btn-neutral float-left" title="Eclipse" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -335,27 +338,16 @@ android:multiprocess=&quot;true&quot;/&gt;
   
 
 
-  
-
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/js/custom.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

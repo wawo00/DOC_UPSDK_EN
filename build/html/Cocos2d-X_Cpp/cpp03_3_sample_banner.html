@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -31,21 +39,16 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Interstitial API" href="cpp03_4_sample_inter.html" />
     <link rel="prev" title="A/B Testing" href="cpp03_2_sample_abtest.html" /> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -168,10 +171,10 @@
            <div itemprop="articleBody">
             
   <div class="section" id="banner-ad">
-<span id="banner-ad"></span><h1>Banner Ad<a class="headerlink" href="#banner-ad" title="Permalink to this headline">¶</a></h1>
+<h1>Banner Ad<a class="headerlink" href="#banner-ad" title="Permalink to this headline">¶</a></h1>
 <p>Banner ads are divided into top banner and bottom banner, and CppPlugin further simplifies the implementation of banner ads, providing interfaces such as display, hide, remove, and event callbacks.</p>
 <div class="section" id="callback-of-banner">
-<span id="callback-of-banner"></span><h2>1.Callback of Banner<a class="headerlink" href="#callback-of-banner" title="Permalink to this headline">¶</a></h2>
+<h2>1.Callback of Banner<a class="headerlink" href="#callback-of-banner" title="Permalink to this headline">¶</a></h2>
 <p>Banner ad needs to set up the show of banner ad, click and remove the callback interface of events. The callback interface is saved internally by the plug-in, so you don’t need to set it up multiple times, only calling upltv:removeBannerAdAt(cpPlaceId) will be deleted.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
 <span class="cm">* @param cpPlaceId banner ad unit</span>
@@ -219,7 +222,7 @@
 </div>
 </div>
 <div class="section" id="show-top-banner-ads">
-<span id="show-top-banner-ads"></span><h2>2. Show top banner ads<a class="headerlink" href="#show-top-banner-ads" title="Permalink to this headline">¶</a></h2>
+<h2>2. Show top banner ads<a class="headerlink" href="#show-top-banner-ads" title="Permalink to this headline">¶</a></h2>
 <p>Show the banner at the top of the screen according to the ad unit.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
 <span class="cm">* @param cpPlaceId palcementid</span>
@@ -257,7 +260,7 @@
 </div>
 </div>
 <div class="section" id="hide-top-banner-ads">
-<span id="hide-top-banner-ads"></span><h2>3.Hide top banner ads<a class="headerlink" href="#hide-top-banner-ads" title="Permalink to this headline">¶</a></h2>
+<h2>3.Hide top banner ads<a class="headerlink" href="#hide-top-banner-ads" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">void</span> <span class="nf">hideBannerAdAtTop</span><span class="p">();</span>
 </pre></div>
 </div>
@@ -281,7 +284,7 @@
 </div>
 </div>
 <div class="section" id="show-bottom-banner-ads">
-<span id="show-bottom-banner-ads"></span><h2>4. Show bottom banner ads<a class="headerlink" href="#show-bottom-banner-ads" title="Permalink to this headline">¶</a></h2>
+<h2>4. Show bottom banner ads<a class="headerlink" href="#show-bottom-banner-ads" title="Permalink to this headline">¶</a></h2>
 <p>Show the banner at the bottom of the screen according to the ad unit.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
 <span class="cm">* @param cpPlaceId</span>
@@ -309,7 +312,7 @@
 </div>
 </div>
 <div class="section" id="hide-bottom-banner-ads">
-<span id="hide-bottom-banner-ads"></span><h2>5. Hide bottom banner ads<a class="headerlink" href="#hide-bottom-banner-ads" title="Permalink to this headline">¶</a></h2>
+<h2>5. Hide bottom banner ads<a class="headerlink" href="#hide-bottom-banner-ads" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">void</span> <span class="nf">hideBannerAdAtBottom</span><span class="p">();</span>
 </pre></div>
 </div>
@@ -333,7 +336,7 @@
 </div>
 </div>
 <div class="section" id="remove-banner-ads">
-<span id="remove-banner-ads"></span><h2>6. Remove banner ads<a class="headerlink" href="#remove-banner-ads" title="Permalink to this headline">¶</a></h2>
+<h2>6. Remove banner ads<a class="headerlink" href="#remove-banner-ads" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
 <span class="cm">* @param cpPlaceId banner ad unit</span>
 <span class="cm">*/</span>
@@ -372,7 +375,7 @@
         <a href="cpp03_4_sample_inter.html" class="btn btn-neutral float-right" title="Interstitial API" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="cpp03_2_sample_abtest.html" class="btn btn-neutral" title="A/B Testing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="cpp03_2_sample_abtest.html" class="btn btn-neutral float-left" title="A/B Testing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -398,27 +401,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/js/custom.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -31,21 +39,16 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="IOS" href="js01_3_help_ios.html" />
     <link rel="prev" title="Android Studio" href="js01_1_help_as.html" /> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -164,11 +167,11 @@
            <div itemprop="articleBody">
             
   <div class="section" id="eclipse">
-<span id="eclipse"></span><h1>Eclipse<a class="headerlink" href="#eclipse" title="Permalink to this headline">¶</a></h1>
+<h1>Eclipse<a class="headerlink" href="#eclipse" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="i-structure-of-upsdk-cppplugin">
-<span id="i-structure-of-upsdk-cppplugin"></span><h2>I.Structure of UPSDK CppPlugin<a class="headerlink" href="#i-structure-of-upsdk-cppplugin" title="Permalink to this headline">¶</a></h2>
+<h2>I.Structure of UPSDK CppPlugin<a class="headerlink" href="#i-structure-of-upsdk-cppplugin" title="Permalink to this headline">¶</a></h2>
 <p>For projects built with Eclipse, UPSDK is imported into the project as <code class="docutils literal notranslate"><span class="pre">*.jar</span></code>. Download UPSDK JavaScriptPlugin in ( <a class="reference external" href="http://doc.upltv.com/en/master/chapters/chapter09.html">Android-JsSDK</a>)and unzip：</p>
-<p><img alt="ec-1-1" src="http://docc.upltv.com/uploads/201805/5af3e73af0172_5af3e73a.png" /></p>
+<p><img alt="ec-1-1" src="http://docc.upltv.com/uploads/201805/5af3e73af0172_5af3e73a.png" />ec-1-1</p>
 <ul class="simple">
 <li><code class="docutils literal notranslate"><span class="pre">Eclipse</span></code>
 This directory mainly contains the ad dependency library files required for Eclipse project access.</li>
@@ -181,24 +184,24 @@ The configuration file of confusion,if you need to obfuscate code, add the conte
 </ul>
 </div>
 <div class="section" id="ii-import-upsdk-main-package">
-<span id="ii-import-upsdk-main-package"></span><h2>II.Import UPSDK main package<a class="headerlink" href="#ii-import-upsdk-main-package" title="Permalink to this headline">¶</a></h2>
+<h2>II.Import UPSDK main package<a class="headerlink" href="#ii-import-upsdk-main-package" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="add-files-of-upsdk">
-<span id="add-files-of-upsdk"></span><h3>1.Add files of UPSDK<a class="headerlink" href="#add-files-of-upsdk" title="Permalink to this headline">¶</a></h3>
+<h3>1.Add files of UPSDK<a class="headerlink" href="#add-files-of-upsdk" title="Permalink to this headline">¶</a></h3>
 <p>Take UPSDK v3.0.03 as an example. In the <code class="docutils literal notranslate"><span class="pre">upsdk_ads</span></code> directory, there are three directories: <code class="docutils literal notranslate"><span class="pre">libs</span></code>, <code class="docutils literal notranslate"><span class="pre">res</span></code> and <code class="docutils literal notranslate"><span class="pre">assets</span></code>. Please copy the contents of the directory to the corresponding directory of your Eclipse main project ( If there is no libs directory, create a libs directory with the same level as src in the app folder).</p>
 <p>As follows:</p>
-<p><img alt="ec-2-1" src="http://docc.upltv.com/uploads/201805/5af3e8f29e3c9_5af3e8f2.png" /></p>
+<p><img alt="ec-2-1" src="http://docc.upltv.com/uploads/201805/5af3e8f29e3c9_5af3e8f2.png" />ec-2-1</p>
 <blockquote>
 <div><code class="docutils literal notranslate"><span class="pre">UPAdsSdk_Js_3.0.03.jar</span></code>just for reference</div></blockquote>
 </div>
 <div class="section" id="check-minsdkversion-and-targetsdkversion-in-manifest">
-<span id="check-minsdkversion-and-targetsdkversion-in-manifest"></span><h3>2.Check minSdkVersion and targetSdkVersion in <code class="docutils literal notranslate"><span class="pre">Manifest</span></code><a class="headerlink" href="#check-minsdkversion-and-targetsdkversion-in-manifest" title="Permalink to this headline">¶</a></h3>
+<h3>2.Check minSdkVersion and targetSdkVersion in <code class="docutils literal notranslate"><span class="pre">Manifest</span></code><a class="headerlink" href="#check-minsdkversion-and-targetsdkversion-in-manifest" title="Permalink to this headline">¶</a></h3>
 <p>UPSDK requires that minSdkVersion cannot be lower than 15, and targetSdkVersion cannot be higher than 26, so check it in the <code class="docutils literal notranslate"><span class="pre">build.gradle</span></code> file，as follows：</p>
 <div class="highlight-groovy notranslate"><div class="highlight"><pre><span></span> <span class="o">&lt;</span> <span class="n">uses</span><span class="o">-</span><span class="n">sdk</span> <span class="nl">android:</span><span class="n">minSdkVersion</span><span class="o">=</span><span class="s2">&quot;16&quot;</span> <span class="nl">android:</span><span class="n">targetSdkVersion</span><span class="o">=</span><span class="s2">&quot;24&quot;</span> <span class="o">/&gt;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="make-sure-so-files-are-aligned">
-<span id="make-sure-so-files-are-aligned"></span><h3>3.Make sure *.so files are aligned<a class="headerlink" href="#make-sure-so-files-are-aligned" title="Permalink to this headline">¶</a></h3>
+<h3>3.Make sure *.so files are aligned<a class="headerlink" href="#make-sure-so-files-are-aligned" title="Permalink to this headline">¶</a></h3>
 <p>There are 3 types of .so files of the cpu type in folder name <code class="docutils literal notranslate"><span class="pre">libs</span></code>：</p>
 <ul class="simple">
 <li>armeabi</li>
@@ -209,42 +212,42 @@ The configuration file of confusion,if you need to obfuscate code, add the conte
 </div>
 </div>
 <div class="section" id="iii-add-ad-networdks">
-<span id="iii-add-ad-networdks"></span><h2>III.Add ad networdks<a class="headerlink" href="#iii-add-ad-networdks" title="Permalink to this headline">¶</a></h2>
+<h2>III.Add ad networdks<a class="headerlink" href="#iii-add-ad-networdks" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="add-google-ads-sdk">
-<span id="add-google-ads-sdk"></span><h3>1.Add Google Ads SDK<a class="headerlink" href="#add-google-ads-sdk" title="Permalink to this headline">¶</a></h3>
+<h3>1.Add Google Ads SDK<a class="headerlink" href="#add-google-ads-sdk" title="Permalink to this headline">¶</a></h3>
 <p>Please refer to<strong>Add files of UPSDK</strong> to add Google Ads into your porject,as follows：</p>
-<p><img alt="ec-3-1" src="http://docc.upltv.com/uploads/201805/5af3ebc528686_5af3ebc5.png" /></p>
+<p><img alt="ec-3-1" src="http://docc.upltv.com/uploads/201805/5af3ebc528686_5af3ebc5.png" />ec-3-1</p>
 <blockquote>
 <div>In particular, if your project already has a different version of google play service, use the higher version.</div></blockquote>
 </div>
 <div class="section" id="add-other-networdks">
-<span id="add-other-networdks"></span><h3>2.Add other networdks<a class="headerlink" href="#add-other-networdks" title="Permalink to this headline">¶</a></h3>
+<h3>2.Add other networdks<a class="headerlink" href="#add-other-networdks" title="Permalink to this headline">¶</a></h3>
 <p>To ensure you get more revenue, add as many ad libraries as possible to your project.
 Folder named <code class="docutils literal notranslate"><span class="pre">optional_ads</span></code> contents  network dependencies file that exists in the form of <code class="docutils literal notranslate"><span class="pre">*.jar</span></code>. Please refer to <strong>Add files of UPSDK</strong> to add it to your project, and copy the contents of the AndroidManifest file to your project’s Manifest file.</p>
 </div>
 </div>
 <div class="section" id="iv-add-android-support-library">
-<span id="iv-add-android-support-library"></span><h2>IV. Add Android Support library<a class="headerlink" href="#iv-add-android-support-library" title="Permalink to this headline">¶</a></h2>
+<h2>IV. Add Android Support library<a class="headerlink" href="#iv-add-android-support-library" title="Permalink to this headline">¶</a></h2>
 <p>The display of the ad requires the support of the <code class="docutils literal notranslate"><span class="pre">support</span></code> library, so please bring it into your project. We have the corresponding <code class="docutils literal notranslate"><span class="pre">xxx.jar</span></code> file for you in the <code class="docutils literal notranslate"><span class="pre">android_support_library/libs</span></code> folder. You just need to added those files into the <code class="docutils literal notranslate"><span class="pre">libs</span></code> directory,as follows：</p>
-<p><img alt="ec-4-1" src="http://docc.upltv.com/uploads/201805/5af3e9c639e11_5af3e9c6.png" /></p>
+<p><img alt="ec-4-1" src="http://docc.upltv.com/uploads/201805/5af3e9c639e11_5af3e9c6.png" />ec-4-1</p>
 </div>
 <div class="section" id="v-modify-androidmanifest-xml-file">
-<span id="v-modify-androidmanifest-xml-file"></span><h2>V. Modify AndroidManifest.xml file<a class="headerlink" href="#v-modify-androidmanifest-xml-file" title="Permalink to this headline">¶</a></h2>
+<h2>V. Modify AndroidManifest.xml file<a class="headerlink" href="#v-modify-androidmanifest-xml-file" title="Permalink to this headline">¶</a></h2>
 <p>Please duplicate the content of <code class="docutils literal notranslate"><span class="pre">AndroidManifest.xml</span></code> file into the related location in your project.</p>
 </div>
 <div class="section" id="vi-add-js-files">
-<span id="vi-add-js-files"></span><h2>Ⅵ. Add *.js files<a class="headerlink" href="#vi-add-js-files" title="Permalink to this headline">¶</a></h2>
+<h2>Ⅵ. Add *.js files<a class="headerlink" href="#vi-add-js-files" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="add-files-in-project">
-<span id="add-files-in-project"></span><h3>1.Add files in project<a class="headerlink" href="#add-files-in-project" title="Permalink to this headline">¶</a></h3>
+<h3>1.Add files in project<a class="headerlink" href="#add-files-in-project" title="Permalink to this headline">¶</a></h3>
 <p>The UPSDK implements cross-platform calls to the native interface via the *js source file, so all *.js files in <code class="docutils literal notranslate"><span class="pre">js/upltv</span></code> must be copied to the project.</p>
 <p>For Cocos2d-x 3.16 version ,we can copy files  to assets/sr. If there are differences in other versions, please refer to the modification, as follows：</p>
-<p><img alt="ec-4-1" src="http://docc.upltv.com/uploads/201805/5af3ea86801bf_5af3ea86.png" /></p>
+<p><img alt="ec-4-1" src="http://docc.upltv.com/uploads/201805/5af3ea86801bf_5af3ea86.png" />ec-4-1</p>
 <blockquote>
 <div>This article is based on cocos2dx-3.16. If your directory does not match this, ask our support team for help.</div></blockquote>
 </div>
 </div>
 <div class="section" id="modify-android-mk-in-jni-directory">
-<span id="modify-android-mk-in-jni-directory"></span><h2>2.Modify android.mk in jni directory<a class="headerlink" href="#modify-android-mk-in-jni-directory" title="Permalink to this headline">¶</a></h2>
+<h2>2.Modify android.mk in jni directory<a class="headerlink" href="#modify-android-mk-in-jni-directory" title="Permalink to this headline">¶</a></h2>
 <p>Add following codes in application.mk file which located in jni folder.</p>
 <div class="highlight-groovy notranslate"><div class="highlight"><pre><span></span><span class="n">APP_SHORT_COMMANDS</span> <span class="o">:=</span> <span class="kc">true</span>
 <span class="n">NDK_TOOLCHAIN_VERSION</span><span class="o">=</span><span class="mf">4.9</span>
@@ -253,12 +256,12 @@ Folder named <code class="docutils literal notranslate"><span class="pre">option
 </div>
 </div>
 <div class="section" id="vii-modify-proguard-setting">
-<span id="vii-modify-proguard-setting"></span><h2>Ⅶ.Modify Proguard setting<a class="headerlink" href="#vii-modify-proguard-setting" title="Permalink to this headline">¶</a></h2>
+<h2>Ⅶ.Modify Proguard setting<a class="headerlink" href="#vii-modify-proguard-setting" title="Permalink to this headline">¶</a></h2>
 <p>If your project used <code class="docutils literal notranslate"><span class="pre">proguard</span></code>.
 You have to copy contents from <code class="docutils literal notranslate"><span class="pre">proguard-project.txt</span></code> to right location of your project.</p>
 </div>
 <div class="section" id="viii-demo-project">
-<span id="viii-demo-project"></span><h2>Ⅷ.Demo Project<a class="headerlink" href="#viii-demo-project" title="Permalink to this headline">¶</a></h2>
+<h2>Ⅷ.Demo Project<a class="headerlink" href="#viii-demo-project" title="Permalink to this headline">¶</a></h2>
 <p>To help you integrate ads SDK easier and faster, here we provide you a simple <a class="reference external" href="https://github.com/AvidlyGit/AdSdkDemo-Studio">Demo Project </a>.</p>
 </div>
 </div>
@@ -274,7 +277,7 @@ You have to copy contents from <code class="docutils literal notranslate"><span 
         <a href="js01_3_help_ios.html" class="btn btn-neutral float-right" title="IOS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="js01_1_help_as.html" class="btn btn-neutral" title="Android Studio" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="js01_1_help_as.html" class="btn btn-neutral float-left" title="Android Studio" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -300,27 +303,16 @@ You have to copy contents from <code class="docutils literal notranslate"><span 
   
 
 
-  
-
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/js/custom.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

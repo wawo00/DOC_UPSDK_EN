@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -31,21 +39,16 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="JavaScriptPlugin Sample" href="laya02_sample_catalog.html" />
     <link rel="prev" title="Eclipse" href="laya01_2_help_ec.html" /> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -163,52 +166,50 @@
            <div itemprop="articleBody">
             
   <div class="section" id="ios">
-<span id="ios"></span><h1>IOS<a class="headerlink" href="#ios" title="Permalink to this headline">¶</a></h1>
+<h1>IOS<a class="headerlink" href="#ios" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="download-sdk-package">
-<span id="download-sdk-package"></span><h2>1 Download SDK package<a class="headerlink" href="#download-sdk-package" title="Permalink to this headline">¶</a></h2>
+<h2>1 Download SDK package<a class="headerlink" href="#download-sdk-package" title="Permalink to this headline">¶</a></h2>
 <p>First from <a class="reference external" href="http://doc.upltv.com/en/master/chapters/chapter09.html">UPSDK Download</a> download Layabox UPSDK JsPlugin package，The uncompressed directory contains the following three files：</p>
 <ul class="simple">
 <li><code class="docutils literal notranslate"><span class="pre">UPSDK.framework</span></code> This is the UPSDK master package, so be sure to add it to your current project</li>
 <li><code class="docutils literal notranslate"><span class="pre">UPSDK.bundle</span></code> Be sure to add the external file resources  because that the UPSDK master package needs to access to the current project</li>
-<li><code class="docutils literal notranslate"><span class="pre">UpltvLayaboxJsBridge</span></code> This directory contains *. CPP source files for bridging the current Layabox JS project and UPSDK interface calls
-</br></li>
+<li><code class="docutils literal notranslate"><span class="pre">UpltvLayaboxJsBridge</span></code> This directory contains *. CPP source files for bridging the current Layabox JS project and UPSDK interface calls</li>
 </ul>
-</div>
+</br></div>
 <div class="section" id="poject-setting-of-layaboxide">
-<span id="poject-setting-of-layaboxide"></span><h2>2 Poject setting of LayaboxIDE<a class="headerlink" href="#poject-setting-of-layaboxide" title="Permalink to this headline">¶</a></h2>
+<h2>2 Poject setting of LayaboxIDE<a class="headerlink" href="#poject-setting-of-layaboxide" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
 <li>Copy <code class="docutils literal notranslate"><span class="pre">UpltvLayaboxJsBridge</span></code> to the <code class="docutils literal notranslate"><span class="pre">src</span></code> folder of the Layabox project, leaving only the <code class="docutils literal notranslate"><span class="pre">.js</span></code> file</li>
 <li>Add the reference to <code class="docutils literal notranslate"><span class="pre">UPLTV.js</span></code>, <code class="docutils literal notranslate"><span class="pre">UPLTVIos.js</span></code> in index.html which in the bin folder of the Layabox project.</li>
 </ol>
 <p>As following:</p>
-<p><img alt="" src="http://docc.upltv.com/uploads/201809/5b98bcb7c6c2b_5b98bcb7.png" /></p>
-<p></br></p>
-</div>
+<p><img alt="http://docc.upltv.com/uploads/201809/5b98bcb7c6c2b_5b98bcb7.png" src="http://docc.upltv.com/uploads/201809/5b98bcb7c6c2b_5b98bcb7.png" /></p>
+</br></div>
 <div class="section" id="project-setting-of-xcode">
-<span id="project-setting-of-xcode"></span><h2>3 Project Setting of XCode<a class="headerlink" href="#project-setting-of-xcode" title="Permalink to this headline">¶</a></h2>
+<h2>3 Project Setting of XCode<a class="headerlink" href="#project-setting-of-xcode" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="add-the-upsdk-main-package-and-source">
-<span id="add-the-upsdk-main-package-and-source"></span><h3>1.Add the UPSDK main package and source<a class="headerlink" href="#add-the-upsdk-main-package-and-source" title="Permalink to this headline">¶</a></h3>
+<h3>1.Add the UPSDK main package and source<a class="headerlink" href="#add-the-upsdk-main-package-and-source" title="Permalink to this headline">¶</a></h3>
 <p>Add UPSDK. Framework, UPSDK. Bundle, and UpltvLayaboxJsBridge folders to your Xcode project directory at the same time.</p>
 <p>Remove *.js files in  UpltvLayaboxJsBridge folder ,leave Object-C++ source，as following：</p>
-<p><img alt="" src="http://docc.upltv.com/uploads/201809/5b98bf749a9ba_5b98bf74.png" /></p>
+<p><img alt="http://docc.upltv.com/uploads/201809/5b98bf749a9ba_5b98bf74.png" src="http://docc.upltv.com/uploads/201809/5b98bf749a9ba_5b98bf74.png" /></p>
 </div>
 <div class="section" id="add-third-party-dependency-libraries">
-<span id="add-third-party-dependency-libraries"></span><h3>2 Add third-party dependency libraries<a class="headerlink" href="#add-third-party-dependency-libraries" title="Permalink to this headline">¶</a></h3>
+<h3>2 Add third-party dependency libraries<a class="headerlink" href="#add-third-party-dependency-libraries" title="Permalink to this headline">¶</a></h3>
 <p>UPSDK will rely on third-party advertising unions when it runs, so you’ll need to manually import the alliance’s dependent library files into your project. To ensure that you can properly add third-party dependency packages, please click here<a class="reference external" href="http://doc.upltv.com/en/master/chapters/chapter09.html">Download UPSDK union package</a> .</p>
 <p>UPSDK currently relies on the following third-party advertising union：</p>
-<p><img alt="Add all third party SDK packages" src="http://docc.upltv.com/uploads/201709/59afafb9143e9_59afafb9.png" /></p>
+<p><img alt="http://docc.upltv.com/uploads/201709/59afafb9143e9_59afafb9.png" src="http://docc.upltv.com/uploads/201709/59afafb9143e9_59afafb9.png" />Add all third party SDK packages</p>
 <blockquote>
 <div>Each alliance corresponds to a folder, and the name is prefixed with the name of the advertising coalition and suffixed with the version number, so it is easy to identify. The folder may contain supporting resource files in addition to the other dependent library or source file, so the dependent library should be added in conjunction with the corresponding supporting resource.</div></blockquote>
 <p>Although it is not required to add all third party affiliate ads to the current project, we still recommend that you add as many of the above affiliate AD dependency libraries and their accompanying resource packages as possible in your project in order to increase revenue. In practice, please contact our technical support staff if you have any questions.</p>
 <p>When you finish after add third party alliance advertising, check in the XCode project <code class="docutils literal notranslate"><span class="pre">Linked</span> <span class="pre">Frameworks</span> <span class="pre">Libraries</span></code> is properly introduced corresponding library files, avoid unnecessary mistakes.</p>
 <p>for example in the current project access Applovin, Unity, Vungle, tapjoy like the four ads, need to put the four advertising library file (in turn isAppLovinSDK.framework,UnityAds.framework,VungleSDK.framework,Tapjoy.framework  like four static library framework) is added to the project, after successful add rendering is as follows：
-<img alt="" src="http://docc.upltv.com/uploads/201804/5acc6644c33a5_5acc6644.png" /></p>
+<img alt="http://docc.upltv.com/uploads/201804/5acc6644c33a5_5acc6644.png" src="http://docc.upltv.com/uploads/201804/5acc6644c33a5_5acc6644.png" /></p>
 <p>In the above hypothesis, because the Tapjoy AD needs to access some of its external resource files, it needs to add its supporting resource files to the project, which can be viewed from TARGETS – General – Copy Bundle Resources：
 <br>
-<img alt="" src="http://docc.upltv.com/uploads/201804/5acc70803fec8_5acc7080.png" /></p>
+<img alt="http://docc.upltv.com/uploads/201804/5acc70803fec8_5acc7080.png" src="http://docc.upltv.com/uploads/201804/5acc70803fec8_5acc7080.png" /></p>
 </div>
 <div class="section" id="add-system-dependencies">
-<span id="add-system-dependencies"></span><h3>3 Add system dependencies<a class="headerlink" href="#add-system-dependencies" title="Permalink to this headline">¶</a></h3>
+<h3>3 Add system dependencies<a class="headerlink" href="#add-system-dependencies" title="Permalink to this headline">¶</a></h3>
 <p>Add dependency libraries form TARGETS → General → Linked Frameworks Libraries</p>
 <ul class="simple">
 <li><code class="docutils literal notranslate"><span class="pre">QuartzCore.framework</span></code></li>
@@ -219,12 +220,12 @@
 <li><code class="docutils literal notranslate"><span class="pre">CoreGraphics.framework</span></code></li>
 <li><code class="docutils literal notranslate"><span class="pre">CFNetwork.framework</span></code></li>
 <li><code class="docutils literal notranslate"><span class="pre">WebKit.framework</span></code> (Optional)</li>
-<li><code class="docutils literal notranslate"><span class="pre">WatchConnectivity.framework</span></code> (Optional)</li>
+<li><code class="docutils literal notranslate"><span class="pre">WatchConnectivity.framework</span></code>	(Optional)</li>
 <li><code class="docutils literal notranslate"><span class="pre">SystemConfiguration.framework</span></code></li>
 <li><code class="docutils literal notranslate"><span class="pre">StoreKit.framework</span></code></li>
 <li><code class="docutils literal notranslate"><span class="pre">Social.framework</span></code></li>
 <li><code class="docutils literal notranslate"><span class="pre">MessageUI.framework</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">JavaScriptCore.framework</span></code>    (Optional)</li>
+<li><code class="docutils literal notranslate"><span class="pre">JavaScriptCore.framework</span></code>	(Optional)</li>
 <li><code class="docutils literal notranslate"><span class="pre">EventKit.framework</span></code></li>
 <li><code class="docutils literal notranslate"><span class="pre">CoreTelephony.framework</span></code></li>
 <li><code class="docutils literal notranslate"><span class="pre">AVFoundation.framework</span></code></li>
@@ -238,32 +239,31 @@
 <li><code class="docutils literal notranslate"><span class="pre">CoreLocation.framework</span></code></li>
 <li><code class="docutils literal notranslate"><span class="pre">EventKitUI.framework</span></code></li>
 <li><code class="docutils literal notranslate"><span class="pre">MobileCoreServices.framework</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">GameController.framework</span></code>
-<br></li>
+<li><code class="docutils literal notranslate"><span class="pre">GameController.framework</span></code></li>
 </ul>
-</div>
+<br></div>
 </div>
 <div class="section" id="project-configuration">
-<span id="project-configuration"></span><h2>4 Project configuration<a class="headerlink" href="#project-configuration" title="Permalink to this headline">¶</a></h2>
+<h2>4 Project configuration<a class="headerlink" href="#project-configuration" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="add-the-classification-compiler">
-<span id="add-the-classification-compiler"></span><h3>1 Add the classification compiler<a class="headerlink" href="#add-the-classification-compiler" title="Permalink to this headline">¶</a></h3>
+<h3>1 Add the classification compiler<a class="headerlink" href="#add-the-classification-compiler" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Add  <code class="docutils literal notranslate"><span class="pre">-ObjC</span></code> on <code class="docutils literal notranslate"><span class="pre">TARGETS</span></code> → <code class="docutils literal notranslate"><span class="pre">Build</span> <span class="pre">Setting</span></code> → <code class="docutils literal notranslate"><span class="pre">Linking</span></code> → <code class="docutils literal notranslate"><span class="pre">Other</span> <span class="pre">Linker</span> <span class="pre">Flags</span></code> such as:</li>
 </ul>
-<p><img alt="" src="http://docc.upltv.com/uploads/201804/5ae28e70be73c_5ae28e70.png" /></p>
+<p><img alt="http://docc.upltv.com/uploads/201804/5ae28e70be73c_5ae28e70.png" src="http://docc.upltv.com/uploads/201804/5ae28e70be73c_5ae28e70.png" /></p>
 </div>
 <div class="section" id="add-the-following-nodes-to-the-info-plist-to-be-compatible-with-http-mode">
-<span id="add-the-following-nodes-to-the-info-plist-to-be-compatible-with-http-mode"></span><h3>2 Add the following nodes to the info.plist to be compatible with HTTP mode<a class="headerlink" href="#add-the-following-nodes-to-the-info-plist-to-be-compatible-with-http-mode" title="Permalink to this headline">¶</a></h3>
+<h3>2 Add the following nodes to the info.plist to be compatible with HTTP mode<a class="headerlink" href="#add-the-following-nodes-to-the-info-plist-to-be-compatible-with-http-mode" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span> <span class="o">&lt;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">NSAppTransportSecurity</span> <span class="o">&lt;/</span><span class="n">key</span><span class="o">&gt;</span>
  <span class="o">&lt;</span><span class="n">dict</span><span class="o">&gt;</span>
-     <span class="o">&lt;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">NSAllowsArbitraryLoads</span> <span class="o">&lt;/</span><span class="n">key</span><span class="o">&gt;</span>
-     <span class="o">&lt;</span><span class="nb">true</span><span class="o">/&gt;</span>
+	 <span class="o">&lt;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">NSAllowsArbitraryLoads</span> <span class="o">&lt;/</span><span class="n">key</span><span class="o">&gt;</span>
+	 <span class="o">&lt;</span><span class="nb">true</span><span class="o">/&gt;</span>
  <span class="o">&lt;/</span><span class="n">dict</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="add-the-following-nodes-to-the-info-plist-to-obtain-permissions-if-you-use-adcolony-union-you-must-add-if-you-do-not-use-adcolony-union-you-may-not-add-it">
-<span id="add-the-following-nodes-to-the-info-plist-to-obtain-permissions-if-you-use-adcolony-union-you-must-add-if-you-do-not-use-adcolony-union-you-may-not-add-it"></span><h3>3 Add the following nodes to the info.plist to obtain permissions (if you use AdColony union, you must add; if you do not use AdColony union, you may not add it)<a class="headerlink" href="#add-the-following-nodes-to-the-info-plist-to-obtain-permissions-if-you-use-adcolony-union-you-must-add-if-you-do-not-use-adcolony-union-you-may-not-add-it" title="Permalink to this headline">¶</a></h3>
+<h3>3 Add the following nodes to the info.plist to obtain permissions (if you use AdColony union, you must add; if you do not use AdColony union, you may not add it)<a class="headerlink" href="#add-the-following-nodes-to-the-info-plist-to-obtain-permissions-if-you-use-adcolony-union-you-must-add-if-you-do-not-use-adcolony-union-you-may-not-add-it" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span> <span class="o">&lt;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">NSCalendarsUsageDescription</span> <span class="o">&lt;/</span><span class="n">key</span><span class="o">&gt;</span>
  <span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span><span class="n">Some</span> <span class="n">ad</span> <span class="n">content</span> <span class="n">may</span> <span class="n">create</span> <span class="n">a</span> <span class="n">calendar</span> <span class="n">event</span><span class="p">.</span> <span class="o">&lt;/</span><span class="n">string</span><span class="o">&gt;</span>
  <span class="o">&lt;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">NSCameraUsageDescription</span> <span class="o">&lt;/</span><span class="n">key</span><span class="o">&gt;</span>
@@ -276,12 +276,12 @@
 <br></p>
 </div>
 <div class="section" id="bitcode">
-<span id="bitcode"></span><h3>4 Bitcode<a class="headerlink" href="#bitcode" title="Permalink to this headline">¶</a></h3>
+<h3>4 Bitcode<a class="headerlink" href="#bitcode" title="Permalink to this headline">¶</a></h3>
 <p>Support Bitcode mode, please select whether to use Bitcode according to the requirement(Domob does not support Bitcode mode).</p>
 </div>
 </div>
 <div class="section" id="version">
-<span id="version"></span><h2>5 Version<a class="headerlink" href="#version" title="Permalink to this headline">¶</a></h2>
+<h2>5 Version<a class="headerlink" href="#version" title="Permalink to this headline">¶</a></h2>
 <p>You can check the version of the UPSDK in <em>UPSDKVersion.h</em>.</p>
 <div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="c1">//version</span>
 <span class="cp">###define AvidlyAdsSDKVERSION  @&quot;3005&quot;</span>
@@ -303,7 +303,7 @@
         <a href="laya02_sample_catalog.html" class="btn btn-neutral float-right" title="JavaScriptPlugin Sample" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="laya01_2_help_ec.html" class="btn btn-neutral" title="Eclipse" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="laya01_2_help_ec.html" class="btn btn-neutral float-left" title="Eclipse" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -329,27 +329,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/js/custom.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

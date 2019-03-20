@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -31,21 +39,16 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Interstitial Ad" href="android05_inter.html" />
     <link rel="prev" title="Quick Banner Ad" href="android04_1_banner_quick.html" /> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -168,9 +171,9 @@
            <div itemprop="articleBody">
             
   <div class="section" id="customizing-banner-ad">
-<span id="customizing-banner-ad"></span><h1>Customizing Banner Ad<a class="headerlink" href="#customizing-banner-ad" title="Permalink to this headline">¶</a></h1>
+<h1>Customizing Banner Ad<a class="headerlink" href="#customizing-banner-ad" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="ad-object-initialization">
-<span id="ad-object-initialization"></span><h2>Ad Object Initialization<a class="headerlink" href="#ad-object-initialization" title="Permalink to this headline">¶</a></h2>
+<h2>Ad Object Initialization<a class="headerlink" href="#ad-object-initialization" title="Permalink to this headline">¶</a></h2>
 <p>Two banner layouts are supported, “Full Banner” and “Square”. Please choose the right style for your product.</p>
 <blockquote>
 <div>You can set the parameter <code class="docutils literal notranslate"><span class="pre">ad</span> <span class="pre">unit</span></code> to any significative name you want. If you’re not sure, please discuss with our <strong>support engineer</strong>. You should use a different <code class="docutils literal notranslate"><span class="pre">ad</span> <span class="pre">unit</span></code> for different ads placement. We provide revenue from each  <code class="docutils literal notranslate"><span class="pre">ad</span> <span class="pre">unit</span></code> in the feature.
@@ -185,7 +188,7 @@ Eg: You may use “Pause” or “Menu” when initializing our SDK in the pause
 </div>
 </div>
 <div class="section" id="show-banner-ads">
-<span id="show-banner-ads"></span><h2>Show Banner Ads<a class="headerlink" href="#show-banner-ads" title="Permalink to this headline">¶</a></h2>
+<h2>Show Banner Ads<a class="headerlink" href="#show-banner-ads" title="Permalink to this headline">¶</a></h2>
 <p>Imagine we are trying to show a “Full Banner” ad. First, you should add the parent view of ads in your layout file, like this.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">LinearLayout</span>
     <span class="n">android</span><span class="p">:</span><span class="nb">id</span><span class="o">=</span><span class="s2">&quot;@+id/banner_container&quot;</span>
@@ -201,7 +204,7 @@ Eg: You may use “Pause” or “Menu” when initializing our SDK in the pause
 </div>
 </div>
 <div class="section" id="callback">
-<span id="callback"></span><h2>Callback<a class="headerlink" href="#callback" title="Permalink to this headline">¶</a></h2>
+<h2>Callback<a class="headerlink" href="#callback" title="Permalink to this headline">¶</a></h2>
 <p>You can use interface <code class="docutils literal notranslate"><span class="pre">setUPBannerAdListener</span></code> to setup callback function. This is optional. You can ignore it if there are no any special requirements.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mBannerAd</span><span class="o">.</span><span class="n">setUPBannerAdListener</span><span class="p">(</span><span class="n">new</span> <span class="n">UPBannerAdListener</span><span class="p">()</span> <span class="p">{</span>
     <span class="nd">@Override</span>
@@ -230,7 +233,7 @@ Eg: You may use “Pause” or “Menu” when initializing our SDK in the pause
         <a href="android05_inter.html" class="btn btn-neutral float-right" title="Interstitial Ad" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="android04_1_banner_quick.html" class="btn btn-neutral" title="Quick Banner Ad" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="android04_1_banner_quick.html" class="btn btn-neutral float-left" title="Quick Banner Ad" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -256,27 +259,16 @@ Eg: You may use “Pause” or “Menu” when initializing our SDK in the pause
   
 
 
-  
-
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/js/custom.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

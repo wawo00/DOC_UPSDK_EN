@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -31,21 +39,16 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="GDPR" href="android07_gdpr.html" />
     <link rel="prev" title="Interstitial Ad" href="android05_inter.html" /> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -162,16 +165,16 @@
            <div itemprop="articleBody">
             
   <div class="section" id="rewarded-video-ad">
-<span id="rewarded-video-ad"></span><h1>Rewarded Video Ad<a class="headerlink" href="#rewarded-video-ad" title="Permalink to this headline">¶</a></h1>
+<h1>Rewarded Video Ad<a class="headerlink" href="#rewarded-video-ad" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="ads-object-initialization">
-<span id="ads-object-initialization"></span><h2>Ads Object Initialization<a class="headerlink" href="#ads-object-initialization" title="Permalink to this headline">¶</a></h2>
+<h2>Ads Object Initialization<a class="headerlink" href="#ads-object-initialization" title="Permalink to this headline">¶</a></h2>
 <p>Initialize Rewarded Video like this:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mVideoAd</span> <span class="o">=</span> <span class="n">UPRewardVideoAd</span><span class="o">.</span><span class="n">getInstance</span><span class="p">(</span><span class="n">this</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="show-rewarded-video-ads">
-<span id="show-rewarded-video-ads"></span><h2>Show Rewarded Video Ads<a class="headerlink" href="#show-rewarded-video-ads" title="Permalink to this headline">¶</a></h2>
+<h2>Show Rewarded Video Ads<a class="headerlink" href="#show-rewarded-video-ads" title="Permalink to this headline">¶</a></h2>
 <p>When you want show Rewarded Video ads, call <code class="docutils literal notranslate"><span class="pre">isReady</span></code> to check if the video was ready. You can determine your “play” button display status with the return value of <code class="docutils literal notranslate"><span class="pre">isReady</span></code>.
 Then, you should call <code class="docutils literal notranslate"><span class="pre">show</span></code> method to display video ads.
 Please use the correct value of parameter <code class="docutils literal notranslate"><span class="pre">ad</span> <span class="pre">unit</span></code> for different ads placement.</p>
@@ -186,7 +189,7 @@ Eg: You may use “Pause” or “Menu” when initializing our SDK in the pause
 </div>
 </div>
 <div class="section" id="callback">
-<span id="callback"></span><h2>Callback<a class="headerlink" href="#callback" title="Permalink to this headline">¶</a></h2>
+<h2>Callback<a class="headerlink" href="#callback" title="Permalink to this headline">¶</a></h2>
 <p>You can use the interface <code class="docutils literal notranslate"><span class="pre">setUPVideoAdListener</span></code> to setup callback functions.
 For the most part, you only need to care about the method <code class="docutils literal notranslate"><span class="pre">onVideoAdReward</span></code> and <code class="docutils literal notranslate"><span class="pre">onVideoAdDontReward</span></code>, which can tell you if you should give the user a reward or not.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mVideoAd</span><span class="o">.</span><span class="n">setUPVideoAdListener</span><span class="p">(</span><span class="n">new</span> <span class="n">UPRewardVideoAdListener</span><span class="p">()</span> <span class="p">{</span>
@@ -219,7 +222,7 @@ For the most part, you only need to care about the method <code class="docutils 
 </div>
 </div>
 <div class="section" id="debug-page">
-<span id="debug-page"></span><h2>Debug Page<a class="headerlink" href="#debug-page" title="Permalink to this headline">¶</a></h2>
+<h2>Debug Page<a class="headerlink" href="#debug-page" title="Permalink to this headline">¶</a></h2>
 <p>We provide a debug page to assist your integration works. You can easily access all status of video ads during development process with the following code:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">mVideoAd</span> <span class="o">!=</span> <span class="n">null</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">mVideoAd</span><span class="o">.</span><span class="n">showVideoDebugActivity</span><span class="p">(</span><span class="n">this</span><span class="p">);</span>
@@ -234,8 +237,8 @@ For the most part, you only need to care about the method <code class="docutils 
 <li>Did this Affiliate Ads successfully load?</li>
 </ul>
 <p>You can play ads by clicking the item if the ads successfully loaded.</p>
-<p><img alt="as_debug_video_view1" src="http://docc.upltv.com/uploads/201810/5bcd40ce08dbf_5bcd40ce.jpg" />
-<img alt="as_debug_video_view2" src="http://docc.upltv.com/uploads/201810/5bcd40de0f43d_5bcd40de.jpg" /></p>
+<p><img alt="as_debug_video_view1" src="http://docc.upltv.com/uploads/201810/5bcd40ce08dbf_5bcd40ce.jpg" />as_debug_video_view1
+<img alt="as_debug_video_view2" src="http://docc.upltv.com/uploads/201810/5bcd40de0f43d_5bcd40de.jpg" />as_debug_video_view2</p>
 </div>
 </div>
 
@@ -250,7 +253,7 @@ For the most part, you only need to care about the method <code class="docutils 
         <a href="android07_gdpr.html" class="btn btn-neutral float-right" title="GDPR" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="android05_inter.html" class="btn btn-neutral" title="Interstitial Ad" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="android05_inter.html" class="btn btn-neutral float-left" title="Interstitial Ad" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -276,27 +279,16 @@ For the most part, you only need to care about the method <code class="docutils 
   
 
 
-  
-
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/js/custom.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

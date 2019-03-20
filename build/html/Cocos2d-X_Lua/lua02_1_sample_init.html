@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -31,21 +39,16 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="A/B Test" href="lua02_2_sample_abtest.html" />
     <link rel="prev" title="LuaPlugin Sample" href="lua02_sample_catalog.html" /> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -167,17 +170,17 @@
            <div itemprop="articleBody">
             
   <div class="section" id="initial-sdk">
-<span id="initial-sdk"></span><h1>Initial SDK<a class="headerlink" href="#initial-sdk" title="Permalink to this headline">¶</a></h1>
+<h1>Initial SDK<a class="headerlink" href="#initial-sdk" title="Permalink to this headline">¶</a></h1>
 <p>Only used Xcode engineering  as an example for explanation. If you are using other projects, please refer to Xcode engineering operation. Sorry for any inconvenience.</p>
 <p>The UPLTV SDK is very simple to initialize.</p>
 <div class="section" id="add-the-following-reference-to-your-project">
-<span id="add-the-following-reference-to-your-project"></span><h2>Add the following reference to your project<a class="headerlink" href="#add-the-following-reference-to-your-project" title="Permalink to this headline">¶</a></h2>
+<h2>Add the following reference to your project<a class="headerlink" href="#add-the-following-reference-to-your-project" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="kd">local</span> <span class="n">upltv</span> <span class="o">=</span> <span class="nb">require</span> <span class="s2">&quot;src.app.views.UPLTV&quot;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="initial-upsdk">
-<span id="initial-upsdk"></span><h2>Initial UPSDK<a class="headerlink" href="#initial-upsdk" title="Permalink to this headline">¶</a></h2>
+<h2>Initial UPSDK<a class="headerlink" href="#initial-upsdk" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="c1">-- initial sdk</span>
 <span class="c1">-- parameter zone：product distribution area，0:overseas，1:China，2:automatic positioning according to IP</span>
 <span class="c1">-- The callback interface after the SDK initialization is completed. The callback interface contains a Boolean parameter callback(Boolean). True means success</span>
@@ -203,7 +206,7 @@
 </div>
 </div>
 <div class="section" id="setcustomerid">
-<span id="setcustomerid"></span><h2>setCustomerId<a class="headerlink" href="#setcustomerid" title="Permalink to this headline">¶</a></h2>
+<h2>setCustomerId<a class="headerlink" href="#setcustomerid" title="Permalink to this headline">¶</a></h2>
 <p>Only support Android platform, for non-gp packages, androidid can be passed to avoid additional statistical errors.</p>
 <div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="c1">-- please call this method before Initializing</span>
 <span class="c1">-- Version 3004(subversion 5) and above support this method</span>
@@ -213,16 +216,16 @@
 </div>
 </div>
 <div class="section" id="add-onapplicationfocus">
-<span id="add-onapplicationfocus"></span><h2>Add onApplicationFocus()<a class="headerlink" href="#add-onapplicationfocus" title="Permalink to this headline">¶</a></h2>
+<h2>Add onApplicationFocus()<a class="headerlink" href="#add-onapplicationfocus" title="Permalink to this headline">¶</a></h2>
 <p>For the Android platform, we strongly require the following two interfaces of UPSDK to be called when switching between the front and back of the current game, so that the UPSDK can respond correctly internally and avoid unnecessary errors.</p>
 <div class="section" id="call-the-api-when-the-game-returns-to-the-foreground">
-<span id="call-the-api-when-the-game-returns-to-the-foreground"></span><h3>Call the API when the game returns to the foreground<a class="headerlink" href="#call-the-api-when-the-game-returns-to-the-foreground" title="Permalink to this headline">¶</a></h3>
+<h3>Call the API when the game returns to the foreground<a class="headerlink" href="#call-the-api-when-the-game-returns-to-the-foreground" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">UPAdsSdk</span><span class="o">.</span><span class="na">onApplicationResume</span><span class="o">();</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="call-the-api-when-the-game-returns-to-the-background">
-<span id="call-the-api-when-the-game-returns-to-the-background"></span><h3>Call the API when the game returns to the background<a class="headerlink" href="#call-the-api-when-the-game-returns-to-the-background" title="Permalink to this headline">¶</a></h3>
+<h3>Call the API when the game returns to the background<a class="headerlink" href="#call-the-api-when-the-game-returns-to-the-background" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">UPAdsSdk</span><span class="o">.</span><span class="na">onApplicationPause</span><span class="o">();</span>
 </pre></div>
 </div>
@@ -256,7 +259,7 @@
         <a href="lua02_2_sample_abtest.html" class="btn btn-neutral float-right" title="A/B Test" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="lua02_sample_catalog.html" class="btn btn-neutral" title="LuaPlugin Sample" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="lua02_sample_catalog.html" class="btn btn-neutral float-left" title="LuaPlugin Sample" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -282,27 +285,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/js/custom.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>
