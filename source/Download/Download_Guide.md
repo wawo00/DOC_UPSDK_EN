@@ -23,7 +23,7 @@
 
 [Android v3.0.06.8](http://cnimg.dataverse.cn/upsdk/export_3006_8_android_foreign.unitypackage "SDK v3.0.06")
 
-[Android & iOS v3.0.06.](http://cnimg.dataverse.cn/upsdk/export_3006_8_both_foreign.unitypackage "SDK v3.0.06")
+[Android & iOS v3.0.06.8](http://cnimg.dataverse.cn/upsdk/export_3006_8_both_foreign.unitypackage "SDK v3.0.06")
 
 
 ### China Mainland
@@ -98,4 +98,4 @@
 
 
 ## Current Version
-**3.0.06.8**
+**Android 3.0.06.8/IOS 3.0.06.7**
