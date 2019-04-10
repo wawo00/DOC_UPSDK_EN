@@ -20,7 +20,7 @@ Add `UPLTV.js` and `UPLTVIos.js` to the `src->upltv` directory and then set them
 ```javascript
 /**
 * Please be sure to complete the SDK initialization before using the other API interfaces of the SDK
-* @param zone product distribution area, 0 overseas, 1 mainland China, 2 automatically according to IP positioning
+* @param zone product distribution area, 0 overseas, 1 mainland China
 */
 intSdk : function(zone, callback)
 

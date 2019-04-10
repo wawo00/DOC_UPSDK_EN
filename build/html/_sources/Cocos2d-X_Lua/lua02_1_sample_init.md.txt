@@ -11,7 +11,7 @@ local upltv = require "src.app.views.UPLTV"
 ###  Initial UPSDK
 ```lua
 -- initial sdk
--- parameter zone：product distribution area，0:overseas，1:China，2:automatic positioning according to IP
+-- parameter zone：product distribution area，0:overseas，1:China
 -- The callback interface after the SDK initialization is completed. The callback interface contains a Boolean parameter callback(Boolean). True means success
 upltv:initSDK(zone, ...) 
 ```

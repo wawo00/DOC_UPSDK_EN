@@ -6,8 +6,7 @@ UPAdsSdk.init(final Context context, final UPAdsGlobalZone zone);
 
     public enum UPAdsGlobalZone {
         UPAdsGlobalZoneForeign,     //Global
-        UPAdsGlobalZoneDomestic,    //China
-        UPAdsGlobalZoneAuto,        //Area according to Ip 
+        UPAdsGlobalZoneDomestic   //China
     }
 ```
 

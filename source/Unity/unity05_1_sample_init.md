@@ -3,7 +3,7 @@
 /*
  * Initialize UPSDK
  * Upsdk will only be initialized once even if it is called multiple times.
- * @param zone:0, areas except China (CN)；1, China；2, judging the types of users automatically depending on ip
+ * @param zone:0, areas except China (CN)；1, China；
 * Since version 3003, please call the constant through the UPConstant class: SDKZONE_FOREIGN, SDKZONE_CHINA, SDKZONE_AUTO;
 * Previous versions prior to 3003 still call the constants via the PolyADSDK class.
  */
