@@ -20,6 +20,7 @@ We need 3rd part library to display ads. Please import these libraries to your p
 <br>
 - **3rd party library is optional, please add it according to our suggestion. If you have any problems, please contact us.**
 </br>
+
 ### Add system reference library 
 Add depends library in: TARGETS → General → Linked Frameworks Libraries
 - `QuartzCore.framework`
@@ -29,13 +30,13 @@ Add depends library in: TARGETS → General → Linked Frameworks Libraries
 - `CoreMedia.framework`
 - `CoreGraphics.framework`
 - `CFNetwork.framework`
-- `WebKit.framework (Optional)`
-- `WatchConnectivity.framework (Optional)`
+- `WebKit.framework` (Optional)
+- `WatchConnectivity.framework`	(Optional)
 - `SystemConfiguration.framework`
 - `StoreKit.framework`
 - `Social.framework`
 - `MessageUI.framework`
-- `JavaScriptCore.framework (Optional)`
+- `JavaScriptCore.framework`	(Optional)
 - `EventKit.framework`
 - `CoreTelephony.framework`
 - `AVFoundation.framework`
@@ -49,6 +50,10 @@ Add depends library in: TARGETS → General → Linked Frameworks Libraries
 - `CoreLocation.framework`
 - `EventKitUI.framework`
 - `MobileCoreServices.framework`
+- `GameController.framework`
+- `PhotosUI.framework`
+- `Photos.framework`
+- `libresolv.tbd`
 
 **Attention:If you use cocos to build project,please add following library:**
 

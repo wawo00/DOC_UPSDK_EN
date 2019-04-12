@@ -83,6 +83,9 @@ Add dependency libraries form TARGETS → General → Linked Frameworks Librarie
 - `EventKitUI.framework`
 - `MobileCoreServices.framework`
 - `GameController.framework`
+- `PhotosUI.framework`
+- `Photos.framework`
+- `libresolv.tbd`
 <br>
 
 ### 4 Project configuration
