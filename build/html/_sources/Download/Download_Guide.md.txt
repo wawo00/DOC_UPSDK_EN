@@ -36,7 +36,7 @@
 #### Upsdk&Firebase
 **If you have integrated Firebase  in your project, for avoiding conflictions,you should use the 'Upsdk&Firebase-unityPlugin'**
 
-[Android & Firebase v3.0.07.1](http://cnimg.dataverse.cn/upsdk/export_3007_android_firebase.unitypackage "SDK v3.0.07")
+[Android & Firebase v3.0.07.1](http://cnimg.dataverse.cn/upsdk/export_3007_1_android_firebase.unitypackage "SDK v3.0.07")
 
 
 ## Cocos2D-X
