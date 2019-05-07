@@ -178,7 +178,13 @@
 
 <span class="cm">/*</span>
 <span class="cm">* Rewarded Video Ads</span>
-<span class="cm">* trigger on ad open</span>
+<span class="cm">* trigger on ad will open</span>
+<span class="cm">*/</span>
+<span class="k">public</span> <span class="k">static</span> <span class="n">Action</span> <span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPRewardWillOpenCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
+
+<span class="cm">/*</span>
+<span class="cm">* Rewarded Video Ads</span>
+<span class="cm">* trigger on ad opened</span>
 <span class="cm">*/</span>
 <span class="k">public</span> <span class="k">static</span> <span class="n">Action</span> <span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPRewardDidOpenCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
 
@@ -207,23 +213,27 @@
 </div>
 <div class="section" id="sequence-of-callback-interface">
 <h2>Sequence  of Callback interface<a class="headerlink" href="#sequence-of-callback-interface" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="uprewardwillopencallback">
+<h3>1. UPRewardWillOpenCallback<a class="headerlink" href="#uprewardwillopencallback" title="Permalink to this headline">¶</a></h3>
+<p>Before showing  RewardVideo</p>
+</div>
 <div class="section" id="uprewarddidopencallback">
-<h3>1. UPRewardDidOpenCallback<a class="headerlink" href="#uprewarddidopencallback" title="Permalink to this headline">¶</a></h3>
+<h3>2. UPRewardDidOpenCallback<a class="headerlink" href="#uprewarddidopencallback" title="Permalink to this headline">¶</a></h3>
 <p>As long as the display of the RewardVideo is successful.</p>
 </div>
 <div class="section" id="uprewarddidclickcallback">
-<h3>2. UPRewardDidClickCallback<a class="headerlink" href="#uprewarddidclickcallback" title="Permalink to this headline">¶</a></h3>
+<h3>3. UPRewardDidClickCallback<a class="headerlink" href="#uprewarddidclickcallback" title="Permalink to this headline">¶</a></h3>
 <p>Called only when  user clicks  RewardVideo.</p>
 </div>
 <div class="section" id="uprewarddidgivencallback-uprewarddidabandoncallback">
-<h3>3. UPRewardDidGivenCallback/UPRewardDidAbandonCallback<a class="headerlink" href="#uprewarddidgivencallback-uprewarddidabandoncallback" title="Permalink to this headline">¶</a></h3>
+<h3>4. UPRewardDidGivenCallback/UPRewardDidAbandonCallback<a class="headerlink" href="#uprewarddidgivencallback-uprewarddidabandoncallback" title="Permalink to this headline">¶</a></h3>
 <p>As long as the display is successful,there will generate rewards or not issue events based on the results. The UPRewardDidGivenCallback is called when the bonus is issued, UPRewardDidAbandonCallback  is called when the bonus is not issued, and only one of the two is invoked.</p>
 </div>
 <div class="section" id="uprewarddidclosecallback">
-<h3>4. UPRewardDidCloseCallback<a class="headerlink" href="#uprewarddidclosecallback" title="Permalink to this headline">¶</a></h3>
+<h3>5. UPRewardDidCloseCallback<a class="headerlink" href="#uprewarddidclosecallback" title="Permalink to this headline">¶</a></h3>
 <p>The UPRewardDidCloseCallback is always called back when the RewardVidero  closed, and it is the callback that was last executed.</p>
 <blockquote>
-<div>To sum up：RewardDidOpen-&gt;RewardDidClick(if have)-&gt;RewardDidGiven(or RewardDidAbandon)-&gt;RewardDidClose.</div></blockquote>
+<div>To sum up：RewardWillOpen-&gt;RewardDidOpen-&gt;RewardDidClick(if have)-&gt;RewardDidGiven(or RewardDidAbandon)-&gt;RewardDidClose.</div></blockquote>
 </div>
 </div>
 <div class="section" id="callback-for-interstitial">
@@ -231,6 +241,12 @@
 <div class="section" id="id1">
 <h3>API reference<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<span class="cm">* Interstitial Ad </span>
+<span class="cm">* trigger on ad will display</span>
+<span class="cm">*/</span>
+<span class="k">public</span> <span class="k">static</span> <span class="n">Action</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPInterstitialWillShowCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
+
+<span class="cm">/*</span>
 <span class="cm">* Interstitial Ad </span>
 <span class="cm">* trigger on ad display </span>
 <span class="cm">*/</span>
@@ -251,19 +267,23 @@
 </div>
 <div class="section" id="id2">
 <h2>Sequence  of Callback interface<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="upinterstitialwillshowcallback">
+<h3>1. UPInterstitialWillShowCallback<a class="headerlink" href="#upinterstitialwillshowcallback" title="Permalink to this headline">¶</a></h3>
+<p>Before showing Interstitial ad.</p>
+</div>
 <div class="section" id="upinterstitialdidshowcallback">
-<h3>1. UPInterstitialDidShowCallback<a class="headerlink" href="#upinterstitialdidshowcallback" title="Permalink to this headline">¶</a></h3>
+<h3>2. UPInterstitialDidShowCallback<a class="headerlink" href="#upinterstitialdidshowcallback" title="Permalink to this headline">¶</a></h3>
 <p>As long as the display of the Interstitial ad is successful.</p>
 </div>
 <div class="section" id="upinterstitialdidclickcallback">
-<h3>2. UPInterstitialDidClickCallback<a class="headerlink" href="#upinterstitialdidclickcallback" title="Permalink to this headline">¶</a></h3>
+<h3>3. UPInterstitialDidClickCallback<a class="headerlink" href="#upinterstitialdidclickcallback" title="Permalink to this headline">¶</a></h3>
 <p>Called only when  user clicks ad.</p>
 </div>
 <div class="section" id="upinterstitialdidclosecallback">
-<h3>3. UPInterstitialDidCloseCallback<a class="headerlink" href="#upinterstitialdidclosecallback" title="Permalink to this headline">¶</a></h3>
+<h3>4. UPInterstitialDidCloseCallback<a class="headerlink" href="#upinterstitialdidclosecallback" title="Permalink to this headline">¶</a></h3>
 <p>The UPInterstitialDidCloseCallback is called back when the Interstitial ad  closed, and it is the callback that was last executed.</p>
 <blockquote>
-<div>To sum up：InterstitialDidShow-&gt;InterstitialDidClick(if have)-&gt;InterstitialDidClose.</div></blockquote>
+<div>To sum up：InterstitialWillShow-&gt;InterstitialDidShow-&gt;InterstitialDidClick(if have)-&gt;InterstitialDidClose.</div></blockquote>
 </div>
 </div>
 <div class="section" id="callback-for-banner">

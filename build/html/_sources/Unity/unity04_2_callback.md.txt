@@ -10,7 +10,13 @@ public static Action <bool, string> UPSDKInitFinishedCallback = null;
 
 /*
 * Rewarded Video Ads
-* trigger on ad open
+* trigger on ad will open
+*/
+public static Action <string, string> UPRewardWillOpenCallback = null;
+
+/*
+* Rewarded Video Ads
+* trigger on ad opened
 */
 public static Action <string, string> UPRewardDidOpenCallback = null;
 
@@ -36,20 +42,28 @@ public static Action <string, string> UPRewardDidAbandonCallback = null;
 
 ```
 ### Sequence  of Callback interface  
-#### 1. UPRewardDidOpenCallback
+#### 1. UPRewardWillOpenCallback
+Before showing  RewardVideo
+#### 2. UPRewardDidOpenCallback
 As long as the display of the RewardVideo is successful.
-#### 2. UPRewardDidClickCallback
+#### 3. UPRewardDidClickCallback
 Called only when  user clicks  RewardVideo.
-#### 3. UPRewardDidGivenCallback/UPRewardDidAbandonCallback
+#### 4. UPRewardDidGivenCallback/UPRewardDidAbandonCallback
 As long as the display is successful,there will generate rewards or not issue events based on the results. The UPRewardDidGivenCallback is called when the bonus is issued, UPRewardDidAbandonCallback  is called when the bonus is not issued, and only one of the two is invoked.
-#### 4. UPRewardDidCloseCallback
+#### 5. UPRewardDidCloseCallback
 The UPRewardDidCloseCallback is always called back when the RewardVidero  closed, and it is the callback that was last executed.
-> To sum up：RewardDidOpen->RewardDidClick(if have)->RewardDidGiven(or RewardDidAbandon)->RewardDidClose.
+> To sum up：RewardWillOpen->RewardDidOpen->RewardDidClick(if have)->RewardDidGiven(or RewardDidAbandon)->RewardDidClose.
 
 ### 2. Callback for Interstitial:
 #### API reference
 
 ```csharp
+/*
+* Interstitial Ad 
+* trigger on ad will display
+*/
+public static Action<string, string> UPInterstitialWillShowCallback = null;
+
 /*
 * Interstitial Ad 
 * trigger on ad display 
@@ -69,13 +83,15 @@ public static Action <string, string> UPInterstitialDidCloseCallback = null;
 ```
 
 ### Sequence  of Callback interface  
-#### 1. UPInterstitialDidShowCallback
+#### 1. UPInterstitialWillShowCallback
+Before showing Interstitial ad.
+#### 2. UPInterstitialDidShowCallback
 As long as the display of the Interstitial ad is successful.
-#### 2. UPInterstitialDidClickCallback
+#### 3. UPInterstitialDidClickCallback
 Called only when  user clicks ad.
-#### 3. UPInterstitialDidCloseCallback
+#### 4. UPInterstitialDidCloseCallback
 The UPInterstitialDidCloseCallback is called back when the Interstitial ad  closed, and it is the callback that was last executed.
-> To sum up：InterstitialDidShow->InterstitialDidClick(if have)->InterstitialDidClose.
+> To sum up：InterstitialWillShow->InterstitialDidShow->InterstitialDidClick(if have)->InterstitialDidClose.
 
 ### 3. Callback for Banner:
 
