@@ -114,7 +114,7 @@ dependencies {
 If you want to add Admob ads in your project, you need to add Google Ads support in your project. You can follow the following steps to add dependencies:
 ```groovy
     dependencies {
-        compile 'com.google.android.gms:play-services-ads:16.0.0'
+        compile 'com.google.android.gms:play-services-ads:17.2.0'
     }
 
 ```

@@ -92,7 +92,7 @@ defaultConfig {
 In the `build.gradle` , download the gms play-service16.0.0 package from Google's remote repository via the compile command.Like this:
     
     dependencies {
-        compile 'com.google.android.gms:play-services-ads:16.0.0'
+        compile 'com.google.android.gms:play-services-ads:17.2.0'
     }
 
 
